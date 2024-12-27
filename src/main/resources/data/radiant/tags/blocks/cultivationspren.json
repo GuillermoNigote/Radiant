@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:cultivationspren_block",
+    "radiant:cultivationspren_block_decay",
+    "radiant:cultivationspren_block_l",
+    "radiant:cultivationspren_block_l_decay"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:dustbringers_glyph"
+    },
+    "title": {
+      "translate": "advancements.dustbringer_third_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.dustbringer_third_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dustbringer_third_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 315
+  },
+  "parent": "radiant:dustbringer_second_ideal"
+}

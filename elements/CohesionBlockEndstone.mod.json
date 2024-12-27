@@ -1,0 +1,46 @@
+{
+  "_fv": 69,
+  "_type": "fluid",
+  "definition": {
+    "name": "Cohesion Liquid",
+    "bucketName": "Cohesion Liquid Bucket",
+    "textureStill": "surge_end_stone",
+    "textureFlowing": "surge_end_stone",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 2400,
+    "levelDecrease": 1,
+    "slopeFindDistance": 10,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "DRIP_WATER"
+    },
+    "flowStrength": 0.0,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 3000,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": false,
+    "textureBucket": "",
+    "creativeTabs": [],
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 15,
+    "emissiveRendering": false,
+    "tickRate": 60,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
+    "onTickUpdate": {
+      "name": "CohesionBlockEndstoneOnTickUpdate"
+    }
+  }
+}

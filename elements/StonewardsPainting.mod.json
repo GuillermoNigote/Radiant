@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "painting",
+  "definition": {
+    "texture": "stonewards.png",
+    "width": 16,
+    "height": 32,
+    "title": "Stonewards",
+    "author": "Steve Argyle"
+  }
+}

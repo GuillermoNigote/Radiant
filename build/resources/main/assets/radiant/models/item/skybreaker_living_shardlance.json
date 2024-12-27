@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/shardlance_skybreaker",
+  "textures": {
+    "1": "radiant:block/shardlance_skybreaker",
+    "particle": "radiant:item/shardlance_skybreaker"
+  }
+}

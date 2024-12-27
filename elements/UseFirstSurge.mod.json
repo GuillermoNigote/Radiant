@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Use First Surge",
+    "keyBindingCategoryKey": "radiant",
+    "onKeyPressed": {
+      "name": "UseFirstSurgeOnKeyPressed"
+    }
+  }
+}

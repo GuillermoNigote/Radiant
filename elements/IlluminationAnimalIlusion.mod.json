@@ -1,0 +1,25 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Illumination Disguise",
+    "icon": "illumination_animal_ilusion.png",
+    "color": {
+      "value": -15908318,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "onActiveTick": {
+      "name": "IlluminationAnimalIlusionOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "IlluminationAnimalIlusionEffectExpires"
+    }
+  }
+}

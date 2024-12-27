@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:skybreakers_glyph"
+    },
+    "title": {
+      "translate": "advancements.skybreaker_second_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.skybreaker_second_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "skybreaker_second_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 160
+  },
+  "parent": "radiant:inmortal_words"
+}

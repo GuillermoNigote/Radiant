@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "painting",
+  "definition": {
+    "texture": "lightweavers.png",
+    "width": 16,
+    "height": 32,
+    "title": "Lightweavers",
+    "author": "Steve Argyle"
+  }
+}

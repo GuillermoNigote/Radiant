@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/shardblade_lightweaver",
+  "textures": {
+    "1": "radiant:block/shardblade_lightweaver",
+    "particle": "radiant:item/shardblade_lightweaver"
+  }
+}

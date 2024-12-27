@@ -1,0 +1,9 @@
+{
+  "parent": "radiant:custom/cultivationspren_turndec",
+  "textures": {
+    "all": "radiant:block/cultivationspren_texture_deshacer",
+    "particle": "radiant:block/cultivationspren_texture_deshacer",
+    "1": "radiant:block/cultivationspren_texture_deshacer"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:orange_concrete"
+  },
+  "result": {
+    "id": "radiant:stoneward_cohesion_glyph",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_snow",
+    "up": "radiant:block/illumination_snow",
+    "north": "radiant:block/illumination_snow",
+    "east": "radiant:block/illumination_snow",
+    "south": "radiant:block/illumination_snow",
+    "west": "radiant:block/illumination_snow",
+    "particle": "radiant:block/illumination_snow"
+  },
+  "render_type": "solid"
+}

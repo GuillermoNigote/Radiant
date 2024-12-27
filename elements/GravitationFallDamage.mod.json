@@ -1,0 +1,7 @@
+{
+  "_fv": 69,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_pre_hurt</field><next><block type=\"controls_if\"><value name=\"IF0\"><block inline=\"false\" type=\"logic_binary_ops\"><field name=\"OP\">AND</field><value name=\"A\"><block inline=\"false\" type=\"logic_binary_ops\"><field name=\"OP\">OR</field><value name=\"A\"><block type=\"entity_haspotioneffect\"><field name=\"potion\">CUSTOM:GravitationSkybreaker</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"B\"><block type=\"entity_haspotioneffect\"><field name=\"potion\">CUSTOM:GravitationWindrunner</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value></block></value><value name=\"B\"><block type=\"damagesource_isequalto\"><field name=\"damagetype\">FALL</field><value name=\"damagesource\"><block type=\"damagesource_from_deps\"/></value></block></value></block></value><statement name=\"DO0\"><block type=\"cancel_event\"/></statement></block></next></block></xml>"
+  }
+}

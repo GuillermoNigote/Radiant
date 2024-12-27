@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Gravitation Surge",
+    "icon": "gravitation_windrunner",
+    "color": {
+      "value": -16764007,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "onStarted": {
+      "name": "GravitationEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "GravitationOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "GravitationSkybreakersEffectExpires"
+    }
+  }
+}

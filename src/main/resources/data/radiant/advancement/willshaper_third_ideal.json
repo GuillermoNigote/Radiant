@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:willshapers_glyph"
+    },
+    "title": {
+      "translate": "advancements.willshaper_third_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.willshaper_third_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "willshaper_third_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 315
+  },
+  "parent": "radiant:willshaper_second_ideal"
+}

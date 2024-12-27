@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "shardblade_edgedancer",
+        "missing": "shardblade_edgedancer"
+      },
+      "name": "default"
+    }
+  }
+}

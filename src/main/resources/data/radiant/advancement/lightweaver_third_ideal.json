@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:lightweavers_glyph"
+    },
+    "title": {
+      "translate": "advancements.lightweaver_third_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.lightweaver_third_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lightweaver_third_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 315
+  },
+  "parent": "radiant:lightweaver_second_ideal"
+}

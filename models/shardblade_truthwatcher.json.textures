@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "shardblade_truthwatcher",
+        "missing": "shardblade_truthwatcher"
+      },
+      "name": "default"
+    }
+  }
+}

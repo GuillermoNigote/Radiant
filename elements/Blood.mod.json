@@ -1,0 +1,43 @@
+{
+  "_fv": 69,
+  "_type": "fluid",
+  "definition": {
+    "name": "Blood",
+    "bucketName": "Blood Bucket",
+    "textureStill": "blood_still",
+    "textureFlowing": "blood_flow",
+    "tintType": "Water",
+    "canMultiply": true,
+    "flowRate": 4,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "flowStrength": 0.8,
+    "luminosity": 0,
+    "density": 2000,
+    "viscosity": 2000,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "blood_bucket",
+    "creativeTabs": [],
+    "emptySound": {
+      "value": "item.bucket.empty"
+    },
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": false,
+    "tickRate": 0,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT"
+  }
+}

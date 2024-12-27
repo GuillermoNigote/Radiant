@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:tension_axe_rock",
+    "radiant:tension_axe_diamond",
+    "radiant:tension_axe_gold",
+    "radiant:tension_axe_iron",
+    "radiant:tension_axe_stone",
+    "radiant:tension_axe_wood"
+  ]
+}

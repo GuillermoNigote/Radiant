@@ -1,0 +1,8 @@
+{
+  "parent": "radiant:custom/shardblade_windrunner",
+  "textures": {
+    "1": "radiant:block/shardblade-windrunner",
+    "missing": "radiant:block/shardblade-windrunner",
+    "particle": "radiant:item/shardblade-windrunner"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:tension_hoe_rock",
+    "radiant:tension_hoe_diamond",
+    "radiant:tension_hoe_gold",
+    "radiant:tension_hoe_iron",
+    "radiant:tension_hoe_stone",
+    "radiant:tension_hoe_wood"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:dustbringer_shardplate_helmet",
+    "radiant:tension_chainmail_armor_helmet",
+    "radiant:tension_turtle_armor_helmet",
+    "radiant:tension_diamond_armor_helmet",
+    "radiant:tension_iron_armor_helmet",
+    "radiant:tension_gold_armor_helmet"
+  ]
+}

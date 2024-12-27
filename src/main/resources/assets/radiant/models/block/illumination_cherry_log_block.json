@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_cherry_log_top",
+    "up": "radiant:block/illumination_cherry_log_top",
+    "north": "radiant:block/illumination_cherry_log",
+    "east": "radiant:block/illumination_cherry_log",
+    "south": "radiant:block/illumination_cherry_log",
+    "west": "radiant:block/illumination_cherry_log",
+    "particle": "radiant:block/illumination_cherry_log_top"
+  },
+  "render_type": "solid"
+}

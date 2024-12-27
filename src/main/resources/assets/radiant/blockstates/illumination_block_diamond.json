@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "radiant:block/illumination_block_diamond"
+    },
+    "facing=east": {
+      "model": "radiant:block/illumination_block_diamond",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "radiant:block/illumination_block_diamond",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "radiant:block/illumination_block_diamond",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "radiant:block/illumination_block_diamond",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "radiant:block/illumination_block_diamond",
+      "x": 90
+    }
+  }
+}

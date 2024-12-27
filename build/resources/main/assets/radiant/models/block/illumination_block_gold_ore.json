@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/surge_gold_ore",
+    "up": "radiant:block/surge_gold_ore",
+    "north": "radiant:block/surge_gold_ore",
+    "east": "radiant:block/surge_gold_ore",
+    "south": "radiant:block/surge_gold_ore",
+    "west": "radiant:block/surge_gold_ore",
+    "particle": "radiant:block/surge_gold_ore"
+  },
+  "render_type": "solid"
+}

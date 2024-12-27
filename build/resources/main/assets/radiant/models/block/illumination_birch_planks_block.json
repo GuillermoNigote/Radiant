@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_birch_planks",
+    "up": "radiant:block/illumination_birch_planks",
+    "north": "radiant:block/illumination_birch_planks",
+    "east": "radiant:block/illumination_birch_planks",
+    "south": "radiant:block/illumination_birch_planks",
+    "west": "radiant:block/illumination_birch_planks",
+    "particle": "radiant:block/illumination_birch_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:dustbringer_shardplate_boots",
+    "radiant:tension_chainmail_armor_boots",
+    "radiant:tension_diamond_armor_boots",
+    "radiant:tension_iron_armor_boots",
+    "radiant:tension_gold_armor_boots"
+  ]
+}

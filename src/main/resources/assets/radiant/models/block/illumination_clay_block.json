@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_clay",
+    "up": "radiant:block/illumination_clay",
+    "north": "radiant:block/illumination_clay",
+    "east": "radiant:block/illumination_clay",
+    "south": "radiant:block/illumination_clay",
+    "west": "radiant:block/illumination_clay",
+    "particle": "radiant:block/illumination_clay"
+  },
+  "render_type": "solid"
+}

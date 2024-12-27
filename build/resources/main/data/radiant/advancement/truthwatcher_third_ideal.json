@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:truthwatchers_glyph"
+    },
+    "title": {
+      "translate": "advancements.truthwatcher_third_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.truthwatcher_third_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "truthwatcher_third_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 315
+  },
+  "parent": "radiant:truthwatcher_second_ideal"
+}

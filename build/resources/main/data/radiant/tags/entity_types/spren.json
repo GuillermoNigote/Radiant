@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:ashspren",
+    "radiant:cryptic",
+    "radiant:cultivationspren",
+    "radiant:highspren",
+    "radiant:honorspren",
+    "radiant:inkspren",
+    "radiant:lightspren",
+    "radiant:mistspren",
+    "radiant:peakspren"
+  ]
+}

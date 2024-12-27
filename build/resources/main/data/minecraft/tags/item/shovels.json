@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:tension_shovel_rock",
+    "radiant:tension_shovel_diamond",
+    "radiant:tension_shovel_gold",
+    "radiant:tension_shovel_iron",
+    "radiant:tension_shovel_stone",
+    "radiant:tension_shovel_wood"
+  ]
+}

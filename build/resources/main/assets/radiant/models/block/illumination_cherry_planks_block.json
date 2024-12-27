@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_cherry_planks",
+    "up": "radiant:block/illumination_cherry_planks",
+    "north": "radiant:block/illumination_cherry_planks",
+    "east": "radiant:block/illumination_cherry_planks",
+    "south": "radiant:block/illumination_cherry_planks",
+    "west": "radiant:block/illumination_cherry_planks",
+    "particle": "radiant:block/illumination_cherry_planks"
+  },
+  "render_type": "solid"
+}

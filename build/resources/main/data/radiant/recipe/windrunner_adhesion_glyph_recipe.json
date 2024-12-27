@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:blue_concrete"
+  },
+  "result": {
+    "id": "radiant:windrunner_adhesion_glyph",
+    "count": 1
+  }
+}

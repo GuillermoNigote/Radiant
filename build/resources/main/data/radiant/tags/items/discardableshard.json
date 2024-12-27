@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:dustbringer_living_shardblade",
+    "radiant:edgedancer_living_shardblade",
+    "radiant:stoneward_living_shardblade",
+    "radiant:willshaper_living_shardblade",
+    "radiant:truthwatcher_living_shardblade",
+    "radiant:skybreaker_living_shardblade",
+    "radiant:windrunner_living_shardblade",
+    "radiant:elsecaller_living_shardblade",
+    "radiant:lightweaver_living_shardblade",
+    "radiant:skybreaker_living_shardlance",
+    "radiant:windrunner_living_shardlance"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "radiant:block/illumination_cobbled_deepslate_block"
+    },
+    "facing=east": {
+      "model": "radiant:block/illumination_cobbled_deepslate_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "radiant:block/illumination_cobbled_deepslate_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "radiant:block/illumination_cobbled_deepslate_block",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "radiant:block/illumination_cobbled_deepslate_block",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "radiant:block/illumination_cobbled_deepslate_block",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "radiant:custom/aon_nae",
+  "textures": {
+    "all": "radiant:block/aon_nae",
+    "particle": "radiant:block/aon_nae",
+    "0": "radiant:block/aon_nae"
+  },
+  "render_type": "cutout_mipped"
+}

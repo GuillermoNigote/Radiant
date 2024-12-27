@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:radiants_glyph"
+    },
+    "title": {
+      "translate": "advancements.inmortal_words.title"
+    },
+    "description": {
+      "translate": "advancements.inmortal_words.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inmortal_words_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 55
+  },
+  "parent": "radiant:broken_oaths"
+}

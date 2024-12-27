@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "radiant:block/cultivationspren_block_l_decay"
+    },
+    "facing=east": {
+      "model": "radiant:block/cultivationspren_block_l_decay",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "radiant:block/cultivationspren_block_l_decay",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "radiant:block/cultivationspren_block_l_decay",
+      "y": 270
+    }
+  }
+}

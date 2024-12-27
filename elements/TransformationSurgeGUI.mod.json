@@ -1,0 +1,172 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 191,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_air",
+          "text": "Air",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AirEssenceTransformation"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 145,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_smoke",
+          "text": "Smoke",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SmokeEssenceTransformation"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 134,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fire",
+          "text": "Fire",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FireEssenceTransformation"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 139,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_glass",
+          "text": "Glass",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GlassEssenceTransformation"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 134,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_wood",
+          "text": "Wood",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "WoodEssenceTransformation"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 139,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_blood",
+          "text": "Blood",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "BloodEssenceTransformation"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 237,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_oil",
+          "text": "Oil",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OilEssenceTransformation"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 236,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_metal",
+          "text": "Metal",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MetalEssenceTransformation"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 236,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_stone",
+          "text": "Stone",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "StoneEssenceTransformation"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 237,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_meat",
+          "text": "Meat",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MeatEssenceTransformation"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 237,
+          "y": 161
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 1,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

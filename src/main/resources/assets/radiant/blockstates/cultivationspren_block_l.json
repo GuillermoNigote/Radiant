@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "radiant:block/cultivationspren_block_l"
+    },
+    "facing=east": {
+      "model": "radiant:block/cultivationspren_block_l",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "radiant:block/cultivationspren_block_l",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "radiant:block/cultivationspren_block_l",
+      "y": 270
+    }
+  }
+}

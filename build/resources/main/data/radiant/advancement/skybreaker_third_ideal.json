@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:skybreakers_glyph"
+    },
+    "title": {
+      "translate": "advancements.skybreaker_third_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.skybreaker_third_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "skybreaker_third_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 315
+  },
+  "parent": "radiant:skybreaker_second_ideal"
+}

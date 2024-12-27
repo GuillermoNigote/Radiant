@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "cultivationspren_texture_deshacer"
+      },
+      "name": "default"
+    }
+  }
+}

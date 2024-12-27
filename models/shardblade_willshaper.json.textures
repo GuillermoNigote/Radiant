@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "shardblade_willshaper",
+        "missing": "shardblade_willshaper"
+      },
+      "name": "default"
+    }
+  }
+}

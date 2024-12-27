@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_redstone_block",
+    "up": "radiant:block/illumination_redstone_block",
+    "north": "radiant:block/illumination_redstone_block",
+    "east": "radiant:block/illumination_redstone_block",
+    "south": "radiant:block/illumination_redstone_block",
+    "west": "radiant:block/illumination_redstone_block",
+    "particle": "radiant:block/illumination_redstone_block"
+  },
+  "render_type": "solid"
+}

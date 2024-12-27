@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:windrunners_glyph"
+    },
+    "title": {
+      "translate": "advancements.windrunner_second_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.windrunner_second_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "windrunner_second_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 160
+  },
+  "parent": "radiant:inmortal_words"
+}

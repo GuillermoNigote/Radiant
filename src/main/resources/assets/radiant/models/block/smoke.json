@@ -1,0 +1,9 @@
+{
+  "parent": "radiant:custom/smoke",
+  "textures": {
+    "all": "radiant:block/empty",
+    "particle": "radiant:block/empty",
+    "0": "radiant:block/empty"
+  },
+  "render_type": "cutout_mipped"
+}

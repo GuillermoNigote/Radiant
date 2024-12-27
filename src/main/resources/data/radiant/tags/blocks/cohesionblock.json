@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:cohesion_block_dirt",
+    "radiant:cohesion_block_stone",
+    "radiant:cohesion_block_obsidian",
+    "radiant:cohesion_block_netherrack",
+    "radiant:cohesion_block_granite",
+    "radiant:cohesion_block_sandstone",
+    "radiant:cohesion_block_sand",
+    "radiant:cohesion_block_diorite",
+    "radiant:cohesion_block_bedrock",
+    "radiant:cohesion_block_andesite",
+    "radiant:cohesion_block_debris",
+    "radiant:cohesion_block_endstone"
+  ]
+}

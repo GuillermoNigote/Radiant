@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_deepslate_coal_ore",
+    "up": "radiant:block/illumination_deepslate_coal_ore",
+    "north": "radiant:block/illumination_deepslate_coal_ore",
+    "east": "radiant:block/illumination_deepslate_coal_ore",
+    "south": "radiant:block/illumination_deepslate_coal_ore",
+    "west": "radiant:block/illumination_deepslate_coal_ore",
+    "particle": "radiant:block/illumination_deepslate_coal_ore"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "shardblade-windrunner",
+        "missing": "shardblade-windrunner"
+      },
+      "name": "default"
+    }
+  }
+}

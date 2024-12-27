@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:dustbringer_shardplate_leggings",
+    "radiant:tension_chainmail_armor_leggings",
+    "radiant:tension_diamond_armor_leggings",
+    "radiant:tension_iron_armor_leggings",
+    "radiant:tension_gold_armor_leggings"
+  ]
+}

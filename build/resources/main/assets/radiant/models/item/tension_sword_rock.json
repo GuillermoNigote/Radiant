@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "radiant:item/rock_sword_tension"
+  }
+}

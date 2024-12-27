@@ -1,0 +1,25 @@
+{
+  "_fv": 69,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The Third Ideal",
+    "achievementDescription": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
+    "achievementIcon": {
+      "value": "CUSTOM:ElsecallersGlyph"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 315,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:ElsecallerSecondIdeal"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

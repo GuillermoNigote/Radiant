@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "painting",
+  "definition": {
+    "texture": "edgedancers_picture.png",
+    "width": 16,
+    "height": 32,
+    "title": "Edgedancers",
+    "author": "Steve Argyle"
+  }
+}

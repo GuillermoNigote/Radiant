@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/surge_diamond_block",
+    "up": "radiant:block/surge_diamond_block",
+    "north": "radiant:block/surge_diamond_block",
+    "east": "radiant:block/surge_diamond_block",
+    "south": "radiant:block/surge_diamond_block",
+    "west": "radiant:block/surge_diamond_block",
+    "particle": "radiant:block/surge_diamond_block"
+  },
+  "render_type": "solid"
+}

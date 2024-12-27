@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:elsecallers_glyph"
+    },
+    "title": {
+      "translate": "advancements.elsecaller_third_ideal.title"
+    },
+    "description": {
+      "translate": "advancements.elsecaller_third_ideal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "elsecaller_third_ideal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 315
+  },
+  "parent": "radiant:elsecaller_second_ideal"
+}

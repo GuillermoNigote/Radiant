@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "radiant:block/illumination_block_emerald_ore"
+    },
+    "facing=east": {
+      "model": "radiant:block/illumination_block_emerald_ore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "radiant:block/illumination_block_emerald_ore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "radiant:block/illumination_block_emerald_ore",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "radiant:block/illumination_block_emerald_ore",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "radiant:block/illumination_block_emerald_ore",
+      "x": 90
+    }
+  }
+}

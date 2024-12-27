@@ -1,0 +1,25 @@
+{
+  "_fv": 69,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The Third Ideal",
+    "achievementDescription": "Also called the Ideal of Dedication, this is a specific oath to dedicate oneself to a greater truth, either a code or, sometimes, a person. A Skybreaker squire must first bond their Highspren before taking this oath, and it is the minimum oath required before the Surge of Division can be used. Swearing this Ideal makes someone a full Skybreaker",
+    "achievementIcon": {
+      "value": "CUSTOM:SkybreakersGlyph"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 315,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:SkybreakerSecondIdeal"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

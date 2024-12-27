@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:tension_sword_rock",
+    "radiant:skybreaker_dead_shardblade",
+    "radiant:lightweaver_dead_shardblade",
+    "radiant:windrunner_dead_shardblade",
+    "radiant:truthwatcher_dead_shardblade",
+    "radiant:willshaper_dead_shardblade",
+    "radiant:stoneward_dead_shardblade",
+    "radiant:edgedancer_dead_shardblade",
+    "radiant:dustbringer_dead_shardblade",
+    "radiant:windrunner_living_shardlance",
+    "radiant:skybreaker_living_shardlance",
+    "radiant:lightweaver_living_shardblade",
+    "radiant:elsecaller_living_shardblade",
+    "radiant:windrunner_living_shardblade",
+    "radiant:skybreaker_living_shardblade",
+    "radiant:tension_sword_diamond",
+    "radiant:tension_sword_gold",
+    "radiant:tension_sword_iron",
+    "radiant:tension_sword_stone",
+    "radiant:tension_sword_wood",
+    "radiant:truthwatcher_living_shardblade",
+    "radiant:willshaper_living_shardblade",
+    "radiant:stoneward_living_shardblade",
+    "radiant:edgedancer_living_shardblade",
+    "radiant:dustbringer_living_shardblade"
+  ]
+}

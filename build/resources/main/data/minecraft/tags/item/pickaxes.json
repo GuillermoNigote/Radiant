@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:tension_pickaxe_rock",
+    "radiant:tension_pickaxe_diamond",
+    "radiant:tension_pickaxe_gold",
+    "radiant:tension_pickaxe_iron",
+    "radiant:tension_pickaxe_stone",
+    "radiant:tension_pickaxe_wood"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Abrasion Surge",
+    "icon": "abrasion_edgedancer",
+    "color": {
+      "value": -199183,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "onStarted": {
+      "name": "AbrasionEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "AbrasionOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "AbrasionEffectExpires"
+    }
+  }
+}

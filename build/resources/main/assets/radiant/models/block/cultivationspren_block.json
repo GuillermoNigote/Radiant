@@ -1,0 +1,9 @@
+{
+  "parent": "radiant:custom/cultivationspren_block",
+  "textures": {
+    "all": "radiant:block/cultivationspren_texture",
+    "particle": "radiant:block/cultivationspren_texture",
+    "0": "radiant:block/cultivationspren_texture"
+  },
+  "render_type": "cutout_mipped"
+}

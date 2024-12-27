@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/illumination_deepslate",
+    "up": "radiant:block/illumination_deepslate",
+    "north": "radiant:block/illumination_deepslate",
+    "east": "radiant:block/illumination_deepslate",
+    "south": "radiant:block/illumination_deepslate",
+    "west": "radiant:block/illumination_deepslate",
+    "particle": "radiant:block/illumination_deepslate"
+  },
+  "render_type": "solid"
+}

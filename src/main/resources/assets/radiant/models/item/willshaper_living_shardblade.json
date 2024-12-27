@@ -1,0 +1,8 @@
+{
+  "parent": "radiant:custom/shardblade_willshaper",
+  "textures": {
+    "2": "radiant:block/shardblade_willshaper",
+    "missing": "radiant:block/shardblade_willshaper",
+    "particle": "radiant:item/shardblade_willshaper"
+  }
+}

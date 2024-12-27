@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:dustbringer_shardplate_chestplate",
+    "radiant:tension_chainmail_armor_chestplate",
+    "radiant:tension_diamond_armor_chestplate",
+    "radiant:tension_iron_armor_chestplate",
+    "radiant:tension_gold_armor_chestplate"
+  ]
+}

@@ -13,7 +13,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class AdhesionInfuseRenderer extends MobRenderer<AdhesionInfuseEntity, SlimeModel<AdhesionInfuseEntity>> {
 	public AdhesionInfuseRenderer(EntityRendererProvider.Context context) {
-		super(context, new SlimeModel(context.bakeLayer(ModelLayers.SLIME)), 0f);
+		super(context, new SlimeModel<AdhesionInfuseEntity>(context.bakeLayer(ModelLayers.SLIME)), 0f);
 	}
 
 	@Override

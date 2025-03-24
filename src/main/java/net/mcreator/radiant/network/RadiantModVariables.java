@@ -73,6 +73,7 @@ public class RadiantModVariables {
 			clone.yant = original.yant;
 			clone.zant = original.zant;
 			clone.BondedShardblade = original.BondedShardblade;
+			clone.SummonedPlate = original.SummonedPlate;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -218,6 +219,7 @@ public class RadiantModVariables {
 		public double yant = 0;
 		public double zant = 0;
 		public ItemStack BondedShardblade = ItemStack.EMPTY;
+		public boolean SummonedPlate = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -228,6 +230,7 @@ public class RadiantModVariables {
 			nbt.putDouble("yant", yant);
 			nbt.putDouble("zant", zant);
 			nbt.put("BondedShardblade", BondedShardblade.saveOptional(lookupProvider));
+			nbt.putBoolean("SummonedPlate", SummonedPlate);
 			return nbt;
 		}
 
@@ -239,6 +242,7 @@ public class RadiantModVariables {
 			yant = nbt.getDouble("yant");
 			zant = nbt.getDouble("zant");
 			BondedShardblade = ItemStack.parseOptional(lookupProvider, nbt.getCompound("BondedShardblade"));
+			SummonedPlate = nbt.getBoolean("SummonedPlate");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

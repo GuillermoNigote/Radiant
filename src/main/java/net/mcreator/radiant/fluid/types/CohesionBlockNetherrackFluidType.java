@@ -23,7 +23,8 @@ public class CohesionBlockNetherrackFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_netherrack"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_netherrack");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/netherrack");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/netherrack");
 
 			@Override
 			public ResourceLocation getStillTexture() {

@@ -2,16 +2,19 @@
 package net.mcreator.radiant.item;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
 import net.mcreator.radiant.procedures.LivingShardbladeEntityIsHitWithToolProcedure;
+import net.mcreator.radiant.procedures.DeadShardbladeToolInInventoryTickProcedure;
 
 public class WillshaperDeadShardbladeItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -37,7 +40,7 @@ public class WillshaperDeadShardbladeItem extends SwordItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 0;
+			return 1;
 		}
 
 		@Override
@@ -53,7 +56,13 @@ public class WillshaperDeadShardbladeItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		LivingShardbladeEntityIsHitWithToolProcedure.execute(entity.level(), entity);
+		LivingShardbladeEntityIsHitWithToolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
 		return retval;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		DeadShardbladeToolInInventoryTickProcedure.execute(world, entity, itemstack);
 	}
 }

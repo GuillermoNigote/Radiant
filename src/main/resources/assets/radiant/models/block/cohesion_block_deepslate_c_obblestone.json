@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "radiant:block/illumination_cobbled_deepslate"
+    "particle": "minecraft:block/cobbled_deepslate"
   }
 }

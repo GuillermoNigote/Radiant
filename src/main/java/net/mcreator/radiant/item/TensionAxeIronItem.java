@@ -42,7 +42,7 @@ public class TensionAxeIronItem extends AxeItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 0;
+			return 1;
 		}
 
 		@Override

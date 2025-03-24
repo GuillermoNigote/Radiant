@@ -11,7 +11,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.radiant.init.RadiantModMobEffects;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class CohesionLiquidOnTickUpdateProcedure {
@@ -22,8 +21,7 @@ public class CohesionLiquidOnTickUpdateProcedure {
 		double sz = 0;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (entityiterator instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(RadiantModMobEffects.COHESION_WILLSHAPER) || entityiterator instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(RadiantModMobEffects.COHESION_STONEWARD)) {
 					keepCohesion = true;
 				}

@@ -23,7 +23,8 @@ public class CohesionLiquidFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_stone"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_stone");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_stone");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_stone");
 
 			@Override
 			public ResourceLocation getStillTexture() {

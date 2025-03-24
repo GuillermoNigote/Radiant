@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_mangrove_log_top",
-    "up": "radiant:block/illumination_mangrove_log_top",
-    "north": "radiant:block/illumination_mangrove_log",
-    "east": "radiant:block/illumination_mangrove_log",
-    "south": "radiant:block/illumination_mangrove_log",
-    "west": "radiant:block/illumination_mangrove_log",
-    "particle": "radiant:block/illumination_mangrove_log_top"
+    "down": "minecraft:block/mangrove_log_top",
+    "up": "minecraft:block/mangrove_log_top",
+    "north": "minecraft:block/mangrove_log",
+    "east": "minecraft:block/mangrove_log",
+    "south": "minecraft:block/mangrove_log",
+    "west": "minecraft:block/mangrove_log",
+    "particle": "minecraft:block/mangrove_log_top"
   },
   "render_type": "solid"
 }

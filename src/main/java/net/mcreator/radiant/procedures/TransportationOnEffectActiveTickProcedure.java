@@ -12,7 +12,6 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.mcreator.radiant.network.RadiantModVariables;
 import net.mcreator.radiant.init.RadiantModMobEffects;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class TransportationOnEffectActiveTickProcedure {
@@ -26,8 +25,7 @@ public class TransportationOnEffectActiveTickProcedure {
 						_player.giveExperiencePoints(-(1));
 					{
 						final Vec3 _center = new Vec3(x, y, z);
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(52 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-						for (Entity entityiterator : _entfound) {
+						for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(52 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 							if (!(entity == entityiterator)) {
 								if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 									_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 15, 0, false, false));

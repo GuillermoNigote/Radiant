@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "fluid",
   "definition": {
     "name": "Cohesion Liquid",
     "bucketName": "Cohesion Liquid Bucket",
     "textureStill": "surge_stone",
     "textureFlowing": "surge_stone",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 2400,

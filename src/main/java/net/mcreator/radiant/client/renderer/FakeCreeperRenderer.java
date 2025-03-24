@@ -11,7 +11,7 @@ import net.mcreator.radiant.entity.FakeCreeperEntity;
 
 public class FakeCreeperRenderer extends MobRenderer<FakeCreeperEntity, CreeperModel<FakeCreeperEntity>> {
 	public FakeCreeperRenderer(EntityRendererProvider.Context context) {
-		super(context, new CreeperModel(context.bakeLayer(ModelLayers.CREEPER)), 0.5f);
+		super(context, new CreeperModel<FakeCreeperEntity>(context.bakeLayer(ModelLayers.CREEPER)), 0.5f);
 	}
 
 	@Override

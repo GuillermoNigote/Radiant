@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "radiant:aluminum_ingot"
+    }
+  ],
+  "result": {
+    "id": "radiant:aluminum_nugget",
+    "count": 9
+  }
+}

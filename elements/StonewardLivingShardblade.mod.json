@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -15,7 +15,7 @@
     "creativeTabs": [],
     "efficiency": 9.0,
     "attackSpeed": 1.6,
-    "enchantability": 0,
+    "enchantability": 1,
     "damageVsEntity": 10.0,
     "usageCount": 2031,
     "glowCondition": {

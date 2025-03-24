@@ -10,7 +10,7 @@ import net.mcreator.radiant.client.model.ModelMastered_Sand_Projectile;
 
 public class MistsprenRenderer extends MobRenderer<MistsprenEntity, ModelMastered_Sand_Projectile<MistsprenEntity>> {
 	public MistsprenRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelMastered_Sand_Projectile(context.bakeLayer(ModelMastered_Sand_Projectile.LAYER_LOCATION)), 0f);
+		super(context, new ModelMastered_Sand_Projectile<MistsprenEntity>(context.bakeLayer(ModelMastered_Sand_Projectile.LAYER_LOCATION)), 0f);
 	}
 
 	@Override

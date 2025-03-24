@@ -23,7 +23,8 @@ public class CohesionBlockDeepslateFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/illumination_deepslate"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/illumination_deepslate");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/deepslate");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/deepslate");
 
 			@Override
 			public ResourceLocation getStillTexture() {

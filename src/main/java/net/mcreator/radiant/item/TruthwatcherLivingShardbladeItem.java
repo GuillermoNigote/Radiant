@@ -40,7 +40,7 @@ public class TruthwatcherLivingShardbladeItem extends SwordItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 0;
+			return 1;
 		}
 
 		@Override
@@ -56,7 +56,7 @@ public class TruthwatcherLivingShardbladeItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		LivingShardbladeEntityIsHitWithToolProcedure.execute(entity.level(), entity);
+		LivingShardbladeEntityIsHitWithToolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
 		return retval;
 	}
 

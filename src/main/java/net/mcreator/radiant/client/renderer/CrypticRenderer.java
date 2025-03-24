@@ -12,7 +12,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class CrypticRenderer extends MobRenderer<CrypticEntity, ModelCryptic<CrypticEntity>> {
 	public CrypticRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCryptic(context.bakeLayer(ModelCryptic.LAYER_LOCATION)), 0f);
+		super(context, new ModelCryptic<CrypticEntity>(context.bakeLayer(ModelCryptic.LAYER_LOCATION)), 0f);
 	}
 
 	@Override

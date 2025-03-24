@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -22,7 +22,8 @@
           "width": 40,
           "height": 20,
           "x": 145,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -37,7 +38,8 @@
           "width": 51,
           "height": 20,
           "x": 134,
-          "y": 80
+          "y": 80,
+          "locked": false
         }
       },
       {
@@ -52,7 +54,8 @@
           "width": 46,
           "height": 20,
           "x": 139,
-          "y": 107
+          "y": 107,
+          "locked": false
         }
       },
       {
@@ -67,7 +70,8 @@
           "width": 51,
           "height": 20,
           "x": 134,
-          "y": 134
+          "y": 134,
+          "locked": false
         }
       },
       {
@@ -82,7 +86,8 @@
           "width": 46,
           "height": 20,
           "x": 139,
-          "y": 161
+          "y": 161,
+          "locked": false
         }
       },
       {
@@ -97,7 +102,8 @@
           "width": 51,
           "height": 20,
           "x": 237,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -112,7 +118,8 @@
           "width": 40,
           "height": 20,
           "x": 236,
-          "y": 80
+          "y": 80,
+          "locked": false
         }
       },
       {
@@ -127,7 +134,8 @@
           "width": 51,
           "height": 20,
           "x": 236,
-          "y": 107
+          "y": 107,
+          "locked": false
         }
       },
       {
@@ -142,7 +150,8 @@
           "width": 51,
           "height": 20,
           "x": 237,
-          "y": 134
+          "y": 134,
+          "locked": false
         }
       },
       {
@@ -157,7 +166,8 @@
           "width": 46,
           "height": 20,
           "x": 237,
-          "y": 161
+          "y": 161,
+          "locked": false
         }
       }
     ],

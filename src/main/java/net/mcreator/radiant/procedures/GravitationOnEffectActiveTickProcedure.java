@@ -16,6 +16,7 @@ public class GravitationOnEffectActiveTickProcedure {
 			return;
 		double Random = 0;
 		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0) {
+			entity.fallDistance = 0;
 			if (entity.isNoGravity() && entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantCounter == 4) {
 				if (entity instanceof Player _player)
 					_player.giveExperiencePoints(-(1));

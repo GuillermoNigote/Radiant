@@ -23,7 +23,8 @@ public class CohesionBlockObsidianFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_obsidian"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_obsidian");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/obsidian");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/obsidian");
 
 			@Override
 			public ResourceLocation getStillTexture() {

@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_mud",
-    "up": "radiant:block/illumination_mud",
-    "north": "radiant:block/illumination_mud",
-    "east": "radiant:block/illumination_mud",
-    "south": "radiant:block/illumination_mud",
-    "west": "radiant:block/illumination_mud",
-    "particle": "radiant:block/illumination_mud"
+    "down": "minecraft:block/mud",
+    "up": "minecraft:block/mud",
+    "north": "minecraft:block/mud",
+    "east": "minecraft:block/mud",
+    "south": "minecraft:block/mud",
+    "west": "minecraft:block/mud",
+    "particle": "minecraft:block/mud"
   },
   "render_type": "solid"
 }

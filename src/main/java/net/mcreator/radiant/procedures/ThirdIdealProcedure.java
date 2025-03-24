@@ -40,18 +40,10 @@ public class ThirdIdealProcedure {
 		if (advancement == null || entity == null)
 			return;
 		double Random = 0;
-		if (("Dustbringers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) == 2) {
+		if (getEntityScore("Oath", entity) == 2) {
+			if (("Dustbringers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
 				if (world instanceof Level _lvl2 && _lvl2.getServer() != null && _lvl2.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/explore_nether")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
@@ -137,20 +129,10 @@ public class ThirdIdealProcedure {
 						}
 					}
 				}
-			}
-		} else if (("Edgedancers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) == 2) {
-				if (world instanceof Level _lvl20 && _lvl20.getServer() != null && _lvl20.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/salvage_sherd")).value().equals(advancement)) {
+			} else if (("Edgedancers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
+				if (world instanceof Level _lvl19 && _lvl19.getServer() != null && _lvl19.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/salvage_sherd")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -171,7 +153,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl24 && _lvl24.getServer() != null && _lvl24.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/craft_decorated_pot_using_only_sherds")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl23 && _lvl23.getServer() != null && _lvl23.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/craft_decorated_pot_using_only_sherds")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -192,7 +174,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl28 && _lvl28.getServer() != null && _lvl28.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/cure_zombie_villager")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl27 && _lvl27.getServer() != null && _lvl27.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/cure_zombie_villager")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -202,7 +184,7 @@ public class ThirdIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will save even those deemed hopeless"), false);
+						_player.displayClientMessage(Component.literal("I will listen to those who have been ignored"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:edgedancer_third_ideal"));
 						if (_adv != null) {
@@ -214,20 +196,10 @@ public class ThirdIdealProcedure {
 						}
 					}
 				}
-			}
-		} else if (("Stonewards").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) == 2) {
-				if (world instanceof Level _lvl34 && _lvl34.getServer() != null && _lvl34.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/lightning_rod_with_villager_no_fire")).value().equals(advancement)) {
+			} else if (("Stonewards").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
+				if (world instanceof Level _lvl32 && _lvl32.getServer() != null && _lvl32.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/lightning_rod_with_villager_no_fire")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -237,7 +209,7 @@ public class ThirdIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("If I can't be there, I'll make sure people have something to rely on"), false);
+						_player.displayClientMessage(Component.literal("I will be the foundation on which others can build"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:stoneward_third_ideal"));
 						if (_adv != null) {
@@ -248,7 +220,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl38 && _lvl38.getServer() != null && _lvl38.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/summon_iron_golem")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl36 && _lvl36.getServer() != null && _lvl36.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/summon_iron_golem")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -258,7 +230,7 @@ public class ThirdIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("If I can't be there, I'll make sure people have something to rely on"), false);
+						_player.displayClientMessage(Component.literal("I will be the foundation on which others can build"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:stoneward_third_ideal"));
 						if (_adv != null) {
@@ -269,7 +241,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl42 && _lvl42.getServer() != null && _lvl42.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl40 && _lvl40.getServer() != null && _lvl40.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -279,7 +251,7 @@ public class ThirdIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will not abandon those who need me"), false);
+						_player.displayClientMessage(Component.literal("I will be the foundation on which others can build"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:stoneward_third_ideal"));
 						if (_adv != null) {
@@ -291,20 +263,10 @@ public class ThirdIdealProcedure {
 						}
 					}
 				}
-			}
-		} else if (("Willshapers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) == 2) {
-				if (world instanceof Level _lvl48 && _lvl48.getServer() != null && _lvl48.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/kill_dragon")).value().equals(advancement)) {
+			} else if (("Willshapers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
+				if (world instanceof Level _lvl45 && _lvl45.getServer() != null && _lvl45.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/kill_dragon")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -325,7 +287,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl52 && _lvl52.getServer() != null && _lvl52.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl49 && _lvl49.getServer() != null && _lvl49.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -347,20 +309,10 @@ public class ThirdIdealProcedure {
 						}
 					}
 				}
-			}
-		} else if (("Truthwatchers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) == 2) {
-				if (world instanceof Level _lvl58 && _lvl58.getServer() != null && _lvl58.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/find_end_city")).value().equals(advancement)) {
+			} else if (("Truthwatchers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
+				if (world instanceof Level _lvl54 && _lvl54.getServer() != null && _lvl54.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/find_end_city")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -381,7 +333,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl62 && _lvl62.getServer() != null && _lvl62.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/follow_ender_eye")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl58 && _lvl58.getServer() != null && _lvl58.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/follow_ender_eye")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -402,7 +354,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl66 && _lvl66.getServer() != null && _lvl66.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/kill_mob_near_sculk_catalyst")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl62 && _lvl62.getServer() != null && _lvl62.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/kill_mob_near_sculk_catalyst")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -424,145 +376,132 @@ public class ThirdIdealProcedure {
 						}
 					}
 				}
-			}
-		} else if (("Windrunners").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (world instanceof Level _lvl71 && _lvl71.getServer() != null && _lvl71.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
-				{
-					Entity _ent = entity;
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective("Oath");
-					if (_so == null)
-						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-				}
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("I will protect even those I hate, so long as it is right"), false);
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_third_ideal"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+			} else if (("Windrunners").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
+				if (world instanceof Level _lvl67 && _lvl67.getServer() != null && _lvl67.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
+					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will protect even those I hate, so long as it is right"), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_third_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
+					}
+				} else if (world instanceof Level _lvl71 && _lvl71.getServer() != null && _lvl71.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/totem_of_undying")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
+					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will protect those I hate. Even if the one I hate most is myself."), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_third_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}
-			} else if (world instanceof Level _lvl75 && _lvl75.getServer() != null && _lvl75.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/totem_of_undying")).value().equals(advancement)) {
-				{
-					Entity _ent = entity;
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective("Oath");
-					if (_so == null)
-						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-				}
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("I will protect those I hate. Even if the one I hate most is myself."), false);
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_third_ideal"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+			} else if (("Elsecallers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
+				if (world instanceof Level _lvl76 && _lvl76.getServer() != null && _lvl76.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/netherite_armor")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
+					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will be the best prepared"), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecaller_third_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
+					}
+				} else if (world instanceof Level _lvl80 && _lvl80.getServer() != null && _lvl80.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/create_full_beacon")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
+					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will be the best prepared"), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecaller_third_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}
-			}
-		} else if (("Elsecallers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (world instanceof Level _lvl80 && _lvl80.getServer() != null && _lvl80.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/netherite_armor")).value().equals(advancement)) {
-				{
-					Entity _ent = entity;
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective("Oath");
-					if (_so == null)
-						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-				}
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("I will be the best prepared"), false);
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecaller_third_ideal"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
+			} else if (("Skybreakers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+					: "")) {
+				if (world instanceof Level _lvl85 && _lvl85.getServer() != null && _lvl85.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trade")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
-				}
-			} else if (world instanceof Level _lvl84 && _lvl84.getServer() != null && _lvl84.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/create_full_beacon")).value().equals(advancement)) {
-				{
-					Entity _ent = entity;
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective("Oath");
-					if (_so == null)
-						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-				}
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("I will be the best prepared"), false);
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecaller_third_ideal"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
-				}
-			}
-		} else if (("Skybreakers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) {
-			if (world instanceof Level _lvl89 && _lvl89.getServer() != null && _lvl89.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trade")).value().equals(advancement)) {
-				{
-					Entity _ent = entity;
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective("Oath");
-					if (_so == null)
-						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-				}
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("I will respect the law of the land"), false);
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreaker_third_ideal"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
-				}
-			} else if (world instanceof Level _lvl93 && _lvl93.getServer() != null && _lvl93.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/respawn_dragon")).value().equals(advancement)) {
-				{
-					Entity _ent = entity;
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective("Oath");
-					if (_so == null)
-						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-				}
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("I will respect the law of the land"), false);
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreaker_third_ideal"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will respect the law of the land"), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreaker_third_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}
 			}
 		}
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }

@@ -10,7 +10,7 @@ import net.mcreator.radiant.client.model.ModelHighspren;
 
 public class HighsprenRenderer extends MobRenderer<HighsprenEntity, ModelHighspren<HighsprenEntity>> {
 	public HighsprenRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelHighspren(context.bakeLayer(ModelHighspren.LAYER_LOCATION)), 0f);
+		super(context, new ModelHighspren<HighsprenEntity>(context.bakeLayer(ModelHighspren.LAYER_LOCATION)), 0f);
 	}
 
 	@Override

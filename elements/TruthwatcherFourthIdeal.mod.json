@@ -1,0 +1,24 @@
+{
+  "_fv": 77,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The Fourth Ideal",
+    "achievementDescription": "Upon achieving this Ideal, a Truthwatcher gains their Shardplate, which is formed of .",
+    "achievementIcon": {
+      "value": "CUSTOM:TruthwatchersGlyph"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardXP": 315,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:TruthwatcherThirdIdeal"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

@@ -1,11 +1,19 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "fluid",
   "definition": {
     "name": "Cohesion Liquid",
     "bucketName": "Cohesion Liquid Bucket",
-    "textureStill": "surge_granite",
-    "textureFlowing": "surge_granite",
+    "textureStill": "minecraft:granite",
+    "textureFlowing": "minecraft:granite",
+    "textureRenderOverlay": "",
+    "hasFog": false,
+    "fogStartDistance": {
+      "fixedValue": 0.0
+    },
+    "fogEndDistance": {
+      "fixedValue": 48.0
+    },
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 2400,

@@ -23,7 +23,8 @@ public class CohesionBlockDebrisFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_ancient_debris_side"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_ancient_debris_side");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/ancient_debris_side");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/ancient_debris_side");
 
 			@Override
 			public ResourceLocation getStillTexture() {

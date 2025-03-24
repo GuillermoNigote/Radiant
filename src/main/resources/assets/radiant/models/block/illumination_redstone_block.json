@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_redstone_block",
-    "up": "radiant:block/illumination_redstone_block",
-    "north": "radiant:block/illumination_redstone_block",
-    "east": "radiant:block/illumination_redstone_block",
-    "south": "radiant:block/illumination_redstone_block",
-    "west": "radiant:block/illumination_redstone_block",
-    "particle": "radiant:block/illumination_redstone_block"
+    "down": "minecraft:block/redstone_block",
+    "up": "minecraft:block/redstone_block",
+    "north": "minecraft:block/redstone_block",
+    "east": "minecraft:block/redstone_block",
+    "south": "minecraft:block/redstone_block",
+    "west": "minecraft:block/redstone_block",
+    "particle": "minecraft:block/redstone_block"
   },
   "render_type": "solid"
 }

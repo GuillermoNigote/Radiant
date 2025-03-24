@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_jungle_log_top",
-    "up": "radiant:block/illumination_jungle_log_top",
-    "north": "radiant:block/illumination_jungle_log",
-    "east": "radiant:block/illumination_jungle_log",
-    "south": "radiant:block/illumination_jungle_log",
-    "west": "radiant:block/illumination_jungle_log",
-    "particle": "radiant:block/illumination_jungle_log_top"
+    "down": "minecraft:block/jungle_log_top",
+    "up": "minecraft:block/jungle_log_top",
+    "north": "minecraft:block/jungle_log",
+    "east": "minecraft:block/jungle_log",
+    "south": "minecraft:block/jungle_log",
+    "west": "minecraft:block/jungle_log",
+    "particle": "minecraft:block/jungle_log_top"
   },
   "render_type": "solid"
 }

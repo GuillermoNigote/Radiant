@@ -19,6 +19,7 @@ import net.mcreator.radiant.procedures.IlluminationEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.IlluminationAnimalIlusionEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.GravitationSkybreakersEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.AbrasionEffectExpiresProcedure;
+import net.mcreator.radiant.potion.WearingShardplateMobEffect;
 import net.mcreator.radiant.potion.TransportationWillshaperMobEffect;
 import net.mcreator.radiant.potion.TransportationElsecallerMobEffect;
 import net.mcreator.radiant.potion.TransformationLightweaverMobEffect;
@@ -62,6 +63,7 @@ public class RadiantModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> ILLUMINATION_LIGHTWEAVER = REGISTRY.register("illumination_lightweaver", () -> new IlluminationLightweaverMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> TRANSFORMATION_ELSECALLER = REGISTRY.register("transformation_elsecaller", () -> new TransformationElsecallerMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> TRANSFORMATION_LIGHTWEAVER = REGISTRY.register("transformation_lightweaver", () -> new TransformationLightweaverMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> WEARING_SHARDPLATE = REGISTRY.register("wearing_shardplate", () -> new WearingShardplateMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

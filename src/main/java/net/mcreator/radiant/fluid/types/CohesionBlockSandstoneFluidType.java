@@ -23,7 +23,8 @@ public class CohesionBlockSandstoneFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_sandstone"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_sandstone");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/sandstone_bottom");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/sandstone_bottom");
 
 			@Override
 			public ResourceLocation getStillTexture() {

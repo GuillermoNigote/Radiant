@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "fluid",
   "definition": {
     "name": "Blood",
     "bucketName": "Blood Bucket",
     "textureStill": "blood_still",
     "textureFlowing": "blood_flow",
+    "hasFog": false,
     "tintType": "Water",
     "canMultiply": true,
     "flowRate": 4,

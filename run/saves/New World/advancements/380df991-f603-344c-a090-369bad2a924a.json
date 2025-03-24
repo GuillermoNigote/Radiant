@@ -1,27 +1,26 @@
 {
+  "radiant:windrunner_second_ideal": {
+    "criteria": {
+      "windrunner_second_ideal_0": "2025-03-24 22:41:03 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2024-11-13 23:25:24 +0100"
+      "unlock_right_away": "2025-03-24 22:40:05 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:savanna": "2024-11-13 23:25:24 +0100"
+      "minecraft:stony_peaks": "2025-03-24 22:43:32 +0100",
+      "minecraft:forest": "2025-03-24 22:41:57 +0100",
+      "minecraft:sparse_jungle": "2025-03-24 22:41:56 +0100",
+      "minecraft:jungle": "2025-03-24 22:40:22 +0100",
+      "minecraft:river": "2025-03-24 22:44:36 +0100",
+      "minecraft:bamboo_jungle": "2025-03-24 22:41:53 +0100"
     },
     "done": false
-  },
-  "minecraft:recipes/decorations/chest": {
-    "criteria": {
-      "has_lots_of_items": "2024-11-26 11:29:02 +0100"
-    },
-    "done": true
-  },
-  "radiant:inmortal_words": {
-    "criteria": {
-      "inmortal_words_0": "2024-11-26 11:30:31 +0100"
-    },
-    "done": true
   },
   "DataVersion": 3955
 }

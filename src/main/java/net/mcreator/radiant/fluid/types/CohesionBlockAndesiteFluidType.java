@@ -23,7 +23,8 @@ public class CohesionBlockAndesiteFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_andesite"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_andesite");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/andesite");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/andesite");
 
 			@Override
 			public ResourceLocation getStillTexture() {

@@ -776,11 +776,7 @@ public class SurgeRightClickOnBlockProcedure {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
-				if (((Entity) world.getEntitiesOfClass(IlluminationFakePlayerEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TamableAnimal _toTame && entity instanceof Player _owner)
+				if ((findEntityInWorldRange(world, IlluminationFakePlayerEntity.class, x, y, z, 1)) instanceof TamableAnimal _toTame && entity instanceof Player _owner)
 					_toTame.tame(_owner);
 			}
 			if ((entity instanceof LivingEntity _livEnt186 && _livEnt186.hasEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER) || entity instanceof LivingEntity _livEnt187 && _livEnt187.hasEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER))
@@ -856,5 +852,9 @@ public class SurgeRightClickOnBlockProcedure {
 				}
 			}
 		}
+	}
+
+	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
+		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
 	}
 }

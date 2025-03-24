@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_birch_log_top",
-    "up": "radiant:block/illumination_birch_log_top",
-    "north": "radiant:block/illumination_birch_log",
-    "east": "radiant:block/illumination_birch_log",
-    "south": "radiant:block/illumination_birch_log",
-    "west": "radiant:block/illumination_birch_log",
-    "particle": "radiant:block/illumination_birch_log_top"
+    "down": "minecraft:block/birch_log_top",
+    "up": "minecraft:block/birch_log_top",
+    "north": "minecraft:block/birch_log",
+    "east": "minecraft:block/birch_log",
+    "south": "minecraft:block/birch_log",
+    "west": "minecraft:block/birch_log",
+    "particle": "minecraft:block/birch_log_top"
   },
   "render_type": "solid"
 }

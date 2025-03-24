@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Cohesion Surge",
@@ -12,9 +12,8 @@
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
-    "isCuredByMilk": false,
-    "isProtectedByTotem": false,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onActiveTick": {
       "name": "CohesionOnEffectActiveTick"
     }

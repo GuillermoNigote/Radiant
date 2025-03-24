@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "radiant:aluminum_nugget"
+    }
+  },
+  "result": {
+    "id": "radiant:aluminum_ingot",
+    "count": 1
+  }
+}

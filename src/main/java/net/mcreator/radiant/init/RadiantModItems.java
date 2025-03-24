@@ -74,12 +74,15 @@ import net.mcreator.radiant.item.SkybreakerLivingShardbladeItem;
 import net.mcreator.radiant.item.SkybreakerGravitationGlyphItem;
 import net.mcreator.radiant.item.SkybreakerDivisionGlyphItem;
 import net.mcreator.radiant.item.SkybreakerDeadShardbladeItem;
+import net.mcreator.radiant.item.ShardplateItem;
 import net.mcreator.radiant.item.RadiantsGlyphItem;
 import net.mcreator.radiant.item.LightweaversGlyphItem;
 import net.mcreator.radiant.item.LightweaverTransformationGlyphItem;
 import net.mcreator.radiant.item.LightweaverLivingShardbladeItem;
 import net.mcreator.radiant.item.LightweaverIlluminationGlyphItem;
 import net.mcreator.radiant.item.LightweaverDeadShardbladeItem;
+import net.mcreator.radiant.item.InfusedEmeraldItem;
+import net.mcreator.radiant.item.InfusedDiamondItem;
 import net.mcreator.radiant.item.ElsecallersGlyphItem;
 import net.mcreator.radiant.item.ElsecallerTransportationGlyphItem;
 import net.mcreator.radiant.item.ElsecallerTransformationGlyphItem;
@@ -90,12 +93,13 @@ import net.mcreator.radiant.item.EdgedancerLivingShardbladeItem;
 import net.mcreator.radiant.item.EdgedancerDeadShardbladeItem;
 import net.mcreator.radiant.item.EdgedancerAbrasionGlyphItem;
 import net.mcreator.radiant.item.DustbringersGlyphItem;
-import net.mcreator.radiant.item.DustbringerShardplateItem;
 import net.mcreator.radiant.item.DustbringerLivingShardbladeItem;
 import net.mcreator.radiant.item.DustbringerDivisionGlyphItem;
 import net.mcreator.radiant.item.DustbringerDeadShardbladeItem;
 import net.mcreator.radiant.item.DustbringerAbrasionGlyphItem;
 import net.mcreator.radiant.item.BloodItem;
+import net.mcreator.radiant.item.AluminumNuggetItem;
+import net.mcreator.radiant.item.AluminumIngotItem;
 import net.mcreator.radiant.RadiantMod;
 
 public class RadiantModItems {
@@ -252,11 +256,15 @@ public class RadiantModItems {
 	public static final DeferredItem<Item> CULTIVATIONSPREN_BLOCK_L = block(RadiantModBlocks.CULTIVATIONSPREN_BLOCK_L);
 	public static final DeferredItem<Item> CULTIVATIONSPREN_BLOCK_L_DECAY = block(RadiantModBlocks.CULTIVATIONSPREN_BLOCK_L_DECAY);
 	public static final DeferredItem<Item> SMOKE = block(RadiantModBlocks.SMOKE);
-	public static final DeferredItem<Item> AON_NAE = block(RadiantModBlocks.AON_NAE);
-	public static final DeferredItem<Item> DUSTBRINGER_SHARDPLATE_HELMET = REGISTRY.register("dustbringer_shardplate_helmet", DustbringerShardplateItem.Helmet::new);
-	public static final DeferredItem<Item> DUSTBRINGER_SHARDPLATE_CHESTPLATE = REGISTRY.register("dustbringer_shardplate_chestplate", DustbringerShardplateItem.Chestplate::new);
-	public static final DeferredItem<Item> DUSTBRINGER_SHARDPLATE_LEGGINGS = REGISTRY.register("dustbringer_shardplate_leggings", DustbringerShardplateItem.Leggings::new);
-	public static final DeferredItem<Item> DUSTBRINGER_SHARDPLATE_BOOTS = REGISTRY.register("dustbringer_shardplate_boots", DustbringerShardplateItem.Boots::new);
+	public static final DeferredItem<Item> INFUSED_DIAMOND = REGISTRY.register("infused_diamond", InfusedDiamondItem::new);
+	public static final DeferredItem<Item> INFUSED_EMERALD = REGISTRY.register("infused_emerald", InfusedEmeraldItem::new);
+	public static final DeferredItem<Item> ALUMINUM_ORE = block(RadiantModBlocks.ALUMINUM_ORE);
+	public static final DeferredItem<Item> ALUMINUM_INGOT = REGISTRY.register("aluminum_ingot", AluminumIngotItem::new);
+	public static final DeferredItem<Item> ALUMINUM_NUGGET = REGISTRY.register("aluminum_nugget", AluminumNuggetItem::new);
+	public static final DeferredItem<Item> SHARDPLATE_HELMET = REGISTRY.register("shardplate_helmet", ShardplateItem.Helmet::new);
+	public static final DeferredItem<Item> SHARDPLATE_CHESTPLATE = REGISTRY.register("shardplate_chestplate", ShardplateItem.Chestplate::new);
+	public static final DeferredItem<Item> SHARDPLATE_LEGGINGS = REGISTRY.register("shardplate_leggings", ShardplateItem.Leggings::new);
+	public static final DeferredItem<Item> SHARDPLATE_BOOTS = REGISTRY.register("shardplate_boots", ShardplateItem.Boots::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_oak_planks",
-    "up": "radiant:block/illumination_oak_planks",
-    "north": "radiant:block/illumination_bookshelf",
-    "east": "radiant:block/illumination_bookshelf",
-    "south": "radiant:block/illumination_bookshelf",
-    "west": "radiant:block/illumination_bookshelf",
-    "particle": "radiant:block/illumination_oak_planks"
+    "down": "minecraft:block/oak_planks",
+    "up": "minecraft:block/oak_planks",
+    "north": "minecraft:block/bookshelf",
+    "east": "minecraft:block/bookshelf",
+    "south": "minecraft:block/bookshelf",
+    "west": "minecraft:block/bookshelf",
+    "particle": "minecraft:block/oak_planks"
   },
   "render_type": "solid"
 }

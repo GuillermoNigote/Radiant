@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_cherry_planks",
-    "up": "radiant:block/illumination_cherry_planks",
-    "north": "radiant:block/illumination_cherry_planks",
-    "east": "radiant:block/illumination_cherry_planks",
-    "south": "radiant:block/illumination_cherry_planks",
-    "west": "radiant:block/illumination_cherry_planks",
-    "particle": "radiant:block/illumination_cherry_planks"
+    "down": "minecraft:block/cherry_planks",
+    "up": "minecraft:block/cherry_planks",
+    "north": "minecraft:block/cherry_planks",
+    "east": "minecraft:block/cherry_planks",
+    "south": "minecraft:block/cherry_planks",
+    "west": "minecraft:block/cherry_planks",
+    "particle": "minecraft:block/cherry_planks"
   },
   "render_type": "solid"
 }

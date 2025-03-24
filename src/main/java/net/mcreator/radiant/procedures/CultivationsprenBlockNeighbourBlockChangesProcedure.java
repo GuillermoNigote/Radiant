@@ -17,7 +17,7 @@ import net.mcreator.radiant.entity.CultivationsprenEntity;
 
 public class CultivationsprenBlockNeighbourBlockChangesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!(!world.getEntitiesOfClass(CultivationsprenEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty())) {
+		if (!(!world.getEntitiesOfClass(CultivationsprenEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(1 / 2d), e -> true).isEmpty())) {
 			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("radiant:cultivationspren")))
 					&& (world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("radiant:cultivationspren")))) {
 				{

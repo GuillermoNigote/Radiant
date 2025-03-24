@@ -23,7 +23,8 @@ public class CohesionBlockCobblestoneFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/illumination_cobblestone"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/illumination_cobblestone");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/cobblestone");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/cobblestone");
 
 			@Override
 			public ResourceLocation getStillTexture() {

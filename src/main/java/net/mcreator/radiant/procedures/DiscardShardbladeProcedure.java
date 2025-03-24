@@ -131,6 +131,15 @@ public class DiscardShardbladeProcedure {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}
+		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("radiant:shardplate")))) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
+			}
+			{
+				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+				_vars.SummonedPlate = false;
+				_vars.syncPlayerVariables(entity);
+			}
 		}
 	}
 }

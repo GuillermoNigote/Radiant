@@ -1,11 +1,19 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "fluid",
   "definition": {
     "name": "Cohesion Liquid",
     "bucketName": "Cohesion Liquid Bucket",
-    "textureStill": "illumination_cobbled_deepslate",
-    "textureFlowing": "illumination_cobbled_deepslate",
+    "textureStill": "minecraft:cobbled_deepslate",
+    "textureFlowing": "minecraft:cobbled_deepslate",
+    "textureRenderOverlay": "",
+    "hasFog": false,
+    "fogStartDistance": {
+      "fixedValue": 0.0
+    },
+    "fogEndDistance": {
+      "fixedValue": 48.0
+    },
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 2400,

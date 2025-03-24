@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_jungle_planks",
-    "up": "radiant:block/illumination_jungle_planks",
-    "north": "radiant:block/illumination_jungle_planks",
-    "east": "radiant:block/illumination_jungle_planks",
-    "south": "radiant:block/illumination_jungle_planks",
-    "west": "radiant:block/illumination_jungle_planks",
-    "particle": "radiant:block/illumination_jungle_planks"
+    "down": "minecraft:block/jungle_planks",
+    "up": "minecraft:block/jungle_planks",
+    "north": "minecraft:block/jungle_planks",
+    "east": "minecraft:block/jungle_planks",
+    "south": "minecraft:block/jungle_planks",
+    "west": "minecraft:block/jungle_planks",
+    "particle": "minecraft:block/jungle_planks"
   },
   "render_type": "solid"
 }

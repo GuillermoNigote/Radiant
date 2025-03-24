@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "achievement",
   "definition": {
     "achievementName": "The Third Ideal",
@@ -14,7 +14,6 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
-    "rewardFunction": "No function",
     "rewardXP": 315,
     "achievementType": "task",
     "parent": {

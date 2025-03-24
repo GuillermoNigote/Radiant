@@ -16,34 +16,28 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.level().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-				return 0;
-			}
-		}.getScore("Oath", entity) >= 1) {
+		if (getEntityScore("Oath", entity) != -2) {
 			if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Dustbringers")) {
-				if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER)) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER);
-				} else {
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:division_dustbringer infinite 0 false");
+				if (getEntityScore("Oath", entity) >= 3) {
+					if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER)) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.removeEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER);
+					} else {
+						{
+							Entity _ent = entity;
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:division_dustbringer infinite 0 false");
+							}
 						}
 					}
 				}
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Edgedancers")) {
-				if (entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER)) {
+				if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER);
 				} else {
@@ -58,7 +52,7 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Willshapers")) {
-				if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(RadiantModMobEffects.TRANSPORTATION_WILLSHAPER)) {
+				if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(RadiantModMobEffects.TRANSPORTATION_WILLSHAPER)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.TRANSPORTATION_WILLSHAPER);
 				} else {
@@ -73,7 +67,7 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Stonewards")) {
-				if (entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(RadiantModMobEffects.TENSION_STONEWARD)) {
+				if (entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(RadiantModMobEffects.TENSION_STONEWARD)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.TENSION_STONEWARD);
 				} else {
@@ -88,7 +82,7 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Truthwatchers")) {
-				if (entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(RadiantModMobEffects.PROGRESSION_TRUTHWATCHER)) {
+				if (entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(RadiantModMobEffects.PROGRESSION_TRUTHWATCHER)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.PROGRESSION_TRUTHWATCHER);
 				} else {
@@ -103,22 +97,24 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Skybreakers")) {
-				if (entity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(RadiantModMobEffects.DIVISION_SKYBREAKER)) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(RadiantModMobEffects.DIVISION_SKYBREAKER);
-				} else {
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:division_skybreaker infinite 0 false");
+				if (getEntityScore("Oath", entity) >= 3) {
+					if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(RadiantModMobEffects.DIVISION_SKYBREAKER)) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.removeEffect(RadiantModMobEffects.DIVISION_SKYBREAKER);
+					} else {
+						{
+							Entity _ent = entity;
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:division_skybreaker infinite 0 false");
+							}
 						}
 					}
 				}
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Windrunners")) {
-				if (entity instanceof LivingEntity _livEnt26 && _livEnt26.hasEffect(RadiantModMobEffects.ADHESION_WINDRUNNER)) {
+				if (entity instanceof LivingEntity _livEnt28 && _livEnt28.hasEffect(RadiantModMobEffects.ADHESION_WINDRUNNER)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.ADHESION_WINDRUNNER);
 				} else {
@@ -133,7 +129,7 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Lightweavers")) {
-				if (entity instanceof LivingEntity _livEnt30 && _livEnt30.hasEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER)) {
+				if (entity instanceof LivingEntity _livEnt32 && _livEnt32.hasEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER);
 				} else {
@@ -148,7 +144,7 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 			} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "").equals("Elsecallers")) {
-				if (entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER)) {
+				if (entity instanceof LivingEntity _livEnt36 && _livEnt36.hasEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER);
 				} else {
@@ -162,5 +158,13 @@ public class UseSecondSurgeOnKeyPressedProcedure {
 				}
 			}
 		}
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }

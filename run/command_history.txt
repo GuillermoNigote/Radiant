@@ -1,1 +1,50 @@
-/scoreboard players set Dev Oath 3
+/gamemode creative
+/gamemode survival
+/xp add Dev 20 levels
+/gamemode creative
+/xp add Dev 20 levels
+/gamemode survival
+/xp add Dev 20 levels
+/xp add Dev 30 levels
+/gamemode creative
+/xp add Dev 30 levels
+/effect give Dev minecraft:night_vision infinite
+/gamemode survival
+/xp add Dev 30 levels
+/gamemode creative
+/gamemode survival
+/xp add Dev 30 levels
+/gamemode creative
+/effect give Dev minecraft:night_vision infinite
+/xp add Dev 30 levels
+/gamemode survival
+/xp add Dev 30 levels
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/time set day
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/kill
+/gamemode creative
+/gamemode survival
+/gamemode ce
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/xp add Dev 100 levels
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/xp add Dev 100 levels

@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "radiant:block/surge_andesite"
+    "particle": "minecraft:block/andesite"
   }
 }

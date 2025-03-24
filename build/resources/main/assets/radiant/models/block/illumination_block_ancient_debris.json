@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/surge_ancient_debris_side",
-    "up": "radiant:block/surge_ancient_debris_top",
-    "north": "radiant:block/surge_ancient_debris_side",
-    "east": "radiant:block/surge_ancient_debris_side",
-    "south": "radiant:block/surge_ancient_debris_side",
-    "west": "radiant:block/surge_ancient_debris_side",
-    "particle": "radiant:block/surge_ancient_debris_side"
+    "down": "minecraft:block/ancient_debris_top",
+    "up": "minecraft:block/ancient_debris_top",
+    "north": "minecraft:block/ancient_debris_side",
+    "east": "minecraft:block/ancient_debris_side",
+    "south": "minecraft:block/ancient_debris_side",
+    "west": "minecraft:block/ancient_debris_side",
+    "particle": "minecraft:block/ancient_debris_top"
   },
   "render_type": "solid"
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "livingentity",
   "definition": {
     "mobName": "Fake Spider",
@@ -22,6 +22,7 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
+    "animations": [],
     "modelWidth": 1.4,
     "modelHeight": 0.9,
     "modelShadowSize": 0.5,
@@ -81,7 +82,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,

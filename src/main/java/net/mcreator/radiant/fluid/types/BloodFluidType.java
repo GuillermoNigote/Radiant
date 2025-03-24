@@ -29,7 +29,8 @@ public class BloodFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/blood_still"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/blood_flow");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/blood_still");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/blood_flow");
 
 			@Override
 			public ResourceLocation getStillTexture() {

@@ -11,7 +11,7 @@ import net.mcreator.radiant.entity.FakeSpiderEntity;
 
 public class FakeSpiderRenderer extends MobRenderer<FakeSpiderEntity, SpiderModel<FakeSpiderEntity>> {
 	public FakeSpiderRenderer(EntityRendererProvider.Context context) {
-		super(context, new SpiderModel(context.bakeLayer(ModelLayers.SPIDER)), 0.5f);
+		super(context, new SpiderModel<FakeSpiderEntity>(context.bakeLayer(ModelLayers.SPIDER)), 0.5f);
 	}
 
 	@Override

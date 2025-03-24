@@ -11,6 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.radiant.network.RadiantModVariables;
 import net.mcreator.radiant.init.RadiantModMobEffects;
 
 import javax.annotation.Nullable;
@@ -73,6 +74,11 @@ public class ProgressionAvoidDeathProcedure {
 					_entity.removeEffect(RadiantModMobEffects.TRANSPORTATION_ELSECALLER);
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(RadiantModMobEffects.TRANSPORTATION_WILLSHAPER);
+				{
+					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+					_vars.SummonedBlade = false;
+					_vars.syncPlayerVariables(entity);
+				}
 			}
 		}
 	}

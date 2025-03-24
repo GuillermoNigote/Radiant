@@ -12,7 +12,7 @@ import net.mcreator.radiant.entity.IlluminationFakePlayerEntity;
 
 public class IlluminationFakePlayerRenderer extends HumanoidMobRenderer<IlluminationFakePlayerEntity, HumanoidModel<IlluminationFakePlayerEntity>> {
 	public IlluminationFakePlayerRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0f);
+		super(context, new HumanoidModel<IlluminationFakePlayerEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 

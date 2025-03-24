@@ -23,7 +23,8 @@ public class CohesionBlockSandFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_sand"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_sand");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/sand");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/sand");
 
 			@Override
 			public ResourceLocation getStillTexture() {

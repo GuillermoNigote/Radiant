@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "radiant:block/surge_ancient_debris_side"
+    "particle": "minecraft:block/ancient_debris_side"
   }
 }

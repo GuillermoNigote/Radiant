@@ -1,8 +1,8 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "achievement",
   "definition": {
-    "achievementName": "The Inmortal Words",
+    "achievementName": "The Immortal Words",
     "achievementDescription": "The Ideals of the Knights Radiant, also known as the Immortal Words, are a set of rules by which the Radiants live. The First Ideal is shared by all of the orders, and is used as a motto for the Knights Radiant as a whole.",
     "achievementIcon": {
       "value": "CUSTOM:RadiantsGlyph"
@@ -14,7 +14,6 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
-    "rewardFunction": "No function",
     "rewardXP": 55,
     "achievementType": "task",
     "parent": {

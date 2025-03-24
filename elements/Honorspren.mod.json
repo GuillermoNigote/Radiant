@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "livingentity",
   "definition": {
     "mobName": "Honorspren",
@@ -29,6 +29,7 @@
         "glow": true
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 1.95,
     "modelShadowSize": 0.0,
@@ -88,7 +89,6 @@
       "fixedValue": true
     },
     "flyingMob": true,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": true,

@@ -17,9 +17,12 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerLevel;
@@ -29,10 +32,13 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.radiant.network.RadiantModVariables;
+import net.mcreator.radiant.init.RadiantModMobEffects;
 import net.mcreator.radiant.init.RadiantModItems;
 import net.mcreator.radiant.RadiantMod;
 
@@ -43,7 +49,7 @@ public class SummonShardbladeOnKeyPressedProcedure {
 	@SubscribeEvent
 	public static void onLeftClick(PlayerInteractEvent.LeftClickEmpty event) {
 		PacketDistributor.sendToServer(new SummonShardbladeOnKeyPressedMessage());
-		execute(event.getLevel(), event.getEntity());
+		execute(event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
 	}
 
 	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -62,7 +68,7 @@ public class SummonShardbladeOnKeyPressedProcedure {
 				context.enqueueWork(() -> {
 					if (!context.player().level().hasChunkAt(context.player().blockPosition()))
 						return;
-					execute(context.player().level(), context.player());
+					execute(context.player().level(), context.player().getX(), context.player().getY(), context.player().getZ(), context.player());
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
@@ -76,24 +82,24 @@ public class SummonShardbladeOnKeyPressedProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		ItemStack leggins = ItemStack.EMPTY;
+		ItemStack helmet = ItemStack.EMPTY;
+		ItemStack boots = ItemStack.EMPTY;
+		ItemStack Chestplate = ItemStack.EMPTY;
 		if (!entity.getData(RadiantModVariables.PLAYER_VARIABLES).SummonedBlade) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()
-					&& !((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END) && new Object() {
-						public int getScore(String score, Entity _ent) {
-							Scoreboard _sc = _ent.level().getScoreboard();
-							Objective _so = _sc.getObjective(score);
-							if (_so != null)
-								return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-							return 0;
-						}
-					}.getScore("Oath", entity) > 2) {
+					&& !((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END)
+					&& (getEntityScore("Oath", entity) > 2
+							|| (entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+									? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+									: "").equals("Unoathed"))) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				for (int index0 = 0; index0 < 10; index0++) {
@@ -244,5 +250,146 @@ public class SummonShardbladeOnKeyPressedProcedure {
 				}
 			}
 		}
+		if (entity.isShiftKeyDown()) {
+			if (entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(RadiantModMobEffects.WEARING_SHARDPLATE)) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()
+						&& !((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END)
+						&& (getEntityScore("Oath", entity) > 3
+								|| (entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+										? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+										: "").equals("Unoathed"))) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 400, 0.25, 0.7, 0.25, 0);
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(3, ItemStack.EMPTY);
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.HEAD, ItemStack.EMPTY);
+						}
+					}
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(2, ItemStack.EMPTY);
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.CHEST, ItemStack.EMPTY);
+						}
+					}
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(1, ItemStack.EMPTY);
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.LEGS, ItemStack.EMPTY);
+						}
+					}
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(0, ItemStack.EMPTY);
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.FEET, ItemStack.EMPTY);
+						}
+					}
+					{
+						RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+						_vars.SummonedPlate = false;
+						_vars.syncPlayerVariables(entity);
+					}
+				}
+			} else {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()
+						&& !((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END)
+						&& (getEntityScore("Oath", entity) > 3
+								|| (entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+										? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+										: "").equals("Unoathed"))) {
+					helmet = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
+					Chestplate = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
+					leggins = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
+					boots = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, helmet);
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, Chestplate);
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, leggins);
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, boots);
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 400, 0.25, 0.7, 0.25, 0);
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(3, new ItemStack(RadiantModItems.SHARDPLATE_HELMET.get()));
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RadiantModItems.SHARDPLATE_HELMET.get()));
+						}
+					}
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(2, new ItemStack(RadiantModItems.SHARDPLATE_CHESTPLATE.get()));
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(RadiantModItems.SHARDPLATE_CHESTPLATE.get()));
+						}
+					}
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(1, new ItemStack(RadiantModItems.SHARDPLATE_LEGGINGS.get()));
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(RadiantModItems.SHARDPLATE_LEGGINGS.get()));
+						}
+					}
+					{
+						Entity _entity = entity;
+						if (_entity instanceof Player _player) {
+							_player.getInventory().armor.set(0, new ItemStack(RadiantModItems.SHARDPLATE_BOOTS.get()));
+							_player.getInventory().setChanged();
+						} else if (_entity instanceof LivingEntity _living) {
+							_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(RadiantModItems.SHARDPLATE_BOOTS.get()));
+						}
+					}
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
+					{
+						RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+						_vars.SummonedPlate = true;
+						_vars.syncPlayerVariables(entity);
+					}
+				}
+			}
+		}
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }

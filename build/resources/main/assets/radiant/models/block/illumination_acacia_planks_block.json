@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/illumination_acacia_planks",
-    "up": "radiant:block/illumination_acacia_planks",
-    "north": "radiant:block/illumination_acacia_planks",
-    "east": "radiant:block/illumination_acacia_planks",
-    "south": "radiant:block/illumination_acacia_planks",
-    "west": "radiant:block/illumination_acacia_planks",
-    "particle": "radiant:block/illumination_acacia_planks"
+    "down": "minecraft:block/acacia_planks",
+    "up": "minecraft:block/acacia_planks",
+    "north": "minecraft:block/acacia_planks",
+    "east": "minecraft:block/acacia_planks",
+    "south": "minecraft:block/acacia_planks",
+    "west": "minecraft:block/acacia_planks",
+    "particle": "minecraft:block/acacia_planks"
   },
   "render_type": "solid"
 }

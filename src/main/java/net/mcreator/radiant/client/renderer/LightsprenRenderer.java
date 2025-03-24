@@ -17,7 +17,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class LightsprenRenderer extends MobRenderer<LightsprenEntity, ModelSeon<LightsprenEntity>> {
 	public LightsprenRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelSeon(context.bakeLayer(ModelSeon.LAYER_LOCATION)), 0f);
+		super(context, new ModelSeon<LightsprenEntity>(context.bakeLayer(ModelSeon.LAYER_LOCATION)), 0f);
 		this.addLayer(new RenderLayer<LightsprenEntity, ModelSeon<LightsprenEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("radiant:textures/entities/lightspren_texture.png");
 

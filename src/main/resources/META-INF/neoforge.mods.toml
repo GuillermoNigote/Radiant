@@ -7,6 +7,7 @@ modId="radiant"
 version="1.0.0"
 displayName="Radiant"
 displayURL="https://mcreator.net"
+logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Usuario, MCreator"
 
@@ -16,7 +17,7 @@ authors="Usuario, MCreator"
 [[dependencies.radiant]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.65,)"
+    versionRange="[21.1.92,)"
     ordering="AFTER"
     side="BOTH"
 

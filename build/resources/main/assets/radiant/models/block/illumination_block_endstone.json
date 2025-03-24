@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/surge_end_stone",
-    "up": "radiant:block/surge_end_stone",
-    "north": "radiant:block/surge_end_stone",
-    "east": "radiant:block/surge_end_stone",
-    "south": "radiant:block/surge_end_stone",
-    "west": "radiant:block/surge_end_stone",
-    "particle": "radiant:block/surge_end_stone"
+    "down": "minecraft:block/end_stone",
+    "up": "minecraft:block/end_stone",
+    "north": "minecraft:block/end_stone",
+    "east": "minecraft:block/end_stone",
+    "south": "minecraft:block/end_stone",
+    "west": "minecraft:block/end_stone",
+    "particle": "minecraft:block/end_stone"
   },
   "render_type": "solid"
 }

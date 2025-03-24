@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "radiant:aon_nae",
     "radiant:smoke",
     "radiant:blood",
     "radiant:cohesion_block_deepslate",

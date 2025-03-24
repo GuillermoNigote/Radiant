@@ -55,11 +55,10 @@ public class RadiantModTabs {
 				tabData.accept(RadiantModItems.WILLSHAPER_COHESION_GLYPH.get());
 				tabData.accept(RadiantModItems.STONEWARD_COHESION_GLYPH.get());
 				tabData.accept(RadiantModItems.STONEWARD_TENSION_GLYPH.get());
-				tabData.accept(RadiantModItems.DUSTBRINGER_SHARDPLATE_HELMET.get());
-				tabData.accept(RadiantModItems.DUSTBRINGER_SHARDPLATE_CHESTPLATE.get());
-				tabData.accept(RadiantModItems.DUSTBRINGER_SHARDPLATE_LEGGINGS.get());
-				tabData.accept(RadiantModItems.DUSTBRINGER_SHARDPLATE_BOOTS.get());
-			})
-
-					.build());
+				tabData.accept(RadiantModBlocks.ALUMINUM_ORE.get().asItem());
+				tabData.accept(RadiantModItems.SHARDPLATE_HELMET.get());
+				tabData.accept(RadiantModItems.SHARDPLATE_CHESTPLATE.get());
+				tabData.accept(RadiantModItems.SHARDPLATE_LEGGINGS.get());
+				tabData.accept(RadiantModItems.SHARDPLATE_BOOTS.get());
+			}).build());
 }

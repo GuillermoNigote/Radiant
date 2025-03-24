@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "radiant:block/surge_diorite"
+    "particle": "minecraft:block/diorite"
   }
 }

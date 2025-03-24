@@ -83,7 +83,7 @@ import net.mcreator.radiant.block.CohesionBlockCobblestoneBlock;
 import net.mcreator.radiant.block.CohesionBlockBedrockBlock;
 import net.mcreator.radiant.block.CohesionBlockAndesiteBlock;
 import net.mcreator.radiant.block.BloodBlock;
-import net.mcreator.radiant.block.AonNaeBlock;
+import net.mcreator.radiant.block.AluminumOreBlock;
 import net.mcreator.radiant.RadiantMod;
 
 public class RadiantModBlocks {
@@ -162,7 +162,7 @@ public class RadiantModBlocks {
 	public static final DeferredBlock<Block> CULTIVATIONSPREN_BLOCK_L = REGISTRY.register("cultivationspren_block_l", CultivationsprenBlockLBlock::new);
 	public static final DeferredBlock<Block> CULTIVATIONSPREN_BLOCK_L_DECAY = REGISTRY.register("cultivationspren_block_l_decay", CultivationsprenBlockLDecayBlock::new);
 	public static final DeferredBlock<Block> SMOKE = REGISTRY.register("smoke", SmokeBlock::new);
-	public static final DeferredBlock<Block> AON_NAE = REGISTRY.register("aon_nae", AonNaeBlock::new);
+	public static final DeferredBlock<Block> ALUMINUM_ORE = REGISTRY.register("aluminum_ore", AluminumOreBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

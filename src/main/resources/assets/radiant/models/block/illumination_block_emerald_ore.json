@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/surge_emerald_ore",
-    "up": "radiant:block/surge_emerald_ore",
-    "north": "radiant:block/surge_emerald_ore",
-    "east": "radiant:block/surge_emerald_ore",
-    "south": "radiant:block/surge_emerald_ore",
-    "west": "radiant:block/surge_emerald_ore",
-    "particle": "radiant:block/surge_emerald_ore"
+    "down": "minecraft:block/emerald_ore",
+    "up": "minecraft:block/emerald_ore",
+    "north": "minecraft:block/emerald_ore",
+    "east": "minecraft:block/emerald_ore",
+    "south": "minecraft:block/emerald_ore",
+    "west": "minecraft:block/emerald_ore",
+    "particle": "minecraft:block/emerald_ore"
   },
   "render_type": "solid"
 }

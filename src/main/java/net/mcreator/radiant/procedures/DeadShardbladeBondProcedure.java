@@ -45,18 +45,10 @@ public class DeadShardbladeBondProcedure {
 						&& ("Elsecallers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& 0 > new Object() {
-							public int getScore(String score, Entity _ent) {
-								Scoreboard _sc = _ent.level().getScoreboard();
-								Objective _so = _sc.getObjective(score);
-								if (_so != null)
-									return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-								return 0;
-							}
-						}.getScore("Oath", entity))) {
+						&& 0 > getEntityScore("Oath", entity))) {
 			{
 				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-				_vars.BondedShardblade = itemstack;
+				_vars.BondedShardblade = itemstack.copy();
 				_vars.syncPlayerVariables(entity);
 			}
 			{
@@ -65,5 +57,13 @@ public class DeadShardbladeBondProcedure {
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 			}
 		}
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }

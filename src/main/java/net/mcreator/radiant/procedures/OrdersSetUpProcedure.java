@@ -32,6 +32,8 @@ public class OrdersSetUpProcedure {
 			return;
 		if (RadiantModVariables.WorldVariables.get(world).OrdersNotExist) {
 			if (world instanceof Level _level)
+				_level.getScoreboard().addPlayerTeam("Unoathed");
+			if (world instanceof Level _level)
 				_level.getScoreboard().addPlayerTeam("Dustbringers");
 			if (world instanceof Level _level)
 				_level.getScoreboard().addPlayerTeam("Edgedancers");

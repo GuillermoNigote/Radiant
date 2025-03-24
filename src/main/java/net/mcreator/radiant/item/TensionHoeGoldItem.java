@@ -42,7 +42,7 @@ public class TensionHoeGoldItem extends HoeItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 0;
+			return 1;
 		}
 
 		@Override

@@ -44,33 +44,11 @@ public class SecondIdealProcedure {
 		if (entity == null || text == null)
 			return;
 		double Random = 0;
-		if (new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.level().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-				return 0;
-			}
-		}.getScore("Oath", entity) != -1) {
-			if ((text).equals("I will seek self-mastery") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+		if (!(("Unoathed").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+				: "")) && getEntityScore("Oath", entity) != -1) {
+			if ((text).equals("I will seek self-mastery") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Dustbringers");
@@ -84,23 +62,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:ashspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:dustbringer_second_ideal"));
@@ -112,24 +81,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will remember") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will remember those who have been forgotten") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Edgedancers");
@@ -143,23 +96,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:cultivationspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:edgedancer_second_ideal"));
@@ -171,24 +115,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will seek freedom") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will seek freedom for those in bondage") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Willshapers");
@@ -202,23 +130,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:lightspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:willshaper_second_ideal"));
@@ -230,24 +149,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will be there when I'm needed") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will step forward when others fall back") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Stonewards");
@@ -261,23 +164,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:peakspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:stoneward_second_ideal"));
@@ -289,24 +183,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will seek truth") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will seek truth") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Truthwatchers");
@@ -320,23 +198,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:mistspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_second_ideal"));
@@ -348,24 +217,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will seek order") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will seek order") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Skybreakers");
@@ -379,23 +232,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:highspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreaker_second_ideal"));
@@ -407,24 +251,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will protect those who cannot protect themselves") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will protect those who cannot protect themselves") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Windrunners");
@@ -438,23 +266,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:honorspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunner_second_ideal"));
@@ -466,24 +285,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will reach my potential") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will reach my potential") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
@@ -497,23 +300,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:inkspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecaller_second_ideal"));
@@ -525,24 +319,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will speak my truth") && new Object() {
-				public int getScore(String score, Entity _ent) {
-					Scoreboard _sc = _ent.level().getScoreboard();
-					Objective _so = _sc.getObjective(score);
-					if (_so != null)
-						return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-					return 0;
-				}
-			}.getScore("Oath", entity) < 2) {
-				if (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-						return 0;
-					}
-				}.getScore("Oath", entity) == 0) {
+			} else if ((text).equals("I will speak my truth") && getEntityScore("Oath", entity) < 2) {
+				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Lightweavers");
@@ -556,23 +334,14 @@ public class SecondIdealProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:cryptic ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
-					}
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(2);
 				}
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:lightweaver_second_ideal"));
@@ -588,15 +357,7 @@ public class SecondIdealProcedure {
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
-					&& new Object() {
-						public int getScore(String score, Entity _ent) {
-							Scoreboard _sc = _ent.level().getScoreboard();
-							Objective _so = _sc.getObjective(score);
-							if (_so != null)
-								return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-							return 0;
-						}
-					}.getScore("Oath", entity) == 2) {
+					&& getEntityScore("Oath", entity) == 2) {
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.level().getScoreboard();
@@ -619,15 +380,7 @@ public class SecondIdealProcedure {
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
-					&& new Object() {
-						public int getScore(String score, Entity _ent) {
-							Scoreboard _sc = _ent.level().getScoreboard();
-							Objective _so = _sc.getObjective(score);
-							if (_so != null)
-								return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-							return 0;
-						}
-					}.getScore("Oath", entity) == 2) {
+					&& getEntityScore("Oath", entity) == 2) {
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.level().getScoreboard();
@@ -650,15 +403,7 @@ public class SecondIdealProcedure {
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
-					&& new Object() {
-						public int getScore(String score, Entity _ent) {
-							Scoreboard _sc = _ent.level().getScoreboard();
-							Objective _so = _sc.getObjective(score);
-							if (_so != null)
-								return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-							return 0;
-						}
-					}.getScore("Oath", entity) == 2) {
+					&& getEntityScore("Oath", entity) == 2) {
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.level().getScoreboard();
@@ -681,15 +426,7 @@ public class SecondIdealProcedure {
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
-					&& new Object() {
-						public int getScore(String score, Entity _ent) {
-							Scoreboard _sc = _ent.level().getScoreboard();
-							Objective _so = _sc.getObjective(score);
-							if (_so != null)
-								return _sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).get();
-							return 0;
-						}
-					}.getScore("Oath", entity) == 2) {
+					&& getEntityScore("Oath", entity) == 2) {
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.level().getScoreboard();
@@ -710,5 +447,13 @@ public class SecondIdealProcedure {
 				}
 			}
 		}
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }

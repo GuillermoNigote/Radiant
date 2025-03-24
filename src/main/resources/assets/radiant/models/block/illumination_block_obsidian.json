@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/surge_obsidian",
-    "up": "radiant:block/surge_obsidian",
-    "north": "radiant:block/surge_obsidian",
-    "east": "radiant:block/surge_obsidian",
-    "south": "radiant:block/surge_obsidian",
-    "west": "radiant:block/surge_obsidian",
-    "particle": "radiant:block/surge_obsidian"
+    "down": "minecraft:block/obsidian",
+    "up": "minecraft:block/obsidian",
+    "north": "minecraft:block/obsidian",
+    "east": "minecraft:block/obsidian",
+    "south": "minecraft:block/obsidian",
+    "west": "minecraft:block/obsidian",
+    "particle": "minecraft:block/obsidian"
   },
   "render_type": "solid"
 }

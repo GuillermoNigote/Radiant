@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class HonorsprenRenderer extends MobRenderer<HonorsprenEntity, VillagerModel<HonorsprenEntity>> {
 	public HonorsprenRenderer(EntityRendererProvider.Context context) {
-		super(context, new VillagerModel(context.bakeLayer(ModelLayers.VILLAGER)), 0f);
+		super(context, new VillagerModel<HonorsprenEntity>(context.bakeLayer(ModelLayers.VILLAGER)), 0f);
 		this.addLayer(new RenderLayer<HonorsprenEntity, VillagerModel<HonorsprenEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("radiant:textures/entities/honorspren_texture.png");
 

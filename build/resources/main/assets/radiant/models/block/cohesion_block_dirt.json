@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "radiant:block/surge_dirt"
+    "particle": "minecraft:block/dirt"
   }
 }

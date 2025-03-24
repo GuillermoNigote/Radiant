@@ -19,7 +19,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class InksprenRenderer extends HumanoidMobRenderer<InksprenEntity, HumanoidModel<InksprenEntity>> {
 	public InksprenRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0f);
+		super(context, new HumanoidModel<InksprenEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 		this.addLayer(new RenderLayer<InksprenEntity, HumanoidModel<InksprenEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("radiant:textures/entities/inkspren.png");

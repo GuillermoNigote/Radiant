@@ -10,7 +10,7 @@ import net.mcreator.radiant.client.model.ModelAshspren;
 
 public class CultivationsprenRenderer extends MobRenderer<CultivationsprenEntity, ModelAshspren<CultivationsprenEntity>> {
 	public CultivationsprenRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelAshspren(context.bakeLayer(ModelAshspren.LAYER_LOCATION)), 0f);
+		super(context, new ModelAshspren<CultivationsprenEntity>(context.bakeLayer(ModelAshspren.LAYER_LOCATION)), 0f);
 	}
 
 	@Override

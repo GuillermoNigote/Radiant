@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 77,
   "_type": "livingentity",
   "definition": {
     "mobName": "Adhesion Infuse",
@@ -22,6 +22,7 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
+    "animations": [],
     "modelWidth": 1.0,
     "modelHeight": 1.0,
     "modelShadowSize": 0.0,
@@ -81,7 +82,6 @@
       "fixedValue": true
     },
     "flyingMob": true,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": true,

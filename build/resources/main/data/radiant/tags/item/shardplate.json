@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:shardplate_helmet",
+    "radiant:shardplate_chestplate",
+    "radiant:shardplate_leggings",
+    "radiant:shardplate_boots"
+  ]
+}

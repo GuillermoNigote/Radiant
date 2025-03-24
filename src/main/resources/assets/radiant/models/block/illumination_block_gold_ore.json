@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "radiant:block/surge_gold_ore",
-    "up": "radiant:block/surge_gold_ore",
-    "north": "radiant:block/surge_gold_ore",
-    "east": "radiant:block/surge_gold_ore",
-    "south": "radiant:block/surge_gold_ore",
-    "west": "radiant:block/surge_gold_ore",
-    "particle": "radiant:block/surge_gold_ore"
+    "down": "minecraft:block/gold_ore",
+    "up": "minecraft:block/gold_ore",
+    "north": "minecraft:block/gold_ore",
+    "east": "minecraft:block/gold_ore",
+    "south": "minecraft:block/gold_ore",
+    "west": "minecraft:block/gold_ore",
+    "particle": "minecraft:block/gold_ore"
   },
   "render_type": "solid"
 }

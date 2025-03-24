@@ -23,7 +23,8 @@ public class CohesionBlockDioriteFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("radiant:block/surge_diorite"), FLOWING_TEXTURE = ResourceLocation.parse("radiant:block/surge_diorite");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/diorite");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/diorite");
 
 			@Override
 			public ResourceLocation getStillTexture() {

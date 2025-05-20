@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
+    "radiant:stoneward_shardplate_chestplate",
+    "radiant:willshaper_shardplate_chestplate",
+    "radiant:elsecaller_shardplate_chestplate",
+    "radiant:lightweaver_shardplate_chestplate",
+    "radiant:truthwatcher_shardplate_chestplate",
+    "radiant:edgedancer_shardplate_chestplate",
+    "radiant:dustbringer_shardplate_chestplate",
+    "radiant:skybreaker_shardplate_chestplate",
+    "radiant:windrunner_shardplate_chestplate",
     "radiant:shardplate_chestplate",
     "radiant:tension_chainmail_armor_chestplate",
     "radiant:tension_diamond_armor_chestplate",

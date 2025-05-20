@@ -23,6 +23,7 @@ import net.mcreator.radiant.fluid.types.CohesionBlockDeepslateFluidType;
 import net.mcreator.radiant.fluid.types.CohesionBlockDeepslateCObblestoneFluidType;
 import net.mcreator.radiant.fluid.types.CohesionBlockDebrisFluidType;
 import net.mcreator.radiant.fluid.types.CohesionBlockCobblestoneFluidType;
+import net.mcreator.radiant.fluid.types.CohesionBlockBlackstoneFluidType;
 import net.mcreator.radiant.fluid.types.CohesionBlockBedrockFluidType;
 import net.mcreator.radiant.fluid.types.CohesionBlockAndesiteFluidType;
 import net.mcreator.radiant.fluid.types.BloodFluidType;
@@ -47,4 +48,5 @@ public class RadiantModFluidTypes {
 	public static final DeferredHolder<FluidType, FluidType> COHESION_BLOCK_DEEPSLATE_C_OBBLESTONE_TYPE = REGISTRY.register("cohesion_block_deepslate_c_obblestone", () -> new CohesionBlockDeepslateCObblestoneFluidType());
 	public static final DeferredHolder<FluidType, FluidType> COHESION_BLOCK_DEEPSLATE_TYPE = REGISTRY.register("cohesion_block_deepslate", () -> new CohesionBlockDeepslateFluidType());
 	public static final DeferredHolder<FluidType, FluidType> BLOOD_TYPE = REGISTRY.register("blood", () -> new BloodFluidType());
+	public static final DeferredHolder<FluidType, FluidType> COHESION_BLOCK_BLACKSTONE_TYPE = REGISTRY.register("cohesion_block_blackstone", () -> new CohesionBlockBlackstoneFluidType());
 }

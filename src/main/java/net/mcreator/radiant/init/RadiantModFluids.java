@@ -31,6 +31,7 @@ import net.mcreator.radiant.fluid.CohesionBlockDeepslateFluid;
 import net.mcreator.radiant.fluid.CohesionBlockDeepslateCObblestoneFluid;
 import net.mcreator.radiant.fluid.CohesionBlockDebrisFluid;
 import net.mcreator.radiant.fluid.CohesionBlockCobblestoneFluid;
+import net.mcreator.radiant.fluid.CohesionBlockBlackstoneFluid;
 import net.mcreator.radiant.fluid.CohesionBlockBedrockFluid;
 import net.mcreator.radiant.fluid.CohesionBlockAndesiteFluid;
 import net.mcreator.radiant.fluid.BloodFluid;
@@ -72,6 +73,8 @@ public class RadiantModFluids {
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_COHESION_BLOCK_DEEPSLATE = REGISTRY.register("flowing_cohesion_block_deepslate", () -> new CohesionBlockDeepslateFluid.Flowing());
 	public static final DeferredHolder<Fluid, FlowingFluid> BLOOD = REGISTRY.register("blood", () -> new BloodFluid.Source());
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_BLOOD = REGISTRY.register("flowing_blood", () -> new BloodFluid.Flowing());
+	public static final DeferredHolder<Fluid, FlowingFluid> COHESION_BLOCK_BLACKSTONE = REGISTRY.register("cohesion_block_blackstone", () -> new CohesionBlockBlackstoneFluid.Source());
+	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_COHESION_BLOCK_BLACKSTONE = REGISTRY.register("flowing_cohesion_block_blackstone", () -> new CohesionBlockBlackstoneFluid.Flowing());
 
 	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class FluidsClientSideHandler {
@@ -111,6 +114,8 @@ public class RadiantModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_COHESION_BLOCK_DEEPSLATE.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(BLOOD.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_BLOOD.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(COHESION_BLOCK_BLACKSTONE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_COHESION_BLOCK_BLACKSTONE.get(), RenderType.translucent());
 		}
 	}
 }

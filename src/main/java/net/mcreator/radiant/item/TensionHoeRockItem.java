@@ -5,18 +5,14 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.DiggerItem;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
-
-import net.mcreator.radiant.procedures.TensionHoeStoneToolInHandTickProcedure;
 
 public class TensionHoeRockItem extends HoeItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -53,13 +49,6 @@ public class TensionHoeRockItem extends HoeItem {
 
 	public TensionHoeRockItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 0f, 0f)));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			TensionHoeStoneToolInHandTickProcedure.execute(entity);
 	}
 
 	@Override

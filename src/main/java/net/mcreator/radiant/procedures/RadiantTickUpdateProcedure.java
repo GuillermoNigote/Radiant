@@ -5,9 +5,12 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.radiant.network.RadiantModVariables;
+import net.mcreator.radiant.init.RadiantModMobEffects;
 
 import javax.annotation.Nullable;
 
@@ -37,6 +40,11 @@ public class RadiantTickUpdateProcedure {
 				_vars.RadiantCounter = entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantCounter + 1;
 				_vars.syncPlayerVariables(entity);
 			}
+		}
+		if (entity.isShiftKeyDown()
+				&& !(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(RadiantModMobEffects.SUMMONING_SHARDPLATE_FIRST) && entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(RadiantModMobEffects.SUMMONING_SHARDPLATE_SECOND))) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.SUMMONING_SHARDPLATE_FIRST, 3, 0));
 		}
 	}
 }

@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-import net.mcreator.radiant.procedures.TensionPickaxeStoneToolInHandTickProcedure;
+import net.mcreator.radiant.procedures.TensionPickaxeStoneToolInInventoryTickProcedure;
 
 public class TensionPickaxeStoneItem extends PickaxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -58,8 +58,7 @@ public class TensionPickaxeStoneItem extends PickaxeItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			TensionPickaxeStoneToolInHandTickProcedure.execute(entity);
+		TensionPickaxeStoneToolInInventoryTickProcedure.execute(entity, itemstack);
 	}
 
 	@Override

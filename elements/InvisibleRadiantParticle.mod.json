@@ -1,0 +1,24 @@
+{
+  "_fv": 77,
+  "_type": "particle",
+  "definition": {
+    "texture": "invisible_radiant_particle",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": {
+      "fixedValue": 1.0
+    },
+    "speedFactor": 1.0,
+    "gravity": 0.0,
+    "maxAge": 1,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
+    "alwaysShow": false,
+    "emissiveRendering": false,
+    "renderType": "OPAQUE"
+  }
+}

@@ -1,6 +1,7 @@
 
 package net.mcreator.radiant.entity;
 
+import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.common.NeoForgeMod;
@@ -160,6 +161,26 @@ public class PeaksprenEntity extends TamableAnimal {
 	@Override
 	public boolean isFood(ItemStack stack) {
 		return Ingredient.of().test(stack);
+	}
+
+	@Override
+	public boolean canDrownInFluidType(FluidType type) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		return false;
+	}
+
+	@Override
+	public boolean isPushedByFluid() {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		return false;
 	}
 
 	@Override

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "radiant:tension_lead",
+    "radiant:tension_string",
     "radiant:tension_sword_rock",
     "radiant:skybreaker_dead_shardblade",
     "radiant:lightweaver_dead_shardblade",

@@ -23,7 +23,7 @@
     },
     "modelLayers": [
       {
-        "model": "Default",
+        "model": "ModelSeon",
         "texture": "lightspren_texture.png",
         "disableHurtOverlay": false,
         "glow": true
@@ -83,10 +83,10 @@
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "pushedByFluids": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "flyingMob": true,
     "inventorySize": 9,
@@ -121,6 +121,9 @@
       "value": ""
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],

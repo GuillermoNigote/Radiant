@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Illumination Fake Player",
     "mobLabel": "",
-    "mobModelName": "Biped",
+    "mobModelName": "ModelCognitive_Peakspren",
     "mobModelTexture": "illumination_steve.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -114,6 +114,9 @@
       "value": ""
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],

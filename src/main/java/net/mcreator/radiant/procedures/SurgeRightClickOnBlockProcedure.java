@@ -26,6 +26,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -37,6 +39,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.radiant.world.inventory.TransformationSurgeGUIMenu;
 import net.mcreator.radiant.init.RadiantModMobEffects;
+import net.mcreator.radiant.init.RadiantModItems;
 import net.mcreator.radiant.init.RadiantModEntities;
 import net.mcreator.radiant.init.RadiantModBlocks;
 import net.mcreator.radiant.entity.IlluminationFakePlayerEntity;
@@ -66,19 +69,21 @@ public class SurgeRightClickOnBlockProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 			if ((entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(RadiantModMobEffects.DIVISION_SKYBREAKER) || entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER))
 					&& (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 1) {
-				if (entity instanceof Player _player)
-					_player.giveExperiencePoints(-(10));
-				if (entity instanceof LivingEntity _entity)
-					_entity.swing(InteractionHand.MAIN_HAND, true);
-				DivisionSurgeOnBlockProcedure.execute(world, x, y, z);
+				if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == RadiantModBlocks.ALUMINUM_BLOCK.get())) {
+					if (entity instanceof Player _player)
+						_player.giveExperiencePoints(-(2));
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+					DivisionSurgeOnBlockProcedure.execute(world, x, y, z);
+				}
 			}
-			if ((entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER) || entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(RadiantModMobEffects.PROGRESSION_TRUTHWATCHER))
+			if ((entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER) || entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(RadiantModMobEffects.PROGRESSION_TRUTHWATCHER))
 					&& (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 1) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.VINE && world.isEmptyBlock(BlockPos.containing(x, y + 1, z))) {
 					world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.VINE.defaultBlockState(), 3);
 				}
 				if (entity instanceof Player _player)
-					_player.giveExperiencePoints(-(10));
+					_player.giveExperiencePoints(-(5));
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				if (world instanceof Level _level) {
@@ -89,7 +94,7 @@ public class SurgeRightClickOnBlockProcedure {
 					}
 				}
 			}
-			if ((entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(RadiantModMobEffects.COHESION_STONEWARD) || entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(RadiantModMobEffects.COHESION_WILLSHAPER))
+			if ((entity instanceof LivingEntity _livEnt20 && _livEnt20.hasEffect(RadiantModMobEffects.COHESION_STONEWARD) || entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(RadiantModMobEffects.COHESION_WILLSHAPER))
 					&& (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 1) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("radiant:cohesionableblocks")))) {
 					if (entity instanceof LivingEntity _entity)
@@ -97,11 +102,11 @@ public class SurgeRightClickOnBlockProcedure {
 					if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.COAL_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.COAL).copy();
-							_setstack.setCount(2);
+							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -123,7 +128,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -141,11 +146,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.REDSTONE_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.REDSTONE).copy();
-							_setstack.setCount(3);
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 5));
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -167,7 +172,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -185,11 +190,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.LAPIS_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.LAPIS_LAZULI).copy();
-							_setstack.setCount(3);
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 9));
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -211,7 +216,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -233,7 +238,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -251,11 +256,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.COPPER_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.RAW_COPPER).copy();
-							_setstack.setCount(2);
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 5));
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -273,11 +278,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.NETHER_QUARTZ_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.QUARTZ).copy();
-							_setstack.setCount(2);
+							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_NETHERRACK.get().defaultBlockState();
@@ -295,11 +300,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.NETHER_GOLD_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.GOLD_NUGGET).copy();
-							_setstack.setCount(2);
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 6));
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_NETHERRACK.get().defaultBlockState();
@@ -317,11 +322,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_COAL_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.COAL).copy();
-							_setstack.setCount(2);
+							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -343,7 +348,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -361,11 +366,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_REDSTONE_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.REDSTONE).copy();
-							_setstack.setCount(3);
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 5));
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -387,7 +392,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -405,11 +410,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_LAPIS_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.LAPIS_LAZULI).copy();
-							_setstack.setCount(3);
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 9));
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -431,7 +436,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -453,7 +458,7 @@ public class SurgeRightClickOnBlockProcedure {
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -471,11 +476,11 @@ public class SurgeRightClickOnBlockProcedure {
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_COPPER_ORE) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(Items.RAW_COPPER).copy();
-							_setstack.setCount(2);
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 5));
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(5));
+							_player.giveExperiencePoints(-(2));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -490,10 +495,54 @@ public class SurgeRightClickOnBlockProcedure {
 							}
 							world.setBlock(_bp, _bs, 3);
 						}
+					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == RadiantModBlocks.ALUMINUM_ORE.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(RadiantModItems.ALUMINUM_NUGGET.get()).copy();
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 6));
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player)
+							_player.giveExperiencePoints(-(2));
+						{
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_BLACKSTONE.get().defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Property<?> _propertyOld : _bso.getProperties()) {
+								Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+								if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+									try {
+										_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+									} catch (Exception e) {
+									}
+							}
+							world.setBlock(_bp, _bs, 3);
+						}
+					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.GILDED_BLACKSTONE) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(Items.GOLD_NUGGET).copy();
+							_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 6));
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player)
+							_player.giveExperiencePoints(-(2));
+						{
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_BLACKSTONE.get().defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Property<?> _propertyOld : _bso.getProperties()) {
+								Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+								if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+									try {
+										_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+									} catch (Exception e) {
+									}
+							}
+							world.setBlock(_bp, _bs, 3);
+						}
 					}
 					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("radiant:dirt")))) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DIRT.get().defaultBlockState();
@@ -510,7 +559,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.STONE == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_STONE.get().defaultBlockState();
@@ -527,7 +576,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.OBSIDIAN == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() || Blocks.CRYING_OBSIDIAN == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_OBSIDIAN.get().defaultBlockState();
@@ -544,7 +593,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.NETHERRACK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_NETHERRACK.get().defaultBlockState();
@@ -561,7 +610,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("radiant:granite")))) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_GRANITE.get().defaultBlockState();
@@ -578,7 +627,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (RadiantModBlocks.ILLUMINATION_BLOCK_SANDSTONE.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_SANDSTONE.get().defaultBlockState();
@@ -595,7 +644,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.SAND == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_SAND.get().defaultBlockState();
@@ -612,7 +661,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.DIORITE == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DIORITE.get().defaultBlockState();
@@ -629,7 +678,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.BEDROCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_BEDROCK.get().defaultBlockState();
@@ -646,7 +695,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.ANDESITE == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_ANDESITE.get().defaultBlockState();
@@ -663,7 +712,7 @@ public class SurgeRightClickOnBlockProcedure {
 						}
 					} else if (Blocks.ANCIENT_DEBRIS == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEBRIS.get().defaultBlockState();
@@ -694,7 +743,7 @@ public class SurgeRightClickOnBlockProcedure {
 							world.setBlock(_bp, _bs, 3);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 					} else if (Blocks.COBBLED_DEEPSLATE == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
@@ -711,7 +760,7 @@ public class SurgeRightClickOnBlockProcedure {
 							world.setBlock(_bp, _bs, 3);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("radiant:cobblestone")))) {
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
@@ -728,10 +777,10 @@ public class SurgeRightClickOnBlockProcedure {
 							world.setBlock(_bp, _bs, 3);
 						}
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("radiant:deepcobblestone")))) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_DEEPSLATE.get().defaultBlockState();
@@ -746,9 +795,26 @@ public class SurgeRightClickOnBlockProcedure {
 							}
 							world.setBlock(_bp, _bs, 3);
 						}
+					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("radiant:blackstone")))) {
+						if (entity instanceof Player _player)
+							_player.giveExperiencePoints(-(1));
+						{
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockState _bs = RadiantModBlocks.COHESION_BLOCK_BLACKSTONE.get().defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Property<?> _propertyOld : _bso.getProperties()) {
+								Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+								if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+									try {
+										_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+									} catch (Exception e) {
+									}
+							}
+							world.setBlock(_bp, _bs, 3);
+						}
 					} else {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(1));
 						{
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockState _bs = RadiantModBlocks.COHESION_LIQUID.get().defaultBlockState();
@@ -766,10 +832,10 @@ public class SurgeRightClickOnBlockProcedure {
 					}
 				}
 			}
-			if ((entity instanceof LivingEntity _livEnt178 && _livEnt178.hasEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER) || entity instanceof LivingEntity _livEnt179 && _livEnt179.hasEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER))
+			if ((entity instanceof LivingEntity _livEnt203 && _livEnt203.hasEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER) || entity instanceof LivingEntity _livEnt204 && _livEnt204.hasEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER))
 					&& entity.isShiftKeyDown() && (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 2) {
 				if (entity instanceof Player _player)
-					_player.giveExperiencePoints(-(20));
+					_player.giveExperiencePoints(-(10));
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = RadiantModEntities.ILLUMINATION_FAKE_PLAYER.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
@@ -779,74 +845,78 @@ public class SurgeRightClickOnBlockProcedure {
 				if ((findEntityInWorldRange(world, IlluminationFakePlayerEntity.class, x, y, z, 1)) instanceof TamableAnimal _toTame && entity instanceof Player _owner)
 					_toTame.tame(_owner);
 			}
-			if ((entity instanceof LivingEntity _livEnt186 && _livEnt186.hasEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER) || entity instanceof LivingEntity _livEnt187 && _livEnt187.hasEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER))
+			if ((entity instanceof LivingEntity _livEnt211 && _livEnt211.hasEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER) || entity instanceof LivingEntity _livEnt212 && _livEnt212.hasEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER))
 					&& !entity.isShiftKeyDown()) {
-				if (entity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = BlockPos.containing(x, y, z);
-					_ent.openMenu(new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("TransformationSurgeGUI");
-						}
+				if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == RadiantModBlocks.ALUMINUM_BLOCK.get())) {
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						_ent.openMenu(new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("TransformationSurgeGUI");
+							}
 
-						@Override
-						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
-							return false;
-						}
+							@Override
+							public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+								return false;
+							}
 
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new TransformationSurgeGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new TransformationSurgeGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
 				}
 			}
-			if (entity instanceof LivingEntity _livEnt190 && _livEnt190.hasEffect(RadiantModMobEffects.ADHESION_WINDRUNNER) && (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 2) {
-				if (Direction.DOWN == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getDirection())) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y - 1, z), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+			if (entity instanceof LivingEntity _livEnt217 && _livEnt217.hasEffect(RadiantModMobEffects.ADHESION_WINDRUNNER) && (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 2) {
+				if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == RadiantModBlocks.ALUMINUM_BLOCK.get())) {
+					if (Direction.DOWN == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getDirection())) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y - 1, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
 						}
-					}
-				} else if (Direction.UP == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-						.getDirection())) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+					} else if (Direction.UP == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+							.getDirection())) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
 						}
-					}
-				} else if (Direction.NORTH == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-						.getDirection())) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y, z - 1), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+					} else if (Direction.NORTH == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+							.getDirection())) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y, z - 1), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
 						}
-					}
-				} else if (Direction.SOUTH == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-						.getDirection())) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y, z + 1), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+					} else if (Direction.SOUTH == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+							.getDirection())) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x, y, z + 1), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
 						}
-					}
-				} else if (Direction.WEST == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-						.getDirection())) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x - 1, y, z), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+					} else if (Direction.WEST == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+							.getDirection())) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x - 1, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
 						}
-					}
-				} else if (Direction.EAST == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-						.getDirection())) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x + 1, y, z), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+					} else if (Direction.EAST == (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(6)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+							.getDirection())) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = RadiantModEntities.ADHESION_INFUSE.get().spawn(_level, BlockPos.containing(x + 1, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
 						}
 					}
 				}

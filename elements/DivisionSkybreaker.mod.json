@@ -8,11 +8,20 @@
       "value": -11317671,
       "falpha": 0.0
     },
+    "particle": {
+      "value": "CUSTOM:InvisibleRadiantParticle"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": []
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "DivisionSkybreakerOnEffectActiveTick"
+    }
   }
 }

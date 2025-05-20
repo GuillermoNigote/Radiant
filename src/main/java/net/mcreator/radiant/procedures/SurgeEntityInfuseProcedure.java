@@ -29,6 +29,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.CommandSourceStack;
@@ -539,7 +540,7 @@ public class SurgeEntityInfuseProcedure {
 						}
 					}
 				}
-			} else if (entity instanceof Player && sourceentity instanceof Player && entity.isShiftKeyDown() && !sourceentity.isShiftKeyDown() && getEntityScore("Oath", entity) == 0 && getEntityScore("Oath", sourceentity) > 2) {
+			} else if (entity instanceof ServerPlayer && sourceentity instanceof ServerPlayer && entity.isShiftKeyDown() && !sourceentity.isShiftKeyDown() && getEntityScore("Oath", entity) == 0 && getEntityScore("Oath", sourceentity) > 2) {
 				if (("Dustbringers").equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 						? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 						: "")) {

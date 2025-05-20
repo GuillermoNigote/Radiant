@@ -768,41 +768,6 @@
       "path": "~/Shardblade"
     },
     {
-      "name": "SummonShardbladeOnKeyPressed",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "summon_shardblade_on_key_pressed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/SummonShardbladeOnKeyPressedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Shardblade"
-    },
-    {
       "name": "DivisionDustbringer",
       "type": "potioneffect",
       "compiles": true,
@@ -1026,25 +991,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/procedures/AbrasionEffectStartedappliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Abrasion"
-    },
-    {
-      "name": "AbrasionEffectExpires",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "abrasion_effect_expires",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/AbrasionEffectExpiresProcedure.java"
         ],
         "dependencies": [
           {
@@ -2890,481 +2836,6 @@
         ]
       },
       "path": "~/Shardblade"
-    },
-    {
-      "name": "TensionAxeWoodToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_axe_wood_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionAxeWoodToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Axe"
-    },
-    {
-      "name": "TensionAxeStoneToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_axe_stone_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionAxeStoneToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Axe"
-    },
-    {
-      "name": "TensionAxeIronToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_axe_iron_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionAxeIronToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Axe"
-    },
-    {
-      "name": "TensionAxeGoldToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_axe_gold_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionAxeGoldToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Axe"
-    },
-    {
-      "name": "TensionAxeDiamondToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_axe_diamond_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionAxeDiamondToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Axe"
-    },
-    {
-      "name": "TensionShovelWoodToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_shovel_wood_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionShovelWoodToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Shovel"
-    },
-    {
-      "name": "TensionShovelStoneToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_shovel_stone_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionShovelStoneToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Shovel"
-    },
-    {
-      "name": "TensionShovelIronToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_shovel_iron_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionShovelIronToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Shovel"
-    },
-    {
-      "name": "TensionShovelGoldToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_shovel_gold_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionShovelGoldToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Shovel"
-    },
-    {
-      "name": "TensionShovelDiamondToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_shovel_diamond_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionShovelDiamondToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Shovel"
-    },
-    {
-      "name": "TensionHoeWoodToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_hoe_wood_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionHoeWoodToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Hoe"
-    },
-    {
-      "name": "TensionHoeStoneToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_hoe_stone_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionHoeStoneToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Hoe"
-    },
-    {
-      "name": "TensionHoeIronToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_hoe_iron_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionHoeIronToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Hoe"
-    },
-    {
-      "name": "TensionHoeGoldToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_hoe_gold_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionHoeGoldToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Hoe"
-    },
-    {
-      "name": "TensionHoeDiamondToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_hoe_diamond_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionHoeDiamondToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Hoe"
-    },
-    {
-      "name": "TensionSwordWoodToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_sword_wood_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionSwordWoodToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Sword"
-    },
-    {
-      "name": "TensionSwordStoneToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_sword_stone_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionSwordStoneToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Sword"
-    },
-    {
-      "name": "TensionSwordIronToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_sword_iron_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionSwordIronToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Sword"
-    },
-    {
-      "name": "TensionSwordGoldToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_sword_gold_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionSwordGoldToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Sword"
-    },
-    {
-      "name": "TensionSwordDiamondToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_sword_diamond_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionSwordDiamondToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Sword"
-    },
-    {
-      "name": "TensionPickaxeWoodToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_pickaxe_wood_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeWoodToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Pickaxe"
-    },
-    {
-      "name": "TensionPickaxeStoneToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_pickaxe_stone_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeStoneToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Pickaxe"
-    },
-    {
-      "name": "TensionPickaxeIronToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_pickaxe_iron_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeIronToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Pickaxe"
-    },
-    {
-      "name": "TensionPickaxeGoldToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_pickaxe_gold_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeGoldToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Pickaxe"
-    },
-    {
-      "name": "TensionPickaxeDiamondToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tension_pickaxe_diamond_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeDiamondToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension/Pickaxe"
     },
     {
       "name": "TensionGoldArmorHelmetTickEvent",
@@ -7809,10 +7280,13 @@
       "registry_name": "aluminum_ore",
       "metadata": {
         "files": [
+          "src/main/resources/data/radiant/worldgen/configured_feature/aluminum_ore.json",
           "src/main/resources/assets/radiant/models/item/aluminum_ore.json",
           "src/main/resources/assets/radiant/blockstates/aluminum_ore.json",
           "src/main/java/net/mcreator/radiant/block/AluminumOreBlock.java",
-          "src/main/resources/assets/radiant/models/block/aluminum_ore.json"
+          "src/main/resources/assets/radiant/models/block/aluminum_ore.json",
+          "src/main/resources/data/radiant/neoforge/biome_modifier/aluminum_ore_biome_modifier.json",
+          "src/main/resources/data/radiant/worldgen/placed_feature/aluminum_ore.json"
         ]
       },
       "path": "~/Aluminum"
@@ -8230,6 +7704,1814 @@
         ]
       },
       "path": "~/Shardblade/DeadBlades"
+    },
+    {
+      "name": "InvisibleRadiantParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisible_radiant_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/client/particle/InvisibleRadiantParticleParticle.java",
+          "src/main/resources/assets/radiant/particles/invisible_radiant_particle.json"
+        ]
+      },
+      "path": "~/Surges"
+    },
+    {
+      "name": "WindrunnerShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windrunner_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/item/WindrunnerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_boots.json"
+        ]
+      },
+      "path": "~/Shardplate/Windrunner"
+    },
+    {
+      "name": "SkybreakerShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skybreaker_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_chestplate.json",
+          "src/main/java/net/mcreator/radiant/item/SkybreakerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_helmet.json"
+        ]
+      },
+      "path": "~/Shardplate/Skybreaker"
+    },
+    {
+      "name": "DustbringerShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustbringer_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_leggings.json",
+          "src/main/java/net/mcreator/radiant/item/DustbringerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_chestplate.json"
+        ]
+      },
+      "path": "~/Shardplate/Dustbringer"
+    },
+    {
+      "name": "EdgedancerShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "edgedancer_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/item/EdgedancerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_leggings.json"
+        ]
+      },
+      "path": "~/Shardplate/Edgedancer"
+    },
+    {
+      "name": "TruthwatcherShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "truthwatcher_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/item/TruthwatcherShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_helmet.json"
+        ]
+      },
+      "path": "~/Shardplate/Truthwatcher"
+    },
+    {
+      "name": "LightweaverShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightweaver_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_chestplate.json",
+          "src/main/java/net/mcreator/radiant/item/LightweaverShardplateItem.java"
+        ]
+      },
+      "path": "~/Shardplate/Lightweaver"
+    },
+    {
+      "name": "ElsecallerShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elsecaller_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/item/ElsecallerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_leggings.json"
+        ]
+      },
+      "path": "~/Shardplate/Elsecaller"
+    },
+    {
+      "name": "WillshaperShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willshaper_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/item/WillshaperShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_chestplate.json"
+        ]
+      },
+      "path": "~/Shardplate/Willshaper"
+    },
+    {
+      "name": "StonewardShardplate",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stoneward_shardplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_leggings.json",
+          "src/main/java/net/mcreator/radiant/item/StonewardShardplateItem.java"
+        ]
+      },
+      "path": "~/Shardplate/Stoneward"
+    },
+    {
+      "name": "NoViolenceDedication",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_violence_dedication",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/NoViolenceDedicationMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "VeganDedication",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegan_dedication",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/VeganDedicationMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "OthersWillDedication",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "others_will_dedication",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/OthersWillDedicationMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "LawDedication",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "law_dedication",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/LawDedicationMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "VeganDedicationManager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegan_dedication_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/VeganDedicationManagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "NoViolenceDedicationManager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_violence_dedication_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/NoViolenceDedicationManagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "NoViolenceDedicationQuest",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_violence_dedication_quest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/NoViolenceDedicationQuestMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "VeganDedicationQuest",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegan_dedication_quest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/VeganDedicationQuestMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "LawDedicationQuest",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "law_dedication_quest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/LawDedicationQuestMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "OthersWillDedicationQuest",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "others_will_dedication_quest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/OthersWillDedicationQuestMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "OthersWillDedicationManager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "others_will_dedication_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/OthersWillDedicationManagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "LawDedicationManager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "law_dedication_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/LawDedicationManagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "LawDedicationOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "law_dedication_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/LawDedicationOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "NoViolenceDedicationOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_violence_dedication_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/NoViolenceDedicationOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "VeganDedicationOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegan_dedication_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/VeganDedicationOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "OthersWillDedicationOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "others_will_dedication_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/OthersWillDedicationOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/InmortalWords/Third/SkybreakersQuests"
+    },
+    {
+      "name": "SummonShardbladeKeyBind",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_shardblade_key_bind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/network/SummonShardbladeKeyBindMessage.java"
+        ]
+      },
+      "path": "~/Shardblade"
+    },
+    {
+      "name": "SummonShardblade",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_shardblade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/SummonShardbladeMobEffect.java"
+        ]
+      },
+      "path": "~/Shardblade"
+    },
+    {
+      "name": "SummonShardbladeManager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_shardblade_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SummonShardbladeManagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shardblade"
+    },
+    {
+      "name": "SummonShardbladeOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_shardblade_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SummonShardbladeOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Shardblade"
+    },
+    {
+      "name": "SummonShardplateManager",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_shardplate_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SummonShardplateManagerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shardplate"
+    },
+    {
+      "name": "SummoningShardplateOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoning_shardplate_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SummoningShardplateOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Shardplate"
+    },
+    {
+      "name": "SummoningShardplateFirst",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoning_shardplate_first",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/SummoningShardplateFirstMobEffect.java"
+        ]
+      },
+      "path": "~/Shardplate"
+    },
+    {
+      "name": "SummoningShardplateSecond",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoning_shardplate_second",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/SummoningShardplateSecondMobEffect.java"
+        ]
+      },
+      "path": "~/Shardplate"
+    },
+    {
+      "name": "SummoningShardplateSecondOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoning_shardplate_second_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SummoningShardplateSecondOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shardplate"
+    },
+    {
+      "name": "AluminumBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/aluminum_block.json",
+          "src/main/resources/assets/radiant/models/block/aluminum_block.json",
+          "src/main/java/net/mcreator/radiant/block/AluminumBlockBlock.java",
+          "src/main/resources/data/radiant/loot_table/blocks/aluminum_block.json",
+          "src/main/resources/assets/radiant/blockstates/aluminum_block.json"
+        ]
+      },
+      "path": "~/Aluminum"
+    },
+    {
+      "name": "AluminumIngotCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_ingot_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/recipe/aluminum_ingot_crafting.json"
+        ]
+      },
+      "path": "~/Aluminum"
+    },
+    {
+      "name": "AluminumBlockCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_block_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/recipe/aluminum_block_crafting.json"
+        ]
+      },
+      "path": "~/Aluminum"
+    },
+    {
+      "name": "CohesionBlockBlackstone",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cohesion_block_blackstone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockBlackstoneBlock.java",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockBlackstoneFluid.java",
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockBlackstoneFluidType.java",
+          "src/main/resources/assets/radiant/models/item/cohesion_block_blackstone_bucket.json",
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_blackstone.json",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_blackstone.json"
+        ]
+      },
+      "path": "~/Surges/Cohesion"
+    },
+    {
+      "name": "CohesionBlockBlackstoneOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cohesion_block_blackstone_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/CohesionBlockBlackstoneOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Cohesion"
+    },
+    {
+      "name": "DivisionSkybreakerOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "division_skybreaker_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/DivisionSkybreakerOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Division"
+    },
+    {
+      "name": "TruthCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "truth_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/TruthCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/InmortalWords/Third/LightweaversIdealsCooldowns"
+    },
+    {
+      "name": "RadiantRespawnOaths",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiant_respawn_oaths",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/RadiantRespawnOathsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/InmortalWords"
+    },
+    {
+      "name": "TensionString",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_string",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/item/TensionStringItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_string.json"
+        ]
+      },
+      "path": "~/Surges/Tension/Other"
+    },
+    {
+      "name": "TensionLead",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_lead",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/tension_lead.json",
+          "src/main/java/net/mcreator/radiant/item/TensionLeadItem.java"
+        ]
+      },
+      "path": "~/Surges/Tension/Other"
+    },
+    {
+      "name": "UseTension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_tension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/UseTensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension"
+    },
+    {
+      "name": "TensionAxeWoodToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_axe_wood_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionAxeWoodToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Axe"
+    },
+    {
+      "name": "TensionAxeStoneToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_axe_stone_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionAxeStoneToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Axe"
+    },
+    {
+      "name": "TensionAxeIronToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_axe_iron_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionAxeIronToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Axe"
+    },
+    {
+      "name": "TensionAxeGoldToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_axe_gold_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionAxeGoldToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Axe"
+    },
+    {
+      "name": "TensionAxeDiamondToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_axe_diamond_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionAxeDiamondToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Axe"
+    },
+    {
+      "name": "TensionShovelWoodToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_shovel_wood_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionShovelWoodToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Shovel"
+    },
+    {
+      "name": "TensionShovelStoneToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_shovel_stone_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionShovelStoneToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Shovel"
+    },
+    {
+      "name": "TensionShovelIronToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_shovel_iron_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionShovelIronToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Shovel"
+    },
+    {
+      "name": "TensionShovelGoldToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_shovel_gold_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionShovelGoldToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Shovel"
+    },
+    {
+      "name": "TensionShovelDiamondToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_shovel_diamond_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionShovelDiamondToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Shovel"
+    },
+    {
+      "name": "TensionHoeWoodToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_hoe_wood_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionHoeWoodToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Hoe"
+    },
+    {
+      "name": "TensionHoeStoneToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_hoe_stone_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionHoeStoneToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Hoe"
+    },
+    {
+      "name": "TensionHoeIronToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_hoe_iron_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionHoeIronToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Hoe"
+    },
+    {
+      "name": "TensionHoeGoldToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_hoe_gold_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionHoeGoldToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Hoe"
+    },
+    {
+      "name": "TensionHoeDiamondToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_hoe_diamond_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionHoeDiamondToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Hoe"
+    },
+    {
+      "name": "TensionSwordWoodToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_sword_wood_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionSwordWoodToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Sword"
+    },
+    {
+      "name": "TensionSwordStoneToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_sword_stone_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionSwordStoneToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Sword"
+    },
+    {
+      "name": "TensionSwordIronToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_sword_iron_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionSwordIronToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Sword"
+    },
+    {
+      "name": "TensionSwordGoldToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_sword_gold_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionSwordGoldToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Sword"
+    },
+    {
+      "name": "TensionSwordDiamondToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_sword_diamond_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionSwordDiamondToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Sword"
+    },
+    {
+      "name": "TensionPickaxeWoodToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_pickaxe_wood_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeWoodToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Pickaxe"
+    },
+    {
+      "name": "TensionPickaxeStoneToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_pickaxe_stone_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeStoneToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Pickaxe"
+    },
+    {
+      "name": "TensionPickaxeIronToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_pickaxe_iron_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeIronToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Pickaxe"
+    },
+    {
+      "name": "TensionPickaxeGoldToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_pickaxe_gold_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeGoldToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Pickaxe"
+    },
+    {
+      "name": "TensionPickaxeDiamondToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_pickaxe_diamond_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionPickaxeDiamondToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Pickaxe"
+    },
+    {
+      "name": "TensionStringToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_string_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionStringToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Other"
+    },
+    {
+      "name": "TensionLeadToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_lead_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionLeadToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension/Other"
+    },
+    {
+      "name": "SurgeEmptyRightClickOnAir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surge_empty_right_click_on_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SurgeEmptyRightClickOnAirProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Surges/Gravitation"
+    },
+    {
+      "name": "SurgeItemRightClickOnAir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surge_item_right_click_on_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SurgeItemRightClickOnAirProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Surges/Gravitation"
+    },
+    {
+      "name": "SurgeHitEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surge_hit_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SurgeHitEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Surges"
+    },
+    {
+      "name": "AbrasionSlipperyOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abrasion_slippery_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/AbrasionSlipperyOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Abrasion"
+    },
+    {
+      "name": "AbrasionSlippery",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abrasion_slippery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/AbrasionSlipperyMobEffect.java"
+        ]
+      },
+      "path": "~/Surges/Abrasion"
+    },
+    {
+      "name": "CognitiveHonorspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_honorspren",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/cognitive_honorspren_spawn_egg.json",
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveHonorsprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/CognitiveHonorsprenEntity.java"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitiveCultivationspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_cultivationspren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveCultivationsprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/CognitiveCultivationsprenEntity.java",
+          "src/main/resources/assets/radiant/models/item/cognitive_cultivationspren_spawn_egg.json"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitivePeakspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_peakspren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitivePeaksprenRenderer.java",
+          "src/main/resources/assets/radiant/models/item/cognitive_peakspren_spawn_egg.json",
+          "src/main/java/net/mcreator/radiant/entity/CognitivePeaksprenEntity.java"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitiveLightspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_lightspren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveLightsprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/CognitiveLightsprenEntity.java",
+          "src/main/resources/assets/radiant/models/item/cognitive_lightspren_spawn_egg.json"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitiveAshspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_ashspren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/entity/CognitiveAshsprenEntity.java",
+          "src/main/resources/assets/radiant/models/item/cognitive_ashspren_spawn_egg.json",
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveAshsprenRenderer.java"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitiveHighspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_highspren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveHighsprenRenderer.java",
+          "src/main/resources/assets/radiant/models/item/cognitive_highspren_spawn_egg.json",
+          "src/main/java/net/mcreator/radiant/entity/CognitiveHighsprenEntity.java"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitiveInkspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_inkspren",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/radiant/models/item/cognitive_inkspren_spawn_egg.json",
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveInksprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/CognitiveInksprenEntity.java"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitiveCryptic",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_cryptic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/entity/CognitiveCrypticEntity.java",
+          "src/main/resources/assets/radiant/models/item/cognitive_cryptic_spawn_egg.json",
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveCrypticRenderer.java"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "DimensionChangeRadiant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimension_change_radiant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/DimensionChangeRadiantProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "dimension",
+            "type": "dimensiontype"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "CognitiveMistspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_mistspren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveMistsprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/CognitiveMistsprenEntity.java",
+          "src/main/resources/assets/radiant/models/item/cognitive_mistspren_spawn_egg.json"
+        ]
+      },
+      "path": "~/Spren"
     }
   ],
   "variable_elements": [
@@ -8280,6 +9562,30 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "SprenName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "RadiantString",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "SummoningPlate",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "FirstSpawn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
     }
   ],
   "sound_elements": [],
@@ -8331,16 +9637,16 @@
       "CUSTOM:IlluminationSpruceLogBlock",
       "CUSTOM:IlluminationSprucePlanksBlock"
     ],
-    "BLOCKS:mod:dirt": [
-      "Blocks.DIRT#0",
-      "Blocks.DIRT#1",
-      "Blocks.DIRT#2",
-      "Blocks.ROOTED_DIRT",
-      "Blocks.GRASS",
-      "Blocks.GRASS_PATH",
-      "Blocks.MYCELIUM"
-    ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:StonewardShardplate.body",
+      "~CUSTOM:WillshaperShardplate.body",
+      "~CUSTOM:ElsecallerShardplate.body",
+      "~CUSTOM:LightweaverShardplate.body",
+      "~CUSTOM:TruthwatcherShardplate.body",
+      "~CUSTOM:EdgedancerShardplate.body",
+      "~CUSTOM:DustbringerShardplate.body",
+      "~CUSTOM:SkybreakerShardplate.body",
+      "~CUSTOM:WindrunnerShardplate.body",
       "~CUSTOM:Shardplate.body",
       "~CUSTOM:TensionChainmailArmor.body",
       "~CUSTOM:TensionDiamondArmor.body",
@@ -8348,6 +9654,7 @@
       "~CUSTOM:TensionGoldArmor.body"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:CohesionBlockBlackstone",
       "~CUSTOM:Smoke",
       "~CUSTOM:Blood",
       "~CUSTOM:CohesionBlockDeepslate",
@@ -8419,27 +9726,6 @@
       "~CUSTOM:IlluminationBlockDirt",
       "~CUSTOM:IlluminationBlock"
     ],
-    "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:TensionPickaxeRock",
-      "~CUSTOM:TensionPickaxeDiamond",
-      "~CUSTOM:TensionPickaxeGold",
-      "~CUSTOM:TensionPickaxeIron",
-      "~CUSTOM:TensionPickaxeStone",
-      "~CUSTOM:TensionPickaxeWood"
-    ],
-    "ITEMS:mod:discardableshard": [
-      "CUSTOM:DustbringerLivingShardblade",
-      "CUSTOM:EdgedancerLivingShardblade",
-      "CUSTOM:StonewardLivingShardblade",
-      "CUSTOM:WillshaperLivingShardblade",
-      "CUSTOM:TruthwatcherLivingShardblade",
-      "CUSTOM:SkybreakerLivingShardblade",
-      "CUSTOM:WindrunnerLivingShardblade",
-      "CUSTOM:ElsecallerLivingShardblade",
-      "CUSTOM:LightweaverLivingShardblade",
-      "CUSTOM:SkybreakerLivingShardlance",
-      "CUSTOM:WindrunnerLivingShardlance"
-    ],
     "BLOCKS:mod:cobblestone": [
       "Blocks.COBBLESTONE",
       "Blocks.MOSSY_COBBLESTONE",
@@ -8449,20 +9735,6 @@
       "Blocks.STONE_SLAB#3",
       "Blocks.COBBLESTONE_WALL#0",
       "Blocks.COBBLESTONE_WALL#1"
-    ],
-    "BLOCKS:mod:cohesionblock": [
-      "CUSTOM:CohesionBlockDirt",
-      "CUSTOM:CohesionBlockStone",
-      "CUSTOM:CohesionBlockObsidian",
-      "CUSTOM:CohesionBlockNetherrack",
-      "CUSTOM:CohesionBlockGranite",
-      "CUSTOM:CohesionBlockSandstone",
-      "CUSTOM:CohesionBlockSand",
-      "CUSTOM:CohesionBlockDiorite",
-      "CUSTOM:CohesionBlockBedrock",
-      "CUSTOM:CohesionBlockAndesite",
-      "CUSTOM:CohesionBlockDebris",
-      "CUSTOM:CohesionBlockEndstone"
     ],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:TensionHoeRock",
@@ -8524,6 +9796,175 @@
       "CUSTOM:IlluminationBlockGold",
       "CUSTOM:IlluminationBlockEmerald",
       "CUSTOM:IlluminationBlockAncientDebris"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:TensionAxeRock",
+      "~CUSTOM:TensionAxeDiamond",
+      "~CUSTOM:TensionAxeGold",
+      "~CUSTOM:TensionAxeIron",
+      "~CUSTOM:TensionAxeStone",
+      "~CUSTOM:TensionAxeWood"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:TensionLead",
+      "~CUSTOM:TensionString",
+      "~CUSTOM:TensionSwordRock",
+      "~CUSTOM:SkybreakerDeadShardblade",
+      "~CUSTOM:LightweaverDeadShardblade",
+      "~CUSTOM:WindrunnerDeadShardblade",
+      "~CUSTOM:TruthwatcherDeadShardblade",
+      "~CUSTOM:WillshaperDeadShardblade",
+      "~CUSTOM:StonewardDeadShardblade",
+      "~CUSTOM:EdgedancerDeadShardblade",
+      "~CUSTOM:DustbringerDeadShardblade",
+      "~CUSTOM:WindrunnerLivingShardlance",
+      "~CUSTOM:SkybreakerLivingShardlance",
+      "~CUSTOM:LightweaverLivingShardblade",
+      "~CUSTOM:ElsecallerLivingShardblade",
+      "~CUSTOM:WindrunnerLivingShardblade",
+      "~CUSTOM:SkybreakerLivingShardblade",
+      "~CUSTOM:TensionSwordDiamond",
+      "~CUSTOM:TensionSwordGold",
+      "~CUSTOM:TensionSwordIron",
+      "~CUSTOM:TensionSwordStone",
+      "~CUSTOM:TensionSwordWood",
+      "~CUSTOM:TruthwatcherLivingShardblade",
+      "~CUSTOM:WillshaperLivingShardblade",
+      "~CUSTOM:StonewardLivingShardblade",
+      "~CUSTOM:EdgedancerLivingShardblade",
+      "~CUSTOM:DustbringerLivingShardblade"
+    ],
+    "ITEMS:mod:shardplate": [
+      "CUSTOM:Shardplate.helmet",
+      "CUSTOM:Shardplate.body",
+      "CUSTOM:Shardplate.legs",
+      "CUSTOM:Shardplate.boots",
+      "CUSTOM:WindrunnerShardplate.helmet",
+      "CUSTOM:WindrunnerShardplate.body",
+      "CUSTOM:WindrunnerShardplate.legs",
+      "CUSTOM:WindrunnerShardplate.boots",
+      "CUSTOM:SkybreakerShardplate.helmet",
+      "CUSTOM:SkybreakerShardplate.body",
+      "CUSTOM:SkybreakerShardplate.legs",
+      "CUSTOM:SkybreakerShardplate.boots",
+      "CUSTOM:DustbringerShardplate.helmet",
+      "CUSTOM:DustbringerShardplate.body",
+      "CUSTOM:DustbringerShardplate.legs",
+      "CUSTOM:DustbringerShardplate.boots",
+      "CUSTOM:EdgedancerShardplate.helmet",
+      "CUSTOM:EdgedancerShardplate.body",
+      "CUSTOM:EdgedancerShardplate.legs",
+      "CUSTOM:EdgedancerShardplate.boots",
+      "CUSTOM:TruthwatcherShardplate.helmet",
+      "CUSTOM:TruthwatcherShardplate.body",
+      "CUSTOM:TruthwatcherShardplate.legs",
+      "CUSTOM:TruthwatcherShardplate.boots",
+      "CUSTOM:LightweaverShardplate.helmet",
+      "CUSTOM:LightweaverShardplate.body",
+      "CUSTOM:LightweaverShardplate.legs",
+      "CUSTOM:LightweaverShardplate.boots",
+      "CUSTOM:ElsecallerShardplate.helmet",
+      "CUSTOM:ElsecallerShardplate.body",
+      "CUSTOM:ElsecallerShardplate.legs",
+      "CUSTOM:ElsecallerShardplate.boots",
+      "CUSTOM:WillshaperShardplate.helmet",
+      "CUSTOM:WillshaperShardplate.body",
+      "CUSTOM:WillshaperShardplate.legs",
+      "CUSTOM:WillshaperShardplate.boots",
+      "CUSTOM:StonewardShardplate.helmet",
+      "CUSTOM:StonewardShardplate.body",
+      "CUSTOM:StonewardShardplate.legs",
+      "CUSTOM:StonewardShardplate.boots"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:StonewardShardplate.helmet",
+      "~CUSTOM:WillshaperShardplate.helmet",
+      "~CUSTOM:ElsecallerShardplate.helmet",
+      "~CUSTOM:LightweaverShardplate.helmet",
+      "~CUSTOM:TruthwatcherShardplate.helmet",
+      "~CUSTOM:EdgedancerShardplate.helmet",
+      "~CUSTOM:DustbringerShardplate.helmet",
+      "~CUSTOM:SkybreakerShardplate.helmet",
+      "~CUSTOM:WindrunnerShardplate.helmet",
+      "~CUSTOM:Shardplate.helmet",
+      "~CUSTOM:TensionChainmailArmor.helmet",
+      "~CUSTOM:TensionTurtleArmor.helmet",
+      "~CUSTOM:TensionDiamondArmor.helmet",
+      "~CUSTOM:TensionIronArmor.helmet",
+      "~CUSTOM:TensionGoldArmor.helmet"
+    ],
+    "ENTITIES:mod:spren": [
+      "CUSTOM:Ashspren",
+      "CUSTOM:Cryptic",
+      "CUSTOM:Cultivationspren",
+      "CUSTOM:Highspren",
+      "CUSTOM:Honorspren",
+      "CUSTOM:Inkspren",
+      "CUSTOM:Lightspren",
+      "CUSTOM:Mistspren",
+      "CUSTOM:Peakspren",
+      "CUSTOM:CognitiveHonorspren",
+      "CUSTOM:CognitiveCultivationspren",
+      "CUSTOM:CognitivePeakspren",
+      "CUSTOM:CognitiveLightspren",
+      "CUSTOM:CognitiveAshspren",
+      "CUSTOM:CognitiveHighspren",
+      "CUSTOM:CognitiveInkspren",
+      "CUSTOM:CognitiveCryptic"
+    ],
+    "BLOCKS:mod:dirt": [
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#1",
+      "Blocks.DIRT#2",
+      "Blocks.ROOTED_DIRT",
+      "Blocks.GRASS",
+      "Blocks.GRASS_PATH",
+      "Blocks.MYCELIUM"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:TensionPickaxeRock",
+      "~CUSTOM:TensionPickaxeDiamond",
+      "~CUSTOM:TensionPickaxeGold",
+      "~CUSTOM:TensionPickaxeIron",
+      "~CUSTOM:TensionPickaxeStone",
+      "~CUSTOM:TensionPickaxeWood"
+    ],
+    "ITEMS:mod:discardableshard": [
+      "CUSTOM:DustbringerLivingShardblade",
+      "CUSTOM:EdgedancerLivingShardblade",
+      "CUSTOM:StonewardLivingShardblade",
+      "CUSTOM:WillshaperLivingShardblade",
+      "CUSTOM:TruthwatcherLivingShardblade",
+      "CUSTOM:SkybreakerLivingShardblade",
+      "CUSTOM:WindrunnerLivingShardblade",
+      "CUSTOM:ElsecallerLivingShardblade",
+      "CUSTOM:LightweaverLivingShardblade",
+      "CUSTOM:SkybreakerLivingShardlance",
+      "CUSTOM:WindrunnerLivingShardlance"
+    ],
+    "BLOCKS:mod:cohesionblock": [
+      "CUSTOM:CohesionBlockDirt",
+      "CUSTOM:CohesionBlockStone",
+      "CUSTOM:CohesionBlockObsidian",
+      "CUSTOM:CohesionBlockNetherrack",
+      "CUSTOM:CohesionBlockGranite",
+      "CUSTOM:CohesionBlockSandstone",
+      "CUSTOM:CohesionBlockSand",
+      "CUSTOM:CohesionBlockDiorite",
+      "CUSTOM:CohesionBlockBedrock",
+      "CUSTOM:CohesionBlockAndesite",
+      "CUSTOM:CohesionBlockDebris",
+      "CUSTOM:CohesionBlockEndstone"
+    ],
+    "ITEMS:mod:goldenarmor": [
+      "CUSTOM:TensionGoldArmor.helmet",
+      "CUSTOM:TensionGoldArmor.body",
+      "CUSTOM:TensionGoldArmor.legs",
+      "CUSTOM:TensionGoldArmor.boots",
+      "Items.GOLDEN_HELMET",
+      "Items.GOLDEN_CHESTPLATE",
+      "Items.GOLDEN_LEGGINGS",
+      "Items.GOLDEN_BOOTS"
     ],
     "BLOCKS:mod:granite": [
       "Blocks.STONE#1",
@@ -8712,46 +10153,24 @@
       "Blocks.CRACKED_DEEPSLATE_BRICKS",
       "Blocks.CRACKED_DEEPSLATE_TILES"
     ],
-    "ITEMS:minecraft:axes": [
-      "~CUSTOM:TensionAxeRock",
-      "~CUSTOM:TensionAxeDiamond",
-      "~CUSTOM:TensionAxeGold",
-      "~CUSTOM:TensionAxeIron",
-      "~CUSTOM:TensionAxeStone",
-      "~CUSTOM:TensionAxeWood"
-    ],
-    "ITEMS:mod:shardplate": [
-      "CUSTOM:Shardplate.helmet",
-      "CUSTOM:Shardplate.body",
-      "CUSTOM:Shardplate.legs",
-      "CUSTOM:Shardplate.boots"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:TensionSwordRock",
-      "~CUSTOM:SkybreakerDeadShardblade",
-      "~CUSTOM:LightweaverDeadShardblade",
-      "~CUSTOM:WindrunnerDeadShardblade",
-      "~CUSTOM:TruthwatcherDeadShardblade",
-      "~CUSTOM:WillshaperDeadShardblade",
-      "~CUSTOM:StonewardDeadShardblade",
-      "~CUSTOM:EdgedancerDeadShardblade",
-      "~CUSTOM:DustbringerDeadShardblade",
-      "~CUSTOM:WindrunnerLivingShardlance",
-      "~CUSTOM:SkybreakerLivingShardlance",
-      "~CUSTOM:LightweaverLivingShardblade",
-      "~CUSTOM:ElsecallerLivingShardblade",
-      "~CUSTOM:WindrunnerLivingShardblade",
-      "~CUSTOM:SkybreakerLivingShardblade",
-      "~CUSTOM:TensionSwordDiamond",
-      "~CUSTOM:TensionSwordGold",
-      "~CUSTOM:TensionSwordIron",
-      "~CUSTOM:TensionSwordStone",
-      "~CUSTOM:TensionSwordWood",
-      "~CUSTOM:TruthwatcherLivingShardblade",
-      "~CUSTOM:WillshaperLivingShardblade",
-      "~CUSTOM:StonewardLivingShardblade",
-      "~CUSTOM:EdgedancerLivingShardblade",
-      "~CUSTOM:DustbringerLivingShardblade"
+    "BLOCKS:mod:blackstone": [
+      "Blocks.BLACKSTONE",
+      "Blocks.BLACKSTONE_STAIRS",
+      "Blocks.BLACKSTONE_WALL",
+      "Blocks.BLACKSTONE_SLAB",
+      "Blocks.POLISHED_BLACKSTONE",
+      "Blocks.POLISHED_BLACKSTONE_BRICKS",
+      "Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS",
+      "Blocks.CHISELED_POLISHED_BLACKSTONE",
+      "Blocks.POLISHED_BLACKSTONE_BRICK_SLAB",
+      "Blocks.POLISHED_BLACKSTONE_BRICK_STAIRS",
+      "Blocks.POLISHED_BLACKSTONE_BRICK_WALL",
+      "Blocks.POLISHED_BLACKSTONE_STAIRS",
+      "Blocks.POLISHED_BLACKSTONE_SLAB",
+      "Blocks.POLISHED_BLACKSTONE_WALL",
+      "Blocks.GILDED_BLACKSTONE",
+      "Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE",
+      "Blocks.CARPET#15"
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:TensionShovelRock",
@@ -8761,26 +10180,16 @@
       "~CUSTOM:TensionShovelStone",
       "~CUSTOM:TensionShovelWood"
     ],
-    "ENTITIES:mod:spren": [
-      "CUSTOM:Ashspren",
-      "CUSTOM:Cryptic",
-      "CUSTOM:Cultivationspren",
-      "CUSTOM:Highspren",
-      "CUSTOM:Honorspren",
-      "CUSTOM:Inkspren",
-      "CUSTOM:Lightspren",
-      "CUSTOM:Mistspren",
-      "CUSTOM:Peakspren"
-    ],
-    "ITEMS:minecraft:head_armor": [
-      "~CUSTOM:Shardplate.helmet",
-      "~CUSTOM:TensionChainmailArmor.helmet",
-      "~CUSTOM:TensionTurtleArmor.helmet",
-      "~CUSTOM:TensionDiamondArmor.helmet",
-      "~CUSTOM:TensionIronArmor.helmet",
-      "~CUSTOM:TensionGoldArmor.helmet"
-    ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:StonewardShardplate.boots",
+      "~CUSTOM:WillshaperShardplate.boots",
+      "~CUSTOM:ElsecallerShardplate.boots",
+      "~CUSTOM:LightweaverShardplate.boots",
+      "~CUSTOM:TruthwatcherShardplate.boots",
+      "~CUSTOM:EdgedancerShardplate.boots",
+      "~CUSTOM:DustbringerShardplate.boots",
+      "~CUSTOM:SkybreakerShardplate.boots",
+      "~CUSTOM:WindrunnerShardplate.boots",
       "~CUSTOM:Shardplate.boots",
       "~CUSTOM:TensionChainmailArmor.boots",
       "~CUSTOM:TensionDiamondArmor.boots",
@@ -8794,6 +10203,15 @@
       "CUSTOM:CultivationsprenBlockLDecay"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:StonewardShardplate.legs",
+      "~CUSTOM:WillshaperShardplate.legs",
+      "~CUSTOM:ElsecallerShardplate.legs",
+      "~CUSTOM:LightweaverShardplate.legs",
+      "~CUSTOM:TruthwatcherShardplate.legs",
+      "~CUSTOM:EdgedancerShardplate.legs",
+      "~CUSTOM:DustbringerShardplate.legs",
+      "~CUSTOM:SkybreakerShardplate.legs",
+      "~CUSTOM:WindrunnerShardplate.legs",
       "~CUSTOM:Shardplate.legs",
       "~CUSTOM:TensionChainmailArmor.legs",
       "~CUSTOM:TensionDiamondArmor.legs",
@@ -8804,143 +10222,286 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "advancements.elsecaller_third_ideal.title": "The Third Ideal",
       "item.radiant.edgedancers_glyph": "Edgedancers Glyph",
       "item.radiant.willshaper_living_shardblade": "Willshaper Living Shardblade",
-      "item.radiant.tension_gold_armor_helmet": "Tension Infused Gold Helmet",
-      "key.radiant.use_second_surge": "Use Second Surge",
-      "block.radiant.illumination_deepslate_redstone_block": "Illumination Deepslate Redstone Ore",
       "item.radiant.dustbringer_dead_shardblade": "Shardblade",
       "advancements.lightweaver_fourth_ideal.title": "The Fourth Ideal",
       "block.radiant.illumination_block_netherrack": "Illumination Netherrack Block",
-      "item_group.radiant.radiant": "Radiant",
-      "item.radiant.dustbringer_division_glyph": "Division Glyph",
-      "block.radiant.smoke": "Smoke",
       "entity.radiant.mistspren": "Mistspren",
-      "item.radiant.tension_sword_rock": "Tension Infused Stone Sword",
+      "item.radiant.elsecaller_shardplate_chestplate": "Shardplate Chestplate",
       "block.radiant.illumination_deepslate_block": "Illumination Deepslate",
       "item.radiant.tension_chainmail_armor_helmet": "Tension Infused Chainmail Helmet",
-      "item.radiant.lightweaver_transformation_glyph": "Transformation Glyph",
-      "fluid.radiant.cohesion_block_stone": "Cohesion Liquid",
-      "item.radiant.dustbringer_living_shardblade": "Dustbringer Living Shardblade",
       "painting.radiant.honor_painting.author": "Donato Giancola",
-      "advancements.broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "effect.radiant.abrasion_edgedancer": "Abrasion Surge",
+      "advancements.broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "item.radiant.truthwatcher_dead_shardblade": "Shardblade",
       "block.radiant.illumination_jungle_log_block": "Illumination Jungle Log",
-      "advancements.edgedancer_third_ideal.title": "The Third Ideal",
-      "item.radiant.edgedancer_living_shardblade": "Edgedancer Living Shardblade",
-      "block.radiant.illumination_mangrove_planks_block": "Illumination Mangrove Planks",
       "gui.radiant.transformation_surge_gui.button_wood": "Wood",
+      "block.radiant.illumination_mangrove_planks_block": "Illumination Mangrove Planks",
       "item.radiant.willshaper_transportation_glyph": "Transportation Glyph",
-      "item.radiant.truthwatchers_glyph": "Truthwatchers Glyph",
-      "effect.radiant.progression_truthwatcher": "Progression Surge",
-      "block.radiant.cohesion_liquid": "Cohesion Liquid",
-      "advancements.elsecaller_second_ideal.title": "The Second Ideal",
+      "entity.radiant.cognitive_ashspren": "Cognitive Ashspren",
       "fluid.radiant.cohesion_block_obsidian": "Cohesion Liquid",
       "block.radiant.aluminum_ore": "Aluminum Ore",
       "painting.radiant.nalan_painting.author": "Karla Ortiz",
-      "block.radiant.cohesion_block_deepslate": "Cohesion Liquid",
       "block.radiant.illumination_acacia_planks_block": "Illumination Acacia Planks",
-      "painting.radiant.ishi_painting.title": "Ishi\u0027Elin",
+      "entity.radiant.cognitive_honorspren": "Cognitive Honorspren",
       "item.radiant.skybreaker_division_glyph": "Division Glyph",
-      "block.radiant.illumination_snow_block": "Illumination Snow",
-      "key.categories.radiant": "Radiant",
+      "effect.radiant.others_will_dedication": "Other\u0027s Will Dedication",
       "block.radiant.cohesion_block_netherrack": "Cohesion Liquid",
       "painting.radiant.battah_painting.title": "Battah\u0027Elin",
-      "item.radiant.edgedancer_abrasion_glyph": "Division Glyph",
-      "fluid.radiant.cohesion_block_debris": "Cohesion Liquid",
       "advancements.lightweaver_second_ideal.descr": "The Ideals of the Order of Lightweavers are very different from those of the other orders. Instead of swearing oaths centered around a specific theme, Lightweavers instead speak individual truths about themselves",
       "item.radiant.aluminum_nugget": "Aluminum Nugget",
       "item.radiant.tension_sword_stone": "Tension Infused Stone Sword",
-      "entity.radiant.peakspren": "Peakspren",
-      "item.radiant.tension_pickaxe_stone": "Tension Infused Stone Pickaxe",
       "block.radiant.cohesion_block_dirt": "Cohesion Liquid",
-      "block.radiant.illumination_cherry_log_block": "Illumination Cherry Log",
+      "entity.radiant.peakspren": "Peakspren",
       "item.radiant.stoneward_cohesion_glyph": "Cohesion Glyph",
-      "item.radiant.tension_pickaxe_wood": "Tension Infused Wood Pickaxe",
+      "item.radiant.willshaper_shardplate_chestplate": "Shardplate Chestplate",
       "block.radiant.cohesion_block_sandstone": "Cohesion Liquid",
-      "block.radiant.illumination_deepsalte_emerald_block": "Illumination Deepslate Emerald Ore",
-      "advancements.inmortal_words.title": "The Immortal Words",
-      "painting.radiant.truthwatchers_painting.title": "Truthwatchers",
+      "item.radiant.dustbringer_shardplate_chestplate": "Shardplate Chestplate",
       "effect.radiant.illumination_lightweaver": "Illumination Surge",
+      "item.radiant.edgedancer_shardplate_chestplate": "Shardplate Chestplate",
       "item.radiant.willshapers_glyph": "Willshapers Glyph",
-      "item.radiant.dustbringers_glyph": "Dustbringers Glyph",
+      "item.radiant.dustbringer_shardplate_boots": "Shardplate Boots",
       "item.radiant.tension_pickaxe_iron": "Tension Infused Iron Pickaxe",
       "item.radiant.shardplate_chestplate": "Shardplate Chestplate",
-      "item.radiant.lightweaver_dead_shardblade": "Shardblade",
+      "fluid.radiant.cohesion_block_blackstone": "Cohesion Liquid",
       "block.radiant.illumination_lapislazuli_ore_block": "Illumination Lapislazuli Ore",
-      "entity.radiant.adhesion_infuse": "Adhesion Infuse",
-      "block.radiant.illumination_block_diamond": "Illumination Diamond Block",
+      "item.radiant.tension_string": "Tension String",
+      "item.radiant.stoneward_shardplate_leggings": "Shardplate Leggings",
+      "item.radiant.elsecaller_shardplate_helmet": "Shardplate Helmet",
       "item.radiant.infused_diamond": "Infused Diamond",
       "advancements.windrunner_second_ideal.descr": "The modern Windrunners consider those of the Second Ideal to be more than a squire, but not a full Windrunner",
       "painting.radiant.skybreakers_painting.author": "Steve Argyle",
       "item.radiant.stoneward_living_shardblade": "Stoneward Living Shardblade",
+      "effect.radiant.summoning_shardplate_second": "Summoning Shardplate 2",
       "block.radiant.illumination_block_endstone": "Illumination Endstone Block",
+      "item.radiant.dustbringer_shardplate_helmet": "Shardplate Helmet",
       "gui.radiant.transformation_surge_gui.button_smoke": "Smoke",
-      "effect.radiant.abrasion_dustbringer": "Abrasion Surge",
       "item.radiant.truthwatcher_living_shardblade": "Truthwatcher Living Shardblade",
-      "item.radiant.tension_shovel_gold": "Tension Infused Gold Shovel ",
-      "block.radiant.illumination_clay_block": "Illumination Clay",
+      "item.radiant.edgedancer_shardplate_helmet": "Shardplate Helmet",
       "effect.radiant.gravitation_skybreaker": "Gravitation Surge",
-      "fluid.radiant.cohesion_block_cobblestone": "Cohesion Liquid",
       "item.radiant.windrunner_living_shardlance": "Windrunner Living Shardlance",
-      "advancements.lightweaver_third_ideal.title": "The Third Ideal",
+      "item.radiant.elsecaller_shardplate_leggings": "Shardplate Leggings",
       "block.radiant.blood": "Blood",
       "entity.radiant.fake_spider": "Fake Spider",
       "effect.radiant.division_skybreaker": "Division Surge",
       "advancements.truthwatcher_third_ideal.title": "The Third Ideal",
-      "painting.radiant.pailiah_painting.author": "Magali Villeneuve",
       "advancements.elsecaller_fourth_ideal.title": "The Fourth Ideal",
       "item.radiant.tension_hoe_gold": "Tension Infused Gold Hoe",
       "painting.radiant.talenelat_painting.author": "Donato Giancola",
       "entity.radiant.cultivationspren": "Cultivationspren",
       "painting.radiant.edgedancers_painting.author": "Steve Argyle",
-      "painting.radiant.stonewards_painting.title": "Stonewards",
       "effect.radiant.division_dustbringer": "Division Surge",
-      "advancements.edgedancer_fourth_ideal.descr": "Upon achieving this Ideal, a Edgedancer gains their Shardplate, which is formed of .",
+      "advancements.edgedancer_fourth_ideal.descr": "Upon achieving this Ideal, a Edgedancer gains their Shardplate, which is formed of Lifespren",
       "block.radiant.cohesion_block_bedrock": "Cohesion Liquid",
       "item.radiant.tension_shovel_stone": "Tension Infused Stone Shovel ",
-      "fluid.radiant.cohesion_liquid": "Cohesion Liquid",
       "painting.radiant.shalash_painting.author": "Dan dos Santos",
       "block.radiant.illumination_block_diamond_ore": "Illumination Diamond Ore",
-      "item.radiant.windrunner_living_shardblade": "Windrunner Living Shardblade",
       "item.radiant.tension_sword_diamond": "Tension Infused Diamond Sword",
-      "item.radiant.stoneward_tension_glyph": "Tension Glyph",
+      "item.radiant.windrunner_living_shardblade": "Windrunner Living Shardblade",
       "block.radiant.illumination_jungle_planks_block": "Illumination Jungle Planks",
-      "advancements.dustbringer_fourth_ideal.title": "The Fourth Ideal",
+      "item.radiant.truthwatcher_shardplate_chestplate": "Shardplate Chestplate",
       "item.radiant.tension_iron_armor_boots": "Tension Infused Iron Boots",
-      "advancements.windrunners_third_ideal.title": "The Third Ideal",
       "advancements.truthwatcher_second_ideal.descr": "The Second Ideal of the Truthwatchers is focused on seeking truth",
       "entity.radiant.fake_creeper": "Fake Creeper",
-      "fluid.radiant.cohesion_block_netherrack": "Cohesion Liquid",
+      "effect.radiant.no_violence_dedication_quest": "No Violence Dedication",
       "item.radiant.shardplate_helmet": "Shardplate Helmet",
-      "item.radiant.tension_hoe_wood": "Tension Infused Wood Hoe ",
-      "effect.radiant.cohesion_willshaper": "Cohesion Surge",
-      "block.radiant.illumination_bookshelf_block": "Illumination Bookshelf",
       "fluid.radiant.cohesion_block_sand": "Cohesion Liquid",
       "block.radiant.illumination_block_dirt": "Illumination Dirt Block",
-      "block.radiant.illumination_birch_log_block": "Illumination Birch Log",
+      "effect.radiant.vegan_dedication": "Vegan Dedication",
       "item.radiant.truthwatcher_progression_glyph": "Progression Glyph",
-      "item.radiant.stoneward_dead_shardblade": "Shardblade",
-      "item.radiant.tension_diamond_armor_leggings": "Tension Infused Diamond Leggings",
       "item.radiant.skybreaker_gravitation_glyph": "Gravitation Glyph",
-      "block.radiant.cultivationspren_block_l_decay": "Cultivationspren L Decay",
-      "item.radiant.tension_axe_gold": "Tension Infused Gold Axe ",
       "advancements.truthwatcher_fourth_ideal.title": "The Fourth Ideal",
       "item.radiant.tension_chainmail_armor_boots": "Tension Infused Chainmail Boots",
       "block.radiant.cohesion_block_deepslate_c_obblestone": "Cohesion Liquid",
       "block.radiant.illumination_block_bedrock": "Illumination Bedrock Block",
-      "effect.radiant.transformation_lightweaver": "Transformation Surge",
       "block.radiant.illumination_dark_oak_log_block": "Illumination Dark Oak Log",
-      "block.radiant.cohesion_block_diorite": "Cohesion Liquid",
+      "entity.radiant.cognitive_peakspren": "Cognitive Peakspren",
       "block.radiant.illumination_birch_planks_block": "Illumination Birch Planks",
+      "advancements.skybreaker_third_ideal.descr": "Also called the Ideal of Dedication, this is a specific oath to dedicate oneself to a greater truth, either a code or, sometimes, a person. A Skybreaker squire must first bond their Highspren before taking this oath, and it is the minimum oath required before the Surge of Division can be used. Swearing this Ideal makes someone a full Skybreaker",
+      "painting.radiant.willshapers_painting.title": "Willshapers",
+      "painting.radiant.the_ten_radiant_orders_painting.title": "Symbols of the Ten Radiant Orders and their Surges",
+      "block.radiant.illumination_deepslate_gold_block": "Illumination Deepslate Gold Ore",
+      "item.radiant.willshaper_cohesion_glyph": "Cohesion Glyph",
+      "item.radiant.tension_gold_armor_boots": "Tension Infused Gold Boots",
+      "advancements.skybreaker_fourth_ideal.descr": "Upon achieving this Ideal, a Skybreaker gains their Shardplate, which is formed of Gravitationspren",
+      "item.radiant.tension_pickaxe_gold": "Tension Infused Gold Pickaxe",
+      "advancements.elsecaller_second_ideal.descr": "The Second Ideal of the Elsecallers is focused on reaching one\u0027s potential",
+      "block.radiant.cohesion_block_obsidian": "Cohesion Liquid",
+      "advancements.dustbringer_second_ideal.title": "The Second Ideal",
+      "advancements.truthwatcher_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
+      "block.radiant.illumination_deepslate_iron_block": "Illumination Deepslate Iron Ore",
+      "item.radiant.tension_axe_wood": "Tension Infused Wood Axe ",
+      "advancements.willshaper_fourth_ideal.title": "The Fourth Ideal",
+      "item.radiant.tension_sword_gold": "Tension Infused Gold Sword",
+      "item.radiant.elsecallers_glyph": "Elsecallers Glyph",
+      "gui.radiant.transformation_surge_gui.button_meat": "Meat",
+      "advancements.skybreaker_second_ideal.title": "The Second Ideal",
+      "advancements.lightweaver_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
+      "block.radiant.illumination_block_emerald_ore": "Illumination Diamond Ore",
+      "effect.radiant.progression_edgedancer": "Progression Surge",
+      "painting.radiant.edgedancers_painting.title": "Edgedancers",
+      "effect.radiant.tension_stoneward": "Tension Surge",
+      "advancements.dustbringer_third_ideal.title": "The Third Ideal",
+      "advancements.edgedancer_fourth_ideal.title": "The Fourth Ideal",
+      "item.radiant.dustbringer_abrasion_glyph": "Division Glyph",
+      "item.radiant.elsecaller_transportation_glyph": "Transportation Glyph",
+      "fluid.radiant.cohesion_block_endstone": "Cohesion Liquid",
+      "item.radiant.cognitive_ashspren_spawn_egg": "Cognitive Ashspren Spawn Egg",
+      "item.radiant.elsecaller_transformation_glyph": "Transformation Glyph",
+      "painting.radiant.the_ten_radiant_orders_painting.author": "Isaac Stewart",
+      "advancements.willshaper_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
+      "block.radiant.cohesion_block_granite": "Cohesion Liquid",
+      "advancements.skybreaker_third_ideal.title": "The Third Ideal",
+      "advancements.truthwatcher_fourth_ideal.descr": "Upon achieving this Ideal, a Truthwatcher gains their Shardplate, which is formed of Concentrationspren",
+      "item.radiant.skybreaker_shardplate_boots": "Shardplate Boots",
+      "item.radiant.skybreaker_dead_shardblade": "Shardblade",
+      "block.radiant.illumination_cobblestone_block": "Illumination Cobblestone Block",
+      "advancements.stoneward_second_ideal.title": "The Second Ideal",
+      "painting.radiant.stonewards_painting.author": "Steve Argyle",
+      "painting.radiant.battah_painting.author": "Miranda Meeks",
+      "painting.radiant.cultivation_painting.title": "Cultivation",
+      "entity.radiant.lightspren": "Lightspren",
+      "item.radiant.lightweavers_glyph": "Lightweavers Glyph",
+      "item.radiant.windrunners_glyph": "Windrunners Glyph",
+      "entity.radiant.illumination_fake_player": "Illumination Fake Player",
+      "item.radiant.truthwatcher_shardplate_boots": "Shardplate Boots",
+      "effect.radiant.wearing_shardplate": "Wearing Shardplate",
+      "item.radiant.tension_sword_iron": "Tension Infused Iron Sword",
+      "item.radiant.skybreaker_shardplate_helmet": "Shardplate Helmet",
+      "advancements.willshaper_second_ideal.title": "The Second Ideal",
+      "block.radiant.cohesion_block_debris": "Cohesion Liquid",
+      "item.radiant.tension_diamond_armor_helmet": "Tension Infused Diamond Helmet",
+      "item.radiant.aluminum_ingot": "Aluminum Ingot",
+      "key.radiant.use_first_surge": "Use First Surge",
+      "block.radiant.illumination_deepslate_lapislazuli_block": "Illumination Deepslate Lapislazuli Ore",
+      "effect.radiant.truth_cooldown": "Truth Cooldown",
+      "gui.radiant.transformation_surge_gui.button_oil": "Oil",
+      "advancements.broken_oaths.title": "Broken Oaths",
+      "item.radiant.lightweaver_illumination_glyph": "Illumination Glyph",
+      "painting.radiant.windrunners_painting.title": "Windrunners",
+      "fluid.radiant.cohesion_block_granite": "Cohesion Liquid",
+      "gui.radiant.transformation_surge_gui.button_glass": "Glass",
+      "item.radiant.tension_pickaxe_diamond": "Tension Infused Diamond Pickaxe",
+      "advancements.elsecaller_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
+      "item.radiant.tension_hoe_rock": "Tension Infused Stone Hoe ",
+      "item.radiant.cognitive_mistspren_spawn_egg": "Cognitive Mistspren Spawn Egg",
+      "block.radiant.illumination_spruce_planks_block": "Illumination Spruce Planks",
+      "effect.radiant.no_violence_dedication": "No Violence Dedication",
+      "effect.radiant.gravitation_windrunner": "Gravitation Surge",
+      "item.radiant.radiants_glyph": "Radiants Glyph",
+      "advancements.windrunner_second_ideal.title": "The Second Ideal",
+      "item.radiant.skybreaker_shardplate_leggings": "Shardplate Leggings",
+      "effect.radiant.others_will_dedication_quest": "Other\u0027s Will Dedication",
+      "block.radiant.illumination_block": "Illumination Block",
+      "block.radiant.illumination_spruce_log_block": "Illumination Snow",
+      "item.radiant.lightweaver_living_shardblade": "Lightweaver Living Shardblade",
+      "block.radiant.illumination_block_ancient_debris": "Illumination Block",
+      "item.radiant.tension_iron_armor_helmet": "Tension Infused Iron Helmet",
+      "item.radiant.willshaper_shardplate_boots": "Shardplate Boots",
+      "item.radiant.tension_iron_armor_leggings": "Tension Infused Iron Leggings",
+      "painting.radiant.truthwatchers_painting.author": "Steve Argyle",
+      "advancements.willshaper_fourth_ideal.descr": "Upon achieving this Ideal, a Willshaper gains their Shardplate, which is formed of Joyspren",
+      "gui.radiant.transformation_surge_gui.button_metal": "Metal",
+      "item.radiant.blood_bucket": "Blood Bucket",
+      "painting.radiant.willshapers_painting.author": "Steve Argyle",
+      "entity.radiant.inkspren": "Inkspren",
+      "fluid.radiant.cohesion_block_sandstone": "Cohesion Liquid",
+      "painting.radiant.talenelat_painting.title": "Talenelat\u0027Elin",
+      "painting.radiant.jezerezeh_painting.title": "Jezerezeh\u0027Elin",
+      "item.radiant.windrunner_gravitation_glyph": "Gravitation Glyph",
+      "block.radiant.illumination_redstone_block": "Illumination Redstone Block",
+      "advancements.stoneward_second_ideal.descr": "The Second Ideal of the Stonewards is focused on being there when needed",
+      "entity.radiant.cognitive_highspren": "Cognitive Highspren",
+      "item.radiant.cognitive_peakspren_spawn_egg": "Cognitive Peakspren Spawn Egg",
+      "advancements.skybreaker_second_ideal.descr": "Also called the Ideal of Justice, this is a specific oath to seek and administer justice. Once a master chooses to accept someone as a squire, they may swear this Ideal. This Ideal gives the squire the ability to breathe in Stormlight and use the Surge of Gravitation",
+      "entity.radiant.ashspren": "Ashspren",
+      "advancements.truthwatcher_second_ideal.title": "The Second Ideal",
+      "item.radiant.stoneward_shardplate_helmet": "Shardplate Helmet",
+      "item.radiant.tension_shovel_iron": "Tension Infused Iron Shovel ",
+      "block.radiant.cultivationspren_block_decay": "Cultivationspren Vine Decay",
+      "item.radiant.tension_axe_rock": "Tension Infused Stone Axe ",
+      "advancements.dustbringer_fourth_ideal.descr": "Upon achieving this Ideal, a Dustbringer gains their Shardplate, which is formed of Flamespren",
+      "effect.radiant.transformation_elsecaller": "Transformation Surge",
+      "advancements.willshaper_third_ideal.title": "The Third Ideal",
+      "painting.radiant.lightweavers_painting.author": "Steve Argyle",
+      "item.radiant.stoneward_shardplate_chestplate": "Shardplate Chestplate",
+      "advancements.elsecaller_third_ideal.title": "The Third Ideal",
+      "item.radiant.tension_gold_armor_helmet": "Tension Infused Gold Helmet",
+      "item.radiant.windrunner_shardplate_leggings": "Shardplate Leggings",
+      "item.radiant.tension_lead": "Tension Lead",
+      "key.radiant.use_second_surge": "Use Second Surge",
+      "effect.radiant.abrasion_slippery": "Abrasion Slippery",
+      "block.radiant.illumination_deepslate_redstone_block": "Illumination Deepslate Redstone Ore",
+      "item_group.radiant.radiant": "Radiant",
+      "item.radiant.dustbringer_division_glyph": "Division Glyph",
+      "block.radiant.smoke": "Smoke",
+      "item.radiant.dustbringer_shardplate_leggings": "Shardplate Leggings",
+      "item.radiant.tension_sword_rock": "Tension Infused Stone Sword",
+      "item.radiant.lightweaver_transformation_glyph": "Transformation Glyph",
+      "fluid.radiant.cohesion_block_stone": "Cohesion Liquid",
+      "item.radiant.dustbringer_living_shardblade": "Dustbringer Living Shardblade",
+      "block.radiant.cohesion_block_blackstone": "Cohesion Liquid",
+      "advancements.edgedancer_third_ideal.title": "The Third Ideal",
+      "item.radiant.edgedancer_living_shardblade": "Edgedancer Living Shardblade",
+      "item.radiant.willshaper_shardplate_helmet": "Shardplate Helmet",
+      "item.radiant.truthwatchers_glyph": "Truthwatchers Glyph",
+      "effect.radiant.progression_truthwatcher": "Progression Surge",
+      "block.radiant.cohesion_liquid": "Cohesion Liquid",
+      "advancements.elsecaller_second_ideal.title": "The Second Ideal",
+      "block.radiant.cohesion_block_deepslate": "Cohesion Liquid",
+      "painting.radiant.ishi_painting.title": "Ishi\u0027Elin",
+      "block.radiant.illumination_snow_block": "Illumination Snow",
+      "key.categories.radiant": "Radiant",
+      "item.radiant.edgedancer_abrasion_glyph": "Division Glyph",
+      "fluid.radiant.cohesion_block_debris": "Cohesion Liquid",
+      "block.radiant.illumination_cherry_log_block": "Illumination Cherry Log",
+      "item.radiant.tension_pickaxe_stone": "Tension Infused Stone Pickaxe",
+      "item.radiant.tension_pickaxe_wood": "Tension Infused Wood Pickaxe",
+      "block.radiant.illumination_deepsalte_emerald_block": "Illumination Deepslate Emerald Ore",
+      "advancements.inmortal_words.title": "The Immortal Words",
+      "painting.radiant.truthwatchers_painting.title": "Truthwatchers",
+      "item.radiant.dustbringers_glyph": "Dustbringers Glyph",
+      "item.radiant.lightweaver_dead_shardblade": "Shardblade",
+      "entity.radiant.adhesion_infuse": "Adhesion Infuse",
+      "block.radiant.illumination_block_diamond": "Illumination Diamond Block",
+      "effect.radiant.abrasion_dustbringer": "Abrasion Surge",
+      "item.radiant.tension_shovel_gold": "Tension Infused Gold Shovel ",
+      "block.radiant.illumination_clay_block": "Illumination Clay",
+      "item.radiant.lightweaver_shardplate_leggings": "Shardplate Leggings",
+      "fluid.radiant.cohesion_block_cobblestone": "Cohesion Liquid",
+      "item.radiant.lightweaver_shardplate_chestplate": "Shardplate Chestplate",
+      "advancements.lightweaver_third_ideal.title": "The Third Ideal",
+      "painting.radiant.pailiah_painting.author": "Magali Villeneuve",
+      "item.radiant.cognitive_lightspren_spawn_egg": "Cognitive Lightspren Spawn Egg",
+      "painting.radiant.stonewards_painting.title": "Stonewards",
+      "item.radiant.cognitive_cryptic_spawn_egg": "Cognitive Cryptic Spawn Egg",
+      "item.radiant.skybreaker_shardplate_chestplate": "Shardplate Chestplate",
+      "fluid.radiant.cohesion_liquid": "Cohesion Liquid",
+      "item.radiant.windrunner_shardplate_chestplate": "Shardplate Chestplate",
+      "item.radiant.stoneward_tension_glyph": "Tension Glyph",
+      "advancements.dustbringer_fourth_ideal.title": "The Fourth Ideal",
+      "item.radiant.cognitive_highspren_spawn_egg": "Cognitive Highspren Spawn Egg",
+      "item.radiant.windrunner_shardplate_helmet": "Shardplate Helmet",
+      "advancements.windrunners_third_ideal.title": "The Third Ideal",
+      "item.radiant.lightweaver_shardplate_boots": "Shardplate Boots",
+      "item.radiant.cognitive_inkspren_spawn_egg": "Cognitive Inkspren Spawn Egg",
+      "fluid.radiant.cohesion_block_netherrack": "Cohesion Liquid",
+      "item.radiant.tension_hoe_wood": "Tension Infused Wood Hoe ",
+      "effect.radiant.cohesion_willshaper": "Cohesion Surge",
+      "item.radiant.truthwatcher_shardplate_leggings": "Shardplate Leggings",
+      "block.radiant.illumination_bookshelf_block": "Illumination Bookshelf",
+      "block.radiant.illumination_birch_log_block": "Illumination Birch Log",
+      "item.radiant.stoneward_dead_shardblade": "Shardblade",
+      "item.radiant.tension_diamond_armor_leggings": "Tension Infused Diamond Leggings",
+      "block.radiant.cultivationspren_block_l_decay": "Cultivationspren L Decay",
+      "item.radiant.tension_axe_gold": "Tension Infused Gold Axe ",
+      "effect.radiant.transformation_lightweaver": "Transformation Surge",
+      "block.radiant.cohesion_block_diorite": "Cohesion Liquid",
       "fluid.radiant.cohesion_block_deepslate_c_obblestone": "Cohesion Liquid",
       "block.radiant.illumination_redstone_ore_block": "Illumination Redstone Ore",
       "item.radiant.skybreakers_glyph": "Skybreakers Glyph",
-      "advancements.skybreaker_third_ideal.descr": "Also called the Ideal of Dedication, this is a specific oath to dedicate oneself to a greater truth, either a code or, sometimes, a person. A Skybreaker squire must first bond their Highspren before taking this oath, and it is the minimum oath required before the Surge of Division can be used. Swearing this Ideal makes someone a full Skybreaker",
       "item.radiant.elsecaller_living_shardblade": "Elsecaller Living Shardblade",
-      "painting.radiant.willshapers_painting.title": "Willshapers",
       "item.radiant.tension_chainmail_armor_leggings": "Tension Infused Chainmail Leggings",
       "entity.radiant.honorspren": "Honorspren",
       "block.radiant.illumination_oak_planks_block": "Illumination Oak Planks",
@@ -8950,68 +10511,40 @@
       "gui.radiant.transformation_surge_gui.button_air": "Air",
       "effect.radiant.transportation_willshaper": "Transportation Surge",
       "block.radiant.illumination_oak_log_block": "Illumination Oak Log",
-      "painting.radiant.the_ten_radiant_orders_painting.title": "Symbols of the Ten Radiant Orders and their Surges",
       "advancements.dustbringer_third_ideal.descr": "The Third Ideal of the Dustbringers gives them access to the surge of Division.",
-      "block.radiant.illumination_deepslate_gold_block": "Illumination Deepslate Gold Ore",
-      "item.radiant.willshaper_cohesion_glyph": "Cohesion Glyph",
       "item.radiant.tension_gold_armor_leggings": "Tension Infused Gold Leggings",
       "item.radiant.truthwatcher_illumination_glyph": "Illumination Glyph",
+      "effect.radiant.summon_shardblade": "Summon Shardblade",
       "block.radiant.illumination_cobbled_deepslate_block": "Illumination Cobbled Deepslate",
-      "item.radiant.tension_gold_armor_boots": "Tension Infused Gold Boots",
-      "advancements.skybreaker_fourth_ideal.descr": "Upon achieving this Ideal, a Skybreaker gains their Shardplate, which is formed of .",
-      "item.radiant.tension_pickaxe_gold": "Tension Infused Gold Pickaxe",
-      "advancements.stoneward_fourth_ideal.descr": "Upon achieving this Ideal, a Stoneward gains their Shardplate, which is formed of .",
+      "advancements.stoneward_fourth_ideal.descr": "Upon achieving this Ideal, a Stoneward gains their Shardplate, which is formed of Bindspren",
       "block.radiant.cohesion_block_andesite": "Cohesion Liquid",
       "advancements.dustbringer_second_ideal.descr": "The Second Ideal of the Dustbringers is focused on self mastery",
-      "advancements.elsecaller_second_ideal.descr": "The Second Ideal of the Elsecallers is focused on reaching one\u0027s potential",
       "advancements.stoneward_third_ideal.title": "The Third Ideal",
-      "block.radiant.cohesion_block_obsidian": "Cohesion Liquid",
       "effect.radiant.illumination_truthwatcher": "Illumination Surge",
-      "advancements.dustbringer_second_ideal.title": "The Second Ideal",
-      "advancements.truthwatcher_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
-      "block.radiant.illumination_deepslate_iron_block": "Illumination Deepslate Iron Ore",
-      "item.radiant.tension_axe_wood": "Tension Infused Wood Axe ",
       "item.radiant.shardplate_leggings": "Shardplate Leggings",
       "block.radiant.illumination_acacia_log_block": "Illumination Acacia Log",
-      "painting.radiant.nalan_painting.title": "Nalan\u0027Elin",
       "item.radiant.infused_emerald": "Infused Emerald",
-      "advancements.willshaper_fourth_ideal.title": "The Fourth Ideal",
+      "painting.radiant.nalan_painting.title": "Nalan\u0027Elin",
       "block.radiant.illumination_block_gold_ore": "Illumination Diamond Ore",
-      "item.radiant.tension_sword_gold": "Tension Infused Gold Sword",
-      "item.radiant.elsecallers_glyph": "Elsecallers Glyph",
-      "gui.radiant.transformation_surge_gui.button_meat": "Meat",
-      "advancements.skybreaker_second_ideal.title": "The Second Ideal",
+      "entity.radiant.cognitive_inkspren": "Cognitive Inkspren",
       "effect.radiant.transportation_elsecaller": "Transportation Surge",
       "block.radiant.illumination_mud_block": "Illumination Mud",
-      "advancements.lightweaver_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
-      "block.radiant.illumination_block_emerald_ore": "Illumination Diamond Ore",
-      "effect.radiant.progression_edgedancer": "Progression Surge",
+      "effect.radiant.summoning_shardplate_first": "Summoning Shardplate 1",
       "painting.radiant.dustbringers_painting.author": "Steve Argyle",
-      "painting.radiant.edgedancers_painting.title": "Edgedancers",
-      "effect.radiant.tension_stoneward": "Tension Surge",
       "item.radiant.shardplate_boots": "Shardplate Boots",
       "item.radiant.tension_gold_armor_chestplate": "Tension Infused Gold Chestplate",
-      "advancements.dustbringer_third_ideal.title": "The Third Ideal",
-      "advancements.edgedancer_fourth_ideal.title": "The Fourth Ideal",
       "item.radiant.tension_axe_iron": "Tension Infused Iron Axe ",
       "item.radiant.tension_hoe_iron": "Tension Infused Iron Hoe",
       "block.radiant.illumination_block_gold": "Illumination Diamond Block",
       "block.radiant.illumination_block_sandstone": "Illumination Sandstone Block",
-      "item.radiant.dustbringer_abrasion_glyph": "Division Glyph",
       "item.radiant.edgedancer_progression_glyph": "Progression Glyph",
-      "item.radiant.elsecaller_transportation_glyph": "Transportation Glyph",
       "item.radiant.tension_diamond_armor_boots": "Tension Infused Diamond Boots",
       "item.radiant.tension_chainmail_armor_chestplate": "Tension Infused Chainmail Chestplate",
-      "fluid.radiant.cohesion_block_endstone": "Cohesion Liquid",
       "advancements.willshaper_second_ideal.descr": "The Second Ideal of the Willshapers is focused on freeing others from opresion",
       "entity.radiant.highspren": "Highspren",
       "fluid.radiant.blood": "Blood",
       "block.radiant.illumination_block_stone": "Illumination Stone Block",
-      "item.radiant.elsecaller_transformation_glyph": "Transformation Glyph",
-      "painting.radiant.the_ten_radiant_orders_painting.author": "Isaac Stewart",
-      "advancements.willshaper_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
       "item.radiant.willshaper_dead_shardblade": "Shardblade",
-      "block.radiant.cohesion_block_granite": "Cohesion Liquid",
       "block.radiant.illumination_dark_oak_planks_block": "Illumination Dark Oak Planks",
       "item.radiant.tension_iron_armor_chestplate": "Tension Infused Iron Chestplate",
       "fluid.radiant.cohesion_block_diorite": "Cohesion Liquid",
@@ -9020,134 +10553,92 @@
       "item.radiant.edgedancer_dead_shardblade": "Shardblade",
       "item.radiant.tension_sword_wood": "Tension Infused Wood Sword",
       "block.radiant.illumination_block_iron_ore": "Illumination Diamond Ore",
+      "key.radiant.summon_shardblade_key_bind": "Summon Shardblade",
       "block.radiant.illumination_block_obsidian": "Illumination Obsidian Block",
-      "advancements.skybreaker_third_ideal.title": "The Third Ideal",
-      "advancements.truthwatcher_fourth_ideal.descr": "Upon achieving this Ideal, a Truthwatcher gains their Shardplate, which is formed of .",
       "gui.radiant.transformation_surge_gui.button_stone": "Stone",
-      "item.radiant.skybreaker_dead_shardblade": "Shardblade",
-      "block.radiant.illumination_cobblestone_block": "Illumination Cobblestone Block",
+      "item.radiant.edgedancer_shardplate_boots": "Shardplate Boots",
+      "item.radiant.windrunner_shardplate_boots": "Shardplate Boots",
       "block.radiant.cultivationspren_block_l": "Cultivationspren L",
-      "advancements.stoneward_second_ideal.title": "The Second Ideal",
+      "item.radiant.cognitive_honorspren_spawn_egg": "Cognitive Honorspren Spawn Egg",
       "block.radiant.illumination_deepslate_coal_block": "Illumination Deepslate Coal Ore",
-      "painting.radiant.stonewards_painting.author": "Steve Argyle",
       "item.radiant.tension_hoe_stone": "Tension Infused Stone Hoe ",
-      "painting.radiant.battah_painting.author": "Miranda Meeks",
       "item.radiant.windrunner_dead_shardblade": "Shardblade",
-      "painting.radiant.cultivation_painting.title": "Cultivation",
-      "entity.radiant.lightspren": "Lightspren",
-      "item.radiant.lightweavers_glyph": "Lightweavers Glyph",
       "painting.radiant.elsecallers_painting.title": "Elsecallers",
-      "item.radiant.windrunners_glyph": "Windrunners Glyph",
-      "entity.radiant.illumination_fake_player": "Illumination Fake Player",
-      "effect.radiant.wearing_shardplate": "Wearing Shardplate",
-      "item.radiant.tension_sword_iron": "Tension Infused Iron Sword",
+      "item.radiant.stoneward_shardplate_boots": "Shardplate Boots",
       "painting.radiant.chanarach_painting.title": "Chanarach\u0027Elin",
-      "advancements.willshaper_second_ideal.title": "The Second Ideal",
       "fluid.radiant.cohesion_block_deepslate": "Cohesion Liquid",
-      "block.radiant.cohesion_block_debris": "Cohesion Liquid",
       "block.radiant.illumination_cherry_planks_block": "Illumination Cherry Planks",
       "advancements.edgedancer_second_ideal.descr": "The Second Ideal of the Edgedancers is focused on listening the ignored",
       "painting.radiant.lightweavers_painting.title": "Lightweavers",
-      "item.radiant.tension_diamond_armor_helmet": "Tension Infused Diamond Helmet",
       "block.radiant.illumination_crimson_planks_block": "Illumination Crimson Planks",
       "item.radiant.tension_shovel_rock": "Tension Infused Stone Shovel ",
       "painting.radiant.honor_painting.title": "Honor",
-      "item.radiant.aluminum_ingot": "Aluminum Ingot",
       "painting.radiant.vedeledev_painting.title": "Vedeledev\u0027Elin",
       "effect.radiant.cohesion_stoneward": "Cohesion Surge",
-      "key.radiant.use_first_surge": "Use First Surge",
-      "block.radiant.illumination_deepslate_lapislazuli_block": "Illumination Deepslate Lapislazuli Ore",
       "advancements.windrunners_fourth_ideal.title": "The Fourth Ideal",
-      "block.radiant.cohesion_block_sand": "Cohesion Liquid",
+      "entity.radiant.cognitive_cultivationspren": "Cognitive Cultivationspren",
       "fluid.radiant.cohesion_block_bedrock": "Cohesion Liquid",
-      "gui.radiant.transformation_surge_gui.button_oil": "Oil",
-      "advancements.broken_oaths.title": "Broken Oaths",
+      "block.radiant.cohesion_block_sand": "Cohesion Liquid",
       "advancements.windrunners_third_ideal.descr": "The Third Ideal of the Windrunners focuses on protecting others despite one\u0027s caveats. It must be spoken before a Windrunner can manifest their honorspren as a Shardblade.",
-      "item.radiant.lightweaver_illumination_glyph": "Illumination Glyph",
       "painting.radiant.pailiah_painting.title": "Pailiah\u0027Elin",
       "item.radiant.windrunner_adhesion_glyph": "Adhesion Glyph",
-      "painting.radiant.windrunners_painting.title": "Windrunners",
+      "item.radiant.lightweaver_shardplate_helmet": "Shardplate Helmet",
+      "item.radiant.elsecaller_shardplate_boots": "Shardplate Boots",
       "block.radiant.illumination_block_emerald": "Illumination Block",
       "item.radiant.tension_turtle_armor_helmet": "Tension Infused Turtle Helmet",
-      "fluid.radiant.cohesion_block_granite": "Cohesion Liquid",
       "effect.radiant.illumination_animal_ilusion": "Illumination Disguise",
-      "gui.radiant.transformation_surge_gui.button_glass": "Glass",
       "gui.radiant.transformation_surge_gui.button_fire": "Fire",
-      "item.radiant.tension_pickaxe_diamond": "Tension Infused Diamond Pickaxe",
       "block.radiant.illumination_deepslate_diamond_block": "Illumination Deepslate Diamond Ore",
       "block.radiant.cohesion_block_endstone": "Cohesion Liquid",
-      "advancements.lightweaver_fourth_ideal.descr": "Upon achieving this Ideal, a Lightweaver gains their Shardplate, which is formed of .",
+      "advancements.lightweaver_fourth_ideal.descr": "Upon achieving this Ideal, a Lightweaver gains their Shardplate, which is formed of Creationspren",
       "item.radiant.tension_axe_stone": "Tension Infused Stone Axe ",
       "advancements.edgedancer_second_ideal.title": "The Second Ideal",
+      "effect.radiant.law_dedication": "Law Dedication",
       "painting.radiant.vedeledev_painting.author": "Howard Lyon",
-      "advancements.elsecaller_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
       "painting.radiant.dustbringers_painting.title": "Dustbringers",
+      "entity.radiant.cognitive_lightspren": "Cognitive Lightspren",
       "painting.radiant.windrunners_painting.author": "Steve Argyle",
       "block.radiant.illumination_deepsalte_copper_block": "Illumination Deepslate Copper Ore",
       "block.radiant.illumination_mangrove_log_block": "Illumination Mangrove Log",
-      "item.radiant.tension_hoe_rock": "Tension Infused Stone Hoe ",
       "block.radiant.cohesion_block_stone": "Cohesion Liquid",
-      "block.radiant.illumination_spruce_planks_block": "Illumination Spruce Planks",
       "item.radiant.skybreaker_living_shardlance": "Skybreaker Living Shardlance",
-      "effect.radiant.gravitation_windrunner": "Gravitation Surge",
       "advancements.stoneward_fourth_ideal.title": "The Fourth Ideal",
       "advancements.skybreaker_fourth_ideal.title": "The Fourth Ideal",
-      "item.radiant.radiants_glyph": "Radiants Glyph",
-      "advancements.windrunner_second_ideal.title": "The Second Ideal",
       "effect.radiant.adhesion_windrunner": "Adhesion Surge",
       "painting.radiant.kelek_painting.author": "Magali Villeneuve",
-      "block.radiant.illumination_block": "Illumination Block",
-      "block.radiant.illumination_spruce_log_block": "Illumination Snow",
-      "item.radiant.lightweaver_living_shardblade": "Lightweaver Living Shardblade",
       "item.radiant.skybreaker_living_shardblade": "Skybreaker Living Shardblade",
-      "block.radiant.illumination_block_ancient_debris": "Illumination Block",
       "item.radiant.stonewards_glyph": "Stonewards Glyph",
-      "item.radiant.tension_iron_armor_helmet": "Tension Infused Iron Helmet",
-      "item.radiant.tension_iron_armor_leggings": "Tension Infused Iron Leggings",
       "painting.radiant.jezerezeh_painting.author": "Howard Lyon",
       "entity.radiant.cryptic": "Cryptic",
       "advancements.stoneward_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
-      "painting.radiant.truthwatchers_painting.author": "Steve Argyle",
-      "advancements.windrunners_fourth_ideal.descr": "Upon achieving this Ideal, a Windrunner gains their Shardplate, which is formed of windspren.",
+      "advancements.windrunners_fourth_ideal.descr": "Upon achieving this Ideal, a Windrunner gains their Shardplate, which is formed of Windspren",
       "item.radiant.tension_hoe_diamond": "Tension Infused Diamond Hoe",
-      "advancements.willshaper_fourth_ideal.descr": "Upon achieving this Ideal, a Willshaper gains their Shardplate, which is formed of .",
       "advancements.inmortal_words.descr": "The Ideals of the Knights Radiant, also known as the Immortal Words, are a set of rules by which the Radiants live. The First Ideal is shared by all of the orders, and is used as a motto for the Knights Radiant as a whole.",
       "block.radiant.illumination_block_sand": "Illumination Sand Block",
       "fluid.radiant.cohesion_block_andesite": "Cohesion Liquid",
-      "gui.radiant.transformation_surge_gui.button_metal": "Metal",
       "item.radiant.tension_diamond_armor_chestplate": "Tension Infused Diamond Chestplate",
-      "item.radiant.blood_bucket": "Blood Bucket",
-      "painting.radiant.willshapers_painting.author": "Steve Argyle",
-      "entity.radiant.inkspren": "Inkspren",
+      "item.radiant.edgedancer_shardplate_leggings": "Shardplate Leggings",
+      "block.radiant.aluminum_block": "Aluminum Block",
       "fluid.radiant.cohesion_block_dirt": "Cohesion Liquid",
-      "fluid.radiant.cohesion_block_sandstone": "Cohesion Liquid",
-      "painting.radiant.talenelat_painting.title": "Talenelat\u0027Elin",
-      "painting.radiant.jezerezeh_painting.title": "Jezerezeh\u0027Elin",
       "item.radiant.tension_shovel_wood": "Tension Infused Wood Shovel ",
       "item.radiant.tension_shovel_diamond": "Tension Infused Diamond Shovel ",
-      "item.radiant.windrunner_gravitation_glyph": "Gravitation Glyph",
       "gui.radiant.transformation_surge_gui.button_blood": "Blood",
       "painting.radiant.ishi_painting.author": "Dan dos Santos",
-      "advancements.stoneward_second_ideal.descr": "The Second Ideal of the Stonewards is focused on being there when needed",
       "painting.radiant.elsecallers_painting.author": "Steve Argyle",
-      "block.radiant.illumination_redstone_block": "Illumination Redstone Block",
+      "entity.radiant.cognitive_cryptic": "Cognitive Cryptic",
       "advancements.edgedancer_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
+      "item.radiant.truthwatcher_shardplate_helmet": "Shardplate Helmet",
+      "effect.radiant.law_dedication_quest": "Law Dedication",
+      "effect.radiant.vegan_dedication_quest": "Vegan Dedication",
       "block.radiant.cultivationspren_block": "Cultivationspren",
       "painting.radiant.kelek_painting.title": "Kelek\u0027Elin",
-      "advancements.skybreaker_second_ideal.descr": "Also called the Ideal of Justice, this is a specific oath to seek and administer justice. Once a master chooses to accept someone as a squire, they may swear this Ideal. This Ideal gives the squire the ability to breathe in Stormlight and use the Surge of Gravitation",
-      "entity.radiant.ashspren": "Ashspren",
-      "advancements.truthwatcher_second_ideal.title": "The Second Ideal",
+      "item.radiant.cognitive_cultivationspren_spawn_egg": "Cognitive Cultivationspren Spawn Egg",
+      "item.radiant.willshaper_shardplate_leggings": "Shardplate Leggings",
       "painting.radiant.chanarach_painting.author": "Karla Ortiz",
-      "item.radiant.tension_shovel_iron": "Tension Infused Iron Shovel ",
-      "advancements.elsecaller_fourth_ideal.descr": "Upon achieving this Ideal, a Elsecaller gains their Shardplate, which is formed of .",
+      "advancements.elsecaller_fourth_ideal.descr": "Upon achieving this Ideal, a Elsecaller gains their Shardplate, which is formed of Logicspren",
       "item.radiant.tension_pickaxe_rock": "Tension Infused Stone Pickaxe",
-      "block.radiant.cultivationspren_block_decay": "Cultivationspren Vine Decay",
-      "item.radiant.tension_axe_rock": "Tension Infused Stone Axe ",
-      "advancements.dustbringer_fourth_ideal.descr": "Upon achieving this Ideal, a Dustbringer gains their Shardplate, which is formed of .",
-      "advancements.willshaper_third_ideal.title": "The Third Ideal",
-      "effect.radiant.transformation_elsecaller": "Transformation Surge",
-      "advancements.lightweaver_second_ideal.title": "The Second Ideal",
-      "painting.radiant.lightweavers_painting.author": "Steve Argyle"
+      "entity.radiant.cognitive_mistspren": "Cognitive Mistspren",
+      "advancements.lightweaver_second_ideal.title": "The Second Ideal"
     }
   },
   "foldersRoot": {
@@ -9181,6 +10672,10 @@
               },
               {
                 "name": "Pickaxe",
+                "children": []
+              },
+              {
+                "name": "Other",
                 "children": []
               }
             ]
@@ -9247,6 +10742,10 @@
           {
             "name": "DeadBlades",
             "children": []
+          },
+          {
+            "name": "Recipes",
+            "children": []
           }
         ]
       },
@@ -9263,7 +10762,16 @@
           },
           {
             "name": "Third",
-            "children": []
+            "children": [
+              {
+                "name": "SkybreakersQuests",
+                "children": []
+              },
+              {
+                "name": "LightweaversIdealsCooldowns",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Fourth",
@@ -9290,7 +10798,44 @@
       },
       {
         "name": "Shardplate",
-        "children": []
+        "children": [
+          {
+            "name": "Windrunner",
+            "children": []
+          },
+          {
+            "name": "Skybreaker",
+            "children": []
+          },
+          {
+            "name": "Dustbringer",
+            "children": []
+          },
+          {
+            "name": "Edgedancer",
+            "children": []
+          },
+          {
+            "name": "Truthwatcher",
+            "children": []
+          },
+          {
+            "name": "Lightweaver",
+            "children": []
+          },
+          {
+            "name": "Elsecaller",
+            "children": []
+          },
+          {
+            "name": "Willshaper",
+            "children": []
+          },
+          {
+            "name": "Stoneward",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Aluminum",
@@ -9305,12 +10850,12 @@
   "workspaceSettings": {
     "modid": "radiant",
     "modName": "Radiant",
-    "version": "1.0.0",
+    "version": "2.2.0",
     "author": "Usuario, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
-    "modPicture": "sin_titulo",
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
@@ -9319,5 +10864,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.radiant"
   },
-  "mcreatorVersion": 202500110519
+  "mcreatorVersion": 202500113416
 }

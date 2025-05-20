@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "radiant:block/aluminum_block",
+    "up": "radiant:block/aluminum_block",
+    "north": "radiant:block/aluminum_block",
+    "east": "radiant:block/aluminum_block",
+    "south": "radiant:block/aluminum_block",
+    "west": "radiant:block/aluminum_block",
+    "particle": "radiant:block/aluminum_block"
+  },
+  "render_type": "solid"
+}

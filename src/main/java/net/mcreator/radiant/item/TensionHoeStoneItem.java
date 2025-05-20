@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-import net.mcreator.radiant.procedures.TensionHoeStoneToolInHandTickProcedure;
+import net.mcreator.radiant.procedures.TensionHoeStoneToolInInventoryTickProcedure;
 
 public class TensionHoeStoneItem extends HoeItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -58,8 +58,7 @@ public class TensionHoeStoneItem extends HoeItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			TensionHoeStoneToolInHandTickProcedure.execute(entity);
+		TensionHoeStoneToolInInventoryTickProcedure.execute(entity, itemstack);
 	}
 
 	@Override

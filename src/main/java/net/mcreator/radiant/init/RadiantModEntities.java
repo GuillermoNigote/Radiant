@@ -27,6 +27,15 @@ import net.mcreator.radiant.entity.FakeSpiderEntity;
 import net.mcreator.radiant.entity.FakeCreeperEntity;
 import net.mcreator.radiant.entity.CultivationsprenEntity;
 import net.mcreator.radiant.entity.CrypticEntity;
+import net.mcreator.radiant.entity.CognitivePeaksprenEntity;
+import net.mcreator.radiant.entity.CognitiveMistsprenEntity;
+import net.mcreator.radiant.entity.CognitiveLightsprenEntity;
+import net.mcreator.radiant.entity.CognitiveInksprenEntity;
+import net.mcreator.radiant.entity.CognitiveHonorsprenEntity;
+import net.mcreator.radiant.entity.CognitiveHighsprenEntity;
+import net.mcreator.radiant.entity.CognitiveCultivationsprenEntity;
+import net.mcreator.radiant.entity.CognitiveCrypticEntity;
+import net.mcreator.radiant.entity.CognitiveAshsprenEntity;
 import net.mcreator.radiant.entity.AshsprenEntity;
 import net.mcreator.radiant.entity.AdhesionInfuseEntity;
 import net.mcreator.radiant.RadiantMod;
@@ -64,6 +73,24 @@ public class RadiantModEntities {
 			EntityType.Builder.<IlluminationFakePlayerEntity>of(IlluminationFakePlayerEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<AdhesionInfuseEntity>> ADHESION_INFUSE = register("adhesion_infuse",
 			EntityType.Builder.<AdhesionInfuseEntity>of(AdhesionInfuseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(1f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveHonorsprenEntity>> COGNITIVE_HONORSPREN = register("cognitive_honorspren",
+			EntityType.Builder.<CognitiveHonorsprenEntity>of(CognitiveHonorsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.95f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveCultivationsprenEntity>> COGNITIVE_CULTIVATIONSPREN = register("cognitive_cultivationspren",
+			EntityType.Builder.<CognitiveCultivationsprenEntity>of(CognitiveCultivationsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitivePeaksprenEntity>> COGNITIVE_PEAKSPREN = register("cognitive_peakspren",
+			EntityType.Builder.<CognitivePeaksprenEntity>of(CognitivePeaksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveLightsprenEntity>> COGNITIVE_LIGHTSPREN = register("cognitive_lightspren",
+			EntityType.Builder.<CognitiveLightsprenEntity>of(CognitiveLightsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveAshsprenEntity>> COGNITIVE_ASHSPREN = register("cognitive_ashspren",
+			EntityType.Builder.<CognitiveAshsprenEntity>of(CognitiveAshsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveHighsprenEntity>> COGNITIVE_HIGHSPREN = register("cognitive_highspren",
+			EntityType.Builder.<CognitiveHighsprenEntity>of(CognitiveHighsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveInksprenEntity>> COGNITIVE_INKSPREN = register("cognitive_inkspren",
+			EntityType.Builder.<CognitiveInksprenEntity>of(CognitiveInksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveCrypticEntity>> COGNITIVE_CRYPTIC = register("cognitive_cryptic",
+			EntityType.Builder.<CognitiveCrypticEntity>of(CognitiveCrypticEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveMistsprenEntity>> COGNITIVE_MISTSPREN = register("cognitive_mistspren",
+			EntityType.Builder.<CognitiveMistsprenEntity>of(CognitiveMistsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -86,6 +113,15 @@ public class RadiantModEntities {
 		CrypticEntity.init(event);
 		IlluminationFakePlayerEntity.init(event);
 		AdhesionInfuseEntity.init(event);
+		CognitiveHonorsprenEntity.init(event);
+		CognitiveCultivationsprenEntity.init(event);
+		CognitivePeaksprenEntity.init(event);
+		CognitiveLightsprenEntity.init(event);
+		CognitiveAshsprenEntity.init(event);
+		CognitiveHighsprenEntity.init(event);
+		CognitiveInksprenEntity.init(event);
+		CognitiveCrypticEntity.init(event);
+		CognitiveMistsprenEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -103,5 +139,14 @@ public class RadiantModEntities {
 		event.put(CRYPTIC.get(), CrypticEntity.createAttributes().build());
 		event.put(ILLUMINATION_FAKE_PLAYER.get(), IlluminationFakePlayerEntity.createAttributes().build());
 		event.put(ADHESION_INFUSE.get(), AdhesionInfuseEntity.createAttributes().build());
+		event.put(COGNITIVE_HONORSPREN.get(), CognitiveHonorsprenEntity.createAttributes().build());
+		event.put(COGNITIVE_CULTIVATIONSPREN.get(), CognitiveCultivationsprenEntity.createAttributes().build());
+		event.put(COGNITIVE_PEAKSPREN.get(), CognitivePeaksprenEntity.createAttributes().build());
+		event.put(COGNITIVE_LIGHTSPREN.get(), CognitiveLightsprenEntity.createAttributes().build());
+		event.put(COGNITIVE_ASHSPREN.get(), CognitiveAshsprenEntity.createAttributes().build());
+		event.put(COGNITIVE_HIGHSPREN.get(), CognitiveHighsprenEntity.createAttributes().build());
+		event.put(COGNITIVE_INKSPREN.get(), CognitiveInksprenEntity.createAttributes().build());
+		event.put(COGNITIVE_CRYPTIC.get(), CognitiveCrypticEntity.createAttributes().build());
+		event.put(COGNITIVE_MISTSPREN.get(), CognitiveMistsprenEntity.createAttributes().build());
 	}
 }

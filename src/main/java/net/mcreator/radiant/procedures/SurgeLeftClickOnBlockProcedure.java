@@ -16,12 +16,15 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.radiant.network.RadiantModVariables;
 import net.mcreator.radiant.init.RadiantModMobEffects;
+import net.mcreator.radiant.init.RadiantModItems;
 import net.mcreator.radiant.init.RadiantModBlocks;
 
 import javax.annotation.Nullable;
@@ -500,7 +503,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					&& (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 1) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.STONE) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -519,7 +522,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -538,7 +541,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.PUMPKIN) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -557,7 +560,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.ANVIL) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -576,7 +579,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CHIPPED_ANVIL) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -595,7 +598,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.COPPER_BLOCK) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -614,7 +617,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.EXPOSED_COPPER) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -633,7 +636,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.WEATHERED_COPPER) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -652,7 +655,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OXIDIZED_COPPER) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -671,7 +674,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.SMOOTH_QUARTZ) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -690,7 +693,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CHISELED_NETHER_BRICKS) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -709,7 +712,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.SMOOTH_SANDSTONE) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -728,7 +731,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.SMOOTH_RED_SANDSTONE) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -747,7 +750,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OAK_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -766,7 +769,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.SPRUCE_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -785,7 +788,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.BIRCH_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -804,7 +807,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.JUNGLE_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -823,7 +826,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.ACACIA_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -842,7 +845,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DARK_OAK_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -861,7 +864,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.WARPED_STEM) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -880,7 +883,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CRIMSON_STEM) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -899,7 +902,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.MANGROVE_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -918,7 +921,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CHERRY_LOG) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -937,7 +940,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.PACKED_MUD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -956,7 +959,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.STONE_BRICKS) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -975,7 +978,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.BAMBOO_BLOCK) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -994,7 +997,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OAK_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1013,7 +1016,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.SPRUCE_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1032,7 +1035,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.BIRCH_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1051,7 +1054,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.JUNGLE_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1070,7 +1073,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.ACACIA_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1089,7 +1092,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DARK_OAK_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1108,7 +1111,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.WARPED_HYPHAE) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1127,7 +1130,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CRIMSON_HYPHAE) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1146,7 +1149,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.MANGROVE_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1165,7 +1168,7 @@ public class SurgeLeftClickOnBlockProcedure {
 					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CHERRY_WOOD) {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1183,18 +1186,18 @@ public class SurgeLeftClickOnBlockProcedure {
 						world.setBlock(_bp, _bs, 3);
 					}
 				}
-			} else if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 1
+			} else if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) >= 1
 					&& (entity instanceof LivingEntity _livEnt401 && _livEnt401.hasEffect(RadiantModMobEffects.COHESION_STONEWARD) || entity instanceof LivingEntity _livEnt402 && _livEnt402.hasEffect(RadiantModMobEffects.COHESION_WILLSHAPER))) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.COAL_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.COAL).copy();
-						_setstack.setCount(2);
+						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
+					if (entity instanceof Player _player)
+						_player.giveExperiencePoints(-(2));
 					{
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockState _bs = Blocks.STONE.defaultBlockState();
@@ -1216,7 +1219,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1236,11 +1239,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.REDSTONE_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.REDSTONE).copy();
-						_setstack.setCount(3);
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 5));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1264,7 +1267,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1284,11 +1287,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.LAPIS_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.LAPIS_LAZULI).copy();
-						_setstack.setCount(3);
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 9));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1312,7 +1315,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1336,7 +1339,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1356,11 +1359,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.COPPER_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.RAW_COPPER).copy();
-						_setstack.setCount(2);
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 5));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1380,11 +1383,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.NETHER_QUARTZ_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.QUARTZ).copy();
-						_setstack.setCount(2);
+						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1404,11 +1407,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.NETHER_GOLD_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.GOLD_NUGGET).copy();
-						_setstack.setCount(2);
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 6));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1428,11 +1431,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_COAL_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.COAL).copy();
-						_setstack.setCount(2);
+						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1456,7 +1459,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1476,11 +1479,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_REDSTONE_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.REDSTONE).copy();
-						_setstack.setCount(3);
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 5));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1504,7 +1507,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1524,11 +1527,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_LAPIS_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.LAPIS_LAZULI).copy();
-						_setstack.setCount(3);
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 4, 9));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1552,7 +1555,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1576,7 +1579,7 @@ public class SurgeLeftClickOnBlockProcedure {
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
+						_player.giveExperiencePoints(-(2));
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 					{
@@ -1596,13 +1599,11 @@ public class SurgeLeftClickOnBlockProcedure {
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DEEPSLATE_COPPER_ORE) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.RAW_COPPER).copy();
-						_setstack.setCount(2);
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 5));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints(-(5));
-					if (entity instanceof LivingEntity _entity)
-						_entity.swing(InteractionHand.MAIN_HAND, true);
+						_player.giveExperiencePoints(-(2));
 					{
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockState _bs = Blocks.COBBLED_DEEPSLATE.defaultBlockState();
@@ -1617,23 +1618,75 @@ public class SurgeLeftClickOnBlockProcedure {
 						}
 						world.setBlock(_bp, _bs, 3);
 					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == RadiantModBlocks.ALUMINUM_ORE.get()) {
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(RadiantModItems.ALUMINUM_NUGGET.get()).copy();
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 6));
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+					if (entity instanceof Player _player)
+						_player.giveExperiencePoints(-(2));
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = Blocks.BLACKSTONE.defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.GILDED_BLACKSTONE) {
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(Items.GOLD_NUGGET).copy();
+						_setstack.setCount(Mth.nextInt(RandomSource.create(), 2, 6));
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+					if (entity instanceof Player _player)
+						_player.giveExperiencePoints(-(2));
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = Blocks.BLACKSTONE.defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
 				}
-			} else if (entity.isShiftKeyDown() && (entity instanceof LivingEntity _livEnt512 && _livEnt512.hasEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER)
-					|| entity instanceof LivingEntity _livEnt513 && _livEnt513.hasEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER))) {
-				{
-					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-					_vars.xant = x;
-					_vars.syncPlayerVariables(entity);
-				}
-				{
-					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-					_vars.yant = y;
-					_vars.syncPlayerVariables(entity);
-				}
-				{
-					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-					_vars.zant = z;
-					_vars.syncPlayerVariables(entity);
+			} else if (entity.isShiftKeyDown() && (entity instanceof LivingEntity _livEnt533 && _livEnt533.hasEffect(RadiantModMobEffects.TRANSFORMATION_ELSECALLER)
+					|| entity instanceof LivingEntity _livEnt534 && _livEnt534.hasEffect(RadiantModMobEffects.TRANSFORMATION_LIGHTWEAVER))) {
+				if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == RadiantModBlocks.ALUMINUM_BLOCK.get())) {
+					{
+						RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+						_vars.xant = x;
+						_vars.syncPlayerVariables(entity);
+					}
+					{
+						RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+						_vars.yant = y;
+						_vars.syncPlayerVariables(entity);
+					}
+					{
+						RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+						_vars.zant = z;
+						_vars.syncPlayerVariables(entity);
+					}
 				}
 			}
 		}

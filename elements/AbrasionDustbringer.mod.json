@@ -8,20 +8,31 @@
       "value": -3600882,
       "falpha": 0.0
     },
+    "particle": {
+      "value": "CUSTOM:InvisibleRadiantParticle"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "STEP_HEIGHT"
+        },
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "onStarted": {
       "name": "AbrasionEffectStartedapplied"
     },
     "onActiveTick": {
       "name": "AbrasionOnEffectActiveTick"
-    },
-    "onExpired": {
-      "name": "AbrasionEffectExpires"
     }
   }
 }

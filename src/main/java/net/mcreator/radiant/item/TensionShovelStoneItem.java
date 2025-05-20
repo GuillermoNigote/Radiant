@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-import net.mcreator.radiant.procedures.TensionShovelStoneToolInHandTickProcedure;
+import net.mcreator.radiant.procedures.TensionShovelStoneToolInInventoryTickProcedure;
 
 public class TensionShovelStoneItem extends ShovelItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -58,8 +58,7 @@ public class TensionShovelStoneItem extends ShovelItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			TensionShovelStoneToolInHandTickProcedure.execute(entity);
+		TensionShovelStoneToolInInventoryTickProcedure.execute(entity, itemstack);
 	}
 
 	@Override

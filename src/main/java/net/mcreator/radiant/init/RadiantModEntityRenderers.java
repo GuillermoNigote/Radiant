@@ -20,6 +20,15 @@ import net.mcreator.radiant.client.renderer.FakeSpiderRenderer;
 import net.mcreator.radiant.client.renderer.FakeCreeperRenderer;
 import net.mcreator.radiant.client.renderer.CultivationsprenRenderer;
 import net.mcreator.radiant.client.renderer.CrypticRenderer;
+import net.mcreator.radiant.client.renderer.CognitivePeaksprenRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveMistsprenRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveLightsprenRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveInksprenRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveHonorsprenRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveHighsprenRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveCultivationsprenRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveCrypticRenderer;
+import net.mcreator.radiant.client.renderer.CognitiveAshsprenRenderer;
 import net.mcreator.radiant.client.renderer.AshsprenRenderer;
 import net.mcreator.radiant.client.renderer.AdhesionInfuseRenderer;
 
@@ -40,5 +49,14 @@ public class RadiantModEntityRenderers {
 		event.registerEntityRenderer(RadiantModEntities.CRYPTIC.get(), CrypticRenderer::new);
 		event.registerEntityRenderer(RadiantModEntities.ILLUMINATION_FAKE_PLAYER.get(), IlluminationFakePlayerRenderer::new);
 		event.registerEntityRenderer(RadiantModEntities.ADHESION_INFUSE.get(), AdhesionInfuseRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_HONORSPREN.get(), CognitiveHonorsprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_CULTIVATIONSPREN.get(), CognitiveCultivationsprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_PEAKSPREN.get(), CognitivePeaksprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_LIGHTSPREN.get(), CognitiveLightsprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_ASHSPREN.get(), CognitiveAshsprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_HIGHSPREN.get(), CognitiveHighsprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_INKSPREN.get(), CognitiveInksprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_CRYPTIC.get(), CognitiveCrypticRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_MISTSPREN.get(), CognitiveMistsprenRenderer::new);
 	}
 }

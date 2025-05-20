@@ -18,6 +18,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.radiant.network.UseSecondSurgeMessage;
 import net.mcreator.radiant.network.UseFirstSurgeMessage;
+import net.mcreator.radiant.network.SummonShardbladeKeyBindMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class RadiantModKeyMappings {
@@ -47,11 +48,25 @@ public class RadiantModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping SUMMON_SHARDBLADE_KEY_BIND = new KeyMapping("key.radiant.summon_shardblade_key_bind", GLFW.GLFW_KEY_Q, "key.categories.radiant") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new SummonShardbladeKeyBindMessage(0, 0));
+				SummonShardbladeKeyBindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(USE_FIRST_SURGE);
 		event.register(USE_SECOND_SURGE);
+		event.register(SUMMON_SHARDBLADE_KEY_BIND);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +76,7 @@ public class RadiantModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				USE_FIRST_SURGE.consumeClick();
 				USE_SECOND_SURGE.consumeClick();
+				SUMMON_SHARDBLADE_KEY_BIND.consumeClick();
 			}
 		}
 	}

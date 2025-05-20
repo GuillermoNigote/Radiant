@@ -27,8 +27,8 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInUseTick": {
-      "name": "TensionShovelStoneToolInHandTick"
+    "onItemInInventoryTick": {
+      "name": "TensionShovelStoneToolInInventoryTick"
     }
   }
 }

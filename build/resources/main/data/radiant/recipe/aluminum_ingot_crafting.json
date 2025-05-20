@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "radiant:aluminum_block"
+    }
+  ],
+  "result": {
+    "id": "radiant:aluminum_ingot",
+    "count": 9
+  }
+}

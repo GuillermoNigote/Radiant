@@ -8,6 +8,8 @@ import net.minecraft.client.renderer.entity.LivingEntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.radiant.entity.LightsprenEntity;
 import net.mcreator.radiant.client.model.ModelSeon;
@@ -24,7 +26,11 @@ public class LightsprenRenderer extends MobRenderer<LightsprenEntity, ModelSeon<
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, LightsprenEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0));
+				EntityModel model = new ModelSeon(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSeon.LAYER_LOCATION));
+				this.getParentModel().copyPropertiesTo(model);
+				model.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
+				model.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
+				model.renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0));
 			}
 		});
 	}

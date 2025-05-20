@@ -7,12 +7,15 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.radiant.network.RadiantModVariables;
+import net.mcreator.radiant.RadiantMod;
 
 import javax.annotation.Nullable;
 
@@ -123,6 +126,18 @@ public class OrdersSetUpProcedure {
 			}
 			RadiantModVariables.WorldVariables.get(world).OrdersNotExist = false;
 			RadiantModVariables.WorldVariables.get(world).syncData(world);
+		} else if (entity.getData(RadiantModVariables.PLAYER_VARIABLES).FirstSpawn) {
+			{
+				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+				_vars.FirstSpawn = false;
+				_vars.syncPlayerVariables(entity);
+			}
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("The words\u2026"), true);
+			RadiantMod.queueServerWork(80, () -> {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("Remember them"), true);
+			});
 		}
 	}
 }

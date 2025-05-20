@@ -13,16 +13,22 @@ import net.mcreator.radiant.client.model.ModelSeon;
 import net.mcreator.radiant.client.model.ModelMastered_Sand_Projectile;
 import net.mcreator.radiant.client.model.ModelHighspren;
 import net.mcreator.radiant.client.model.ModelCryptic;
+import net.mcreator.radiant.client.model.ModelCognitive_Peakspren;
+import net.mcreator.radiant.client.model.ModelCognitive_Inkspren;
+import net.mcreator.radiant.client.model.ModelCognitive_Criptic;
 import net.mcreator.radiant.client.model.ModelAshspren;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class RadiantModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ModelAshspren.LAYER_LOCATION, ModelAshspren::createBodyLayer);
-		event.registerLayerDefinition(ModelCryptic.LAYER_LOCATION, ModelCryptic::createBodyLayer);
 		event.registerLayerDefinition(ModelMastered_Sand_Projectile.LAYER_LOCATION, ModelMastered_Sand_Projectile::createBodyLayer);
 		event.registerLayerDefinition(ModelHighspren.LAYER_LOCATION, ModelHighspren::createBodyLayer);
+		event.registerLayerDefinition(ModelCognitive_Peakspren.LAYER_LOCATION, ModelCognitive_Peakspren::createBodyLayer);
+		event.registerLayerDefinition(ModelAshspren.LAYER_LOCATION, ModelAshspren::createBodyLayer);
+		event.registerLayerDefinition(ModelCognitive_Criptic.LAYER_LOCATION, ModelCognitive_Criptic::createBodyLayer);
+		event.registerLayerDefinition(ModelCryptic.LAYER_LOCATION, ModelCryptic::createBodyLayer);
+		event.registerLayerDefinition(ModelCognitive_Inkspren.LAYER_LOCATION, ModelCognitive_Inkspren::createBodyLayer);
 		event.registerLayerDefinition(ModelSeon.LAYER_LOCATION, ModelSeon::createBodyLayer);
 	}
 }

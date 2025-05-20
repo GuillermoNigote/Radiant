@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.radiant.network.RadiantModVariables;
 import net.mcreator.radiant.init.RadiantModTabs;
+import net.mcreator.radiant.init.RadiantModParticleTypes;
 import net.mcreator.radiant.init.RadiantModMobEffects;
 import net.mcreator.radiant.init.RadiantModMenus;
 import net.mcreator.radiant.init.RadiantModItems;
@@ -56,6 +57,7 @@ public class RadiantMod {
 
 		RadiantModMobEffects.REGISTRY.register(modEventBus);
 		RadiantModMenus.REGISTRY.register(modEventBus);
+		RadiantModParticleTypes.REGISTRY.register(modEventBus);
 
 		RadiantModFluids.REGISTRY.register(modEventBus);
 		RadiantModFluidTypes.REGISTRY.register(modEventBus);

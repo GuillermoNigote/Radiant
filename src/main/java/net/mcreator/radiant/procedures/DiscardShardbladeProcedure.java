@@ -45,11 +45,6 @@ public class DiscardShardbladeProcedure {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}
-			{
-				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-				_vars.SummonedBlade = false;
-				_vars.syncPlayerVariables(entity);
-			}
 			for (int index0 = 0; index0 < 10; index0++) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
@@ -126,6 +121,11 @@ public class DiscardShardbladeProcedure {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("summon radiant:inkspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+			}
+			{
+				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+				_vars.SummonedBlade = false;
+				_vars.syncPlayerVariables(entity);
 			}
 		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("radiant:illuminationitem")))) {
 			if (event instanceof ICancellableEvent _cancellable) {

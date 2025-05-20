@@ -25,13 +25,22 @@ public class AbrasionOnEffectActiveTickProcedure {
 				if (entity instanceof Player _player)
 					_player.giveExperiencePoints(-(1));
 			}
-			if (entity.onGround()) {
+			if (entity.isInWater()) {
+				entity.setDeltaMovement(new Vec3((Math.abs(entity.getDeltaMovement().x()) < 1.5 ? entity.getDeltaMovement().x() * 1.2 : entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()),
+						(Math.abs(entity.getDeltaMovement().z()) < 1.5 ? entity.getDeltaMovement().z() * 1.2 : entity.getDeltaMovement().z())));
+			} else if (!entity.onGround() && entity.isShiftKeyDown()) {
+				if (!world.isEmptyBlock(BlockPos.containing(entity.getX() + 1, entity.getY(), entity.getZ())) || !world.isEmptyBlock(BlockPos.containing(entity.getX() - 1, entity.getY(), entity.getZ()))
+						|| !world.isEmptyBlock(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ() + 1)) || !world.isEmptyBlock(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ() - 1))) {
+					entity.fallDistance = 2;
+					entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() * 0.8), (entity.getDeltaMovement().z())));
+				}
+			} else if (entity.onGround()) {
 				entity.setDeltaMovement(new Vec3((Math.abs(entity.getDeltaMovement().x()) < 3 ? entity.getDeltaMovement().x() * 1.8 : entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()),
 						(Math.abs(entity.getDeltaMovement().z()) < 3 ? entity.getDeltaMovement().z() * 1.8 : entity.getDeltaMovement().z())));
 				if (entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant != x || entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant != y || entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant != z) {
-					if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER) && entity.isShiftKeyDown()) {
+					if (entity instanceof LivingEntity _livEnt43 && _livEnt43.hasEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER) && entity.isShiftKeyDown()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(30));
+							_player.giveExperiencePoints(-(5));
 						DivisionSurgeOnBlockProcedure.execute(world, entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant, entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - 1, entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant);
 						DivisionSurgeOnBlockProcedure.execute(world,
 								Mth.nextInt(RandomSource.create(), 0, 1) != 0
@@ -49,9 +58,9 @@ public class AbrasionOnEffectActiveTickProcedure {
 								Mth.nextInt(RandomSource.create(), 0, 1) != 0
 										? entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant + Mth.nextInt(RandomSource.create(), 0, 1)
 										: entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - Mth.nextInt(RandomSource.create(), 0, 1));
-					} else if (entity instanceof LivingEntity _livEnt26 && _livEnt26.hasEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER) && entity.isShiftKeyDown()) {
+					} else if (entity instanceof LivingEntity _livEnt58 && _livEnt58.hasEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER) && entity.isShiftKeyDown()) {
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(10));
+							_player.giveExperiencePoints(-(5));
 						if (world instanceof Level _level) {
 							BlockPos _bp = BlockPos.containing(entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant, entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant, entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant);
 							if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
@@ -68,9 +77,6 @@ public class AbrasionOnEffectActiveTickProcedure {
 						}
 					}
 				}
-			} else if (entity.isInWater()) {
-				entity.setDeltaMovement(new Vec3((Math.abs(entity.getDeltaMovement().x()) < 1.5 ? entity.getDeltaMovement().x() * 1.2 : entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()),
-						(Math.abs(entity.getDeltaMovement().z()) < 1.5 ? entity.getDeltaMovement().z() * 1.2 : entity.getDeltaMovement().z())));
 			}
 			{
 				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);

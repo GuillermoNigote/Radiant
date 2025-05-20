@@ -17,6 +17,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.WanderingTrader;
 import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
@@ -33,6 +34,7 @@ import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
+import net.mcreator.radiant.network.RadiantModVariables;
 import net.mcreator.radiant.init.RadiantModItems;
 
 import javax.annotation.Nullable;
@@ -64,6 +66,11 @@ public class BreakRadiantOathsProcedure {
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: ""))
 				&& sourceentity == (damagesource.getDirectEntity())) {
+			{
+				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+				_vars.SummonedBlade = false;
+				_vars.syncPlayerVariables(entity);
+			}
 			{
 				Entity _ent = sourceentity;
 				Scoreboard _sc = _ent.level().getScoreboard();
@@ -177,6 +184,29 @@ public class BreakRadiantOathsProcedure {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RadiantModItems.LIGHTWEAVER_DEAD_SHARDBLADE.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (("Windrunners").equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+				: "") && getEntityScore("Oath", sourceentity) == 3 && entity instanceof ZombieVillager) {
+			{
+				Entity _ent = sourceentity;
+				Scoreboard _sc = _ent.level().getScoreboard();
+				Objective _so = _sc.getObjective("Oath");
+				if (_so == null)
+					_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+				_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(4);
+			}
+			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("I accept that there will be those I cannot save"), false);
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_fourth_ideal"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}

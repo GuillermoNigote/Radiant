@@ -1,26 +1,21 @@
 {
-  "radiant:windrunner_second_ideal": {
-    "criteria": {
-      "windrunner_second_ideal_0": "2025-03-24 22:41:03 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-03-24 22:40:05 +0100"
+      "unlock_right_away": "2025-05-19 17:58:40 +0200"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:stony_peaks": "2025-03-24 22:43:32 +0100",
-      "minecraft:forest": "2025-03-24 22:41:57 +0100",
-      "minecraft:sparse_jungle": "2025-03-24 22:41:56 +0100",
-      "minecraft:jungle": "2025-03-24 22:40:22 +0100",
-      "minecraft:river": "2025-03-24 22:44:36 +0100",
-      "minecraft:bamboo_jungle": "2025-03-24 22:41:53 +0100"
+      "minecraft:beach": "2025-05-19 17:58:40 +0200"
     },
     "done": false
+  },
+  "radiant:lightweaver_second_ideal": {
+    "criteria": {
+      "lightweaver_second_ideal_0": "2025-05-19 22:35:10 +0200"
+    },
+    "done": true
   },
   "DataVersion": 3955
 }

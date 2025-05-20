@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "radiant:block/surge_stone"
+    "particle": "minecraft:block/stone"
   }
 }

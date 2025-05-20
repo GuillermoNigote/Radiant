@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "The Fourth Ideal",
-    "achievementDescription": "Upon achieving this Ideal, a Skybreaker gains their Shardplate, which is formed of .",
+    "achievementDescription": "Upon achieving this Ideal, a Skybreaker gains their Shardplate, which is formed of Gravitationspren",
     "achievementIcon": {
       "value": "CUSTOM:SkybreakersGlyph"
     },

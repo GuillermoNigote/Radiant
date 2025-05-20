@@ -15,7 +15,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-import net.mcreator.radiant.procedures.TensionSwordWoodToolInHandTickProcedure;
+import net.mcreator.radiant.procedures.TensionSwordWoodToolInInventoryTickProcedure;
 
 public class TensionSwordWoodItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -57,8 +57,7 @@ public class TensionSwordWoodItem extends SwordItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			TensionSwordWoodToolInHandTickProcedure.execute(entity);
+		TensionSwordWoodToolInInventoryTickProcedure.execute(entity, itemstack);
 	}
 
 	@Override

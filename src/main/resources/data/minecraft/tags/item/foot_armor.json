@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
+    "radiant:stoneward_shardplate_boots",
+    "radiant:willshaper_shardplate_boots",
+    "radiant:elsecaller_shardplate_boots",
+    "radiant:lightweaver_shardplate_boots",
+    "radiant:truthwatcher_shardplate_boots",
+    "radiant:edgedancer_shardplate_boots",
+    "radiant:dustbringer_shardplate_boots",
+    "radiant:skybreaker_shardplate_boots",
+    "radiant:windrunner_shardplate_boots",
     "radiant:shardplate_boots",
     "radiant:tension_chainmail_armor_boots",
     "radiant:tension_diamond_armor_boots",

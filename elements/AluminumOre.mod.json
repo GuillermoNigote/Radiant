@@ -2,12 +2,12 @@
   "_fv": 77,
   "_type": "block",
   "definition": {
-    "texture": "aluminum_gilded_blackstone",
-    "textureTop": "aluminum_gilded_blackstone",
-    "textureLeft": "aluminum_gilded_blackstone",
-    "textureFront": "aluminum_gilded_blackstone",
-    "textureRight": "aluminum_gilded_blackstone",
-    "textureBack": "aluminum_gilded_blackstone",
+    "texture": "basalt_aluminum_ore_top",
+    "textureTop": "basalt_aluminum_ore_top",
+    "textureLeft": "basalt_aluminum_ore_side",
+    "textureFront": "basalt_aluminum_ore_side",
+    "textureRight": "basalt_aluminum_ore_side",
+    "textureBack": "basalt_aluminum_ore_side",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -121,7 +121,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "generateFeature": false,
+    "generateFeature": true,
     "restrictionBiomes": [
       {
         "value": "basalt_deltas"
@@ -141,14 +141,11 @@
     ],
     "blocksToReplace": [
       {
-        "value": "Blocks.BLACKSTONE"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
+        "value": "Blocks.BASALT"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 7,
+    "frequencyPerChunks": 20,
     "frequencyOnChunk": 8,
     "minGenerateHeight": -200,
     "maxGenerateHeight": 200

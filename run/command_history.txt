@@ -1,50 +1,50 @@
+/effect give Dev radiant:abrasion_dustbringer infinite
 /gamemode creative
 /gamemode survival
-/xp add Dev 20 levels
-/gamemode creative
-/xp add Dev 20 levels
-/gamemode survival
-/xp add Dev 20 levels
-/xp add Dev 30 levels
-/gamemode creative
-/xp add Dev 30 levels
-/effect give Dev minecraft:night_vision infinite
-/gamemode survival
-/xp add Dev 30 levels
-/gamemode creative
-/gamemode survival
-/xp add Dev 30 levels
-/gamemode creative
-/effect give Dev minecraft:night_vision infinite
-/xp add Dev 30 levels
-/gamemode survival
-/xp add Dev 30 levels
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
+/xp add Dev 50 levels
 /time set day
 /gamemode survival
 /gamemode creative
 /gamemode survival
 /gamemode creative
 /gamemode survival
-/kill
+/xp add Dev 50 levels
+/gamemode survival
+/xp add Dev 50 levels
+/gamemode creative
+/time set day
+/gamemode survival
+/time set day
 /gamemode creative
 /gamemode survival
+/xp add Dev 50 levels
+/gamemode survival
+/xp add Dev 50 levels
+/gamemode survival
+/xp add Dev 50 levels
 /gamemode ce
 /gamemode creative
+/effect give Dev minecraft:night_vision infinite
+/locate biome minecraft:basalt_deltas
+/tp -1110 82 -416
+/effect give Dev radiant:vegan_dedication_quest 5
 /gamemode survival
+/time set day
+/effect give Dev radiant:law_dedication_quest 5
+/gamemode creative
+/effect give Dev radiant:law_dedication_quest 5
+/gamemode creative
+/effect give Dev radiant:law_dedication_quest 5
 /gamemode creative
 /gamemode survival
 /gamemode creative
 /gamemode survival
-/xp add Dev 100 levels
+/xp add Dev 30 levels
 /gamemode creative
+/effect give Dev minecraft:night_vision infinite
 /gamemode survival
+/xp add Dev 30 levels
 /gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/xp add Dev 100 levels
+/time set day
+/time set night
+/time set day

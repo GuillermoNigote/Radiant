@@ -40,7 +40,7 @@
               "value": "CUSTOM:AluminumNugget"
             },
             "weight": 1,
-            "minCount": 3,
+            "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -54,7 +54,7 @@
               "value": "CUSTOM:AluminumNugget"
             },
             "weight": 1,
-            "minCount": 0,
+            "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -68,7 +68,7 @@
               "value": "CUSTOM:AluminumNugget"
             },
             "weight": 1,
-            "minCount": 0,
+            "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,

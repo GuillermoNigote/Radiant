@@ -9,6 +9,14 @@
     "radiant:inkspren",
     "radiant:lightspren",
     "radiant:mistspren",
-    "radiant:peakspren"
+    "radiant:peakspren",
+    "radiant:cognitive_honorspren",
+    "radiant:cognitive_cultivationspren",
+    "radiant:cognitive_peakspren",
+    "radiant:cognitive_lightspren",
+    "radiant:cognitive_ashspren",
+    "radiant:cognitive_highspren",
+    "radiant:cognitive_inkspren",
+    "radiant:cognitive_cryptic"
   ]
 }

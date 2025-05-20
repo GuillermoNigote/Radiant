@@ -15,18 +15,30 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.radiant.procedures.SummonShardbladeManagerProcedure;
 import net.mcreator.radiant.procedures.IlluminationEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.IlluminationAnimalIlusionEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.GravitationSkybreakersEffectExpiresProcedure;
-import net.mcreator.radiant.procedures.AbrasionEffectExpiresProcedure;
 import net.mcreator.radiant.potion.WearingShardplateMobEffect;
+import net.mcreator.radiant.potion.VeganDedicationQuestMobEffect;
+import net.mcreator.radiant.potion.VeganDedicationMobEffect;
+import net.mcreator.radiant.potion.TruthCooldownMobEffect;
 import net.mcreator.radiant.potion.TransportationWillshaperMobEffect;
 import net.mcreator.radiant.potion.TransportationElsecallerMobEffect;
 import net.mcreator.radiant.potion.TransformationLightweaverMobEffect;
 import net.mcreator.radiant.potion.TransformationElsecallerMobEffect;
 import net.mcreator.radiant.potion.TensionStonewardMobEffect;
+import net.mcreator.radiant.potion.SummoningShardplateSecondMobEffect;
+import net.mcreator.radiant.potion.SummoningShardplateFirstMobEffect;
+import net.mcreator.radiant.potion.SummonShardbladeMobEffect;
 import net.mcreator.radiant.potion.ProgressionTruthwatcherMobEffect;
 import net.mcreator.radiant.potion.ProgressionEdgedancerMobEffect;
+import net.mcreator.radiant.potion.OthersWillDedicationQuestMobEffect;
+import net.mcreator.radiant.potion.OthersWillDedicationMobEffect;
+import net.mcreator.radiant.potion.NoViolenceDedicationQuestMobEffect;
+import net.mcreator.radiant.potion.NoViolenceDedicationMobEffect;
+import net.mcreator.radiant.potion.LawDedicationQuestMobEffect;
+import net.mcreator.radiant.potion.LawDedicationMobEffect;
 import net.mcreator.radiant.potion.IlluminationTruthwatcherMobEffect;
 import net.mcreator.radiant.potion.IlluminationLightweaverMobEffect;
 import net.mcreator.radiant.potion.IlluminationAnimalIlusionMobEffect;
@@ -37,6 +49,7 @@ import net.mcreator.radiant.potion.DivisionDustbringerMobEffect;
 import net.mcreator.radiant.potion.CohesionWillshaperMobEffect;
 import net.mcreator.radiant.potion.CohesionStonewardMobEffect;
 import net.mcreator.radiant.potion.AdhesionWindrunnerMobEffect;
+import net.mcreator.radiant.potion.AbrasionSlipperyMobEffect;
 import net.mcreator.radiant.potion.AbrasionEdgedancerMobEffect;
 import net.mcreator.radiant.potion.AbrasionDustbringerMobEffect;
 import net.mcreator.radiant.RadiantMod;
@@ -64,6 +77,19 @@ public class RadiantModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> TRANSFORMATION_ELSECALLER = REGISTRY.register("transformation_elsecaller", () -> new TransformationElsecallerMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> TRANSFORMATION_LIGHTWEAVER = REGISTRY.register("transformation_lightweaver", () -> new TransformationLightweaverMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> WEARING_SHARDPLATE = REGISTRY.register("wearing_shardplate", () -> new WearingShardplateMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> NO_VIOLENCE_DEDICATION = REGISTRY.register("no_violence_dedication", () -> new NoViolenceDedicationMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> VEGAN_DEDICATION = REGISTRY.register("vegan_dedication", () -> new VeganDedicationMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> OTHERS_WILL_DEDICATION = REGISTRY.register("others_will_dedication", () -> new OthersWillDedicationMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LAW_DEDICATION = REGISTRY.register("law_dedication", () -> new LawDedicationMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> NO_VIOLENCE_DEDICATION_QUEST = REGISTRY.register("no_violence_dedication_quest", () -> new NoViolenceDedicationQuestMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> VEGAN_DEDICATION_QUEST = REGISTRY.register("vegan_dedication_quest", () -> new VeganDedicationQuestMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LAW_DEDICATION_QUEST = REGISTRY.register("law_dedication_quest", () -> new LawDedicationQuestMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> OTHERS_WILL_DEDICATION_QUEST = REGISTRY.register("others_will_dedication_quest", () -> new OthersWillDedicationQuestMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SUMMON_SHARDBLADE = REGISTRY.register("summon_shardblade", () -> new SummonShardbladeMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SUMMONING_SHARDPLATE_FIRST = REGISTRY.register("summoning_shardplate_first", () -> new SummoningShardplateFirstMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SUMMONING_SHARDPLATE_SECOND = REGISTRY.register("summoning_shardplate_second", () -> new SummoningShardplateSecondMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TRUTH_COOLDOWN = REGISTRY.register("truth_cooldown", () -> new TruthCooldownMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ABRASION_SLIPPERY = REGISTRY.register("abrasion_slippery", () -> new AbrasionSlipperyMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -82,11 +108,7 @@ public class RadiantModMobEffects {
 	}
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
-		if (effectInstance.getEffect().is(ABRASION_DUSTBRINGER)) {
-			AbrasionEffectExpiresProcedure.execute(entity);
-		} else if (effectInstance.getEffect().is(ABRASION_EDGEDANCER)) {
-			AbrasionEffectExpiresProcedure.execute(entity);
-		} else if (effectInstance.getEffect().is(ILLUMINATION_TRUTHWATCHER)) {
+		if (effectInstance.getEffect().is(ILLUMINATION_TRUTHWATCHER)) {
 			IlluminationEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(GRAVITATION_SKYBREAKER)) {
 			GravitationSkybreakersEffectExpiresProcedure.execute(entity);
@@ -96,6 +118,8 @@ public class RadiantModMobEffects {
 			IlluminationAnimalIlusionEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		} else if (effectInstance.getEffect().is(ILLUMINATION_LIGHTWEAVER)) {
 			IlluminationEffectExpiresProcedure.execute(entity);
+		} else if (effectInstance.getEffect().is(SUMMON_SHARDBLADE)) {
+			SummonShardbladeManagerProcedure.execute(entity.level(), entity);
 		}
 	}
 }

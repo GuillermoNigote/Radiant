@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "radiant:cohesion_block_blackstone",
     "radiant:smoke",
     "radiant:blood",
     "radiant:cohesion_block_deepslate",

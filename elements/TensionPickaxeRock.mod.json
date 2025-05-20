@@ -26,9 +26,6 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onItemInUseTick": {
-      "name": "TensionPickaxeStoneToolInHandTick"
-    }
+    "damageOnCrafting": false
   }
 }

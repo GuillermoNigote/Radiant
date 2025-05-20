@@ -27,8 +27,8 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInUseTick": {
-      "name": "TensionSwordDiamondToolInHandTick"
+    "onItemInInventoryTick": {
+      "name": "TensionSwordDiamondToolInInventoryTick"
     }
   }
 }

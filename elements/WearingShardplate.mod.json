@@ -3,10 +3,13 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Wearing Shardplate",
-    "icon": "shardplate_helmet",
+    "icon": "wearing_shardplate",
     "color": {
       "value": -1,
       "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",

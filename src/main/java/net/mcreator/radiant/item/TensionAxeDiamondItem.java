@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-import net.mcreator.radiant.procedures.TensionAxeDiamondToolInHandTickProcedure;
+import net.mcreator.radiant.procedures.TensionAxeDiamondToolInInventoryTickProcedure;
 
 public class TensionAxeDiamondItem extends AxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -58,8 +58,7 @@ public class TensionAxeDiamondItem extends AxeItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			TensionAxeDiamondToolInHandTickProcedure.execute(entity);
+		TensionAxeDiamondToolInInventoryTickProcedure.execute(entity, itemstack);
 	}
 
 	@Override

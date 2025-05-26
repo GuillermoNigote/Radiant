@@ -52,7 +52,7 @@ public record UseSecondSurgeMessage(int eventType, int pressedms) implements Cus
 			return;
 		if (type == 0) {
 
-			UseSecondSurgeOnKeyPressedProcedure.execute(entity);
+			UseSecondSurgeOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

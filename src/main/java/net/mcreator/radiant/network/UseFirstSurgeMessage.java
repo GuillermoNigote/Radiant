@@ -52,7 +52,7 @@ public record UseFirstSurgeMessage(int eventType, int pressedms) implements Cust
 			return;
 		if (type == 0) {
 
-			UseFirstSurgeOnKeyPressedProcedure.execute(entity);
+			UseFirstSurgeOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

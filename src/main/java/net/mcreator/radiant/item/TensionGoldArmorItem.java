@@ -68,7 +68,7 @@ public abstract class TensionGoldArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionGoldArmorHelmetTickEventProcedure.execute(entity);
+				TensionGoldArmorHelmetTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -87,7 +87,7 @@ public abstract class TensionGoldArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionGoldArmorChestplateTickEventProcedure.execute(entity);
+				TensionGoldArmorChestplateTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -106,7 +106,7 @@ public abstract class TensionGoldArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionGoldArmorLeggingsTickEventProcedure.execute(entity);
+				TensionGoldArmorLeggingsTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -125,7 +125,7 @@ public abstract class TensionGoldArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionGoldArmorBootsTickEventProcedure.execute(entity);
+				TensionGoldArmorBootsTickEventProcedure.execute(world, entity);
 			}
 		}
 	}

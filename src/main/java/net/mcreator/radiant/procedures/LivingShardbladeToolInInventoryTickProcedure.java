@@ -1,5 +1,7 @@
 package net.mcreator.radiant.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.WorldGenLevel;
@@ -10,7 +12,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
@@ -24,7 +25,6 @@ public class LivingShardbladeToolInInventoryTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		Entity radiantspren = null;
 		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END || !entity.getData(RadiantModVariables.PLAYER_VARIABLES).SummonedBlade) {
 			itemstack.shrink(1);
 		} else {
@@ -39,40 +39,37 @@ public class LivingShardbladeToolInInventoryTickProcedure {
 					}
 				}
 			}
-			if (entity.isNoGravity() && itemstack.getItem() == RadiantModItems.WINDRUNNER_LIVING_SHARDBLADE.get()) {
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(RadiantModItems.WINDRUNNER_LIVING_SHARDLANCE.get()).copy();
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+			if (entity.isNoGravity()) {
+				if (itemstack.getItem() == RadiantModItems.WINDRUNNER_LIVING_SHARDBLADE.get()) {
+					itemstack.shrink(1);
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(RadiantModItems.WINDRUNNER_LIVING_SHARDLANCE.get()).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+				} else if (itemstack.getItem() == RadiantModItems.SKYBREAKER_LIVING_SHARDBLADE.get()) {
+					itemstack.shrink(1);
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(RadiantModItems.SKYBREAKER_LIVING_SHARDLANCE.get()).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
 				}
-			}
-			if (entity.isNoGravity() && itemstack.getItem() == RadiantModItems.SKYBREAKER_LIVING_SHARDBLADE.get()) {
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(RadiantModItems.SKYBREAKER_LIVING_SHARDLANCE.get()).copy();
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-			}
-			if (!entity.isNoGravity() && itemstack.getItem() == RadiantModItems.SKYBREAKER_LIVING_SHARDLANCE.get()) {
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(RadiantModItems.SKYBREAKER_LIVING_SHARDBLADE.get()).copy();
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-			}
-			if (!entity.isNoGravity() && itemstack.getItem() == RadiantModItems.WINDRUNNER_LIVING_SHARDLANCE.get()) {
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(RadiantModItems.WINDRUNNER_LIVING_SHARDBLADE.get()).copy();
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+			} else {
+				if (itemstack.getItem() == RadiantModItems.SKYBREAKER_LIVING_SHARDLANCE.get()) {
+					itemstack.shrink(1);
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(RadiantModItems.SKYBREAKER_LIVING_SHARDBLADE.get()).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+				} else if (itemstack.getItem() == RadiantModItems.WINDRUNNER_LIVING_SHARDLANCE.get()) {
+					itemstack.shrink(1);
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(RadiantModItems.WINDRUNNER_LIVING_SHARDBLADE.get()).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
 				}
 			}
 		}

@@ -917,37 +917,6 @@
       "path": "~/Surges/Progression"
     },
     {
-      "name": "DivisionSurgeOnBlock",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "division_surge_on_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/DivisionSurgeOnBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Surges/Division"
-    },
-    {
       "name": "TransportationOnEffectActiveTick",
       "type": "procedure",
       "compiles": true,
@@ -1065,7 +1034,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionOnEffectActiveTick",
@@ -1344,6 +1313,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1363,6 +1348,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1648,29 +1649,6 @@
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
-    },
-    {
-      "name": "SurgeItemClickWith",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "surge_item_click_with",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/SurgeItemClickWithProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Surges"
     },
     {
       "name": "TensionAxeWood",
@@ -2038,7 +2016,7 @@
           "src/main/resources/assets/radiant/models/block/cohesion_block_dirt.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockStone",
@@ -2056,7 +2034,7 @@
           "src/main/resources/assets/radiant/models/item/cohesion_block_stone_bucket.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockObsidian",
@@ -2074,7 +2052,7 @@
           "src/main/java/net/mcreator/radiant/block/CohesionBlockObsidianBlock.java"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockNetherrack",
@@ -2092,7 +2070,7 @@
           "src/main/resources/assets/radiant/blockstates/cohesion_block_netherrack.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockGranite",
@@ -2110,7 +2088,7 @@
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockGraniteFluid.java"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockSandstone",
@@ -2128,7 +2106,7 @@
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockSandstoneFluid.java"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockSand",
@@ -2146,7 +2124,7 @@
           "src/main/resources/assets/radiant/models/block/cohesion_block_sand.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDiorite",
@@ -2164,7 +2142,7 @@
           "src/main/resources/assets/radiant/models/block/cohesion_block_diorite.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockBedrock",
@@ -2182,7 +2160,7 @@
           "src/main/resources/assets/radiant/blockstates/cohesion_block_bedrock.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockAndesite",
@@ -2200,7 +2178,7 @@
           "src/main/java/net/mcreator/radiant/block/CohesionBlockAndesiteBlock.java"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDebris",
@@ -2218,7 +2196,7 @@
           "src/main/resources/assets/radiant/blockstates/cohesion_block_debris.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockEndstone",
@@ -2236,7 +2214,7 @@
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockEndstoneFluid.java"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDirtOnTickUpdate",
@@ -2267,7 +2245,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockStoneOnTickUpdate",
@@ -2298,7 +2276,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockObsidianOnTickUpdate",
@@ -2329,7 +2307,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockNetherrackOnTickUpdate",
@@ -2360,7 +2338,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockGraniteOnTickUpdate",
@@ -2391,7 +2369,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockSandstoneOnTickUpdate",
@@ -2422,7 +2400,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockSandOnTickUpdate",
@@ -2453,7 +2431,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDioriteOnTickUpdate",
@@ -2484,7 +2462,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockBedrockOnTickUpdate",
@@ -2515,7 +2493,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockAndesiteOnTickUpdate",
@@ -2546,7 +2524,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDebrisOnTickUpdate",
@@ -2577,7 +2555,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockEndstoneOnTickUpdate",
@@ -2608,7 +2586,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionLiquid",
@@ -2626,7 +2604,7 @@
           "src/main/java/net/mcreator/radiant/block/CohesionLiquidBlock.java"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "OnSurgeJump",
@@ -2851,6 +2829,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2870,6 +2852,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2889,6 +2875,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2908,6 +2898,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2927,6 +2921,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2946,6 +2944,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2965,6 +2967,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2984,6 +2990,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3003,6 +3013,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3022,6 +3036,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3041,6 +3059,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3060,6 +3082,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3079,6 +3105,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3098,6 +3128,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3117,6 +3151,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3136,6 +3174,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3155,6 +3197,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5583,7 +5629,7 @@
           "src/main/resources/assets/radiant/models/item/cohesion_block_cobblestone_bucket.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockCobblestoneOnTickUpdate",
@@ -5614,7 +5660,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDeepslateCObblestone",
@@ -5632,7 +5678,7 @@
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDeepslateCObblestoneFluidType.java"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDeepslateCObblestoneOnTickUpdate",
@@ -5663,7 +5709,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDeepslate",
@@ -5681,7 +5727,7 @@
           "src/main/resources/assets/radiant/models/block/cohesion_block_deepslate.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockDeepslateOnTickUpdate",
@@ -5712,7 +5758,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "EdgedancerAbrasionGlyph",
@@ -6519,20 +6565,7 @@
           }
         ]
       },
-      "path": "~/InmortalWords"
-    },
-    {
-      "name": "BrokenOaths",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "broken_oaths",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/radiant/advancement/broken_oaths.json"
-        ]
-      },
-      "path": "~/InmortalWords"
+      "path": "~/InmortalWords/OathBreakers"
     },
     {
       "name": "DustbringerDeadShardblade",
@@ -8466,7 +8499,7 @@
           "src/main/resources/assets/radiant/models/block/cohesion_block_blackstone.json"
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "CohesionBlockBlackstoneOnTickUpdate",
@@ -8497,7 +8530,7 @@
           }
         ]
       },
-      "path": "~/Surges/Cohesion"
+      "path": "~/Surges/Cohesion/CohesionBlocks"
     },
     {
       "name": "DivisionSkybreakerOnEffectActiveTick",
@@ -8581,29 +8614,6 @@
         ]
       },
       "path": "~/Surges/Tension/Other"
-    },
-    {
-      "name": "UseTension",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "use_tension",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/radiant/procedures/UseTensionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Surges/Tension"
     },
     {
       "name": "TensionAxeWoodToolInInventoryTick",
@@ -9240,10 +9250,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
-      "path": "~/Surges/Gravitation"
+      "path": "~/Surges"
     },
     {
       "name": "SurgeItemRightClickOnAir",
@@ -9347,7 +9361,6 @@
       "registry_name": "cognitive_honorspren",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/cognitive_honorspren_spawn_egg.json",
           "src/main/java/net/mcreator/radiant/client/renderer/CognitiveHonorsprenRenderer.java",
           "src/main/java/net/mcreator/radiant/entity/CognitiveHonorsprenEntity.java"
         ]
@@ -9363,8 +9376,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/client/renderer/CognitiveCultivationsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/CognitiveCultivationsprenEntity.java",
-          "src/main/resources/assets/radiant/models/item/cognitive_cultivationspren_spawn_egg.json"
+          "src/main/java/net/mcreator/radiant/entity/CognitiveCultivationsprenEntity.java"
         ]
       },
       "path": "~/Spren"
@@ -9378,7 +9390,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/client/renderer/CognitivePeaksprenRenderer.java",
-          "src/main/resources/assets/radiant/models/item/cognitive_peakspren_spawn_egg.json",
           "src/main/java/net/mcreator/radiant/entity/CognitivePeaksprenEntity.java"
         ]
       },
@@ -9393,8 +9404,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/client/renderer/CognitiveLightsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/CognitiveLightsprenEntity.java",
-          "src/main/resources/assets/radiant/models/item/cognitive_lightspren_spawn_egg.json"
+          "src/main/java/net/mcreator/radiant/entity/CognitiveLightsprenEntity.java"
         ]
       },
       "path": "~/Spren"
@@ -9408,7 +9418,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/entity/CognitiveAshsprenEntity.java",
-          "src/main/resources/assets/radiant/models/item/cognitive_ashspren_spawn_egg.json",
           "src/main/java/net/mcreator/radiant/client/renderer/CognitiveAshsprenRenderer.java"
         ]
       },
@@ -9423,7 +9432,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/client/renderer/CognitiveHighsprenRenderer.java",
-          "src/main/resources/assets/radiant/models/item/cognitive_highspren_spawn_egg.json",
           "src/main/java/net/mcreator/radiant/entity/CognitiveHighsprenEntity.java"
         ]
       },
@@ -9437,7 +9445,6 @@
       "registry_name": "cognitive_inkspren",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/cognitive_inkspren_spawn_egg.json",
           "src/main/java/net/mcreator/radiant/client/renderer/CognitiveInksprenRenderer.java",
           "src/main/java/net/mcreator/radiant/entity/CognitiveInksprenEntity.java"
         ]
@@ -9453,7 +9460,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/entity/CognitiveCrypticEntity.java",
-          "src/main/resources/assets/radiant/models/item/cognitive_cryptic_spawn_egg.json",
           "src/main/java/net/mcreator/radiant/client/renderer/CognitiveCrypticRenderer.java"
         ]
       },
@@ -9471,9 +9477,51 @@
         ],
         "dependencies": [
           {
-            "name": "dimension",
-            "type": "dimensiontype"
-          },
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dimension"
+    },
+    {
+      "name": "CognitiveMistspren",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cognitive_mistspren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveMistsprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/CognitiveMistsprenEntity.java"
+        ]
+      },
+      "path": "~/Spren"
+    },
+    {
+      "name": "Perpendicularity",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perpendicularity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/PerpendicularityMobEffect.java"
+        ]
+      },
+      "path": "~/Dimension"
+    },
+    {
+      "name": "PerpendicularityEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perpendicularity_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/PerpendicularityEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
           {
             "name": "entity",
             "type": "entity"
@@ -9496,22 +9544,416 @@
           }
         ]
       },
-      "path": "~/Spren"
+      "path": "~/Dimension"
     },
     {
-      "name": "CognitiveMistspren",
-      "type": "livingentity",
+      "name": "PerpendicularityOnEffectActiveTick",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cognitive_mistspren",
+      "registry_name": "perpendicularity_on_effect_active_tick",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveMistsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/CognitiveMistsprenEntity.java",
-          "src/main/resources/assets/radiant/models/item/cognitive_mistspren_spawn_egg.json"
+          "src/main/java/net/mcreator/radiant/procedures/PerpendicularityOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
-      "path": "~/Spren"
+      "path": "~/Dimension"
+    },
+    {
+      "name": "WindrunnersBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windrunners_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/windrunners_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "SkybreakersBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skybreakers_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/skybreakers_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "DustbringersBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustbringers_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/dustbringers_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "EdgedancersBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "edgedancers_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/edgedancers_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "TruthwatchersBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "truthwatchers_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/truthwatchers_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "LightweaversBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightweavers_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/lightweavers_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "ElsecallersBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elsecallers_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/elsecallers_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "WillshapersBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willshapers_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/willshapers_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "StonewardsBrokenOaths",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonewards_broken_oaths",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radiant/advancement/stonewards_broken_oaths.json"
+        ]
+      },
+      "path": "~/InmortalWords/OathBreakers"
+    },
+    {
+      "name": "CohesionRightClickOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cohesion_right_click_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/CohesionRightClickOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Cohesion"
+    },
+    {
+      "name": "CohesionLeftClickOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cohesion_left_click_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/CohesionLeftClickOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Cohesion"
+    },
+    {
+      "name": "DivisionLeftClickOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "division_left_click_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/DivisionLeftClickOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Division"
+    },
+    {
+      "name": "DivisionRightClickOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "division_right_click_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/DivisionRightClickOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Division"
+    },
+    {
+      "name": "IlluminationLeftClickOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illumination_left_click_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/IlluminationLeftClickOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Illumination"
+    },
+    {
+      "name": "TensionItemRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_item_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionItemRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension"
+    },
+    {
+      "name": "SurgeOnItemRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surge_on_item_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/SurgeOnItemRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges"
+    },
+    {
+      "name": "TensionSurgeOnArmor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tension_surge_on_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TensionSurgeOnArmorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "armorslot",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Surges/Tension"
+    },
+    {
+      "name": "InfusedArmor",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infused_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radiant/potion/InfusedArmorMobEffect.java"
+        ]
+      },
+      "path": "~/Surges/Tension"
     }
   ],
   "variable_elements": [
@@ -9910,7 +10352,8 @@
       "CUSTOM:CognitiveAshspren",
       "CUSTOM:CognitiveHighspren",
       "CUSTOM:CognitiveInkspren",
-      "CUSTOM:CognitiveCryptic"
+      "CUSTOM:CognitiveCryptic",
+      "CUSTOM:CognitiveMistspren"
     ],
     "BLOCKS:mod:dirt": [
       "Blocks.DIRT#0",
@@ -10227,13 +10670,14 @@
       "item.radiant.dustbringer_dead_shardblade": "Shardblade",
       "advancements.lightweaver_fourth_ideal.title": "The Fourth Ideal",
       "block.radiant.illumination_block_netherrack": "Illumination Netherrack Block",
+      "advancements.edgedancers_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "entity.radiant.mistspren": "Mistspren",
       "item.radiant.elsecaller_shardplate_chestplate": "Shardplate Chestplate",
       "block.radiant.illumination_deepslate_block": "Illumination Deepslate",
       "item.radiant.tension_chainmail_armor_helmet": "Tension Infused Chainmail Helmet",
+      "advancements.dustbringers_broken_oaths.title": "Broken Oaths",
       "painting.radiant.honor_painting.author": "Donato Giancola",
       "effect.radiant.abrasion_edgedancer": "Abrasion Surge",
-      "advancements.broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "item.radiant.truthwatcher_dead_shardblade": "Shardblade",
       "block.radiant.illumination_jungle_log_block": "Illumination Jungle Log",
       "gui.radiant.transformation_surge_gui.button_wood": "Wood",
@@ -10244,6 +10688,7 @@
       "block.radiant.aluminum_ore": "Aluminum Ore",
       "painting.radiant.nalan_painting.author": "Karla Ortiz",
       "block.radiant.illumination_acacia_planks_block": "Illumination Acacia Planks",
+      "advancements.lightweavers_broken_oaths.title": "Broken Oaths",
       "entity.radiant.cognitive_honorspren": "Cognitive Honorspren",
       "item.radiant.skybreaker_division_glyph": "Division Glyph",
       "effect.radiant.others_will_dedication": "Other\u0027s Will Dedication",
@@ -10268,6 +10713,8 @@
       "block.radiant.illumination_lapislazuli_ore_block": "Illumination Lapislazuli Ore",
       "item.radiant.tension_string": "Tension String",
       "item.radiant.stoneward_shardplate_leggings": "Shardplate Leggings",
+      "advancements.skybreakers_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
+      "advancements.truthwatchers_broken_oaths.title": "Broken Oaths",
       "item.radiant.elsecaller_shardplate_helmet": "Shardplate Helmet",
       "item.radiant.infused_diamond": "Infused Diamond",
       "advancements.windrunner_second_ideal.descr": "The modern Windrunners consider those of the Second Ideal to be more than a squire, but not a full Windrunner",
@@ -10306,6 +10753,7 @@
       "entity.radiant.fake_creeper": "Fake Creeper",
       "effect.radiant.no_violence_dedication_quest": "No Violence Dedication",
       "item.radiant.shardplate_helmet": "Shardplate Helmet",
+      "advancements.windrunners_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "fluid.radiant.cohesion_block_sand": "Cohesion Liquid",
       "block.radiant.illumination_block_dirt": "Illumination Dirt Block",
       "effect.radiant.vegan_dedication": "Vegan Dedication",
@@ -10328,6 +10776,7 @@
       "item.radiant.tension_pickaxe_gold": "Tension Infused Gold Pickaxe",
       "advancements.elsecaller_second_ideal.descr": "The Second Ideal of the Elsecallers is focused on reaching one\u0027s potential",
       "block.radiant.cohesion_block_obsidian": "Cohesion Liquid",
+      "advancements.elsecallers_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "advancements.dustbringer_second_ideal.title": "The Second Ideal",
       "advancements.truthwatcher_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
       "block.radiant.illumination_deepslate_iron_block": "Illumination Deepslate Iron Ore",
@@ -10347,7 +10796,6 @@
       "item.radiant.dustbringer_abrasion_glyph": "Division Glyph",
       "item.radiant.elsecaller_transportation_glyph": "Transportation Glyph",
       "fluid.radiant.cohesion_block_endstone": "Cohesion Liquid",
-      "item.radiant.cognitive_ashspren_spawn_egg": "Cognitive Ashspren Spawn Egg",
       "item.radiant.elsecaller_transformation_glyph": "Transformation Glyph",
       "painting.radiant.the_ten_radiant_orders_painting.author": "Isaac Stewart",
       "advancements.willshaper_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
@@ -10377,15 +10825,14 @@
       "block.radiant.illumination_deepslate_lapislazuli_block": "Illumination Deepslate Lapislazuli Ore",
       "effect.radiant.truth_cooldown": "Truth Cooldown",
       "gui.radiant.transformation_surge_gui.button_oil": "Oil",
-      "advancements.broken_oaths.title": "Broken Oaths",
       "item.radiant.lightweaver_illumination_glyph": "Illumination Glyph",
       "painting.radiant.windrunners_painting.title": "Windrunners",
       "fluid.radiant.cohesion_block_granite": "Cohesion Liquid",
+      "advancements.dustbringers_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "gui.radiant.transformation_surge_gui.button_glass": "Glass",
       "item.radiant.tension_pickaxe_diamond": "Tension Infused Diamond Pickaxe",
       "advancements.elsecaller_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
       "item.radiant.tension_hoe_rock": "Tension Infused Stone Hoe ",
-      "item.radiant.cognitive_mistspren_spawn_egg": "Cognitive Mistspren Spawn Egg",
       "block.radiant.illumination_spruce_planks_block": "Illumination Spruce Planks",
       "effect.radiant.no_violence_dedication": "No Violence Dedication",
       "effect.radiant.gravitation_windrunner": "Gravitation Surge",
@@ -10404,7 +10851,9 @@
       "advancements.willshaper_fourth_ideal.descr": "Upon achieving this Ideal, a Willshaper gains their Shardplate, which is formed of Joyspren",
       "gui.radiant.transformation_surge_gui.button_metal": "Metal",
       "item.radiant.blood_bucket": "Blood Bucket",
+      "advancements.elsecallers_broken_oaths.title": "Broken Oaths",
       "painting.radiant.willshapers_painting.author": "Steve Argyle",
+      "advancements.willshapers_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "entity.radiant.inkspren": "Inkspren",
       "fluid.radiant.cohesion_block_sandstone": "Cohesion Liquid",
       "painting.radiant.talenelat_painting.title": "Talenelat\u0027Elin",
@@ -10412,8 +10861,8 @@
       "item.radiant.windrunner_gravitation_glyph": "Gravitation Glyph",
       "block.radiant.illumination_redstone_block": "Illumination Redstone Block",
       "advancements.stoneward_second_ideal.descr": "The Second Ideal of the Stonewards is focused on being there when needed",
+      "advancements.windrunners_broken_oaths.title": "Broken Oaths",
       "entity.radiant.cognitive_highspren": "Cognitive Highspren",
-      "item.radiant.cognitive_peakspren_spawn_egg": "Cognitive Peakspren Spawn Egg",
       "advancements.skybreaker_second_ideal.descr": "Also called the Ideal of Justice, this is a specific oath to seek and administer justice. Once a master chooses to accept someone as a squire, they may swear this Ideal. This Ideal gives the squire the ability to breathe in Stormlight and use the Surge of Gravitation",
       "entity.radiant.ashspren": "Ashspren",
       "advancements.truthwatcher_second_ideal.title": "The Second Ideal",
@@ -10470,22 +10919,20 @@
       "block.radiant.illumination_clay_block": "Illumination Clay",
       "item.radiant.lightweaver_shardplate_leggings": "Shardplate Leggings",
       "fluid.radiant.cohesion_block_cobblestone": "Cohesion Liquid",
+      "advancements.edgedancers_broken_oaths.title": "Broken Oaths",
       "item.radiant.lightweaver_shardplate_chestplate": "Shardplate Chestplate",
       "advancements.lightweaver_third_ideal.title": "The Third Ideal",
       "painting.radiant.pailiah_painting.author": "Magali Villeneuve",
-      "item.radiant.cognitive_lightspren_spawn_egg": "Cognitive Lightspren Spawn Egg",
       "painting.radiant.stonewards_painting.title": "Stonewards",
-      "item.radiant.cognitive_cryptic_spawn_egg": "Cognitive Cryptic Spawn Egg",
       "item.radiant.skybreaker_shardplate_chestplate": "Shardplate Chestplate",
       "fluid.radiant.cohesion_liquid": "Cohesion Liquid",
       "item.radiant.windrunner_shardplate_chestplate": "Shardplate Chestplate",
       "item.radiant.stoneward_tension_glyph": "Tension Glyph",
+      "advancements.willshapers_broken_oaths.title": "Broken Oaths",
       "advancements.dustbringer_fourth_ideal.title": "The Fourth Ideal",
-      "item.radiant.cognitive_highspren_spawn_egg": "Cognitive Highspren Spawn Egg",
       "item.radiant.windrunner_shardplate_helmet": "Shardplate Helmet",
       "advancements.windrunners_third_ideal.title": "The Third Ideal",
       "item.radiant.lightweaver_shardplate_boots": "Shardplate Boots",
-      "item.radiant.cognitive_inkspren_spawn_egg": "Cognitive Inkspren Spawn Egg",
       "fluid.radiant.cohesion_block_netherrack": "Cohesion Liquid",
       "item.radiant.tension_hoe_wood": "Tension Infused Wood Hoe ",
       "effect.radiant.cohesion_willshaper": "Cohesion Surge",
@@ -10518,6 +10965,7 @@
       "block.radiant.illumination_cobbled_deepslate_block": "Illumination Cobbled Deepslate",
       "advancements.stoneward_fourth_ideal.descr": "Upon achieving this Ideal, a Stoneward gains their Shardplate, which is formed of Bindspren",
       "block.radiant.cohesion_block_andesite": "Cohesion Liquid",
+      "advancements.lightweavers_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "advancements.dustbringer_second_ideal.descr": "The Second Ideal of the Dustbringers is focused on self mastery",
       "advancements.stoneward_third_ideal.title": "The Third Ideal",
       "effect.radiant.illumination_truthwatcher": "Illumination Surge",
@@ -10529,6 +10977,7 @@
       "entity.radiant.cognitive_inkspren": "Cognitive Inkspren",
       "effect.radiant.transportation_elsecaller": "Transportation Surge",
       "block.radiant.illumination_mud_block": "Illumination Mud",
+      "advancements.skybreakers_broken_oaths.title": "Broken Oaths",
       "effect.radiant.summoning_shardplate_first": "Summoning Shardplate 1",
       "painting.radiant.dustbringers_painting.author": "Steve Argyle",
       "item.radiant.shardplate_boots": "Shardplate Boots",
@@ -10540,6 +10989,7 @@
       "item.radiant.edgedancer_progression_glyph": "Progression Glyph",
       "item.radiant.tension_diamond_armor_boots": "Tension Infused Diamond Boots",
       "item.radiant.tension_chainmail_armor_chestplate": "Tension Infused Chainmail Chestplate",
+      "advancements.truthwatchers_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "advancements.willshaper_second_ideal.descr": "The Second Ideal of the Willshapers is focused on freeing others from opresion",
       "entity.radiant.highspren": "Highspren",
       "fluid.radiant.blood": "Blood",
@@ -10555,11 +11005,11 @@
       "block.radiant.illumination_block_iron_ore": "Illumination Diamond Ore",
       "key.radiant.summon_shardblade_key_bind": "Summon Shardblade",
       "block.radiant.illumination_block_obsidian": "Illumination Obsidian Block",
+      "advancements.stonewards_broken_oaths.title": "Broken Oaths",
       "gui.radiant.transformation_surge_gui.button_stone": "Stone",
       "item.radiant.edgedancer_shardplate_boots": "Shardplate Boots",
       "item.radiant.windrunner_shardplate_boots": "Shardplate Boots",
       "block.radiant.cultivationspren_block_l": "Cultivationspren L",
-      "item.radiant.cognitive_honorspren_spawn_egg": "Cognitive Honorspren Spawn Egg",
       "block.radiant.illumination_deepslate_coal_block": "Illumination Deepslate Coal Ore",
       "item.radiant.tension_hoe_stone": "Tension Infused Stone Hoe ",
       "item.radiant.windrunner_dead_shardblade": "Shardblade",
@@ -10574,6 +11024,7 @@
       "item.radiant.tension_shovel_rock": "Tension Infused Stone Shovel ",
       "painting.radiant.honor_painting.title": "Honor",
       "painting.radiant.vedeledev_painting.title": "Vedeledev\u0027Elin",
+      "advancements.stonewards_broken_oaths.descr": "When a Knight Radiant breaks his oaths it kills the spren they bonded.",
       "effect.radiant.cohesion_stoneward": "Cohesion Surge",
       "advancements.windrunners_fourth_ideal.title": "The Fourth Ideal",
       "entity.radiant.cognitive_cultivationspren": "Cognitive Cultivationspren",
@@ -10602,6 +11053,7 @@
       "block.radiant.illumination_mangrove_log_block": "Illumination Mangrove Log",
       "block.radiant.cohesion_block_stone": "Cohesion Liquid",
       "item.radiant.skybreaker_living_shardlance": "Skybreaker Living Shardlance",
+      "effect.radiant.infused_armor": "Infused Armor",
       "advancements.stoneward_fourth_ideal.title": "The Fourth Ideal",
       "advancements.skybreaker_fourth_ideal.title": "The Fourth Ideal",
       "effect.radiant.adhesion_windrunner": "Adhesion Surge",
@@ -10625,6 +11077,7 @@
       "gui.radiant.transformation_surge_gui.button_blood": "Blood",
       "painting.radiant.ishi_painting.author": "Dan dos Santos",
       "painting.radiant.elsecallers_painting.author": "Steve Argyle",
+      "effect.radiant.perpendicularity": "Perpendicularity",
       "entity.radiant.cognitive_cryptic": "Cognitive Cryptic",
       "advancements.edgedancer_third_ideal.descr": "The Third Ideal of the Knigths Radiant usually gives them access to their Shardweapon",
       "item.radiant.truthwatcher_shardplate_helmet": "Shardplate Helmet",
@@ -10632,7 +11085,6 @@
       "effect.radiant.vegan_dedication_quest": "Vegan Dedication",
       "block.radiant.cultivationspren_block": "Cultivationspren",
       "painting.radiant.kelek_painting.title": "Kelek\u0027Elin",
-      "item.radiant.cognitive_cultivationspren_spawn_egg": "Cognitive Cultivationspren Spawn Egg",
       "item.radiant.willshaper_shardplate_leggings": "Shardplate Leggings",
       "painting.radiant.chanarach_painting.author": "Karla Ortiz",
       "advancements.elsecaller_fourth_ideal.descr": "Upon achieving this Ideal, a Elsecaller gains their Shardplate, which is formed of Logicspren",
@@ -10682,7 +11134,12 @@
           },
           {
             "name": "Cohesion",
-            "children": []
+            "children": [
+              {
+                "name": "CohesionBlocks",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Transportation",
@@ -10776,6 +11233,10 @@
           {
             "name": "Fourth",
             "children": []
+          },
+          {
+            "name": "OathBreakers",
+            "children": []
           }
         ]
       },
@@ -10844,13 +11305,17 @@
       {
         "name": "Gems",
         "children": []
+      },
+      {
+        "name": "Dimension",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "radiant",
     "modName": "Radiant",
-    "version": "2.2.0",
+    "version": "2.2.2",
     "author": "Usuario, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",

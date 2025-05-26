@@ -62,7 +62,7 @@ public abstract class TensionChainmailArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionChainmailArmorHelmetTickEventProcedure.execute(entity);
+				TensionChainmailArmorHelmetTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -76,7 +76,7 @@ public abstract class TensionChainmailArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionChainmailArmorChestplateTickEventProcedure.execute(entity);
+				TensionChainmailArmorChestplateTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -90,7 +90,7 @@ public abstract class TensionChainmailArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionChainmailArmorLeggingsTickEventProcedure.execute(entity);
+				TensionChainmailArmorLeggingsTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -104,7 +104,7 @@ public abstract class TensionChainmailArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionChainmailArmorBootsTickEventProcedure.execute(entity);
+				TensionChainmailArmorBootsTickEventProcedure.execute(world, entity);
 			}
 		}
 	}

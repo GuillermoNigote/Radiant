@@ -71,7 +71,7 @@
     "stepHeight": 1.0,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "followRange": 24,
+    "followRange": 64,
     "health": 1000,
     "xpAmount": 0,
     "waterMob": false,

@@ -9,8 +9,12 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
@@ -31,7 +35,7 @@ public class SurgeEmptyRightClickOnAirProcedure {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
 			return;
 		PacketDistributor.sendToServer(new SurgeEmptyRightClickOnAirMessage());
-		execute(event.getEntity());
+		execute(event.getLevel(), event.getEntity());
 	}
 
 	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -50,7 +54,7 @@ public class SurgeEmptyRightClickOnAirProcedure {
 				context.enqueueWork(() -> {
 					if (!context.player().level().hasChunkAt(context.player().blockPosition()))
 						return;
-					execute(context.player());
+					execute(context.player().level(), context.player());
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
@@ -64,13 +68,14 @@ public class SurgeEmptyRightClickOnAirProcedure {
 		}
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		double damage = 0;
 		if ((entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(RadiantModMobEffects.GRAVITATION_SKYBREAKER) || entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(RadiantModMobEffects.GRAVITATION_WINDRUNNER))
 				&& entity.isNoGravity()) {
 			{
@@ -88,6 +93,15 @@ public class SurgeEmptyRightClickOnAirProcedure {
 				_vars.zant = 0;
 				_vars.syncPlayerVariables(entity);
 			}
+		} else if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(RadiantModMobEffects.TENSION_STONEWARD) && (entity instanceof Player _plr ? _plr.experienceLevel : 0) >= 2) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.swing(InteractionHand.MAIN_HAND, true);
+			TensionSurgeOnArmorProcedure.execute(world, entity, 2);
+			TensionSurgeOnArmorProcedure.execute(world, entity, 1);
+			TensionSurgeOnArmorProcedure.execute(world, entity, 3);
+			TensionSurgeOnArmorProcedure.execute(world, entity, 0);
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.INFUSED_ARMOR, 2400, 0));
 		}
 	}
 }

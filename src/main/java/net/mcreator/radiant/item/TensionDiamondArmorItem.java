@@ -62,7 +62,7 @@ public abstract class TensionDiamondArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionDiamondArmorHelmetTickEventProcedure.execute(entity);
+				TensionDiamondArmorHelmetTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -76,7 +76,7 @@ public abstract class TensionDiamondArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionDiamondArmorChestplateTickEventProcedure.execute(entity);
+				TensionDiamondArmorChestplateTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -90,7 +90,7 @@ public abstract class TensionDiamondArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionDiamondArmorLeggingsTickEventProcedure.execute(entity);
+				TensionDiamondArmorLeggingsTickEventProcedure.execute(world, entity);
 			}
 		}
 	}
@@ -104,7 +104,7 @@ public abstract class TensionDiamondArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				TensionDiamondArmorBootsTickEventProcedure.execute(entity);
+				TensionDiamondArmorBootsTickEventProcedure.execute(world, entity);
 			}
 		}
 	}

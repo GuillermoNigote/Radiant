@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Cognitive Mistspren",
     "mobLabel": "",
-    "mobModelName": "ModelCognitive_Peakspren",
-    "mobModelTexture": "cognitive_highspren.png",
+    "mobModelName": "ModelCognitive_Mistspren",
+    "mobModelTexture": "cognitive_mistspren.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -27,7 +27,7 @@
     "modelHeight": 1.8,
     "modelShadowSize": 0.0,
     "mountedYOffset": 0.0,
-    "hasSpawnEgg": true,
+    "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -16777216,
       "falpha": 0.0
@@ -36,11 +36,7 @@
       "value": -1,
       "falpha": 0.0
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Radiant"
-      }
-    ],
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",

@@ -99,14 +99,5 @@ public class RadiantModTabs {
 				tabData.accept(RadiantModItems.STONEWARD_SHARDPLATE_LEGGINGS.get());
 				tabData.accept(RadiantModItems.STONEWARD_SHARDPLATE_BOOTS.get());
 				tabData.accept(RadiantModBlocks.ALUMINUM_BLOCK.get().asItem());
-				tabData.accept(RadiantModItems.COGNITIVE_HONORSPREN_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_CULTIVATIONSPREN_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_PEAKSPREN_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_LIGHTSPREN_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_ASHSPREN_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_HIGHSPREN_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_INKSPREN_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_CRYPTIC_SPAWN_EGG.get());
-				tabData.accept(RadiantModItems.COGNITIVE_MISTSPREN_SPAWN_EGG.get());
 			}).build());
 }

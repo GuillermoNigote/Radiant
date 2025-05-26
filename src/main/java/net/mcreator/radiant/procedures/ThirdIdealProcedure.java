@@ -311,7 +311,7 @@ public class ThirdIdealProcedure {
 			} else if (("Truthwatchers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "")) {
-				if (world instanceof Level _lvl54 && _lvl54.getServer() != null && _lvl54.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/find_bastion")).value().equals(advancement)) {
+				if (world instanceof Level _lvl54 && _lvl54.getServer() != null && _lvl54.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trade_at_world_height")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -321,7 +321,7 @@ public class ThirdIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
+						_player.displayClientMessage(Component.literal("I will reveal truth to all who seek it"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_third_ideal"));
 						if (_adv != null) {
@@ -332,7 +332,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl58 && _lvl58.getServer() != null && _lvl58.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/follow_ender_eye")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl58 && _lvl58.getServer() != null && _lvl58.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/make_a_sign_glow")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -342,7 +342,7 @@ public class ThirdIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
+						_player.displayClientMessage(Component.literal("I will reveal truth to all who seek it"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_third_ideal"));
 						if (_adv != null) {
@@ -353,7 +353,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl62 && _lvl62.getServer() != null && _lvl62.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/kill_mob_near_sculk_catalyst")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl62 && _lvl62.getServer() != null && _lvl62.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/craft_decorated_pot_using_only_sherds")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -363,70 +363,7 @@ public class ThirdIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will pay the necessary price for knowledge"), false);
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_third_ideal"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
-						}
-					}
-				} else if (world instanceof Level _lvl66 && _lvl66.getServer() != null && _lvl66.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/read_power_of_chiseled_bookshelf")).value().equals(advancement)) {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_third_ideal"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
-						}
-					}
-				} else if (world instanceof Level _lvl70 && _lvl70.getServer() != null && _lvl70.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/revaulting")).value().equals(advancement)) {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_third_ideal"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
-						}
-					}
-				} else if (world instanceof Level _lvl74 && _lvl74.getServer() != null && _lvl74.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/fast_travel")).value().equals(advancement)) {
-					{
-						Entity _ent = entity;
-						Scoreboard _sc = _ent.level().getScoreboard();
-						Objective _so = _sc.getObjective("Oath");
-						if (_so == null)
-							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
-					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
+						_player.displayClientMessage(Component.literal("I will reveal truth to all who seek it"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_third_ideal"));
 						if (_adv != null) {
@@ -441,7 +378,7 @@ public class ThirdIdealProcedure {
 			} else if (("Windrunners").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "")) {
-				if (world instanceof Level _lvl79 && _lvl79.getServer() != null && _lvl79.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
+				if (world instanceof Level _lvl67 && _lvl67.getServer() != null && _lvl67.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/hero_of_the_village")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -462,7 +399,7 @@ public class ThirdIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl83 && _lvl83.getServer() != null && _lvl83.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/totem_of_undying")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl71 && _lvl71.getServer() != null && _lvl71.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/totem_of_undying")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -488,7 +425,7 @@ public class ThirdIdealProcedure {
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "")) {
 				if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("archer")) {
-					if (world instanceof Level _lvl88 && _lvl88.getServer() != null && _lvl88.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/bullseye")).value().equals(advancement)) {
+					if (world instanceof Level _lvl76 && _lvl76.getServer() != null && _lvl76.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/bullseye")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -509,7 +446,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl92 && _lvl92.getServer() != null && _lvl92.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/sniper_duel")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl80 && _lvl80.getServer() != null && _lvl80.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/sniper_duel")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -530,7 +467,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl96 && _lvl96.getServer() != null && _lvl96.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/two_birds_one_arrow")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl84 && _lvl84.getServer() != null && _lvl84.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/two_birds_one_arrow")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -551,7 +488,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl100 && _lvl100.getServer() != null && _lvl100.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/arbalistic")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl88 && _lvl88.getServer() != null && _lvl88.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/arbalistic")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -574,7 +511,7 @@ public class ThirdIdealProcedure {
 						}
 					}
 				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("smith")) {
-					if (world instanceof Level _lvl104 && _lvl104.getServer() != null && _lvl104.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/obtain_armor")).value().equals(advancement)) {
+					if (world instanceof Level _lvl92 && _lvl92.getServer() != null && _lvl92.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/obtain_armor")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -595,7 +532,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl108 && _lvl108.getServer() != null && _lvl108.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/mine_diamond")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl96 && _lvl96.getServer() != null && _lvl96.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/mine_diamond")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -616,7 +553,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl112 && _lvl112.getServer() != null && _lvl112.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/shiny_gear")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl100 && _lvl100.getServer() != null && _lvl100.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/shiny_gear")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -637,7 +574,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl116 && _lvl116.getServer() != null && _lvl116.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl104 && _lvl104.getServer() != null && _lvl104.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -658,7 +595,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl120 && _lvl120.getServer() != null && _lvl120.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/netherite_armor")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl108 && _lvl108.getServer() != null && _lvl108.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/netherite_armor")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -679,7 +616,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl124 && _lvl124.getServer() != null && _lvl124.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_any_armor_pattern")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl112 && _lvl112.getServer() != null && _lvl112.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_any_armor_pattern")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -702,7 +639,7 @@ public class ThirdIdealProcedure {
 						}
 					}
 				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("beekeeper")) {
-					if (world instanceof Level _lvl128 && _lvl128.getServer() != null && _lvl128.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/safely_harvest_honey")).value().equals(advancement)) {
+					if (world instanceof Level _lvl116 && _lvl116.getServer() != null && _lvl116.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/safely_harvest_honey")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -723,7 +660,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl132 && _lvl132.getServer() != null && _lvl132.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/honey_block_slide")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl120 && _lvl120.getServer() != null && _lvl120.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/honey_block_slide")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -744,7 +681,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl136 && _lvl136.getServer() != null && _lvl136.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_on")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl124 && _lvl124.getServer() != null && _lvl124.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_on")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -765,7 +702,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl140 && _lvl140.getServer() != null && _lvl140.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_off")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl128 && _lvl128.getServer() != null && _lvl128.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_off")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -786,7 +723,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl144 && _lvl144.getServer() != null && _lvl144.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/silk_touch_nest")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl132 && _lvl132.getServer() != null && _lvl132.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/silk_touch_nest")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -809,7 +746,7 @@ public class ThirdIdealProcedure {
 						}
 					}
 				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("collector")) {
-					if (world instanceof Level _lvl148 && _lvl148.getServer() != null && _lvl148.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/froglights")).value().equals(advancement)) {
+					if (world instanceof Level _lvl136 && _lvl136.getServer() != null && _lvl136.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/froglights")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -830,8 +767,8 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl152 && _lvl152.getServer() != null
-							&& _lvl152.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_all_exclusive_armor_patterns")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl140 && _lvl140.getServer() != null
+							&& _lvl140.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_all_exclusive_armor_patterns")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -852,7 +789,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl156 && _lvl156.getServer() != null && _lvl156.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/dragon_egg")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl144 && _lvl144.getServer() != null && _lvl144.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/dragon_egg")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -873,7 +810,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl160 && _lvl160.getServer() != null && _lvl160.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/create_beacon")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl148 && _lvl148.getServer() != null && _lvl148.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/create_beacon")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -894,7 +831,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl164 && _lvl164.getServer() != null && _lvl164.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/obtain_sniffer_egg")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl152 && _lvl152.getServer() != null && _lvl152.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/obtain_sniffer_egg")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -915,7 +852,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl168 && _lvl168.getServer() != null && _lvl168.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/whole_pack")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl156 && _lvl156.getServer() != null && _lvl156.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/whole_pack")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -936,7 +873,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl172 && _lvl172.getServer() != null && _lvl172.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/complete_catalogue")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl160 && _lvl160.getServer() != null && _lvl160.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/complete_catalogue")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -957,7 +894,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl176 && _lvl176.getServer() != null && _lvl176.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/elytra")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl164 && _lvl164.getServer() != null && _lvl164.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/elytra")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -978,7 +915,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl180 && _lvl180.getServer() != null && _lvl180.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/throw_trident")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl168 && _lvl168.getServer() != null && _lvl168.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/throw_trident")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -999,7 +936,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl184 && _lvl184.getServer() != null && _lvl184.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl172 && _lvl172.getServer() != null && _lvl172.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();
@@ -1020,7 +957,7 @@ public class ThirdIdealProcedure {
 								}
 							}
 						}
-					} else if (world instanceof Level _lvl188 && _lvl188.getServer() != null && _lvl188.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/overoverkill")).value().equals(advancement)) {
+					} else if (world instanceof Level _lvl176 && _lvl176.getServer() != null && _lvl176.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/overoverkill")).value().equals(advancement)) {
 						{
 							Entity _ent = entity;
 							Scoreboard _sc = _ent.level().getScoreboard();

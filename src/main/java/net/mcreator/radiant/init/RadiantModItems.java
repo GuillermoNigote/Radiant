@@ -7,7 +7,6 @@ package net.mcreator.radiant.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -316,16 +315,6 @@ public class RadiantModItems {
 	public static final DeferredItem<Item> ALUMINUM_BLOCK = block(RadiantModBlocks.ALUMINUM_BLOCK);
 	public static final DeferredItem<Item> TENSION_STRING = REGISTRY.register("tension_string", TensionStringItem::new);
 	public static final DeferredItem<Item> TENSION_LEAD = REGISTRY.register("tension_lead", TensionLeadItem::new);
-	public static final DeferredItem<Item> COGNITIVE_HONORSPREN_SPAWN_EGG = REGISTRY.register("cognitive_honorspren_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_HONORSPREN, -13369345, -13382401, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_CULTIVATIONSPREN_SPAWN_EGG = REGISTRY.register("cognitive_cultivationspren_spawn_egg",
-			() -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_CULTIVATIONSPREN, -16738048, -1, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_PEAKSPREN_SPAWN_EGG = REGISTRY.register("cognitive_peakspren_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_PEAKSPREN, -3355444, -13159, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_LIGHTSPREN_SPAWN_EGG = REGISTRY.register("cognitive_lightspren_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_LIGHTSPREN, -13210, -13210, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_ASHSPREN_SPAWN_EGG = REGISTRY.register("cognitive_ashspren_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_ASHSPREN, -1, -3355444, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_HIGHSPREN_SPAWN_EGG = REGISTRY.register("cognitive_highspren_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_HIGHSPREN, -16777216, -256, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_INKSPREN_SPAWN_EGG = REGISTRY.register("cognitive_inkspren_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_INKSPREN, -16777216, -13434829, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_CRYPTIC_SPAWN_EGG = REGISTRY.register("cognitive_cryptic_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_CRYPTIC, -16777216, -1, new Item.Properties()));
-	public static final DeferredItem<Item> COGNITIVE_MISTSPREN_SPAWN_EGG = REGISTRY.register("cognitive_mistspren_spawn_egg", () -> new DeferredSpawnEggItem(RadiantModEntities.COGNITIVE_MISTSPREN, -16777216, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

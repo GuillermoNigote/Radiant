@@ -1,50 +1,50 @@
-/effect give Dev radiant:abrasion_dustbringer infinite
-/gamemode creative
-/gamemode survival
-/xp add Dev 50 levels
-/time set day
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/xp add Dev 50 levels
-/gamemode survival
-/xp add Dev 50 levels
-/gamemode creative
-/time set day
-/gamemode survival
-/time set day
-/gamemode creative
-/gamemode survival
-/xp add Dev 50 levels
-/gamemode survival
-/xp add Dev 50 levels
-/gamemode survival
-/xp add Dev 50 levels
-/gamemode ce
-/gamemode creative
-/effect give Dev minecraft:night_vision infinite
-/locate biome minecraft:basalt_deltas
-/tp -1110 82 -416
-/effect give Dev radiant:vegan_dedication_quest 5
-/gamemode survival
-/time set day
-/effect give Dev radiant:law_dedication_quest 5
-/gamemode creative
-/effect give Dev radiant:law_dedication_quest 5
-/gamemode creative
-/effect give Dev radiant:law_dedication_quest 5
-/gamemode creative
+/team join Skybreakers Dev
+/xp add Dev 132 levels
+/scoreboard players display numberformat Dev Oath
+/scoreboard players get Dev Oath
+/xp add Dev 132 levels
+/team join Skybreakers Dev
+/scoreboard players get Dev Oath
+/team join Willshapers Dev
+/scoreboard players get Dev Oath
 /gamemode survival
 /gamemode creative
+/team join Skybreakers Dev
+/xp add Dev 132 levels
+/team join Dustbringers Dev
+/scoreboard players set Dev Oath 3
+/gamemode creative
 /gamemode survival
+/give Dev minecraft:totem_of_undying
 /xp add Dev 30 levels
 /gamemode creative
+/scoreboard players set Dev Oath 4
+/tp Dev end
+/execute in minecraft:the_nether run tp @p ~ ~ ~
 /effect give Dev minecraft:night_vision infinite
+/execute in minecraft:the_end run tp @p ~ ~ ~
+/locate structure minecraft:stronghold
+/tp 800 ~ -1200
+/effect give Dev minecraft:night_vision infinite
+/scoreboard players get Dev Oath
+/effect clear
+/effect give Dev minecraft:night_vision infinite
+/kill
+/effect give Dev minecraft:night_vision infinite
+/summon minecraft:ender_dragon ~ ~ ~ {NoAI:1b}
+/kill @e[ type= minecraft:ender_dragon]
+/summon minecraft:ender_dragon ~ ~ ~ {NoAI:1b}
+/effect clear
+/scoreboard players set Dev Oath 2
+/effect give Dev minecraft:night_vision infinite
+/effect clear
+/summon minecraft:ender_dragon ~ ~ ~
+/kill @e[ type= minecraft:ender_dragon]
+/summon minecraft:ender_dragon ~ ~ ~
 /gamemode survival
-/xp add Dev 30 levels
+/xp add Dev 5 levels
 /gamemode creative
-/time set day
-/time set night
-/time set day
+/summon radiant:cognitive_highspren
+/effect give Dev minecraft:night_vision infinite
+/scoreboard players get Dev
+/scoreboard players get Dev Oath

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:edgedancers_glyph"
+    },
+    "title": {
+      "translate": "advancements.edgedancers_broken_oaths.title"
+    },
+    "description": {
+      "translate": "advancements.edgedancers_broken_oaths.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "edgedancers_broken_oaths_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "radiant:edgedancer_fourth_ideal"
+}

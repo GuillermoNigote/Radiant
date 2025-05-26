@@ -16,6 +16,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.radiant.procedures.SummonShardbladeManagerProcedure;
+import net.mcreator.radiant.procedures.PerpendicularityEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.IlluminationEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.IlluminationAnimalIlusionEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.GravitationSkybreakersEffectExpiresProcedure;
@@ -33,12 +34,14 @@ import net.mcreator.radiant.potion.SummoningShardplateFirstMobEffect;
 import net.mcreator.radiant.potion.SummonShardbladeMobEffect;
 import net.mcreator.radiant.potion.ProgressionTruthwatcherMobEffect;
 import net.mcreator.radiant.potion.ProgressionEdgedancerMobEffect;
+import net.mcreator.radiant.potion.PerpendicularityMobEffect;
 import net.mcreator.radiant.potion.OthersWillDedicationQuestMobEffect;
 import net.mcreator.radiant.potion.OthersWillDedicationMobEffect;
 import net.mcreator.radiant.potion.NoViolenceDedicationQuestMobEffect;
 import net.mcreator.radiant.potion.NoViolenceDedicationMobEffect;
 import net.mcreator.radiant.potion.LawDedicationQuestMobEffect;
 import net.mcreator.radiant.potion.LawDedicationMobEffect;
+import net.mcreator.radiant.potion.InfusedArmorMobEffect;
 import net.mcreator.radiant.potion.IlluminationTruthwatcherMobEffect;
 import net.mcreator.radiant.potion.IlluminationLightweaverMobEffect;
 import net.mcreator.radiant.potion.IlluminationAnimalIlusionMobEffect;
@@ -90,6 +93,8 @@ public class RadiantModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> SUMMONING_SHARDPLATE_SECOND = REGISTRY.register("summoning_shardplate_second", () -> new SummoningShardplateSecondMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> TRUTH_COOLDOWN = REGISTRY.register("truth_cooldown", () -> new TruthCooldownMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> ABRASION_SLIPPERY = REGISTRY.register("abrasion_slippery", () -> new AbrasionSlipperyMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> PERPENDICULARITY = REGISTRY.register("perpendicularity", () -> new PerpendicularityMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> INFUSED_ARMOR = REGISTRY.register("infused_armor", () -> new InfusedArmorMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -120,6 +125,8 @@ public class RadiantModMobEffects {
 			IlluminationEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(SUMMON_SHARDBLADE)) {
 			SummonShardbladeManagerProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(PERPENDICULARITY)) {
+			PerpendicularityEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		}
 	}
 }

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:stonewards_glyph"
+    },
+    "title": {
+      "translate": "advancements.stonewards_broken_oaths.title"
+    },
+    "description": {
+      "translate": "advancements.stonewards_broken_oaths.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "stonewards_broken_oaths_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "radiant:stoneward_fourth_ideal"
+}

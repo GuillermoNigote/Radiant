@@ -30,7 +30,7 @@
     "onEntityHitWith": {
       "name": "LivingShardbladeEntityIsHitWithTool"
     },
-    "onItemInUseTick": {
+    "onItemInInventoryTick": {
       "name": "LivingShardbladeToolInInventoryTick"
     }
   }

@@ -1,5 +1,6 @@
 {
   "display": {
+    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "id": "radiant:radiants_glyph"
     },
@@ -21,6 +22,5 @@
   },
   "rewards": {
     "experience": 55
-  },
-  "parent": "radiant:broken_oaths"
+  }
 }

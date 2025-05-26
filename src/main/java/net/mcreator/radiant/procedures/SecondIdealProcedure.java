@@ -54,8 +54,9 @@ public class SecondIdealProcedure {
 			return;
 		if (!(("Unoathed").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "")) && getEntityScore("Oath", entity) != -1) {
-			if ((text).equals("I will seek self-mastery") && getEntityScore("Oath", entity) < 2) {
+				: ""))) {
+			if ((text).equals("I will seek self-mastery") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr2 && _plr2.level() instanceof ServerLevel
+					&& _plr2.getAdvancements().getOrStartProgress(_plr2.server.getAdvancements().get(ResourceLocation.parse("radiant:dustbringers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -89,7 +90,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will remember those who have been forgotten") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will remember those who have been forgotten") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr10 && _plr10.level() instanceof ServerLevel
+					&& _plr10.getAdvancements().getOrStartProgress(_plr10.server.getAdvancements().get(ResourceLocation.parse("radiant:edgedancers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -123,7 +125,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will seek freedom for those in bondage") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will seek freedom for those in bondage") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr18 && _plr18.level() instanceof ServerLevel
+					&& _plr18.getAdvancements().getOrStartProgress(_plr18.server.getAdvancements().get(ResourceLocation.parse("radiant:willshapers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -157,7 +160,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will step forward when others fall back") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will step forward when others fall back") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr26 && _plr26.level() instanceof ServerLevel
+					&& _plr26.getAdvancements().getOrStartProgress(_plr26.server.getAdvancements().get(ResourceLocation.parse("radiant:stonewards_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -191,7 +195,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will seek truth") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will seek truth") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr34 && _plr34.level() instanceof ServerLevel
+					&& _plr34.getAdvancements().getOrStartProgress(_plr34.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatchers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -225,7 +230,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will seek order") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will seek order") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr42 && _plr42.level() instanceof ServerLevel
+					&& _plr42.getAdvancements().getOrStartProgress(_plr42.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreakers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -259,7 +265,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will protect those who cannot protect themselves") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will protect those who cannot protect themselves") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr50 && _plr50.level() instanceof ServerLevel
+					&& _plr50.getAdvancements().getOrStartProgress(_plr50.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -293,7 +300,8 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will speak my truth") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will speak my truth") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr58 && _plr58.level() instanceof ServerLevel
+					&& _plr58.getAdvancements().getOrStartProgress(_plr58.server.getAdvancements().get(ResourceLocation.parse("radiant:lightweavers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
 					{
 						Entity _entityTeam = entity;
@@ -342,7 +350,7 @@ public class SecondIdealProcedure {
 							return 0;
 						}
 					}.convert(entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString), 0));
-			} else if ((text).equals("I follow youtube tutorials for my builds") && !(entity instanceof LivingEntity _livEnt60 && _livEnt60.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+			} else if ((text).equals("I follow youtube tutorials for my builds") && !(entity instanceof LivingEntity _livEnt67 && _livEnt67.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
@@ -380,7 +388,7 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I am bad at pvp") && !(entity instanceof LivingEntity _livEnt67 && _livEnt67.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+			} else if ((text).equals("I am bad at pvp") && !(entity instanceof LivingEntity _livEnt74 && _livEnt74.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
@@ -418,7 +426,7 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I killed the wandering trader for his lamas") && !(entity instanceof LivingEntity _livEnt74 && _livEnt74.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+			} else if ((text).equals("I killed the wandering trader for his lamas") && !(entity instanceof LivingEntity _livEnt81 && _livEnt81.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
@@ -456,7 +464,7 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I dont like mining") && !(entity instanceof LivingEntity _livEnt81 && _livEnt81.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+			} else if ((text).equals("I dont like mining") && !(entity instanceof LivingEntity _livEnt88 && _livEnt88.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")

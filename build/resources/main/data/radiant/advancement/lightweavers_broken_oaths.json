@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:lightweavers_glyph"
+    },
+    "title": {
+      "translate": "advancements.lightweavers_broken_oaths.title"
+    },
+    "description": {
+      "translate": "advancements.lightweavers_broken_oaths.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "lightweavers_broken_oaths_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "radiant:lightweaver_fourth_ideal"
+}

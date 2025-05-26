@@ -291,7 +291,7 @@ public class FourthIdealProcedure {
 			} else if (("Truthwatchers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "")) {
-				if (world instanceof Level _lvl50 && _lvl50.getServer() != null && _lvl50.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trade_at_world_height")).value().equals(advancement)) {
+				if (world instanceof Level _lvl50 && _lvl50.getServer() != null && _lvl50.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/find_bastion")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -301,7 +301,7 @@ public class FourthIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(4);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will share what I know anywhere, so that everyone can benefit from it"), false);
+						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_fourth_ideal"));
 						if (_adv != null) {
@@ -312,7 +312,7 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl54 && _lvl54.getServer() != null && _lvl54.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/make_a_sign_glow")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl54 && _lvl54.getServer() != null && _lvl54.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:story/follow_ender_eye")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -322,7 +322,7 @@ public class FourthIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(4);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will share what I know, so that everyone can benefit from it"), false);
+						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_fourth_ideal"));
 						if (_adv != null) {
@@ -333,7 +333,7 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl58 && _lvl58.getServer() != null && _lvl58.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/craft_decorated_pot_using_only_sherds")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl58 && _lvl58.getServer() != null && _lvl58.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/kill_mob_near_sculk_catalyst")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -343,7 +343,70 @@ public class FourthIdealProcedure {
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(4);
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("I will share what I know, so that everyone can benefit from it"), false);
+						_player.displayClientMessage(Component.literal("I will pay the necessary price for knowledge"), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_fourth_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
+					}
+				} else if (world instanceof Level _lvl62 && _lvl62.getServer() != null && _lvl62.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/read_power_of_chiseled_bookshelf")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(4);
+					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_fourth_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
+					}
+				} else if (world instanceof Level _lvl66 && _lvl66.getServer() != null && _lvl66.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/revaulting")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(4);
+					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_fourth_ideal"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
+					}
+				} else if (world instanceof Level _lvl70 && _lvl70.getServer() != null && _lvl70.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/fast_travel")).value().equals(advancement)) {
+					{
+						Entity _ent = entity;
+						Scoreboard _sc = _ent.level().getScoreboard();
+						Objective _so = _sc.getObjective("Oath");
+						if (_so == null)
+							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(4);
+					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("I will seek the truth even if it is not pleasant"), false);
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatcher_fourth_ideal"));
 						if (_adv != null) {
@@ -358,12 +421,12 @@ public class FourthIdealProcedure {
 			} else if (("Elsecallers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "")) {
-				if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("archer") && entity instanceof ServerPlayer _plr63 && _plr63.level() instanceof ServerLevel
-						&& _plr63.getAdvancements().getOrStartProgress(_plr63.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/arbalistic"))).isDone() && entity instanceof ServerPlayer _plr64
-						&& _plr64.level() instanceof ServerLevel && _plr64.getAdvancements().getOrStartProgress(_plr64.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/two_birds_one_arrow"))).isDone()
-						&& entity instanceof ServerPlayer _plr65 && _plr65.level() instanceof ServerLevel
-						&& _plr65.getAdvancements().getOrStartProgress(_plr65.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/sniper_duel"))).isDone() && entity instanceof ServerPlayer _plr66
-						&& _plr66.level() instanceof ServerLevel && _plr66.getAdvancements().getOrStartProgress(_plr66.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/bullseye"))).isDone()) {
+				if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("archer") && entity instanceof ServerPlayer _plr75 && _plr75.level() instanceof ServerLevel
+						&& _plr75.getAdvancements().getOrStartProgress(_plr75.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/arbalistic"))).isDone() && entity instanceof ServerPlayer _plr76
+						&& _plr76.level() instanceof ServerLevel && _plr76.getAdvancements().getOrStartProgress(_plr76.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/two_birds_one_arrow"))).isDone()
+						&& entity instanceof ServerPlayer _plr77 && _plr77.level() instanceof ServerLevel
+						&& _plr77.getAdvancements().getOrStartProgress(_plr77.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/sniper_duel"))).isDone() && entity instanceof ServerPlayer _plr78
+						&& _plr78.level() instanceof ServerLevel && _plr78.getAdvancements().getOrStartProgress(_plr78.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/bullseye"))).isDone()) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -384,15 +447,15 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("smith") && entity instanceof ServerPlayer _plr70 && _plr70.level() instanceof ServerLevel
-						&& _plr70.getAdvancements().getOrStartProgress(_plr70.server.getAdvancements().get(ResourceLocation.parse("minecraft:story/obtain_armor"))).isDone() && entity instanceof ServerPlayer _plr71
-						&& _plr71.level() instanceof ServerLevel && _plr71.getAdvancements().getOrStartProgress(_plr71.server.getAdvancements().get(ResourceLocation.parse("minecraft:story/mine_diamond"))).isDone()
-						&& entity instanceof ServerPlayer _plr72 && _plr72.level() instanceof ServerLevel
-						&& _plr72.getAdvancements().getOrStartProgress(_plr72.server.getAdvancements().get(ResourceLocation.parse("minecraft:story/shiny_gear"))).isDone() && entity instanceof ServerPlayer _plr73
-						&& _plr73.level() instanceof ServerLevel && _plr73.getAdvancements().getOrStartProgress(_plr73.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris"))).isDone()
-						&& entity instanceof ServerPlayer _plr74 && _plr74.level() instanceof ServerLevel
-						&& _plr74.getAdvancements().getOrStartProgress(_plr74.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/netherite_armor"))).isDone() && entity instanceof ServerPlayer _plr75
-						&& _plr75.level() instanceof ServerLevel && _plr75.getAdvancements().getOrStartProgress(_plr75.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_any_armor_pattern"))).isDone()) {
+				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("smith") && entity instanceof ServerPlayer _plr82 && _plr82.level() instanceof ServerLevel
+						&& _plr82.getAdvancements().getOrStartProgress(_plr82.server.getAdvancements().get(ResourceLocation.parse("minecraft:story/obtain_armor"))).isDone() && entity instanceof ServerPlayer _plr83
+						&& _plr83.level() instanceof ServerLevel && _plr83.getAdvancements().getOrStartProgress(_plr83.server.getAdvancements().get(ResourceLocation.parse("minecraft:story/mine_diamond"))).isDone()
+						&& entity instanceof ServerPlayer _plr84 && _plr84.level() instanceof ServerLevel
+						&& _plr84.getAdvancements().getOrStartProgress(_plr84.server.getAdvancements().get(ResourceLocation.parse("minecraft:story/shiny_gear"))).isDone() && entity instanceof ServerPlayer _plr85
+						&& _plr85.level() instanceof ServerLevel && _plr85.getAdvancements().getOrStartProgress(_plr85.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris"))).isDone()
+						&& entity instanceof ServerPlayer _plr86 && _plr86.level() instanceof ServerLevel
+						&& _plr86.getAdvancements().getOrStartProgress(_plr86.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/netherite_armor"))).isDone() && entity instanceof ServerPlayer _plr87
+						&& _plr87.level() instanceof ServerLevel && _plr87.getAdvancements().getOrStartProgress(_plr87.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_any_armor_pattern"))).isDone()) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -413,14 +476,14 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("beekeeper") && entity instanceof ServerPlayer _plr79 && _plr79.level() instanceof ServerLevel
-						&& _plr79.getAdvancements().getOrStartProgress(_plr79.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/safely_harvest_honey"))).isDone() && entity instanceof ServerPlayer _plr80
-						&& _plr80.level() instanceof ServerLevel && _plr80.getAdvancements().getOrStartProgress(_plr80.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/honey_block_slide"))).isDone()
-						&& entity instanceof ServerPlayer _plr81 && _plr81.level() instanceof ServerLevel
-						&& _plr81.getAdvancements().getOrStartProgress(_plr81.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_on"))).isDone() && entity instanceof ServerPlayer _plr82
-						&& _plr82.level() instanceof ServerLevel && _plr82.getAdvancements().getOrStartProgress(_plr82.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_off"))).isDone()
-						&& entity instanceof ServerPlayer _plr83 && _plr83.level() instanceof ServerLevel
-						&& _plr83.getAdvancements().getOrStartProgress(_plr83.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/silk_touch_nest"))).isDone()) {
+				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("beekeeper") && entity instanceof ServerPlayer _plr91 && _plr91.level() instanceof ServerLevel
+						&& _plr91.getAdvancements().getOrStartProgress(_plr91.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/safely_harvest_honey"))).isDone() && entity instanceof ServerPlayer _plr92
+						&& _plr92.level() instanceof ServerLevel && _plr92.getAdvancements().getOrStartProgress(_plr92.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/honey_block_slide"))).isDone()
+						&& entity instanceof ServerPlayer _plr93 && _plr93.level() instanceof ServerLevel
+						&& _plr93.getAdvancements().getOrStartProgress(_plr93.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_on"))).isDone() && entity instanceof ServerPlayer _plr94
+						&& _plr94.level() instanceof ServerLevel && _plr94.getAdvancements().getOrStartProgress(_plr94.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/wax_off"))).isDone()
+						&& entity instanceof ServerPlayer _plr95 && _plr95.level() instanceof ServerLevel
+						&& _plr95.getAdvancements().getOrStartProgress(_plr95.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/silk_touch_nest"))).isDone()) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -441,22 +504,22 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("collector") && entity instanceof ServerPlayer _plr87 && _plr87.level() instanceof ServerLevel
-						&& _plr87.getAdvancements().getOrStartProgress(_plr87.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/froglights"))).isDone() && entity instanceof ServerPlayer _plr88
-						&& _plr88.level() instanceof ServerLevel && _plr88.getAdvancements().getOrStartProgress(_plr88.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_all_exclusive_armor_patterns"))).isDone()
-						&& entity instanceof ServerPlayer _plr89 && _plr89.level() instanceof ServerLevel && _plr89.getAdvancements().getOrStartProgress(_plr89.server.getAdvancements().get(ResourceLocation.parse("minecraft:end/dragon_egg"))).isDone()
-						&& entity instanceof ServerPlayer _plr90 && _plr90.level() instanceof ServerLevel
-						&& _plr90.getAdvancements().getOrStartProgress(_plr90.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/create_beacon"))).isDone() && entity instanceof ServerPlayer _plr91
-						&& _plr91.level() instanceof ServerLevel && _plr91.getAdvancements().getOrStartProgress(_plr91.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/obtain_sniffer_egg"))).isDone()
-						&& entity instanceof ServerPlayer _plr92 && _plr92.level() instanceof ServerLevel
-						&& _plr92.getAdvancements().getOrStartProgress(_plr92.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/whole_pack"))).isDone() && entity instanceof ServerPlayer _plr93
-						&& _plr93.level() instanceof ServerLevel && _plr93.getAdvancements().getOrStartProgress(_plr93.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/complete_catalogue"))).isDone()
-						&& entity instanceof ServerPlayer _plr94 && _plr94.level() instanceof ServerLevel && _plr94.getAdvancements().getOrStartProgress(_plr94.server.getAdvancements().get(ResourceLocation.parse("minecraft:end/elytra"))).isDone()
-						&& entity instanceof ServerPlayer _plr95 && _plr95.level() instanceof ServerLevel
-						&& _plr95.getAdvancements().getOrStartProgress(_plr95.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/throw_trident"))).isDone() && entity instanceof ServerPlayer _plr96
-						&& _plr96.level() instanceof ServerLevel && _plr96.getAdvancements().getOrStartProgress(_plr96.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris"))).isDone()
-						&& entity instanceof ServerPlayer _plr97 && _plr97.level() instanceof ServerLevel
-						&& _plr97.getAdvancements().getOrStartProgress(_plr97.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/overoverkill"))).isDone()) {
+				} else if ((entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString).equals("collector") && entity instanceof ServerPlayer _plr99 && _plr99.level() instanceof ServerLevel
+						&& _plr99.getAdvancements().getOrStartProgress(_plr99.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/froglights"))).isDone() && entity instanceof ServerPlayer _plr100
+						&& _plr100.level() instanceof ServerLevel && _plr100.getAdvancements().getOrStartProgress(_plr100.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/trim_with_all_exclusive_armor_patterns"))).isDone()
+						&& entity instanceof ServerPlayer _plr101 && _plr101.level() instanceof ServerLevel
+						&& _plr101.getAdvancements().getOrStartProgress(_plr101.server.getAdvancements().get(ResourceLocation.parse("minecraft:end/dragon_egg"))).isDone() && entity instanceof ServerPlayer _plr102
+						&& _plr102.level() instanceof ServerLevel && _plr102.getAdvancements().getOrStartProgress(_plr102.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/create_beacon"))).isDone()
+						&& entity instanceof ServerPlayer _plr103 && _plr103.level() instanceof ServerLevel
+						&& _plr103.getAdvancements().getOrStartProgress(_plr103.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/obtain_sniffer_egg"))).isDone() && entity instanceof ServerPlayer _plr104
+						&& _plr104.level() instanceof ServerLevel && _plr104.getAdvancements().getOrStartProgress(_plr104.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/whole_pack"))).isDone()
+						&& entity instanceof ServerPlayer _plr105 && _plr105.level() instanceof ServerLevel
+						&& _plr105.getAdvancements().getOrStartProgress(_plr105.server.getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/complete_catalogue"))).isDone() && entity instanceof ServerPlayer _plr106
+						&& _plr106.level() instanceof ServerLevel && _plr106.getAdvancements().getOrStartProgress(_plr106.server.getAdvancements().get(ResourceLocation.parse("minecraft:end/elytra"))).isDone() && entity instanceof ServerPlayer _plr107
+						&& _plr107.level() instanceof ServerLevel && _plr107.getAdvancements().getOrStartProgress(_plr107.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/throw_trident"))).isDone()
+						&& entity instanceof ServerPlayer _plr108 && _plr108.level() instanceof ServerLevel
+						&& _plr108.getAdvancements().getOrStartProgress(_plr108.server.getAdvancements().get(ResourceLocation.parse("minecraft:nether/obtain_ancient_debris"))).isDone() && entity instanceof ServerPlayer _plr109
+						&& _plr109.level() instanceof ServerLevel && _plr109.getAdvancements().getOrStartProgress(_plr109.server.getAdvancements().get(ResourceLocation.parse("minecraft:adventure/overoverkill"))).isDone()) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -481,7 +544,7 @@ public class FourthIdealProcedure {
 			} else if (("Skybreakers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "")) {
-				if (world instanceof Level _lvl102 && _lvl102.getServer() != null && _lvl102.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/kill_dragon")).value().equals(advancement)) {
+				if (world instanceof Level _lvl114 && _lvl114.getServer() != null && _lvl114.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:end/kill_dragon")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -506,7 +569,7 @@ public class FourthIdealProcedure {
 			} else if (("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 					? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 					: "")) {
-				if (world instanceof Level _lvl107 && _lvl107.getServer() != null && _lvl107.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/bred_all_animals")).value().equals(advancement)) {
+				if (world instanceof Level _lvl119 && _lvl119.getServer() != null && _lvl119.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:husbandry/bred_all_animals")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -527,7 +590,7 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl111 && _lvl111.getServer() != null && _lvl111.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/very_very_frightening")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl123 && _lvl123.getServer() != null && _lvl123.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:adventure/very_very_frightening")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -548,7 +611,7 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl115 && _lvl115.getServer() != null && _lvl115.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/uneasy_alliance")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl127 && _lvl127.getServer() != null && _lvl127.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/uneasy_alliance")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -569,7 +632,7 @@ public class FourthIdealProcedure {
 							}
 						}
 					}
-				} else if (world instanceof Level _lvl119 && _lvl119.getServer() != null && _lvl119.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/all_potions")).value().equals(advancement)) {
+				} else if (world instanceof Level _lvl131 && _lvl131.getServer() != null && _lvl131.getServer().getAdvancements().get(ResourceLocation.parse("minecraft:nether/all_potions")).value().equals(advancement)) {
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();

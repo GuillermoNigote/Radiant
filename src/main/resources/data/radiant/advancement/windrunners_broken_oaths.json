@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "radiant:windrunners_glyph"
+    },
+    "title": {
+      "translate": "advancements.windrunners_broken_oaths.title"
+    },
+    "description": {
+      "translate": "advancements.windrunners_broken_oaths.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "windrunners_broken_oaths_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "radiant:windrunners_fourth_ideal"
+}

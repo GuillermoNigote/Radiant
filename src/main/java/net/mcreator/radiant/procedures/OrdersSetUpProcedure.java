@@ -126,7 +126,8 @@ public class OrdersSetUpProcedure {
 			}
 			RadiantModVariables.WorldVariables.get(world).OrdersNotExist = false;
 			RadiantModVariables.WorldVariables.get(world).syncData(world);
-		} else if (entity.getData(RadiantModVariables.PLAYER_VARIABLES).FirstSpawn) {
+		}
+		if (entity.getData(RadiantModVariables.PLAYER_VARIABLES).FirstSpawn) {
 			{
 				RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
 				_vars.FirstSpawn = false;

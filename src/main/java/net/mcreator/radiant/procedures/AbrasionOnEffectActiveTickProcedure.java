@@ -41,23 +41,26 @@ public class AbrasionOnEffectActiveTickProcedure {
 					if (entity instanceof LivingEntity _livEnt43 && _livEnt43.hasEffect(RadiantModMobEffects.DIVISION_DUSTBRINGER) && entity.isShiftKeyDown()) {
 						if (entity instanceof Player _player)
 							_player.giveExperiencePoints(-(5));
-						DivisionSurgeOnBlockProcedure.execute(world, entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant, entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - 1, entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant);
-						DivisionSurgeOnBlockProcedure.execute(world,
+						DivisionRightClickOnBlockProcedure.execute(world, entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant, entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - 1,
+								entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant, entity);
+						DivisionRightClickOnBlockProcedure.execute(world,
 								Mth.nextInt(RandomSource.create(), 0, 1) != 0
 										? entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant + Mth.nextInt(RandomSource.create(), 0, 1)
 										: entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - Mth.nextInt(RandomSource.create(), 0, 1),
 								entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - 1,
 								Mth.nextInt(RandomSource.create(), 0, 1) != 0
 										? entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant + Mth.nextInt(RandomSource.create(), 0, 1)
-										: entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - Mth.nextInt(RandomSource.create(), 0, 1));
-						DivisionSurgeOnBlockProcedure.execute(world,
+										: entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - Mth.nextInt(RandomSource.create(), 0, 1),
+								entity);
+						DivisionRightClickOnBlockProcedure.execute(world,
 								Mth.nextInt(RandomSource.create(), 0, 1) != 0
 										? entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant + Mth.nextInt(RandomSource.create(), 0, 1)
 										: entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - Mth.nextInt(RandomSource.create(), 0, 1),
 								entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - 1,
 								Mth.nextInt(RandomSource.create(), 0, 1) != 0
 										? entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant + Mth.nextInt(RandomSource.create(), 0, 1)
-										: entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - Mth.nextInt(RandomSource.create(), 0, 1));
+										: entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - Mth.nextInt(RandomSource.create(), 0, 1),
+								entity);
 					} else if (entity instanceof LivingEntity _livEnt58 && _livEnt58.hasEffect(RadiantModMobEffects.PROGRESSION_EDGEDANCER) && entity.isShiftKeyDown()) {
 						if (entity instanceof Player _player)
 							_player.giveExperiencePoints(-(5));

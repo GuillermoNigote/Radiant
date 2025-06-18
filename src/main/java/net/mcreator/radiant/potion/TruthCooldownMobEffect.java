@@ -40,11 +40,6 @@ public class TruthCooldownMobEffect extends MobEffect {
 			public boolean renderInventoryText(MobEffectInstance instance, EffectRenderingInventoryScreen<?> screen, GuiGraphics guiGraphics, int x, int y, int blitOffset) {
 				return false;
 			}
-
-			@Override
-			public boolean isVisibleInGui(MobEffectInstance effect) {
-				return false;
-			}
 		}, RadiantModMobEffects.TRUTH_COOLDOWN.get());
 	}
 }

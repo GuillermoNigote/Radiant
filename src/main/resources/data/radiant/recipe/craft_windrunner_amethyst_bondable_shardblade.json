@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "radiant:windrunner_dead_shardblade"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "result": {
+    "id": "radiant:windrunner_amethyst_bondable_shardblade",
+    "count": 1
+  }
+}

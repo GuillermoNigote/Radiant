@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/amethyst_shardblade_truthwatcher",
+  "textures": {
+    "0": "radiant:block/shardblade_truthwatcher_amethyst",
+    "particle": "radiant:item/shardblade_truthwatcher_amethyst"
+  }
+}

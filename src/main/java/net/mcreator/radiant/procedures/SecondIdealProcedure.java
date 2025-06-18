@@ -58,19 +58,19 @@ public class SecondIdealProcedure {
 			if ((text).equals("I will seek self-mastery") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr2 && _plr2.level() instanceof ServerLevel
 					&& _plr2.getAdvancements().getOrStartProgress(_plr2.server.getAdvancements().get(ResourceLocation.parse("radiant:dustbringers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Dustbringers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:ashspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Dustbringers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -93,19 +93,19 @@ public class SecondIdealProcedure {
 			} else if ((text).equals("I will remember those who have been forgotten") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr10 && _plr10.level() instanceof ServerLevel
 					&& _plr10.getAdvancements().getOrStartProgress(_plr10.server.getAdvancements().get(ResourceLocation.parse("radiant:edgedancers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Edgedancers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:cultivationspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Edgedancers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -128,19 +128,19 @@ public class SecondIdealProcedure {
 			} else if ((text).equals("I will seek freedom for those in bondage") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr18 && _plr18.level() instanceof ServerLevel
 					&& _plr18.getAdvancements().getOrStartProgress(_plr18.server.getAdvancements().get(ResourceLocation.parse("radiant:willshapers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Willshapers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:lightspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Willshapers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -163,19 +163,19 @@ public class SecondIdealProcedure {
 			} else if ((text).equals("I will step forward when others fall back") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr26 && _plr26.level() instanceof ServerLevel
 					&& _plr26.getAdvancements().getOrStartProgress(_plr26.server.getAdvancements().get(ResourceLocation.parse("radiant:stonewards_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Stonewards");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:peakspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Stonewards");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -198,19 +198,19 @@ public class SecondIdealProcedure {
 			} else if ((text).equals("I will seek truth") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr34 && _plr34.level() instanceof ServerLevel
 					&& _plr34.getAdvancements().getOrStartProgress(_plr34.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatchers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Truthwatchers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:mistspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Truthwatchers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -233,19 +233,19 @@ public class SecondIdealProcedure {
 			} else if ((text).equals("I will seek order") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr42 && _plr42.level() instanceof ServerLevel
 					&& _plr42.getAdvancements().getOrStartProgress(_plr42.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreakers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Skybreakers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:highspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Skybreakers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -268,19 +268,19 @@ public class SecondIdealProcedure {
 			} else if ((text).equals("I will protect those who cannot protect themselves") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr50 && _plr50.level() instanceof ServerLevel
 					&& _plr50.getAdvancements().getOrStartProgress(_plr50.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Windrunners");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:honorspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Windrunners");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -303,19 +303,19 @@ public class SecondIdealProcedure {
 			} else if ((text).equals("I will speak my truth") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr58 && _plr58.level() instanceof ServerLevel
 					&& _plr58.getAdvancements().getOrStartProgress(_plr58.server.getAdvancements().get(ResourceLocation.parse("radiant:lightweavers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Lightweavers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:cryptic ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Lightweavers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					Entity _ent = entity;
@@ -363,21 +363,6 @@ public class SecondIdealProcedure {
 						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
 					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 				}
-				{
-					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-					_vars.RadiantString = new java.text.DecimalFormat("##").format(Mth.nextInt(RandomSource.create(), 72000, 144000));
-					_vars.syncPlayerVariables(entity);
-				}
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.TRUTH_COOLDOWN, (int) new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
-							}
-							return 0;
-						}
-					}.convert(entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString), 0));
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:lightweaver_third_ideal"));
 					if (_adv != null) {
@@ -388,26 +373,11 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I am bad at pvp") && !(entity instanceof LivingEntity _livEnt74 && _livEnt74.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+			} else if ((text).equals("I am bad at pvp") && !(entity instanceof LivingEntity _livEnt72 && _livEnt72.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
 					&& getEntityScore("Oath", entity) == 2) {
-				{
-					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-					_vars.RadiantString = new java.text.DecimalFormat("##").format(Mth.nextInt(RandomSource.create(), 72000, 144000));
-					_vars.syncPlayerVariables(entity);
-				}
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.TRUTH_COOLDOWN, (int) new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
-							}
-							return 0;
-						}
-					}.convert(entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString), 0));
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.level().getScoreboard();
@@ -426,26 +396,11 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I killed the wandering trader for his lamas") && !(entity instanceof LivingEntity _livEnt81 && _livEnt81.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+			} else if ((text).equals("This is just another two-week minecraft phase") && !(entity instanceof LivingEntity _livEnt77 && _livEnt77.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
 					&& getEntityScore("Oath", entity) == 2) {
-				{
-					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-					_vars.RadiantString = new java.text.DecimalFormat("##").format(Mth.nextInt(RandomSource.create(), 72000, 144000));
-					_vars.syncPlayerVariables(entity);
-				}
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.TRUTH_COOLDOWN, (int) new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
-							}
-							return 0;
-						}
-					}.convert(entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString), 0));
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.level().getScoreboard();
@@ -464,26 +419,34 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I dont like mining") && !(entity instanceof LivingEntity _livEnt88 && _livEnt88.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+			} else if ((text).equals("I killed the wandering trader for his lamas") && !(entity instanceof LivingEntity _livEnt82 && _livEnt82.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
 					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 							: "")
 					&& getEntityScore("Oath", entity) == 2) {
 				{
-					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-					_vars.RadiantString = new java.text.DecimalFormat("##").format(Mth.nextInt(RandomSource.create(), 72000, 144000));
-					_vars.syncPlayerVariables(entity);
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.level().getScoreboard();
+					Objective _so = _sc.getObjective("Oath");
+					if (_so == null)
+						_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+					_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(3);
 				}
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.TRUTH_COOLDOWN, (int) new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
-							}
-							return 0;
+				if (entity instanceof ServerPlayer _player) {
+					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:lightweaver_third_ideal"));
+					if (_adv != null) {
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
 						}
-					}.convert(entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantString), 0));
+					}
+				}
+			} else if ((text).equals("I dont like mining") && !(entity instanceof LivingEntity _livEnt87 && _livEnt87.hasEffect(RadiantModMobEffects.TRUTH_COOLDOWN))
+					&& ("Lightweavers").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
+							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
+							: "")
+					&& getEntityScore("Oath", entity) == 2) {
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.level().getScoreboard();
@@ -541,21 +504,22 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will become a master archer") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will become a master archer") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr112 && _plr112.level() instanceof ServerLevel
+					&& _plr112.getAdvancements().getOrStartProgress(_plr112.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecallers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:inkspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
@@ -580,21 +544,22 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will become a master smith") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will become a master smith") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr120 && _plr120.level() instanceof ServerLevel
+					&& _plr120.getAdvancements().getOrStartProgress(_plr120.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecallers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:inkspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
@@ -619,21 +584,22 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will become a master beekeeper") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will become a master beekeeper") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr128 && _plr128.level() instanceof ServerLevel
+					&& _plr128.getAdvancements().getOrStartProgress(_plr128.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecallers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:inkspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
@@ -658,21 +624,22 @@ public class SecondIdealProcedure {
 						}
 					}
 				}
-			} else if ((text).equals("I will fill my collection") && getEntityScore("Oath", entity) < 2) {
+			} else if ((text).equals("I will fill my collection") && getEntityScore("Oath", entity) < 2 && !(entity instanceof ServerPlayer _plr136 && _plr136.level() instanceof ServerLevel
+					&& _plr136.getAdvancements().getOrStartProgress(_plr136.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecallers_broken_oaths"))).isDone())) {
 				if (getEntityScore("Oath", entity) == 0) {
-					{
-						Entity _entityTeam = entity;
-						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
-						if (_pt != null) {
-							if (_entityTeam instanceof Player _player)
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-							else
-								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-						}
-					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								("summon radiant:inkspren ~ ~1 ~ {Owner:" + (entity.getDisplayName().getString() + "}")));
+				}
+				{
+					Entity _entityTeam = entity;
+					PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");
+					if (_pt != null) {
+						if (_entityTeam instanceof Player _player)
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+						else
+							_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+					}
 				}
 				{
 					RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);

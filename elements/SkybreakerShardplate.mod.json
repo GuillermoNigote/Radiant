@@ -11,22 +11,18 @@
     "enableBoots": true,
     "textureBoots": "skybreaker_boots",
     "onHelmetTick": {
-      "name": "ShardplateHelmetTickEvent"
-    },
-    "onBodyTick": {
       "name": "ShardplateTickEvent"
     },
+    "onBodyTick": {
+      "name": "ShardplateChestTickEvent"
+    },
     "onLeggingsTick": {
-      "name": "ShardplateLeggingsTickEvent"
+      "name": "ShardplateTickEvent"
     },
     "onBootsTick": {
-      "name": "ShardplateBootsTickEvent"
+      "name": "ShardplateTickEvent"
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Radiant"
-      }
-    ],
+    "creativeTabs": [],
     "armorTextureFile": "skybreaker_shardplate",
     "helmetName": "Shardplate Helmet",
     "bodyName": "Shardplate Chestplate",

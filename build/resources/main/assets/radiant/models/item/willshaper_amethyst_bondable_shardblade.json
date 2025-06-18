@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/amethyst_shardblade_willshaper",
+  "textures": {
+    "0": "radiant:block/shardblade_willshaper_amethyst",
+    "particle": "radiant:item/shardblade_willshaper_amethyst"
+  }
+}

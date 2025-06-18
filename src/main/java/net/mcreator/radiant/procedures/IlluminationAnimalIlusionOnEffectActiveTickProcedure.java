@@ -14,8 +14,9 @@ public class IlluminationAnimalIlusionOnEffectActiveTickProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0) {
-			if (entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantCounter == 4) {
+		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0
+				&& (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER) || entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER))) {
+			if (entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantCounter == 5) {
 				if (entity instanceof Player _player)
 					_player.giveExperiencePoints(-(1));
 			}
@@ -23,7 +24,7 @@ public class IlluminationAnimalIlusionOnEffectActiveTickProcedure {
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "tp @e[name=] @s");
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "tp @e[tag=ilusion,limit=1,sort=nearest] @s");
 				}
 			}
 		} else {

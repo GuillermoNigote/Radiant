@@ -9,12 +9,14 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -28,6 +30,7 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.radiant.init.RadiantModMobEffects;
@@ -40,7 +43,7 @@ public class TransportationChangeDimensionProcedure {
 	@SubscribeEvent
 	public static void onLeftClick(PlayerInteractEvent.LeftClickEmpty event) {
 		PacketDistributor.sendToServer(new TransportationChangeDimensionMessage());
-		execute(event.getEntity());
+		execute(event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
 	}
 
 	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -59,7 +62,7 @@ public class TransportationChangeDimensionProcedure {
 				context.enqueueWork(() -> {
 					if (!context.player().level().hasChunkAt(context.player().blockPosition()))
 						return;
-					execute(context.player());
+					execute(context.player().level(), context.player().getX(), context.player().getY(), context.player().getZ(), context.player());
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
@@ -73,11 +76,11 @@ public class TransportationChangeDimensionProcedure {
 		}
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
@@ -86,6 +89,8 @@ public class TransportationChangeDimensionProcedure {
 				if (entity instanceof Player _player)
 					_player.giveExperienceLevels(-(30));
 				if ((entity.level().dimension()) == Level.END) {
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.WATER_ELSECALL, 15, 0));
 					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 						ResourceKey<Level> destinationType = Level.OVERWORLD;
 						if (_player.level().dimension() == destinationType)
@@ -101,6 +106,10 @@ public class TransportationChangeDimensionProcedure {
 						}
 					}
 				} else {
+					if (entity.isInWater() && world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("radiant:waterbiome")))) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(RadiantModMobEffects.WATER_ELSECALL, 10, 0));
+					}
 					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 						ResourceKey<Level> destinationType = Level.END;
 						if (_player.level().dimension() == destinationType)

@@ -249,11 +249,7 @@ public class UseFirstSurgeOnKeyPressedProcedure {
 				} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 						? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 						: "").equals("Truthwatchers")) {
-					if (entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(RadiantModMobEffects.ILLUMINATION_ANIMAL_ILUSION) && entity.isShiftKeyDown()) {
-						if (entity instanceof LivingEntity _entity)
-							_entity.removeEffect(RadiantModMobEffects.ILLUMINATION_ANIMAL_ILUSION);
-					}
-					if (entity instanceof LivingEntity _livEnt68 && _livEnt68.hasEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER)) {
+					if (entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER)) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER);
 					} else {
@@ -268,7 +264,7 @@ public class UseFirstSurgeOnKeyPressedProcedure {
 				} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 						? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 						: "").equals("Skybreakers")) {
-					if (entity instanceof LivingEntity _livEnt72 && _livEnt72.hasEffect(RadiantModMobEffects.GRAVITATION_SKYBREAKER)) {
+					if (entity instanceof LivingEntity _livEnt69 && _livEnt69.hasEffect(RadiantModMobEffects.GRAVITATION_SKYBREAKER)) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(RadiantModMobEffects.GRAVITATION_SKYBREAKER);
 					} else {
@@ -283,7 +279,7 @@ public class UseFirstSurgeOnKeyPressedProcedure {
 				} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 						? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 						: "").equals("Windrunners")) {
-					if (entity instanceof LivingEntity _livEnt76 && _livEnt76.hasEffect(RadiantModMobEffects.GRAVITATION_WINDRUNNER)) {
+					if (entity instanceof LivingEntity _livEnt73 && _livEnt73.hasEffect(RadiantModMobEffects.GRAVITATION_WINDRUNNER)) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(RadiantModMobEffects.GRAVITATION_WINDRUNNER);
 					} else {
@@ -298,11 +294,7 @@ public class UseFirstSurgeOnKeyPressedProcedure {
 				} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 						? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 						: "").equals("Lightweavers")) {
-					if (entity instanceof LivingEntity _livEnt80 && _livEnt80.hasEffect(RadiantModMobEffects.ILLUMINATION_ANIMAL_ILUSION) && entity.isShiftKeyDown()) {
-						if (entity instanceof LivingEntity _entity)
-							_entity.removeEffect(RadiantModMobEffects.ILLUMINATION_ANIMAL_ILUSION);
-					}
-					if (entity instanceof LivingEntity _livEnt83 && _livEnt83.hasEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER)) {
+					if (entity instanceof LivingEntity _livEnt77 && _livEnt77.hasEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER)) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER);
 					} else {
@@ -317,7 +309,7 @@ public class UseFirstSurgeOnKeyPressedProcedure {
 				} else if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 						? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 						: "").equals("Elsecallers")) {
-					if (entity instanceof LivingEntity _livEnt87 && _livEnt87.hasEffect(RadiantModMobEffects.TRANSPORTATION_ELSECALLER)) {
+					if (entity instanceof LivingEntity _livEnt81 && _livEnt81.hasEffect(RadiantModMobEffects.TRANSPORTATION_ELSECALLER)) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(RadiantModMobEffects.TRANSPORTATION_ELSECALLER);
 					} else {

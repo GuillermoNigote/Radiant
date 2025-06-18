@@ -68,17 +68,17 @@ public class RadiantModVariables {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
 			clone.SummonedBlade = original.SummonedBlade;
+			clone.SummonedPlate = original.SummonedPlate;
+			clone.FirstSpawn = original.FirstSpawn;
 			clone.RadiantCounter = original.RadiantCounter;
 			clone.xant = original.xant;
 			clone.yant = original.yant;
 			clone.zant = original.zant;
-			clone.BondedShardblade = original.BondedShardblade;
-			clone.SummonedPlate = original.SummonedPlate;
 			clone.SprenName = original.SprenName;
 			clone.RadiantString = original.RadiantString;
-			clone.SummoningPlate = original.SummoningPlate;
-			clone.FirstSpawn = original.FirstSpawn;
 			if (!event.isWasDeath()) {
+				clone.BondedShardblade = original.BondedShardblade;
+				clone.BondedShardplate = original.BondedShardplate;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -217,48 +217,48 @@ public class RadiantModVariables {
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+		public ItemStack BondedShardblade = ItemStack.EMPTY;
 		public boolean SummonedBlade = false;
+		public boolean SummonedPlate = false;
+		public boolean FirstSpawn = true;
 		public double RadiantCounter = 0;
 		public double xant = 0;
 		public double yant = 0;
 		public double zant = 0;
-		public ItemStack BondedShardblade = ItemStack.EMPTY;
-		public boolean SummonedPlate = false;
 		public String SprenName = "\"\"";
 		public String RadiantString = "\"\"";
-		public boolean SummoningPlate = false;
-		public boolean FirstSpawn = true;
+		public ItemStack BondedShardplate = ItemStack.EMPTY;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
+			nbt.put("BondedShardblade", BondedShardblade.saveOptional(lookupProvider));
 			nbt.putBoolean("SummonedBlade", SummonedBlade);
+			nbt.putBoolean("SummonedPlate", SummonedPlate);
+			nbt.putBoolean("FirstSpawn", FirstSpawn);
 			nbt.putDouble("RadiantCounter", RadiantCounter);
 			nbt.putDouble("xant", xant);
 			nbt.putDouble("yant", yant);
 			nbt.putDouble("zant", zant);
-			nbt.put("BondedShardblade", BondedShardblade.saveOptional(lookupProvider));
-			nbt.putBoolean("SummonedPlate", SummonedPlate);
 			nbt.putString("SprenName", SprenName);
 			nbt.putString("RadiantString", RadiantString);
-			nbt.putBoolean("SummoningPlate", SummoningPlate);
-			nbt.putBoolean("FirstSpawn", FirstSpawn);
+			nbt.put("BondedShardplate", BondedShardplate.saveOptional(lookupProvider));
 			return nbt;
 		}
 
 		@Override
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
+			BondedShardblade = ItemStack.parseOptional(lookupProvider, nbt.getCompound("BondedShardblade"));
 			SummonedBlade = nbt.getBoolean("SummonedBlade");
+			SummonedPlate = nbt.getBoolean("SummonedPlate");
+			FirstSpawn = nbt.getBoolean("FirstSpawn");
 			RadiantCounter = nbt.getDouble("RadiantCounter");
 			xant = nbt.getDouble("xant");
 			yant = nbt.getDouble("yant");
 			zant = nbt.getDouble("zant");
-			BondedShardblade = ItemStack.parseOptional(lookupProvider, nbt.getCompound("BondedShardblade"));
-			SummonedPlate = nbt.getBoolean("SummonedPlate");
 			SprenName = nbt.getString("SprenName");
 			RadiantString = nbt.getString("RadiantString");
-			SummoningPlate = nbt.getBoolean("SummoningPlate");
-			FirstSpawn = nbt.getBoolean("FirstSpawn");
+			BondedShardplate = ItemStack.parseOptional(lookupProvider, nbt.getCompound("BondedShardplate"));
 		}
 
 		public void syncPlayerVariables(Entity entity) {

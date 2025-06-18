@@ -13,8 +13,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-import net.mcreator.radiant.procedures.LivingShardbladeEntityIsHitWithToolProcedure;
 import net.mcreator.radiant.procedures.DeadShardbladeToolInInventoryTickProcedure;
+import net.mcreator.radiant.procedures.DeadShardbladeLivingEntityIsHitWithToolProcedure;
 
 public class StonewardDeadShardbladeItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -56,7 +56,7 @@ public class StonewardDeadShardbladeItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		LivingShardbladeEntityIsHitWithToolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
+		DeadShardbladeLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity);
 		return retval;
 	}
 

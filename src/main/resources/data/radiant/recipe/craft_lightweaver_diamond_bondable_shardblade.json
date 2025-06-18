@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "radiant:lightweaver_dead_shardblade"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "id": "radiant:lightweaver_diamond_bondable_shardblade",
+    "count": 1
+  }
+}

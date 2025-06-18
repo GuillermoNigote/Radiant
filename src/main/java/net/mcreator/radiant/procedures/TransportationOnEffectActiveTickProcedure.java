@@ -37,6 +37,8 @@ public class TransportationOnEffectActiveTickProcedure {
 		} else {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(RadiantModMobEffects.TRANSPORTATION_WILLSHAPER);
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(RadiantModMobEffects.TRANSPORTATION_ELSECALLER);
 		}
 	}
 }

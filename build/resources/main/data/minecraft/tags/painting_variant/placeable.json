@@ -4,8 +4,6 @@
     "radiant:truthwatchers_painting",
     "radiant:willshapers_painting",
     "radiant:stonewards_painting",
-    "radiant:edgedancers_painting",
-    "radiant:dustbringers_painting",
     "radiant:talenelat_painting",
     "radiant:pailiah_painting",
     "radiant:kelek_painting",
@@ -22,6 +20,8 @@
     "radiant:ishi_painting",
     "radiant:battah_painting",
     "radiant:honor_painting",
-    "radiant:cultivation_painting"
+    "radiant:cultivation_painting",
+    "radiant:edgedancers_painting",
+    "radiant:dustbringers_painting"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/diamond_shardblade_dustbringer",
+  "textures": {
+    "0": "radiant:block/shardblade-dustbringer_diamond",
+    "particle": "radiant:item/shardblade-dustbringer_diamond"
+  }
+}

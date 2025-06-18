@@ -14,7 +14,7 @@ public class IlluminationOakPlanksBlockBlockIsPlacedByProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER) || entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER))
-				&& (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 2) {
+				&& (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0) {
 			if (entity instanceof Player _player)
 				_player.giveExperiencePoints(-(5));
 			if (entity instanceof LivingEntity _entity) {

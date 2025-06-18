@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "radiant:willshaper_dead_shardblade"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "result": {
+    "id": "radiant:willshaper_emerald_bondable_shardblade",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "shardblade_skybreaker_emerald"
+      },
+      "name": "default"
+    }
+  }
+}

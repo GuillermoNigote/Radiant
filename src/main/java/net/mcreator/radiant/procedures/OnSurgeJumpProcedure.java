@@ -29,10 +29,11 @@ public class OnSurgeJumpProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(RadiantModMobEffects.ABRASION_DUSTBRINGER) || entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(RadiantModMobEffects.ABRASION_EDGEDANCER)) {
 			entity.setDeltaMovement(new Vec3((2.5 * entity.getDeltaMovement().x()), 0.5, (2.5 * entity.getDeltaMovement().z())));
-		} else if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(RadiantModMobEffects.WEARING_SHARDPLATE) && entity.isSprinting()) {
+		} else if ((entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(RadiantModMobEffects.WEARING_SHARDPLATE) || entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(RadiantModMobEffects.UNOATHED_WEARING_SHARDPLATE))
+				&& entity.isSprinting()) {
 			entity.setDeltaMovement(new Vec3((2.5 * entity.getDeltaMovement().x()), 0.5, (2.5 * entity.getDeltaMovement().z())));
 		}
-		if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(RadiantModMobEffects.GRAVITATION_WINDRUNNER) || entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(RadiantModMobEffects.GRAVITATION_SKYBREAKER)) {
+		if (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(RadiantModMobEffects.GRAVITATION_WINDRUNNER) || entity instanceof LivingEntity _livEnt12 && _livEnt12.hasEffect(RadiantModMobEffects.GRAVITATION_SKYBREAKER)) {
 			entity.setNoGravity(true);
 		}
 	}

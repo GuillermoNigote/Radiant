@@ -76,31 +76,31 @@
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "pushedByFluids": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "flyingMob": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "disableCollisions": false,
+    "disableCollisions": true,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
-    "immuneToDrowning": false,
-    "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
+    "immuneToLightning": true,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
-    "immuneToTrident": false,
-    "immuneToAnvil": false,
-    "immuneToWither": false,
-    "immuneToDragonBreath": false,
+    "immuneToExplosion": true,
+    "immuneToTrident": true,
+    "immuneToAnvil": true,
+    "immuneToWither": true,
+    "immuneToDragonBreath": true,
     "mobDrop": {
       "value": ""
     },
@@ -116,7 +116,13 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
+    "whenMobIsHurt": {
+      "name": "DisguiseEntityIsHurt"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",

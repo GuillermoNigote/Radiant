@@ -15,14 +15,18 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.radiant.procedures.WaterElsecallEffectExpiresProcedure;
+import net.mcreator.radiant.procedures.UnoathedWearingShardplateEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.SummonShardbladeManagerProcedure;
 import net.mcreator.radiant.procedures.PerpendicularityEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.IlluminationEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.IlluminationAnimalIlusionEffectExpiresProcedure;
 import net.mcreator.radiant.procedures.GravitationSkybreakersEffectExpiresProcedure;
 import net.mcreator.radiant.potion.WearingShardplateMobEffect;
+import net.mcreator.radiant.potion.WaterElsecallMobEffect;
 import net.mcreator.radiant.potion.VeganDedicationQuestMobEffect;
 import net.mcreator.radiant.potion.VeganDedicationMobEffect;
+import net.mcreator.radiant.potion.UnoathedWearingShardplateMobEffect;
 import net.mcreator.radiant.potion.TruthCooldownMobEffect;
 import net.mcreator.radiant.potion.TransportationWillshaperMobEffect;
 import net.mcreator.radiant.potion.TransportationElsecallerMobEffect;
@@ -32,6 +36,7 @@ import net.mcreator.radiant.potion.TensionStonewardMobEffect;
 import net.mcreator.radiant.potion.SummoningShardplateSecondMobEffect;
 import net.mcreator.radiant.potion.SummoningShardplateFirstMobEffect;
 import net.mcreator.radiant.potion.SummonShardbladeMobEffect;
+import net.mcreator.radiant.potion.ReverseUnoathedWearingShardplateMobEffect;
 import net.mcreator.radiant.potion.ProgressionTruthwatcherMobEffect;
 import net.mcreator.radiant.potion.ProgressionEdgedancerMobEffect;
 import net.mcreator.radiant.potion.PerpendicularityMobEffect;
@@ -95,6 +100,9 @@ public class RadiantModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> ABRASION_SLIPPERY = REGISTRY.register("abrasion_slippery", () -> new AbrasionSlipperyMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> PERPENDICULARITY = REGISTRY.register("perpendicularity", () -> new PerpendicularityMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> INFUSED_ARMOR = REGISTRY.register("infused_armor", () -> new InfusedArmorMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> WATER_ELSECALL = REGISTRY.register("water_elsecall", () -> new WaterElsecallMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> UNOATHED_WEARING_SHARDPLATE = REGISTRY.register("unoathed_wearing_shardplate", () -> new UnoathedWearingShardplateMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> REVERSE_UNOATHED_WEARING_SHARDPLATE = REGISTRY.register("reverse_unoathed_wearing_shardplate", () -> new ReverseUnoathedWearingShardplateMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -127,6 +135,10 @@ public class RadiantModMobEffects {
 			SummonShardbladeManagerProcedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(PERPENDICULARITY)) {
 			PerpendicularityEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		} else if (effectInstance.getEffect().is(WATER_ELSECALL)) {
+			WaterElsecallEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		} else if (effectInstance.getEffect().is(UNOATHED_WEARING_SHARDPLATE)) {
+			UnoathedWearingShardplateEffectExpiresProcedure.execute(entity);
 		}
 	}
 }

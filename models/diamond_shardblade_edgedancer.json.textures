@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "shardblade_edgedancer_diamond"
+      },
+      "name": "default"
+    }
+  }
+}

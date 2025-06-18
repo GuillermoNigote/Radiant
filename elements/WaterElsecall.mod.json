@@ -1,0 +1,27 @@
+{
+  "_fv": 77,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Prueba",
+    "icon": "transportation_elsecaller",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "CUSTOM:InvisibleRadiantParticle"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onExpired": {
+      "name": "WaterElsecallEffectExpires"
+    }
+  }
+}

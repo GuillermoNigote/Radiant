@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "radiant:windrunner_dead_shardblade"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "id": "radiant:windrunner_diamond_bondable_shardblade",
+    "count": 1
+  }
+}

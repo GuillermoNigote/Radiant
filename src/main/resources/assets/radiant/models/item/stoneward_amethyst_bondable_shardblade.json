@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/amethyst_shardblade_stoneward",
+  "textures": {
+    "0": "radiant:block/shardblade_stoneward_amethyst",
+    "particle": "radiant:item/shardblade_stoneward_amethyst"
+  }
+}

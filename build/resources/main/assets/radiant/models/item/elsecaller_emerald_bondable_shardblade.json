@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/emerald_shardblade_elsecaller",
+  "textures": {
+    "0": "radiant:block/shardblade-elsecaller_emerald",
+    "particle": "radiant:item/shardblade-elsecaller_emerald"
+  }
+}

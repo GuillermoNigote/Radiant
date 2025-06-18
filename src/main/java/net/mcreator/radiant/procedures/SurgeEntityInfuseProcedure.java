@@ -12,18 +12,6 @@ import net.minecraft.world.scores.Objective;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
-import net.minecraft.world.entity.monster.Spider;
-import net.minecraft.world.entity.monster.Creeper;
-import net.minecraft.world.entity.animal.horse.Horse;
-import net.minecraft.world.entity.animal.camel.Camel;
-import net.minecraft.world.entity.animal.Wolf;
-import net.minecraft.world.entity.animal.Sheep;
-import net.minecraft.world.entity.animal.Rabbit;
-import net.minecraft.world.entity.animal.Pig;
-import net.minecraft.world.entity.animal.Fox;
-import net.minecraft.world.entity.animal.Cow;
-import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -33,8 +21,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 
 import net.mcreator.radiant.init.RadiantModMobEffects;
 
@@ -108,446 +94,18 @@ public class SurgeEntityInfuseProcedure {
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt44 && _livEnt44.hasEffect(RadiantModMobEffects.ILLUMINATION_TRUTHWATCHER)
 					|| sourceentity instanceof LivingEntity _livEnt45 && _livEnt45.hasEffect(RadiantModMobEffects.ILLUMINATION_LIGHTWEAVER)) && sourceentity.isShiftKeyDown()) {
-				if (entity instanceof Pig) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon pig" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Cow) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon cow" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Chicken) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon chicken" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Sheep) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon sheep" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Villager) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon villager" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Horse) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon horse" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Fox) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon fox" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Wolf) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon wolf" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Camel) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon camel" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Creeper) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon radiant:fake_creeper" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Spider) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon radiant:fake_spider" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
-				} else if (entity instanceof Rabbit) {
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s minecraft:invisibility infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s radiant:illumination_animal_ilusion infinite 0 true");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule never");
-						}
-					}
-					{
-						Entity _ent = sourceentity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon rabbit" + " ~ ~ ~ {CustomName:\"\\\"\\\"\"}"));
-						}
-					}
+				if (sourceentity instanceof LivingEntity _livEnt47 && _livEnt47.hasEffect(RadiantModMobEffects.ILLUMINATION_ANIMAL_ILUSION)) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(RadiantModMobEffects.ILLUMINATION_ANIMAL_ILUSION);
 				}
+				DisguiseIlluminationProcedure.execute(entity, sourceentity);
 			} else if (entity instanceof ServerPlayer && sourceentity instanceof ServerPlayer && entity.isShiftKeyDown() && !sourceentity.isShiftKeyDown() && getEntityScore("Oath", entity) == 0 && getEntityScore("Oath", sourceentity) > 2) {
 				if (("Dustbringers")
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr126 && _plr126.level() instanceof ServerLevel
-								&& _plr126.getAdvancements().getOrStartProgress(_plr126.server.getAdvancements().get(ResourceLocation.parse("radiant:dustbringers_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr56 && _plr56.level() instanceof ServerLevel
+								&& _plr56.getAdvancements().getOrStartProgress(_plr56.server.getAdvancements().get(ResourceLocation.parse("radiant:dustbringers_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Dustbringers");
@@ -562,8 +120,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr129 && _plr129.level() instanceof ServerLevel
-								&& _plr129.getAdvancements().getOrStartProgress(_plr129.server.getAdvancements().get(ResourceLocation.parse("radiant:edgedancers_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr59 && _plr59.level() instanceof ServerLevel
+								&& _plr59.getAdvancements().getOrStartProgress(_plr59.server.getAdvancements().get(ResourceLocation.parse("radiant:edgedancers_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Edgedancers");
@@ -578,8 +136,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr132 && _plr132.level() instanceof ServerLevel
-								&& _plr132.getAdvancements().getOrStartProgress(_plr132.server.getAdvancements().get(ResourceLocation.parse("radiant:stonewards_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr62 && _plr62.level() instanceof ServerLevel
+								&& _plr62.getAdvancements().getOrStartProgress(_plr62.server.getAdvancements().get(ResourceLocation.parse("radiant:stonewards_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Stonewards");
@@ -594,8 +152,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr135 && _plr135.level() instanceof ServerLevel
-								&& _plr135.getAdvancements().getOrStartProgress(_plr135.server.getAdvancements().get(ResourceLocation.parse("radiant:willshapers_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr65 && _plr65.level() instanceof ServerLevel
+								&& _plr65.getAdvancements().getOrStartProgress(_plr65.server.getAdvancements().get(ResourceLocation.parse("radiant:willshapers_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Willshapers");
@@ -610,8 +168,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr138 && _plr138.level() instanceof ServerLevel
-								&& _plr138.getAdvancements().getOrStartProgress(_plr138.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatchers_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr68 && _plr68.level() instanceof ServerLevel
+								&& _plr68.getAdvancements().getOrStartProgress(_plr68.server.getAdvancements().get(ResourceLocation.parse("radiant:truthwatchers_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Truthwatchers");
@@ -626,8 +184,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr141 && _plr141.level() instanceof ServerLevel
-								&& _plr141.getAdvancements().getOrStartProgress(_plr141.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreakers_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr71 && _plr71.level() instanceof ServerLevel
+								&& _plr71.getAdvancements().getOrStartProgress(_plr71.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreakers_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Skybreakers");
@@ -642,8 +200,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr144 && _plr144.level() instanceof ServerLevel
-								&& _plr144.getAdvancements().getOrStartProgress(_plr144.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr74 && _plr74.level() instanceof ServerLevel
+								&& _plr74.getAdvancements().getOrStartProgress(_plr74.server.getAdvancements().get(ResourceLocation.parse("radiant:windrunners_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Windrunners");
@@ -658,8 +216,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr147 && _plr147.level() instanceof ServerLevel
-								&& _plr147.getAdvancements().getOrStartProgress(_plr147.server.getAdvancements().get(ResourceLocation.parse("radiant:lightweavers_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr77 && _plr77.level() instanceof ServerLevel
+								&& _plr77.getAdvancements().getOrStartProgress(_plr77.server.getAdvancements().get(ResourceLocation.parse("radiant:lightweavers_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Lightweavers");
@@ -674,8 +232,8 @@ public class SurgeEntityInfuseProcedure {
 						.equals(sourceentity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
 								? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
 								: "")
-						&& !(entity instanceof ServerPlayer _plr150 && _plr150.level() instanceof ServerLevel
-								&& _plr150.getAdvancements().getOrStartProgress(_plr150.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecallers_broken_oaths"))).isDone())) {
+						&& !(entity instanceof ServerPlayer _plr80 && _plr80.level() instanceof ServerLevel
+								&& _plr80.getAdvancements().getOrStartProgress(_plr80.server.getAdvancements().get(ResourceLocation.parse("radiant:elsecallers_broken_oaths"))).isDone())) {
 					{
 						Entity _entityTeam = entity;
 						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("Elsecallers");

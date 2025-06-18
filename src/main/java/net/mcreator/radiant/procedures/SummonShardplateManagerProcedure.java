@@ -30,10 +30,7 @@ public class SummonShardplateManagerProcedure {
 		ItemStack boots = ItemStack.EMPTY;
 		ItemStack Chestplate = ItemStack.EMPTY;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(RadiantModMobEffects.WEARING_SHARDPLATE)) {
-			if (!((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END) && (getEntityScore("Oath", entity) > 3
-					|| (entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-							? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-							: "").equals("Unoathed"))) {
+			if (!((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END) && getEntityScore("Oath", entity) > 3) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(RadiantModMobEffects.SUMMONING_SHARDPLATE_SECOND);
 				if (world instanceof ServerLevel _level)
@@ -739,80 +736,6 @@ public class SummonShardplateManagerProcedure {
 							_player.getInventory().setChanged();
 						} else if (_entity instanceof LivingEntity _living) {
 							_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(RadiantModItems.ELSECALLER_SHARDPLATE_BOOTS.get()));
-						}
-					}
-					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
-					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
-					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
-					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);
-					{
-						RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
-						_vars.SummonedPlate = true;
-						_vars.syncPlayerVariables(entity);
-					}
-				} else if (("Unoathed").equals(entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-						? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-						: "")) {
-					helmet = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
-					Chestplate = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
-					leggins = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
-					boots = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
-					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, helmet);
-						entityToSpawn.setPickUpDelay(10);
-						_level.addFreshEntity(entityToSpawn);
-					}
-					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, Chestplate);
-						entityToSpawn.setPickUpDelay(10);
-						_level.addFreshEntity(entityToSpawn);
-					}
-					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, leggins);
-						entityToSpawn.setPickUpDelay(10);
-						_level.addFreshEntity(entityToSpawn);
-					}
-					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, boots);
-						entityToSpawn.setPickUpDelay(10);
-						_level.addFreshEntity(entityToSpawn);
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 400, 0.25, 0.7, 0.25, 0);
-					{
-						Entity _entity = entity;
-						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(3, new ItemStack(RadiantModItems.SHARDPLATE_HELMET.get()));
-							_player.getInventory().setChanged();
-						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RadiantModItems.SHARDPLATE_HELMET.get()));
-						}
-					}
-					{
-						Entity _entity = entity;
-						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(2, new ItemStack(RadiantModItems.SHARDPLATE_CHESTPLATE.get()));
-							_player.getInventory().setChanged();
-						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(RadiantModItems.SHARDPLATE_CHESTPLATE.get()));
-						}
-					}
-					{
-						Entity _entity = entity;
-						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(1, new ItemStack(RadiantModItems.SHARDPLATE_LEGGINGS.get()));
-							_player.getInventory().setChanged();
-						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(RadiantModItems.SHARDPLATE_LEGGINGS.get()));
-						}
-					}
-					{
-						Entity _entity = entity;
-						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(0, new ItemStack(RadiantModItems.SHARDPLATE_BOOTS.get()));
-							_player.getInventory().setChanged();
-						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(RadiantModItems.SHARDPLATE_BOOTS.get()));
 						}
 					}
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.MENDING), 1);

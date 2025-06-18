@@ -54,6 +54,15 @@ public class InfuseGemProcedure {
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.AMETHYST_SHARD && (entity instanceof Player _plr ? _plr.experienceLevel : 0) > 2) {
+				if (entity instanceof Player _player)
+					_player.giveExperiencePoints(-(22));
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(RadiantModItems.INFUSED_AMETHYST.get()).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == RadiantModItems.INFUSED_DIAMOND.get()) {
 				if (entity instanceof Player _player)
 					_player.giveExperiencePoints(22);
@@ -69,6 +78,15 @@ public class InfuseGemProcedure {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(Items.EMERALD).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == RadiantModItems.INFUSED_AMETHYST.get()) {
+				if (entity instanceof Player _player)
+					_player.giveExperiencePoints(-(22));
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(Items.AMETHYST_SHARD).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}

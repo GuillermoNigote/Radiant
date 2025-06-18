@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
+    "radiant:stoneward_shardplate_bondable_leggings",
+    "radiant:willshaper_shardplate_bondable_leggings",
+    "radiant:elsecaller_shardplate_bondable_leggings",
+    "radiant:lightweaver_shardplate_bondable_leggings",
+    "radiant:truthwatcher_shardplate_bondable_leggings",
+    "radiant:edgedancer_shardplate_bondable_leggings",
+    "radiant:dustbringer_shardplate_bondable_leggings",
+    "radiant:skybreaker_shardplate_bondable_leggings",
+    "radiant:windrunner_shardplate_bondable_leggings",
     "radiant:stoneward_shardplate_leggings",
     "radiant:willshaper_shardplate_leggings",
     "radiant:elsecaller_shardplate_leggings",
@@ -10,7 +19,6 @@
     "radiant:dustbringer_shardplate_leggings",
     "radiant:skybreaker_shardplate_leggings",
     "radiant:windrunner_shardplate_leggings",
-    "radiant:shardplate_leggings",
     "radiant:tension_chainmail_armor_leggings",
     "radiant:tension_diamond_armor_leggings",
     "radiant:tension_iron_armor_leggings",

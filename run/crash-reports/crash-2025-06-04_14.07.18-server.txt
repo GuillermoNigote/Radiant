@@ -1,0 +1,149 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2025-06-04 14:07:18
+Description: Ticking player
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.entity.Entity.level()" because the return value of "net.mcreator.radiant.procedures.IlluminationAnimalIlusionEffectExpiresProcedure.findEntityInWorldRange(net.minecraft.world.level.LevelAccessor, java.lang.Class, double, double, double, double)" is null
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.procedures.IlluminationAnimalIlusionEffectExpiresProcedure.execute(IlluminationAnimalIlusionEffectExpiresProcedure.java:19) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.init.RadiantModMobEffects.expireEffects(RadiantModMobEffects.java:125) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.init.RadiantModMobEffects.onEffectRemoved(RadiantModMobEffects.java:105) ~[%23185!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:49) ~[bus-8.0.2.jar%23143!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23143!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23143!/:?] {}
+	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.event.EventHooks.onEffectRemoved(EventHooks.java:1033) ~[neoforge-21.1.92.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.removeEffect(LivingEntity.java:1014) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.procedures.IlluminationAnimalIlusionOnEffectActiveTickProcedure.execute(IlluminationAnimalIlusionOnEffectActiveTickProcedure.java:32) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.potion.IlluminationAnimalIlusionMobEffect.applyEffectTick(IlluminationAnimalIlusionMobEffect.java:31) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.effect.MobEffectInstance.tick(MobEffectInstance.java:223) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tickEffects(LivingEntity.java:789) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:493) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.tick(Entity.java:425) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2392) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:556) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:260) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.Connection.tick(Connection.java:412) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:159) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1051) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.procedures.IlluminationAnimalIlusionEffectExpiresProcedure.execute(IlluminationAnimalIlusionEffectExpiresProcedure.java:19) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.init.RadiantModMobEffects.expireEffects(RadiantModMobEffects.java:125) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.init.RadiantModMobEffects.onEffectRemoved(RadiantModMobEffects.java:105) ~[%23185!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:49) ~[bus-8.0.2.jar%23143!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23143!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23143!/:?] {}
+	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.event.EventHooks.onEffectRemoved(EventHooks.java:1033) ~[neoforge-21.1.92.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.removeEffect(LivingEntity.java:1014) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.procedures.IlluminationAnimalIlusionOnEffectActiveTickProcedure.execute(IlluminationAnimalIlusionOnEffectActiveTickProcedure.java:32) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/radiant@2.3.4/net.mcreator.radiant.potion.IlluminationAnimalIlusionMobEffect.applyEffectTick(IlluminationAnimalIlusionMobEffect.java:31) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.effect.MobEffectInstance.tick(MobEffectInstance.java:223) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tickEffects(LivingEntity.java:789) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:493) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.tick(Entity.java:425) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2392) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.player.Player.tick(Player.java:281) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.server.level.ServerPlayer)
+	Entity ID: 54
+	Entity Name: Dev
+	Entity's Exact location: -57.17, 67.00, 61.94
+	Entity's Block location: World: (-58,67,61), Section: (at 6,3,13 in -4,4,3; chunk contains blocks -64,-64,48 to -49,319,63), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:556) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:260) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.Connection.tick(Connection.java:412) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:159) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1051) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.92.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 21.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 162967096 bytes (155 MiB) / 629145600 bytes (600 MiB) up to 4278190080 bytes (4080 MiB)
+	CPUs: 6
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 13
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 3.70
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 6
+	Graphics card #0 name: NVIDIA GeForce RTX 2060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 6144.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.7652
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 30522.29
+	Virtual memory used (MiB): 26624.76
+	Swap memory total (MiB): 14202.75
+	Swap memory used (MiB): 1622.59
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 20601.89, total: 228291.00
+	Space in storage for workdir (MiB): available: 20601.89, total: 228291.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/54, l='ServerLevel[New World]', x=-57.17, y=67.00, z=61.94]]
+	Active Data Packs: vanilla, mod_data, mod/neoforge, mod/radiant
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/neoforge, mod/radiant, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 450720771631174936
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.92
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.34.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.34.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.34.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		neoforge-21.1.92.jar                              |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.92.jar                              |NeoForge                      |neoforge                      |21.1.92             |Manifest: NOSIGNATURE
+		main                                              |Radiant                       |radiant                       |2.3.4               |Manifest: NOSIGNATURE
+	Crash Report UUID: 79d9fab9-e962-4491-b70f-0c7340dd2099
+	FML: 4.0.34
+	NeoForge: 21.1.92

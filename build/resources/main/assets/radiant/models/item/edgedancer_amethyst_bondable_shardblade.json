@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/amethyst_shardblade_edgedancer_-_copia",
+  "textures": {
+    "0": "radiant:block/shardblade_edgedancer_amethyst",
+    "particle": "radiant:item/shardblade_edgedancer_amethyst"
+  }
+}

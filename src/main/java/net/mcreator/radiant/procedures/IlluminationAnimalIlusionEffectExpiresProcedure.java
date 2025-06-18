@@ -7,9 +7,6 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 
 import java.util.Comparator;
 
@@ -21,20 +18,6 @@ public class IlluminationAnimalIlusionEffectExpiresProcedure {
 			_entity.removeEffect(MobEffects.INVISIBILITY);
 		if (!(findEntityInWorldRange(world, Mob.class, x, y, z, 1)).level().isClientSide())
 			(findEntityInWorldRange(world, Mob.class, x, y, z, 1)).discard();
-		{
-			Entity _ent = entity;
-			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Truthwatchers collisionRule always");
-			}
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team modify Lightweavers collisionRule always");
-			}
-		}
 	}
 
 	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {

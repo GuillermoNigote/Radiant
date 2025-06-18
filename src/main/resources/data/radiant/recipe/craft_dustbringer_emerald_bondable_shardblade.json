@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "radiant:dustbringer_dead_shardblade"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "result": {
+    "id": "radiant:dustbringer_emerald_bondable_shardblade",
+    "count": 1
+  }
+}

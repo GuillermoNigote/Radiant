@@ -16,8 +16,13 @@ import net.mcreator.radiant.client.renderer.InksprenRenderer;
 import net.mcreator.radiant.client.renderer.IlluminationFakePlayerRenderer;
 import net.mcreator.radiant.client.renderer.HonorsprenRenderer;
 import net.mcreator.radiant.client.renderer.HighsprenRenderer;
+import net.mcreator.radiant.client.renderer.FakeZombieRenderer;
+import net.mcreator.radiant.client.renderer.FakeWitchRenderer;
+import net.mcreator.radiant.client.renderer.FakeVillagerPlainsRenderer;
 import net.mcreator.radiant.client.renderer.FakeSpiderRenderer;
+import net.mcreator.radiant.client.renderer.FakePigRenderer;
 import net.mcreator.radiant.client.renderer.FakeCreeperRenderer;
+import net.mcreator.radiant.client.renderer.FakeCowRenderer;
 import net.mcreator.radiant.client.renderer.CultivationsprenRenderer;
 import net.mcreator.radiant.client.renderer.CrypticRenderer;
 import net.mcreator.radiant.client.renderer.CognitivePeaksprenRenderer;
@@ -58,5 +63,10 @@ public class RadiantModEntityRenderers {
 		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_INKSPREN.get(), CognitiveInksprenRenderer::new);
 		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_CRYPTIC.get(), CognitiveCrypticRenderer::new);
 		event.registerEntityRenderer(RadiantModEntities.COGNITIVE_MISTSPREN.get(), CognitiveMistsprenRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.FAKE_COW.get(), FakeCowRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.FAKE_PIG.get(), FakePigRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.FAKE_VILLAGER_PLAINS.get(), FakeVillagerPlainsRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.FAKE_WITCH.get(), FakeWitchRenderer::new);
+		event.registerEntityRenderer(RadiantModEntities.FAKE_ZOMBIE.get(), FakeZombieRenderer::new);
 	}
 }

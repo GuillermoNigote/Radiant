@@ -4,7 +4,7 @@ license="Not specified"
 
 [[mods]]
 modId="radiant"
-version="2.2.2"
+version="2.3.5"
 displayName="Radiant"
 displayURL="https://mcreator.net"
 logoFile="logo.png"

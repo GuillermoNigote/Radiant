@@ -1,0 +1,7 @@
+{
+  "parent": "radiant:custom/shardblade_elsecaller",
+  "textures": {
+    "2": "radiant:block/shardblade_elsecaller",
+    "particle": "radiant:item/shardblade_elsecaller"
+  }
+}

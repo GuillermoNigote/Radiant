@@ -12,11 +12,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Radiant"
-      }
-    ],
+    "creativeTabs": [],
     "efficiency": 9.0,
     "attackSpeed": 1.6,
     "enchantability": 1,

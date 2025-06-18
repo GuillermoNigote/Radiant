@@ -13,10 +13,13 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.radiant.procedures.WearingShardplateOnEffectActiveTickProcedure;
+import net.mcreator.radiant.init.RadiantModParticleTypes;
 import net.mcreator.radiant.init.RadiantModMobEffects;
 import net.mcreator.radiant.RadiantMod;
 
@@ -33,6 +36,11 @@ public class WearingShardplateMobEffect extends MobEffect {
 		this.addAttributeModifier(Attributes.JUMP_STRENGTH, ResourceLocation.fromNamespaceAndPath(RadiantMod.MODID, "effect.wearing_shardplate_6"), 0.2, AttributeModifier.Operation.ADD_VALUE);
 		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(RadiantMod.MODID, "effect.wearing_shardplate_7"), 0.05, AttributeModifier.Operation.ADD_VALUE);
 		this.addAttributeModifier(Attributes.STEP_HEIGHT, ResourceLocation.fromNamespaceAndPath(RadiantMod.MODID, "effect.wearing_shardplate_8"), 1, AttributeModifier.Operation.ADD_VALUE);
+	}
+
+	@Override
+	public ParticleOptions createParticleOptions(MobEffectInstance mobEffectInstance) {
+		return (SimpleParticleType) (RadiantModParticleTypes.INVISIBLE_RADIANT_PARTICLE.get());
 	}
 
 	@Override

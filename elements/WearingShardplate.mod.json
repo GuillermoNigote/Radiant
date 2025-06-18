@@ -8,6 +8,9 @@
       "value": -1,
       "falpha": 0.0
     },
+    "particle": {
+      "value": "CUSTOM:InvisibleRadiantParticle"
+    },
     "onAddedSound": {
       "value": ""
     },

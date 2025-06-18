@@ -3,10 +3,16 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Illumination Disguise",
-    "icon": "illumination_animal_ilusion.png",
+    "icon": "illumination_animal_ilusion",
     "color": {
       "value": -15908318,
       "falpha": 0.0
+    },
+    "particle": {
+      "value": "CUSTOM:InvisibleRadiantParticle"
+    },
+    "onAddedSound": {
+      "value": ""
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",

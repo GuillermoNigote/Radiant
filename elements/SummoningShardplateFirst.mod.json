@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Summoning Shardplate 1",
-    "icon": "summoning_shardplate_first",
+    "icon": "wearing_shardplate",
     "color": {
       "value": -1,
       "falpha": 0.0

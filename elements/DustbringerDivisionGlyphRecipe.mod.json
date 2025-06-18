@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "stoneCuttingInputStack": {
-      "value": "Blocks.CONCRETE#14"
+      "value": "Blocks.STAINED_HARDENED_CLAY#14"
     },
     "stoneCuttingReturnStack": {
       "value": "CUSTOM:DustbringerDivisionGlyph"

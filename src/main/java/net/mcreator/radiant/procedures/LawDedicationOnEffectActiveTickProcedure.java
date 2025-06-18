@@ -87,6 +87,15 @@ public class LawDedicationOnEffectActiveTickProcedure {
 						_vars.SummonedBlade = false;
 						_vars.syncPlayerVariables(entity);
 					}
+					{
+						RadiantModVariables.PlayerVariables _vars = entity.getData(RadiantModVariables.PLAYER_VARIABLES);
+						_vars.SummonedPlate = false;
+						_vars.syncPlayerVariables(entity);
+					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(RadiantModMobEffects.GRAVITATION_SKYBREAKER);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(RadiantModMobEffects.DIVISION_SKYBREAKER);
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(RadiantModMobEffects.LAW_DEDICATION);
 					if (entity instanceof LivingEntity _entity)
@@ -129,6 +138,13 @@ public class LawDedicationOnEffectActiveTickProcedure {
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
+					if (getEntityScore("Oath", entity) > 3) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RadiantModItems.SKYBREAKER_SHARDPLATE_BONDABLE_HELMET.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+					}
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.level().getScoreboard();
@@ -136,6 +152,13 @@ public class LawDedicationOnEffectActiveTickProcedure {
 						if (_so == null)
 							_so = _sc.addObjective("Oath", ObjectiveCriteria.DUMMY, Component.literal("Oath"), ObjectiveCriteria.RenderType.INTEGER, true, null);
 						_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(-2);
+					}
+					{
+						Entity _ent = entity;
+						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "team leave @s");
+						}
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("radiant:skybreakers_broken_oaths"));

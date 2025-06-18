@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "shardblade_willshaper_amethyst"
+      },
+      "name": "default"
+    }
+  }
+}

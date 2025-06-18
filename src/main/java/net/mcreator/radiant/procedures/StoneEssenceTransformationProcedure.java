@@ -18,9 +18,9 @@ public class StoneEssenceTransformationProcedure {
 		if (entity instanceof Player _player)
 			_player.closeContainer();
 		if (entity instanceof Player _player)
-			_player.giveExperiencePoints(-((int) (20 * Math.sqrt((entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - x) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - x)
+			_player.giveExperienceLevels(-((int) Math.sqrt((entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - x) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - x)
 					+ (entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - y) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - y)
-					+ (entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - z) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - z)))));
+					+ (entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - z) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - z))));
 		{
 			Entity _ent = entity;
 			if (!_ent.level().isClientSide() && _ent.getServer() != null) {

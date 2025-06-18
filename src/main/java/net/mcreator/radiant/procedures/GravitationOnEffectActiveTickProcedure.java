@@ -2,19 +2,17 @@ package net.mcreator.radiant.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.radiant.network.RadiantModVariables;
 import net.mcreator.radiant.init.RadiantModMobEffects;
 
-import java.util.Random;
-
 public class GravitationOnEffectActiveTickProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		double Random = 0;
 		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0) {
 			entity.fallDistance = 0;
 			if (entity.isNoGravity() && entity.getData(RadiantModVariables.PLAYER_VARIABLES).RadiantCounter == 4) {
@@ -64,6 +62,7 @@ public class GravitationOnEffectActiveTickProcedure {
 					entity.setDeltaMovement(
 							new Vec3((1.5 * entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant), (1.5 * entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant), (1.5 * entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant)));
 				}
+				entity.setPose(Pose.FALL_FLYING);
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity)

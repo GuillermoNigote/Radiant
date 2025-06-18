@@ -1,0 +1,60 @@
+{
+  "_fv": 77,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Unoathed Wearing Shardplate",
+    "icon": "wearing_shardplate",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "CUSTOM:InvisibleRadiantParticle"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "SCALE"
+        },
+        "amount": -0.25,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "KNOCKBACK_RESISTANCE"
+        },
+        "amount": -0.75,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "JUMP_STRENGTH"
+        },
+        "amount": -0.3,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -0.1,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "STEP_HEIGHT"
+        },
+        "amount": -1.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

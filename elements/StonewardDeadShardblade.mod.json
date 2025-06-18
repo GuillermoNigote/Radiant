@@ -32,7 +32,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {
-      "name": "LivingShardbladeEntityIsHitWithTool"
+      "name": "DeadShardbladeLivingEntityIsHitWithTool"
     },
     "onItemInInventoryTick": {
       "name": "DeadShardbladeToolInInventoryTick"

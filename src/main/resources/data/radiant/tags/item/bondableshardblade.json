@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "radiant:dustbringer_emerald_bondable_shardblade",
+    "radiant:dustbringer_diamond_bondable_shardblade",
+    "radiant:edgedancer_emerald_bondable_shardblade",
+    "radiant:edgedancer_diamond_bondable_shardblade",
+    "radiant:skybreaker_diamond_bondable_shardblade",
+    "radiant:skybreaker_emerald_bondable_shardblade",
+    "radiant:windrunner_emerald_bondable_shardblade",
+    "radiant:windrunner_diamond_bondable_shardblade",
+    "radiant:truthwatcher_diamond_bondable_shardblade",
+    "radiant:truthwatcher_emerald_bondable_shardblade",
+    "radiant:lightweaver_diamond_bondable_shardblade",
+    "radiant:lightweaver_emerald_bondable_shardblade",
+    "radiant:willshaper_diamond_bondable_shardblade",
+    "radiant:willshaper_emerald_bondable_shardblade",
+    "radiant:stoneward_emerald_bondable_shardblade",
+    "radiant:stoneward_diamond_bondable_shardblade",
+    "radiant:elsecaller_emerald_bondable_shardblade",
+    "radiant:elsecaller_diamond_bondable_shardblade",
+    "radiant:dustbringer_amethyst_bondable_shardblade",
+    "radiant:edgedancer_amethyst_bondable_shardblade",
+    "radiant:skybreaker_amethyst_bondable_shardblade",
+    "radiant:windrunner_amethyst_bondable_shardblade",
+    "radiant:truthwatcher_amethyst_bondable_shardblade",
+    "radiant:lightweaver_amethyst_bondable_shardblade",
+    "radiant:willshaper_amethyst_bondable_shardblade",
+    "radiant:stoneward_amethyst_bondable_shardblade",
+    "radiant:elsecaller_amethyst_bondable_shardblade"
+  ]
+}

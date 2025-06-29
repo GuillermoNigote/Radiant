@@ -83,7 +83,7 @@ public class InfuseGemProcedure {
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == RadiantModItems.INFUSED_AMETHYST.get()) {
 				if (entity instanceof Player _player)
-					_player.giveExperiencePoints(-(22));
+					_player.giveExperiencePoints(22);
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(Items.AMETHYST_SHARD).copy();

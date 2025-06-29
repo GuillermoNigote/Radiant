@@ -1,4 +1,3 @@
-/xp add Dev 15 levels
 /summon minecraft:creeper
 /kill @e[ type=minecraft:sheep]
 /tp @e[tag=#radiant:spren] @s
@@ -48,3 +47,4 @@
 /team leave
 /team leave Dev
 /team list Unoathed
+/give Dev minecraft:amethyst_shard

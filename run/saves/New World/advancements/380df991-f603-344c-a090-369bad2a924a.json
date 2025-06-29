@@ -1,16 +1,45 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-06-05 17:45:01 +0200"
+      "unlock_right_away": "2025-06-19 09:28:50 +0200"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:meadow": "2025-06-05 17:50:01 +0200",
-      "minecraft:plains": "2025-06-05 17:45:02 +0200"
+      "minecraft:jungle": "2025-06-19 09:29:35 +0200"
     },
     "done": false
+  },
+  "radiant:skybreaker_second_ideal": {
+    "criteria": {
+      "skybreaker_second_ideal_0": "2025-06-19 09:29:41 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/calibrated_sculk_sensor": {
+    "criteria": {
+      "has_amethyst_shard": "2025-06-19 09:30:10 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2025-06-19 09:30:10 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2025-06-19 09:30:10 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/amethyst_block": {
+    "criteria": {
+      "has_amethyst_shard": "2025-06-19 09:30:10 +0200"
+    },
+    "done": true
   },
   "DataVersion": 3955
 }

@@ -1,0 +1,75 @@
+# Gradle build output
+/build/
+/bin/
+/.gradle/
+
+# MCreator generated files
+/generated/
+/moddev/
+/tmp/
+
+# IDE files
+*.iml
+.idea/
+*.ipr
+*.iws
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Minecraft mod dev files
+run/
+runs/
+
+# Misc
+*.class
+*.jar
+*.war
+*.ear
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# User-specific files
+*.user
+*.sublime-workspace
+*.sublime-project
+
+# Ignore mod element backups
+
+# Ignore mod element backups
+*.mod.json.backup
+*.backup
+
+# Ignore MCreator config and cache folder
+.mcreator/
+
+# Minecraft crash reports and logs
+crash-reports/
+logs/
+
+# Minecraft server and world files
+server.properties
+eula.txt
+saves/
+options.txt
+usercache.json
+
+# Forge and mod config
+config/
+
+# Export/build artifacts
+out/
+export/
+
+# Other temp/backup files
+*.old
+
+# Ignore gradle wrapper jar
+/gradle/wrapper/gradle-wrapper.jar

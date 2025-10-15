@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -58,7 +57,7 @@ public class TensionShovelGoldItem extends ShovelItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		TensionShovelGoldToolInInventoryTickProcedure.execute(entity, itemstack);
+		TensionShovelGoldToolInInventoryTickProcedure.execute(world, entity, itemstack);
 	}
 
 	@Override

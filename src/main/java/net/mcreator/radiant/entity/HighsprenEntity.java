@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.entity;
 
 import net.neoforged.neoforge.fluids.FluidType;

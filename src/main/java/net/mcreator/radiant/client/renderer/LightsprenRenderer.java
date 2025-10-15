@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -33,6 +32,11 @@ public class LightsprenRenderer extends MobRenderer<LightsprenEntity, ModelSeon<
 				model.renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0));
 			}
 		});
+	}
+
+	@Override
+	protected void scale(LightsprenEntity entity, PoseStack poseStack, float f) {
+		poseStack.scale(entity.getAgeScale(), entity.getAgeScale(), entity.getAgeScale());
 	}
 
 	@Override

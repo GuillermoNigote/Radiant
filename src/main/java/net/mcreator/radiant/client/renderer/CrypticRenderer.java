@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -18,6 +17,7 @@ public class CrypticRenderer extends MobRenderer<CrypticEntity, ModelCryptic<Cry
 	@Override
 	protected void scale(CrypticEntity entity, PoseStack poseStack, float f) {
 		poseStack.scale(0.2f, 0.2f, 0.2f);
+		poseStack.scale(entity.getAgeScale(), entity.getAgeScale(), entity.getAgeScale());
 	}
 
 	@Override

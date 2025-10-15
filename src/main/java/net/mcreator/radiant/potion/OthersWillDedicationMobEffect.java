@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.potion;
 
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;

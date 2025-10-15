@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "block",
   "definition": {
     "texture": "minecraft:deepslate_diamond_ore",
@@ -14,8 +14,10 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "animations": [],
     "itemTexture": "",
     "particleTexture": "",
+    "blockSetType": "OAK",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -42,6 +44,10 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
     "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
@@ -54,9 +60,6 @@
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
-    "material": {
-      "value": "AIR"
-    },
     "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": true,
@@ -65,11 +68,13 @@
       "fixedValue": 15.0
     },
     "colorOnMap": "DEFAULT",
+    "noteBlockInstrument": "harp",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -101,6 +106,8 @@
     "unbreakable": false,
     "vanillaToolTier": "STONE",
     "isBonemealable": false,
+    "sensitiveToVibration": false,
+    "vibrationalEvents": [],
     "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,

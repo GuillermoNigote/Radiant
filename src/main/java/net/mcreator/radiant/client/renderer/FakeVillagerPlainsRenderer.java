@@ -1,7 +1,7 @@
-
 package net.mcreator.radiant.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.layers.CrossedArmsItemLayer;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.model.geom.ModelLayers;
@@ -14,6 +14,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class FakeVillagerPlainsRenderer extends MobRenderer<FakeVillagerPlainsEntity, VillagerModel<FakeVillagerPlainsEntity>> {
 	public FakeVillagerPlainsRenderer(EntityRendererProvider.Context context) {
 		super(context, new VillagerModel<FakeVillagerPlainsEntity>(context.bakeLayer(ModelLayers.VILLAGER)), 0.5f);
+		this.addLayer(new CrossedArmsItemLayer<>(this, context.getItemInHandRenderer()));
 	}
 
 	@Override

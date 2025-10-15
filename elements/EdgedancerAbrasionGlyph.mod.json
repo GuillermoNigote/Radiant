@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -54,6 +54,7 @@
     "animation": "none",
     "isMusicDisc": false,
     "musicDiscLengthInTicks": 0,
-    "musicDiscAnalogOutput": 0
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
   }
 }

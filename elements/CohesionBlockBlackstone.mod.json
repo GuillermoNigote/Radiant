@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "fluid",
   "definition": {
     "name": "Cohesion Liquid",
@@ -44,6 +44,7 @@
     "lightOpacity": 15,
     "emissiveRendering": false,
     "tickRate": 60,
+    "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",

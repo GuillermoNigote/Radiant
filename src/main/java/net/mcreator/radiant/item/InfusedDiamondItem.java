@@ -1,16 +1,14 @@
-
 package net.mcreator.radiant.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 public class InfusedDiamondItem extends Item {
 	public InfusedDiamondItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties());
 	}
 
 	@Override

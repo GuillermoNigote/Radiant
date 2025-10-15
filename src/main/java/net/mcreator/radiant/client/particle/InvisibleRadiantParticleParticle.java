@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.client.particle;
 
 import net.neoforged.api.distmarker.OnlyIn;

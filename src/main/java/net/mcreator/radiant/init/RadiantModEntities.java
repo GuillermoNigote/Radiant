@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -49,59 +48,107 @@ import net.mcreator.radiant.RadiantMod;
 public class RadiantModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, RadiantMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<PeaksprenEntity>> PEAKSPREN = register("peakspren",
-			EntityType.Builder.<PeaksprenEntity>of(PeaksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<PeaksprenEntity>of(PeaksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<LightsprenEntity>> LIGHTSPREN = register("lightspren",
-			EntityType.Builder.<LightsprenEntity>of(LightsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<LightsprenEntity>of(LightsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MistsprenEntity>> MISTSPREN = register("mistspren",
-			EntityType.Builder.<MistsprenEntity>of(MistsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<MistsprenEntity>of(MistsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CultivationsprenEntity>> CULTIVATIONSPREN = register("cultivationspren",
-			EntityType.Builder.<CultivationsprenEntity>of(CultivationsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CultivationsprenEntity>of(CultivationsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<AshsprenEntity>> ASHSPREN = register("ashspren",
-			EntityType.Builder.<AshsprenEntity>of(AshsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<AshsprenEntity>of(AshsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<HighsprenEntity>> HIGHSPREN = register("highspren",
-			EntityType.Builder.<HighsprenEntity>of(HighsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<HighsprenEntity>of(HighsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<HonorsprenEntity>> HONORSPREN = register("honorspren",
-			EntityType.Builder.<HonorsprenEntity>of(HonorsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.95f));
+			EntityType.Builder.<HonorsprenEntity>of(HonorsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.95f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FakeCreeperEntity>> FAKE_CREEPER = register("fake_creeper",
-			EntityType.Builder.<FakeCreeperEntity>of(FakeCreeperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.7f));
+			EntityType.Builder.<FakeCreeperEntity>of(FakeCreeperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.7f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FakeSpiderEntity>> FAKE_SPIDER = register("fake_spider",
-			EntityType.Builder.<FakeSpiderEntity>of(FakeSpiderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(1.4f, 0.9f));
+			EntityType.Builder.<FakeSpiderEntity>of(FakeSpiderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(1.4f, 0.9f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InksprenEntity>> INKSPREN = register("inkspren",
-			EntityType.Builder.<InksprenEntity>of(InksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<InksprenEntity>of(InksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CrypticEntity>> CRYPTIC = register("cryptic",
-			EntityType.Builder.<CrypticEntity>of(CrypticEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CrypticEntity>of(CrypticEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<IlluminationFakePlayerEntity>> ILLUMINATION_FAKE_PLAYER = register("illumination_fake_player",
-			EntityType.Builder.<IlluminationFakePlayerEntity>of(IlluminationFakePlayerEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<IlluminationFakePlayerEntity>of(IlluminationFakePlayerEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<AdhesionInfuseEntity>> ADHESION_INFUSE = register("adhesion_infuse",
-			EntityType.Builder.<AdhesionInfuseEntity>of(AdhesionInfuseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(1f, 1f));
+			EntityType.Builder.<AdhesionInfuseEntity>of(AdhesionInfuseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(1f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveHonorsprenEntity>> COGNITIVE_HONORSPREN = register("cognitive_honorspren",
-			EntityType.Builder.<CognitiveHonorsprenEntity>of(CognitiveHonorsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.95f));
+			EntityType.Builder.<CognitiveHonorsprenEntity>of(CognitiveHonorsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.95f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveCultivationsprenEntity>> COGNITIVE_CULTIVATIONSPREN = register("cognitive_cultivationspren",
-			EntityType.Builder.<CognitiveCultivationsprenEntity>of(CognitiveCultivationsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitiveCultivationsprenEntity>of(CognitiveCultivationsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitivePeaksprenEntity>> COGNITIVE_PEAKSPREN = register("cognitive_peakspren",
-			EntityType.Builder.<CognitivePeaksprenEntity>of(CognitivePeaksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitivePeaksprenEntity>of(CognitivePeaksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveLightsprenEntity>> COGNITIVE_LIGHTSPREN = register("cognitive_lightspren",
-			EntityType.Builder.<CognitiveLightsprenEntity>of(CognitiveLightsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitiveLightsprenEntity>of(CognitiveLightsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveAshsprenEntity>> COGNITIVE_ASHSPREN = register("cognitive_ashspren",
-			EntityType.Builder.<CognitiveAshsprenEntity>of(CognitiveAshsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitiveAshsprenEntity>of(CognitiveAshsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveHighsprenEntity>> COGNITIVE_HIGHSPREN = register("cognitive_highspren",
-			EntityType.Builder.<CognitiveHighsprenEntity>of(CognitiveHighsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitiveHighsprenEntity>of(CognitiveHighsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveInksprenEntity>> COGNITIVE_INKSPREN = register("cognitive_inkspren",
-			EntityType.Builder.<CognitiveInksprenEntity>of(CognitiveInksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitiveInksprenEntity>of(CognitiveInksprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveCrypticEntity>> COGNITIVE_CRYPTIC = register("cognitive_cryptic",
-			EntityType.Builder.<CognitiveCrypticEntity>of(CognitiveCrypticEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitiveCrypticEntity>of(CognitiveCrypticEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CognitiveMistsprenEntity>> COGNITIVE_MISTSPREN = register("cognitive_mistspren",
-			EntityType.Builder.<CognitiveMistsprenEntity>of(CognitiveMistsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CognitiveMistsprenEntity>of(CognitiveMistsprenEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FakeCowEntity>> FAKE_COW = register("fake_cow",
-			EntityType.Builder.<FakeCowEntity>of(FakeCowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.9f, 1.4f));
+			EntityType.Builder.<FakeCowEntity>of(FakeCowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.9f, 1.4f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FakePigEntity>> FAKE_PIG = register("fake_pig",
-			EntityType.Builder.<FakePigEntity>of(FakePigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.9f, 0.9f));
+			EntityType.Builder.<FakePigEntity>of(FakePigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.9f, 0.9f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FakeVillagerPlainsEntity>> FAKE_VILLAGER_PLAINS = register("fake_villager_plains",
-			EntityType.Builder.<FakeVillagerPlainsEntity>of(FakeVillagerPlainsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.95f));
+			EntityType.Builder.<FakeVillagerPlainsEntity>of(FakeVillagerPlainsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.95f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FakeWitchEntity>> FAKE_WITCH = register("fake_witch",
-			EntityType.Builder.<FakeWitchEntity>of(FakeWitchEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.95f));
+			EntityType.Builder.<FakeWitchEntity>of(FakeWitchEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.95f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FakeZombieEntity>> FAKE_ZOMBIE = register("fake_zombie",
-			EntityType.Builder.<FakeZombieEntity>of(FakeZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<FakeZombieEntity>of(FakeZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

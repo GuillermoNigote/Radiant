@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.item;
 
 import net.minecraft.world.level.block.Block;

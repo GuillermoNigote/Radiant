@@ -1,76 +1,54 @@
-[19Jun2025 09:32:57.934] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 21.1.92, --assetIndex, 17, --assetsDir, C:\\Users\\Usuario\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.neoForgeVersion, 21.1.92, --fml.fmlVersion, 4.0.34, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
-[19Jun2025 09:32:57.937] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.5+11-LTS
-[19Jun2025 09:32:57.938] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.5 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[19Jun2025 09:32:58.022] [main/WARN] [net.neoforged.fml.loading.FMLConfig/CORE]: Configuration file C:\Users\Usuario\MCreatorWorkspaces\radiant\run\config\fml.toml is not correct. Correcting
-[19Jun2025 09:32:58.048] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[19Jun2025 09:32:58.135] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[19Jun2025 09:32:58.277] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[19Jun2025 09:32:58.376] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Usuario/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23131!/ Service=ModLauncher Env=CLIENT
-[19Jun2025 09:32:58.391] [main/WARN] [net.neoforged.fml.loading.FMLConfig/CORE]: Configuration file C:\Users\Usuario\MCreatorWorkspaces\radiant\run\config\fml.toml is not correct. Correcting
-[19Jun2025 09:32:58.639] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 2060/PCIe/SSE2 GL version 4.6.0 NVIDIA 576.52, NVIDIA Corporation
-[19Jun2025 09:32:58.701] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[19Jun2025 09:32:58.703] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[12Oct2025 14:37:21.879] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.176, --assetIndex, 17, --assetsDir, C:\\Users\\alber\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.39, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.176, --fml.neoFormVersion, 20240808.144430]
+[12Oct2025 14:37:21.882] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+[12Oct2025 14:37:21.883] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.7 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[12Oct2025 14:37:21.950] [main/WARN] [net.neoforged.fml.loading.FMLConfig/CORE]: Configuration file G:\Git\Radiant\run\config\fml.toml is not correct. Correcting
+[12Oct2025 14:37:21.973] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[12Oct2025 14:37:22.044] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[12Oct2025 14:37:22.188] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[12Oct2025 14:37:22.301] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/alber/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[12Oct2025 14:37:22.309] [main/WARN] [net.neoforged.fml.loading.FMLConfig/CORE]: Configuration file G:\Git\Radiant\run\config\fml.toml is not correct. Correcting
+[12Oct2025 14:37:22.516] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 4070/PCIe/SSE2 GL version 4.6.0 NVIDIA 580.88, NVIDIA Corporation
+[12Oct2025 14:37:22.601] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[12Oct2025 14:37:22.602] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
 		Minecraft 1.21.1 (minecraft)
-		NeoForge 21.1.92 (neoforge)
+		NeoForge 21.1.176 (neoforge)
 		Radiant 2.3.5 (radiant)
-[19Jun2025 09:32:59.539] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 21.1.92, --gameDir, ., --assetsDir, C:\Users\Usuario\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
-[19Jun2025 09:33:01.059] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 417 milliseconds
-[19Jun2025 09:33:01.073] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[19Jun2025 09:33:05.463] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Jun2025 09:33:05.465] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Jun2025 09:33:05.468] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Jun2025 09:33:05.469] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Jun2025 09:33:05.471] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Jun2025 09:33:05.580] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/MCreatorWorkspaces/radiant/build/moddev/artifacts/neoforge-21.1.92.jar%23183!/assets/.mcassetsroot' uses unexpected schema
-[19Jun2025 09:33:05.580] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Usuario/MCreatorWorkspaces/radiant/build/moddev/artifacts/neoforge-21.1.92.jar%23183!/data/.mcassetsroot' uses unexpected schema
-[19Jun2025 09:33:05.605] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[19Jun2025 09:33:05.612] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[19Jun2025 09:33:05.691] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[19Jun2025 09:33:05.859] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.92, for MC 1.21.1
-[19Jun2025 09:33:07.352] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
-[19Jun2025 09:33:07.632] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/radiant
-[19Jun2025 09:33:07.781] [Worker-Main-3/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
-[19Jun2025 09:33:08.061] [Worker-Main-3/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
-[19Jun2025 09:33:08.273] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivation_spren_turn_block.json
-net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Cultivation_Spren_Turn_Block
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.276] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationspren_decayturn.json
+[12Oct2025 14:37:23.330] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.176, --gameDir, ., --assetsDir, C:\Users\alber\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[12Oct2025 14:37:24.833] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 308 milliseconds
+[12Oct2025 14:37:25.004] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[12Oct2025 14:37:28.986] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12Oct2025 14:37:28.987] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12Oct2025 14:37:28.989] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12Oct2025 14:37:28.990] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12Oct2025 14:37:28.990] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12Oct2025 14:37:29.085] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/G:/Git/Radiant/build/moddev/artifacts/neoforge-21.1.176.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[12Oct2025 14:37:29.085] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/G:/Git/Radiant/build/moddev/artifacts/neoforge-21.1.176.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[12Oct2025 14:37:29.115] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[12Oct2025 14:37:29.123] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[12Oct2025 14:37:29.207] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[12Oct2025 14:37:29.392] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.176, for MC 1.21.1
+[12Oct2025 14:37:30.441] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[12Oct2025 14:37:30.652] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/radiant
+[12Oct2025 14:37:30.765] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[12Oct2025 14:37:30.820] [Worker-Main-4/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[12Oct2025 14:37:30.994] [Worker-Main-12/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationspren_decayturn.json
 net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:CultivationsprenVine_LDecay
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
@@ -78,131 +56,21 @@ net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of l
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.277] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationspren_ldec.json
-net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.280] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_decay_l.json
-net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.281] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_giro.json
-net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.283] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_l.json
-net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.285] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_prueba_-_copia.json
-net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.273] [Worker-Main-1/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivation_spren_block_l.json
+[12Oct2025 14:37:30.994] [Worker-Main-7/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivation_spren_turn_block.json
 net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Cultivation_Spren_Turn_Block
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
@@ -210,21 +78,21 @@ net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of l
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.286] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_prueba_decay.json
+[12Oct2025 14:37:30.994] [Worker-Main-1/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_prueba_-_copia.json
 net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.92.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.92/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.92.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.92.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.92.jar%23183!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
@@ -232,65 +100,182 @@ net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of l
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[19Jun2025 09:33:08.395] [Worker-Main-5/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture radiant:item/dustbringers_glyph with size 554x483 limits mip level from 2 to 0
-[19Jun2025 09:33:11.957] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[19Jun2025 09:33:11.957] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[19Jun2025 09:33:12.014] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on LG TV (NVIDIA High Definition Audio)
-[19Jun2025 09:33:12.015] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[19Jun2025 09:33:12.143] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 8192x4096x2 minecraft:textures/atlas/blocks.png-atlas
-[19Jun2025 09:33:12.227] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[19Jun2025 09:33:12.227] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[19Jun2025 09:33:12.228] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[19Jun2025 09:33:12.228] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[19Jun2025 09:33:12.230] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[19Jun2025 09:33:12.230] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[19Jun2025 09:33:12.231] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[19Jun2025 09:33:12.231] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[19Jun2025 09:33:12.302] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[19Jun2025 09:33:12.303] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 8192x4096x0 minecraft:textures/atlas/paintings.png-atlas
-[19Jun2025 09:33:12.334] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x4096x0 minecraft:textures/atlas/mob_effects.png-atlas
-[19Jun2025 09:33:12.347] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[19Jun2025 09:33:12.347] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[19Jun2025 09:33:12.368] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[19Jun2025 09:33:12.418] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[19Jun2025 09:36:18.534] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1349 recipes
-[19Jun2025 09:36:18.702] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1436 advancements
-[19Jun2025 09:36:19.231] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
-[19Jun2025 09:36:19.231] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[19Jun2025 09:36:20.977] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[19Jun2025 09:36:21.202] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Jun2025 09:36:21.291] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[19Jun2025 09:36:21.292] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 277 ms
-[19Jun2025 09:36:21.292] [Server thread/WARN] [net.neoforged.neoforge.common.TagConventionLogWarning/]: 
+[12Oct2025 14:37:30.994] [Worker-Main-14/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_decay_l.json
+net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[12Oct2025 14:37:30.994] [Worker-Main-4/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivation_spren_block_l.json
+net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Cultivation_Spren_Turn_Block
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[12Oct2025 14:37:30.994] [Worker-Main-8/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationspren_ldec.json
+net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[12Oct2025 14:37:30.994] [Worker-Main-11/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_giro.json
+net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[12Oct2025 14:37:30.994] [Worker-Main-9/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_l.json
+net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[12Oct2025 14:37:30.995] [Worker-Main-3/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model radiant:models/custom/cultivationsprenvine_prueba_decay.json
+net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:Culspren_L
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:284) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:60) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:56) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:354) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[12Oct2025 14:37:31.063] [Worker-Main-15/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture radiant:item/dustbringers_glyph with size 554x483 limits mip level from 2 to 0
+[12Oct2025 14:37:33.341] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[12Oct2025 14:37:33.341] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[12Oct2025 14:37:33.376] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on VG270U P (NVIDIA High Definition Audio)
+[12Oct2025 14:37:33.377] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[12Oct2025 14:37:33.452] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 8192x4096x2 minecraft:textures/atlas/blocks.png-atlas
+[12Oct2025 14:37:33.513] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[12Oct2025 14:37:33.513] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[12Oct2025 14:37:33.514] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[12Oct2025 14:37:33.514] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[12Oct2025 14:37:33.515] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[12Oct2025 14:37:33.516] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[12Oct2025 14:37:33.516] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[12Oct2025 14:37:33.516] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[12Oct2025 14:37:33.592] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[12Oct2025 14:37:33.593] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 8192x4096x0 minecraft:textures/atlas/paintings.png-atlas
+[12Oct2025 14:37:33.625] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x4096x0 minecraft:textures/atlas/mob_effects.png-atlas
+[12Oct2025 14:37:33.638] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[12Oct2025 14:37:33.638] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[12Oct2025 14:37:33.658] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[12Oct2025 14:37:33.702] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[12Oct2025 14:37:53.073] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1349 recipes
+[12Oct2025 14:37:53.200] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1437 advancements
+[12Oct2025 14:37:53.574] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[12Oct2025 14:37:53.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[12Oct2025 14:37:54.302] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[12Oct2025 14:37:54.513] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Oct2025 14:37:54.563] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[12Oct2025 14:37:54.564] [Server thread/WARN] [net.neoforged.neoforge.common.TagConventionLogWarning/]: 
    Dev warning - Legacy Tags detected. Please migrate your 'forge' namespace tags to the 'c' namespace! See net.neoforged.neoforge.common.Tags.java for all tags.
    NOTE: Many tags have been moved around or renamed. Some new ones were added so please review the new tags.
     And make sure you follow tag conventions for new tags! The convention is `c` with nouns generally being plural and adjectives being singular.
    You can disable this message in NeoForge's common config by setting `logLegacyTagWarnings` to "SILENCED" or see individual tags with "DEV_VERBOSE".
 
-[19Jun2025 09:36:21.353] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[19Jun2025 09:36:21.353] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[19Jun2025 09:36:22.019] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:32e4965c] logged in with entity id 40 at (55.37159522927871, 73.0, 6.8543751137527265)
-[19Jun2025 09:36:22.070] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[19Jun2025 09:36:22.278] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 10 advancements
-[19Jun2025 09:36:22.944] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[19Jun2025 09:36:22.963] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[19Jun2025 09:36:22.991] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[19Jun2025 09:36:23.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[19Jun2025 09:39:01.243] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[19Jun2025 09:39:01.277] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[19Jun2025 09:39:01.301] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[19Jun2025 09:39:01.310] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[19Jun2025 09:39:01.870] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[19Jun2025 09:39:01.897] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[19Jun2025 09:39:01.897] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[19Jun2025 09:39:01.921] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[19Jun2025 09:39:01.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[19Jun2025 09:39:01.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[19Jun2025 09:39:01.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[19Jun2025 09:39:02.353] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[19Jun2025 09:39:02.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[19Jun2025 09:39:02.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[19Jun2025 09:39:02.532] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[19Jun2025 09:39:02.533] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[19Jun2025 09:39:02.533] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[19Jun2025 09:39:02.533] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[12Oct2025 14:37:54.571] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 260 ms
+[12Oct2025 14:37:54.636] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[12Oct2025 14:37:54.636] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[12Oct2025 14:37:55.418] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:07bf5160] logged in with entity id 108 at (1.300000011920929, 69.0, 13.765171724209226)
+[12Oct2025 14:37:55.492] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[12Oct2025 14:37:55.728] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 16 advancements
+[12Oct2025 14:37:59.880] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Stone Age]
+[12Oct2025 14:37:59.910] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has made the advancement [Stone Age]
+[12Oct2025 14:37:59.935] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 30 advancements
+[12Oct2025 14:38:05.865] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[12Oct2025 14:38:05.898] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[12Oct2025 14:38:05.911] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12Oct2025 14:38:05.912] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether

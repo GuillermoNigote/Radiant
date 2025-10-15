@@ -33,7 +33,7 @@ import javax.annotation.Nullable;
 public class SurgeEmptyRightClickOnAirProcedure {
 	@SubscribeEvent
 	public static void onRightClick(PlayerInteractEvent.RightClickEmpty event) {
-		if (event.getHand() != event.getEntity().getUsedItemHand())
+		if (event.getHand() != InteractionHand.MAIN_HAND)
 			return;
 		PacketDistributor.sendToServer(new SurgeEmptyRightClickOnAirMessage());
 		execute(event.getLevel(), event.getEntity());

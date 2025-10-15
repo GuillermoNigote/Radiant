@@ -1,7 +1,4 @@
-
 package net.mcreator.radiant.block.entity;
-
-import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
@@ -26,8 +23,7 @@ import javax.annotation.Nullable;
 import java.util.stream.IntStream;
 
 public class IlluminationRedstoneOreBlockBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
-	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(9, ItemStack.EMPTY);
 
 	public IlluminationRedstoneOreBlockBlockEntity(BlockPos position, BlockState state) {
 		super(RadiantModBlockEntities.ILLUMINATION_REDSTONE_ORE_BLOCK.get(), position, state);
@@ -120,9 +116,5 @@ public class IlluminationRedstoneOreBlockBlockEntity extends RandomizableContain
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
-	}
-
-	public SidedInvWrapper getItemHandler() {
-		return handler;
 	}
 }

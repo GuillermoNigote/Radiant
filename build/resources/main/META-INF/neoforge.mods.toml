@@ -14,10 +14,14 @@ authors="Usuario, MCreator"
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
 [[dependencies.radiant]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.92,)"
+    versionRange="[21.1.176,)"
     ordering="AFTER"
     side="BOTH"
 

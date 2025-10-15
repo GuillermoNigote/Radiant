@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -58,7 +57,7 @@ public class TensionHoeDiamondItem extends HoeItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		TensionHoeDiamondToolInInventoryTickProcedure.execute(entity, itemstack);
+		TensionHoeDiamondToolInInventoryTickProcedure.execute(world, entity, itemstack);
 	}
 
 	@Override

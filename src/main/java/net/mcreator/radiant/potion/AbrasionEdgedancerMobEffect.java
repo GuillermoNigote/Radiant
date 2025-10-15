@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.potion;
 
 import net.minecraft.world.entity.ai.attributes.Attributes;

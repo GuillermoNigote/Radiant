@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -8,6 +8,7 @@
     "texture": "minecraft:iron_shovel",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Tension Infused Iron Shovel ",
     "specialInformation": {
       "fixedValue": []

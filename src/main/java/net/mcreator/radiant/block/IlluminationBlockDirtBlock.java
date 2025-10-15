@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.block;
 
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -30,7 +29,7 @@ public class IlluminationBlockDirtBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public IlluminationBlockDirtBlock() {
-		super(BlockBehaviour.Properties.of().air().sound(SoundType.EMPTY).strength(1f, 10f).noCollission());
+		super(BlockBehaviour.Properties.of().sound(SoundType.EMPTY).strength(1f, 10f).noCollission().replaceable());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -59,11 +58,6 @@ public class IlluminationBlockDirtBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public boolean canBeReplaced(BlockState state, BlockPlaceContext context) {
-		return context.getItemInHand().getItem() != this.asItem();
-	}
-
-	@Override
 	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
 		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
 		IlluminationBlockDirtBlockIsPlacedByProcedure.execute(entity);
@@ -84,7 +78,7 @@ public class IlluminationBlockDirtBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.block;
 
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -27,7 +26,7 @@ public class IlluminationBlockBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public IlluminationBlockBlock() {
-		super(BlockBehaviour.Properties.of().air().sound(SoundType.EMPTY).strength(1f, 10f).noCollission());
+		super(BlockBehaviour.Properties.of().sound(SoundType.EMPTY).strength(1f, 10f).noCollission().replaceable());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -56,11 +55,6 @@ public class IlluminationBlockBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public boolean canBeReplaced(BlockState state, BlockPlaceContext context) {
-		return context.getItemInHand().getItem() != this.asItem();
-	}
-
-	@Override
 	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
 		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
 		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
@@ -75,7 +69,7 @@ public class IlluminationBlockBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

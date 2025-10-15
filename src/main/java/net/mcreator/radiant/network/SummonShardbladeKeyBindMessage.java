@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;

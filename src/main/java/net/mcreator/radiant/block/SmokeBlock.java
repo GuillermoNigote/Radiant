@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -10,7 +9,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
@@ -19,7 +17,7 @@ import net.mcreator.radiant.procedures.SmokeOnTickUpdateProcedure;
 
 public class SmokeBlock extends Block {
 	public SmokeBlock() {
-		super(BlockBehaviour.Properties.of().air().sound(SoundType.EMPTY).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.EMPTY).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).replaceable());
 	}
 
 	@Override
@@ -40,11 +38,6 @@ public class SmokeBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return box(8, 8, 8, 9, 9, 9);
-	}
-
-	@Override
-	public boolean canBeReplaced(BlockState state, BlockPlaceContext context) {
-		return context.getItemInHand().getItem() != this.asItem();
 	}
 
 	@Override

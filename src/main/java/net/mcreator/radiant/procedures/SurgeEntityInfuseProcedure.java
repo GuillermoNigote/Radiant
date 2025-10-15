@@ -30,7 +30,7 @@ import javax.annotation.Nullable;
 public class SurgeEntityInfuseProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
-		if (event.getHand() != event.getEntity().getUsedItemHand())
+		if (event.getHand() != InteractionHand.MAIN_HAND)
 			return;
 		execute(event, event.getLevel(), event.getTarget(), event.getEntity());
 	}

@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;

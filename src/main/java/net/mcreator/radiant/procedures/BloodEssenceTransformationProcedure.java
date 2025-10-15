@@ -18,9 +18,7 @@ public class BloodEssenceTransformationProcedure {
 		if (entity instanceof Player _player)
 			_player.closeContainer();
 		if (entity instanceof Player _player)
-			_player.giveExperienceLevels(-((int) Math.sqrt((entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - x) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).xant - x)
-					+ (entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - y) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).yant - y)
-					+ (entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - z) * (entity.getData(RadiantModVariables.PLAYER_VARIABLES).zant - z))));
+			_player.giveExperienceLevels(-((int) TransformationCalculateXPProcedure.execute(x, y, z, entity)));
 		{
 			Entity _ent = entity;
 			if (!_ent.level().isClientSide() && _ent.getServer() != null) {

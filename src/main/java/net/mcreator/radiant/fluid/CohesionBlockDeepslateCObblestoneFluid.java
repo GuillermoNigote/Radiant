@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.fluid;
 
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;

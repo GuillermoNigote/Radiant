@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -101,7 +101,7 @@
           },
           "width": 51,
           "height": 20,
-          "x": 237,
+          "x": 235,
           "y": 53,
           "locked": false
         }
@@ -117,7 +117,7 @@
           },
           "width": 40,
           "height": 20,
-          "x": 236,
+          "x": 235,
           "y": 80,
           "locked": false
         }
@@ -133,7 +133,7 @@
           },
           "width": 51,
           "height": 20,
-          "x": 236,
+          "x": 235,
           "y": 107,
           "locked": false
         }
@@ -149,7 +149,7 @@
           },
           "width": 51,
           "height": 20,
-          "x": 237,
+          "x": 235,
           "y": 134,
           "locked": false
         }
@@ -165,18 +165,21 @@
           },
           "width": 46,
           "height": 20,
-          "x": 237,
+          "x": 235,
           "y": 161,
           "locked": false
         }
       }
     ],
+    "onTick": {
+      "name": "TransformationSurgeGUIThisGUIIsOpened"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 1,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

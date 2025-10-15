@@ -62,8 +62,8 @@
       "registry_name": "willshapers_glyph",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/WillshapersGlyphItem.java",
-          "src/main/resources/assets/radiant/models/item/willshapers_glyph.json"
+          "src/main/resources/assets/radiant/models/item/willshapers_glyph.json",
+          "src/main/java/net/mcreator/radiant/item/WillshapersGlyphItem.java"
         ]
       },
       "path": "~/Other"
@@ -76,8 +76,8 @@
       "registry_name": "stonewards_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/stonewards_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/StonewardsGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/StonewardsGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/stonewards_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -90,8 +90,8 @@
       "registry_name": "edgedancers_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/edgedancers_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/EdgedancersGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/EdgedancersGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/edgedancers_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -104,8 +104,8 @@
       "registry_name": "dustbringers_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/dustbringers_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/DustbringersGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/DustbringersGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/dustbringers_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -118,8 +118,8 @@
       "registry_name": "radiants_glyph",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/RadiantsGlyphItem.java",
-          "src/main/resources/assets/radiant/models/item/radiants_glyph.json"
+          "src/main/resources/assets/radiant/models/item/radiants_glyph.json",
+          "src/main/java/net/mcreator/radiant/item/RadiantsGlyphItem.java"
         ]
       },
       "path": "~/Other"
@@ -562,8 +562,8 @@
       "registry_name": "dustbringer_living_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/dustbringer_living_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/DustbringerLivingShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/DustbringerLivingShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/dustbringer_living_shardblade.json"
         ]
       },
       "path": "~/Shardblade"
@@ -682,8 +682,8 @@
       "registry_name": "willshaper_living_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/willshaper_living_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/WillshaperLivingShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/WillshaperLivingShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/willshaper_living_shardblade.json"
         ]
       },
       "path": "~/Shardblade"
@@ -1053,8 +1053,8 @@
       "registry_name": "peakspren",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/entity/PeaksprenEntity.java",
-          "src/main/java/net/mcreator/radiant/client/renderer/PeaksprenRenderer.java"
+          "src/main/java/net/mcreator/radiant/client/renderer/PeaksprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/PeaksprenEntity.java"
         ]
       },
       "path": "~/Spren"
@@ -1095,8 +1095,8 @@
       "registry_name": "cultivationspren",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/entity/CultivationsprenEntity.java",
-          "src/main/java/net/mcreator/radiant/client/renderer/CultivationsprenRenderer.java"
+          "src/main/java/net/mcreator/radiant/client/renderer/CultivationsprenRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/CultivationsprenEntity.java"
         ]
       },
       "path": "~/Spren"
@@ -1351,11 +1351,11 @@
       "registry_name": "tension_gold_armor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionGoldArmorItem.java",
           "src/main/resources/assets/radiant/models/item/tension_gold_armor_boots.json",
+          "src/main/resources/assets/radiant/models/item/tension_gold_armor_chestplate.json",
+          "src/main/java/net/mcreator/radiant/item/TensionGoldArmorItem.java",
           "src/main/resources/assets/radiant/models/item/tension_gold_armor_leggings.json",
-          "src/main/resources/assets/radiant/models/item/tension_gold_armor_helmet.json",
-          "src/main/resources/assets/radiant/models/item/tension_gold_armor_chestplate.json"
+          "src/main/resources/assets/radiant/models/item/tension_gold_armor_helmet.json"
         ]
       },
       "path": "~/Surges/Tension/Armor"
@@ -1368,11 +1368,11 @@
       "registry_name": "tension_iron_armor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionIronArmorItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_iron_armor_helmet.json",
-          "src/main/resources/assets/radiant/models/item/tension_iron_armor_leggings.json",
           "src/main/resources/assets/radiant/models/item/tension_iron_armor_boots.json",
-          "src/main/resources/assets/radiant/models/item/tension_iron_armor_chestplate.json"
+          "src/main/resources/assets/radiant/models/item/tension_iron_armor_leggings.json",
+          "src/main/resources/assets/radiant/models/item/tension_iron_armor_chestplate.json",
+          "src/main/java/net/mcreator/radiant/item/TensionIronArmorItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_iron_armor_helmet.json"
         ]
       },
       "path": "~/Surges/Tension/Armor"
@@ -1385,11 +1385,11 @@
       "registry_name": "tension_diamond_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_diamond_armor_helmet.json",
-          "src/main/resources/assets/radiant/models/item/tension_diamond_armor_chestplate.json",
-          "src/main/java/net/mcreator/radiant/item/TensionDiamondArmorItem.java",
           "src/main/resources/assets/radiant/models/item/tension_diamond_armor_boots.json",
-          "src/main/resources/assets/radiant/models/item/tension_diamond_armor_leggings.json"
+          "src/main/resources/assets/radiant/models/item/tension_diamond_armor_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/tension_diamond_armor_leggings.json",
+          "src/main/java/net/mcreator/radiant/item/TensionDiamondArmorItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_diamond_armor_helmet.json"
         ]
       },
       "path": "~/Surges/Tension/Armor"
@@ -1417,10 +1417,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/item/TensionChainmailArmorItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_chainmail_armor_chestplate.json",
           "src/main/resources/assets/radiant/models/item/tension_chainmail_armor_leggings.json",
           "src/main/resources/assets/radiant/models/item/tension_chainmail_armor_boots.json",
-          "src/main/resources/assets/radiant/models/item/tension_chainmail_armor_helmet.json"
+          "src/main/resources/assets/radiant/models/item/tension_chainmail_armor_helmet.json",
+          "src/main/resources/assets/radiant/models/item/tension_chainmail_armor_chestplate.json"
         ]
       },
       "path": "~/Surges/Tension/Armor"
@@ -1433,12 +1433,12 @@
       "registry_name": "illumination_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/blockstates/illumination_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockBlock.java",
+          "src/main/resources/assets/radiant/models/block/illumination_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block.json"
+          "src/main/resources/assets/radiant/blockstates/illumination_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1470,12 +1470,12 @@
       "registry_name": "illumination_block_dirt",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockDirtBlock.java",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockDirtBlockEntity.java",
           "src/main/resources/assets/radiant/models/block/illumination_block_dirt.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockDirtBlock.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_block_dirt.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block_dirt.json",
-          "src/main/resources/assets/radiant/models/item/illumination_block_dirt.json"
+          "src/main/resources/assets/radiant/models/item/illumination_block_dirt.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_block_dirt.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1488,12 +1488,12 @@
       "registry_name": "illumination_block_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockStoneBlockEntity.java",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockStoneBlock.java",
-          "src/main/resources/assets/radiant/models/block/illumination_block_stone.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_stone.json",
           "src/main/resources/assets/radiant/models/item/illumination_block_stone.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_block_stone.json"
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockStoneBlockEntity.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_block_stone.json",
+          "src/main/resources/assets/radiant/models/block/illumination_block_stone.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockStoneBlock.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_stone.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1506,12 +1506,12 @@
       "registry_name": "illumination_block_obsidian",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockObsidianBlock.java",
-          "src/main/resources/assets/radiant/models/item/illumination_block_obsidian.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockObsidianBlockEntity.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block_obsidian.json",
+          "src/main/resources/assets/radiant/models/item/illumination_block_obsidian.json",
           "src/main/resources/assets/radiant/blockstates/illumination_block_obsidian.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_obsidian.json"
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockObsidianBlockEntity.java",
+          "src/main/resources/assets/radiant/models/block/illumination_block_obsidian.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockObsidianBlock.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1524,12 +1524,12 @@
       "registry_name": "illumination_block_sand",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockSandBlock.java",
           "src/main/resources/assets/radiant/models/item/illumination_block_sand.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockSandBlockEntity.java",
           "src/main/resources/assets/radiant/blockstates/illumination_block_sand.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_sand.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_sand.json"
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockSandBlockEntity.java",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockSandBlock.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_sand.json",
+          "src/main/resources/assets/radiant/models/block/illumination_block_sand.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1544,10 +1544,10 @@
         "files": [
           "src/main/resources/assets/radiant/blockstates/illumination_block_netherrack.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationBlockNetherrackBlock.java",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockNetherrackBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_block_netherrack.json",
+          "src/main/resources/assets/radiant/models/block/illumination_block_netherrack.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block_netherrack.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_netherrack.json"
+          "src/main/resources/assets/radiant/models/item/illumination_block_netherrack.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockNetherrackBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1560,10 +1560,10 @@
       "registry_name": "illumination_block_bedrock",
       "metadata": {
         "files": [
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_bedrock.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockBedrockBlock.java",
           "src/main/resources/assets/radiant/blockstates/illumination_block_bedrock.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_bedrock.json",
           "src/main/resources/assets/radiant/models/item/illumination_block_bedrock.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockBedrockBlock.java",
           "src/main/resources/assets/radiant/models/block/illumination_block_bedrock.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockBedrockBlockEntity.java"
         ]
@@ -1578,12 +1578,12 @@
       "registry_name": "illumination_block_diamond",
       "metadata": {
         "files": [
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_diamond.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_diamond.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockDiamondBlockEntity.java",
           "src/main/java/net/mcreator/radiant/block/IlluminationBlockDiamondBlock.java",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockDiamondBlockEntity.java",
+          "src/main/resources/assets/radiant/models/block/illumination_block_diamond.json",
           "src/main/resources/assets/radiant/models/item/illumination_block_diamond.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_block_diamond.json"
+          "src/main/resources/assets/radiant/blockstates/illumination_block_diamond.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_diamond.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1597,11 +1597,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockSandstoneBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_sandstone.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_block_sandstone.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationBlockSandstoneBlock.java",
-          "src/main/resources/assets/radiant/models/item/illumination_block_sandstone.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_sandstone.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_sandstone.json",
+          "src/main/resources/assets/radiant/models/block/illumination_block_sandstone.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_block_sandstone.json",
+          "src/main/resources/assets/radiant/models/item/illumination_block_sandstone.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1615,11 +1615,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/radiant/models/item/illumination_block_endstone.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_block_endstone.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockEndstoneBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_endstone.json",
           "src/main/resources/assets/radiant/models/block/illumination_block_endstone.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockEndstoneBlock.java"
+          "src/main/resources/assets/radiant/blockstates/illumination_block_endstone.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_endstone.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockEndstoneBlock.java",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockEndstoneBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -1646,8 +1646,8 @@
       "registry_name": "tension_shovel_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_shovel_wood.json",
-          "src/main/java/net/mcreator/radiant/item/TensionShovelWoodItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionShovelWoodItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_shovel_wood.json"
         ]
       },
       "path": "~/Surges/Tension/Shovel"
@@ -1674,8 +1674,8 @@
       "registry_name": "tension_sword_wood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionSwordWoodItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_sword_wood.json"
+          "src/main/resources/assets/radiant/models/item/tension_sword_wood.json",
+          "src/main/java/net/mcreator/radiant/item/TensionSwordWoodItem.java"
         ]
       },
       "path": "~/Surges/Tension/Sword"
@@ -1702,8 +1702,8 @@
       "registry_name": "tension_axe_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_axe_stone.json",
-          "src/main/java/net/mcreator/radiant/item/TensionAxeStoneItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionAxeStoneItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_axe_stone.json"
         ]
       },
       "path": "~/Surges/Tension/Axe"
@@ -1716,8 +1716,8 @@
       "registry_name": "tension_axe_iron",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_axe_iron.json",
-          "src/main/java/net/mcreator/radiant/item/TensionAxeIronItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionAxeIronItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_axe_iron.json"
         ]
       },
       "path": "~/Surges/Tension/Axe"
@@ -1730,8 +1730,8 @@
       "registry_name": "tension_axe_gold",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_axe_gold.json",
-          "src/main/java/net/mcreator/radiant/item/TensionAxeGoldItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionAxeGoldItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_axe_gold.json"
         ]
       },
       "path": "~/Surges/Tension/Axe"
@@ -1772,8 +1772,8 @@
       "registry_name": "tension_shovel_iron",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionShovelIronItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_shovel_iron.json"
+          "src/main/resources/assets/radiant/models/item/tension_shovel_iron.json",
+          "src/main/java/net/mcreator/radiant/item/TensionShovelIronItem.java"
         ]
       },
       "path": "~/Surges/Tension/Shovel"
@@ -1800,8 +1800,8 @@
       "registry_name": "tension_shovel_diamond",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_shovel_diamond.json",
-          "src/main/java/net/mcreator/radiant/item/TensionShovelDiamondItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionShovelDiamondItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_shovel_diamond.json"
         ]
       },
       "path": "~/Surges/Tension/Shovel"
@@ -1814,8 +1814,8 @@
       "registry_name": "tension_hoe_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionHoeStoneItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_hoe_stone.json"
+          "src/main/resources/assets/radiant/models/item/tension_hoe_stone.json",
+          "src/main/java/net/mcreator/radiant/item/TensionHoeStoneItem.java"
         ]
       },
       "path": "~/Surges/Tension/Hoe"
@@ -1842,8 +1842,8 @@
       "registry_name": "tension_hoe_gold",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionHoeGoldItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_hoe_gold.json"
+          "src/main/resources/assets/radiant/models/item/tension_hoe_gold.json",
+          "src/main/java/net/mcreator/radiant/item/TensionHoeGoldItem.java"
         ]
       },
       "path": "~/Surges/Tension/Hoe"
@@ -1870,8 +1870,8 @@
       "registry_name": "tension_sword_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionSwordStoneItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_sword_stone.json"
+          "src/main/resources/assets/radiant/models/item/tension_sword_stone.json",
+          "src/main/java/net/mcreator/radiant/item/TensionSwordStoneItem.java"
         ]
       },
       "path": "~/Surges/Tension/Sword"
@@ -1884,8 +1884,8 @@
       "registry_name": "tension_sword_iron",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_sword_iron.json",
-          "src/main/java/net/mcreator/radiant/item/TensionSwordIronItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionSwordIronItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_sword_iron.json"
         ]
       },
       "path": "~/Surges/Tension/Sword"
@@ -1898,8 +1898,8 @@
       "registry_name": "tension_sword_gold",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionSwordGoldItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_sword_gold.json"
+          "src/main/resources/assets/radiant/models/item/tension_sword_gold.json",
+          "src/main/java/net/mcreator/radiant/item/TensionSwordGoldItem.java"
         ]
       },
       "path": "~/Surges/Tension/Sword"
@@ -1926,8 +1926,8 @@
       "registry_name": "tension_pickaxe_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionPickaxeStoneItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_pickaxe_stone.json"
+          "src/main/resources/assets/radiant/models/item/tension_pickaxe_stone.json",
+          "src/main/java/net/mcreator/radiant/item/TensionPickaxeStoneItem.java"
         ]
       },
       "path": "~/Surges/Tension/Pickaxe"
@@ -1940,8 +1940,8 @@
       "registry_name": "tension_pickaxe_iron",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionPickaxeIronItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_pickaxe_iron.json"
+          "src/main/resources/assets/radiant/models/item/tension_pickaxe_iron.json",
+          "src/main/java/net/mcreator/radiant/item/TensionPickaxeIronItem.java"
         ]
       },
       "path": "~/Surges/Tension/Pickaxe"
@@ -1968,8 +1968,8 @@
       "registry_name": "tension_pickaxe_diamond",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_pickaxe_diamond.json",
-          "src/main/java/net/mcreator/radiant/item/TensionPickaxeDiamondItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionPickaxeDiamondItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_pickaxe_diamond.json"
         ]
       },
       "path": "~/Surges/Tension/Pickaxe"
@@ -1982,12 +1982,12 @@
       "registry_name": "cohesion_block_dirt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockDirtBlock.java",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDirtFluid.java",
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDirtFluidType.java",
           "src/main/resources/assets/radiant/models/item/cohesion_block_dirt_bucket.json",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_dirt.json",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDirtFluid.java",
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockDirtBlock.java",
           "src/main/resources/assets/radiant/blockstates/cohesion_block_dirt.json",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_dirt.json"
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDirtFluidType.java"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2000,12 +2000,12 @@
       "registry_name": "cohesion_block_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockStoneBlock.java",
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockStoneFluidType.java",
+          "src/main/resources/assets/radiant/models/item/cohesion_block_stone_bucket.json",
           "src/main/resources/assets/radiant/blockstates/cohesion_block_stone.json",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_stone.json",
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockStoneFluid.java",
-          "src/main/resources/assets/radiant/models/item/cohesion_block_stone_bucket.json"
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockStoneFluidType.java",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_stone.json",
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockStoneBlock.java"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2018,12 +2018,12 @@
       "registry_name": "cohesion_block_obsidian",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_obsidian.json",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockObsidianFluid.java",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockObsidianFluidType.java",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockObsidianFluid.java",
           "src/main/resources/assets/radiant/models/block/cohesion_block_obsidian.json",
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockObsidianBlock.java",
           "src/main/resources/assets/radiant/models/item/cohesion_block_obsidian_bucket.json",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockObsidianBlock.java"
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_obsidian.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2036,11 +2036,11 @@
       "registry_name": "cohesion_block_netherrack",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockNetherrackFluidType.java",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_netherrack.json",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockNetherrackBlock.java",
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockNetherrackFluid.java",
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockNetherrackBlock.java",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_netherrack.json",
           "src/main/resources/assets/radiant/models/item/cohesion_block_netherrack_bucket.json",
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockNetherrackFluidType.java",
           "src/main/resources/assets/radiant/blockstates/cohesion_block_netherrack.json"
         ]
       },
@@ -2054,11 +2054,11 @@
       "registry_name": "cohesion_block_granite",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/cohesion_block_granite.json",
           "src/main/resources/assets/radiant/blockstates/cohesion_block_granite.json",
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockGraniteBlock.java",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockGraniteFluidType.java",
           "src/main/resources/assets/radiant/models/item/cohesion_block_granite_bucket.json",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockGraniteBlock.java",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_granite.json",
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockGraniteFluid.java"
         ]
       },
@@ -2072,12 +2072,12 @@
       "registry_name": "cohesion_block_sandstone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/cohesion_block_sandstone.json",
-          "src/main/resources/assets/radiant/models/item/cohesion_block_sandstone_bucket.json",
           "src/main/java/net/mcreator/radiant/block/CohesionBlockSandstoneBlock.java",
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_sandstone.json",
+          "src/main/resources/assets/radiant/models/item/cohesion_block_sandstone_bucket.json",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockSandstoneFluidType.java",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockSandstoneFluid.java"
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockSandstoneFluid.java",
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_sandstone.json",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_sandstone.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2090,12 +2090,12 @@
       "registry_name": "cohesion_block_sand",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_sand.json",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockSandBlock.java",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockSandFluidType.java",
           "src/main/resources/assets/radiant/models/item/cohesion_block_sand_bucket.json",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockSandFluid.java",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_sand.json"
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockSandBlock.java",
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_sand.json",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_sand.json",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockSandFluid.java"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2109,11 +2109,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDioriteFluidType.java",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockDioriteBlock.java",
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDioriteFluid.java",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_diorite.json",
           "src/main/resources/assets/radiant/blockstates/cohesion_block_diorite.json",
           "src/main/resources/assets/radiant/models/item/cohesion_block_diorite_bucket.json",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_diorite.json"
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockDioriteBlock.java"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2126,12 +2126,12 @@
       "registry_name": "cohesion_block_bedrock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockBedrockFluidType.java",
           "src/main/java/net/mcreator/radiant/block/CohesionBlockBedrockBlock.java",
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockBedrockFluidType.java",
           "src/main/resources/assets/radiant/models/block/cohesion_block_bedrock.json",
-          "src/main/resources/assets/radiant/models/item/cohesion_block_bedrock_bucket.json",
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_bedrock.json",
           "src/main/java/net/mcreator/radiant/fluid/CohesionBlockBedrockFluid.java",
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_bedrock.json"
+          "src/main/resources/assets/radiant/models/item/cohesion_block_bedrock_bucket.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2145,11 +2145,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/radiant/blockstates/cohesion_block_andesite.json",
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockAndesiteBlock.java",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockAndesiteFluid.java",
           "src/main/resources/assets/radiant/models/item/cohesion_block_andesite_bucket.json",
           "src/main/resources/assets/radiant/models/block/cohesion_block_andesite.json",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockAndesiteFluid.java",
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockAndesiteFluidType.java",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockAndesiteBlock.java"
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockAndesiteFluidType.java"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2162,12 +2162,12 @@
       "registry_name": "cohesion_block_debris",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDebrisFluid.java",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDebrisFluidType.java",
           "src/main/resources/assets/radiant/models/item/cohesion_block_debris_bucket.json",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDebrisFluid.java",
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_debris.json",
           "src/main/java/net/mcreator/radiant/block/CohesionBlockDebrisBlock.java",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_debris.json",
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_debris.json"
+          "src/main/resources/assets/radiant/models/block/cohesion_block_debris.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2180,12 +2180,12 @@
       "registry_name": "cohesion_block_endstone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_endstone.json",
-          "src/main/resources/assets/radiant/models/item/cohesion_block_endstone_bucket.json",
           "src/main/resources/assets/radiant/models/block/cohesion_block_endstone.json",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockEndstoneBlock.java",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockEndstoneFluid.java",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockEndstoneFluidType.java",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockEndstoneFluid.java"
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockEndstoneBlock.java",
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_endstone.json",
+          "src/main/resources/assets/radiant/models/item/cohesion_block_endstone_bucket.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2570,12 +2570,12 @@
       "registry_name": "cohesion_liquid",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/block/CohesionLiquidBlock.java",
+          "src/main/resources/assets/radiant/models/block/cohesion_liquid.json",
           "src/main/java/net/mcreator/radiant/fluid/CohesionLiquidFluid.java",
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionLiquidFluidType.java",
           "src/main/resources/assets/radiant/models/item/cohesion_liquid_bucket.json",
           "src/main/resources/assets/radiant/blockstates/cohesion_liquid.json",
-          "src/main/resources/assets/radiant/models/block/cohesion_liquid.json",
-          "src/main/java/net/mcreator/radiant/block/CohesionLiquidBlock.java"
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionLiquidFluidType.java"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -2664,8 +2664,8 @@
       "registry_name": "skybreakers_glyph",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/SkybreakersGlyphItem.java",
-          "src/main/resources/assets/radiant/models/item/skybreakers_glyph.json"
+          "src/main/resources/assets/radiant/models/item/skybreakers_glyph.json",
+          "src/main/java/net/mcreator/radiant/item/SkybreakersGlyphItem.java"
         ]
       },
       "path": "~/Other"
@@ -2756,8 +2756,8 @@
       "registry_name": "highspren",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/client/renderer/HighsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/HighsprenEntity.java"
+          "src/main/java/net/mcreator/radiant/entity/HighsprenEntity.java",
+          "src/main/java/net/mcreator/radiant/client/renderer/HighsprenRenderer.java"
         ]
       },
       "path": "~/Spren"
@@ -2783,8 +2783,8 @@
       "registry_name": "skybreaker_living_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/SkybreakerLivingShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/skybreaker_living_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/skybreaker_living_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/SkybreakerLivingShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade"
@@ -3188,8 +3188,8 @@
       "registry_name": "honorspren",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/client/renderer/HonorsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/HonorsprenEntity.java"
+          "src/main/java/net/mcreator/radiant/entity/HonorsprenEntity.java",
+          "src/main/java/net/mcreator/radiant/client/renderer/HonorsprenRenderer.java"
         ]
       },
       "path": "~/Spren"
@@ -3307,11 +3307,11 @@
       "registry_name": "illumination_block_diamond_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/illumination_block_diamond_ore.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockDiamondOreBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_diamond_ore.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationBlockDiamondOreBlock.java",
+          "src/main/resources/assets/radiant/models/block/illumination_block_diamond_ore.json",
           "src/main/resources/assets/radiant/models/item/illumination_block_diamond_ore.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_diamond_ore.json",
           "src/main/resources/assets/radiant/blockstates/illumination_block_diamond_ore.json"
         ]
       },
@@ -3325,12 +3325,12 @@
       "registry_name": "illumination_block_iron_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockIronOreBlockEntity.java",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockIronOreBlock.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_iron_ore.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_block_iron_ore.json",
           "src/main/resources/assets/radiant/models/item/illumination_block_iron_ore.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_iron_ore.json"
+          "src/main/resources/assets/radiant/models/block/illumination_block_iron_ore.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_iron_ore.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockIronOreBlock.java",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockIronOreBlockEntity.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_block_iron_ore.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -3343,12 +3343,12 @@
       "registry_name": "illumination_block_gold_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/illumination_block_gold_ore.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockGoldOreBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block_gold_ore.json",
+          "src/main/resources/assets/radiant/models/item/illumination_block_gold_ore.json",
+          "src/main/resources/assets/radiant/models/block/illumination_block_gold_ore.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockGoldOreBlock.java",
           "src/main/resources/assets/radiant/blockstates/illumination_block_gold_ore.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockGoldOreBlockEntity.java",
-          "src/main/resources/assets/radiant/models/block/illumination_block_gold_ore.json"
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockGoldOreBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -3361,12 +3361,12 @@
       "registry_name": "illumination_block_emerald_ore",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockEmeraldOreBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block_emerald_ore.json",
           "src/main/resources/assets/radiant/blockstates/illumination_block_emerald_ore.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_emerald_ore.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockEmeraldOreBlock.java",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockEmeraldOreBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_block_emerald_ore.json"
+          "src/main/resources/assets/radiant/models/item/illumination_block_emerald_ore.json",
+          "src/main/resources/assets/radiant/models/block/illumination_block_emerald_ore.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -3379,12 +3379,12 @@
       "registry_name": "illumination_block_gold",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockGoldBlockEntity.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_block_gold.json",
-          "src/main/resources/assets/radiant/models/item/illumination_block_gold.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockGoldBlock.java",
+          "src/main/resources/assets/radiant/models/block/illumination_block_gold.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block_gold.json",
-          "src/main/resources/assets/radiant/models/block/illumination_block_gold.json"
+          "src/main/resources/assets/radiant/blockstates/illumination_block_gold.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockGoldBlock.java",
+          "src/main/resources/assets/radiant/models/item/illumination_block_gold.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockGoldBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -3397,10 +3397,10 @@
       "registry_name": "illumination_block_emerald",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockEmeraldBlock.java",
           "src/main/resources/assets/radiant/models/block/illumination_block_emerald.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_emerald.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockEmeraldBlockEntity.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_block_emerald.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockEmeraldBlock.java",
           "src/main/resources/assets/radiant/models/item/illumination_block_emerald.json",
           "src/main/resources/assets/radiant/blockstates/illumination_block_emerald.json"
         ]
@@ -3415,12 +3415,12 @@
       "registry_name": "illumination_block_ancient_debris",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/blockstates/illumination_block_ancient_debris.json",
-          "src/main/resources/assets/radiant/models/item/illumination_block_ancient_debris.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBlockAncientDebrisBlock.java",
-          "src/main/resources/assets/radiant/models/block/illumination_block_ancient_debris.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_block_ancient_debris.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockAncientDebrisBlockEntity.java"
+          "src/main/java/net/mcreator/radiant/block/IlluminationBlockAncientDebrisBlock.java",
+          "src/main/resources/assets/radiant/models/item/illumination_block_ancient_debris.json",
+          "src/main/resources/assets/radiant/models/block/illumination_block_ancient_debris.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBlockAncientDebrisBlockEntity.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_block_ancient_debris.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -3447,8 +3447,8 @@
       "registry_name": "windrunner_gravitation_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/windrunner_gravitation_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/WindrunnerGravitationGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/WindrunnerGravitationGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/windrunner_gravitation_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -3608,8 +3608,8 @@
       "registry_name": "fake_creeper",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/entity/FakeCreeperEntity.java",
-          "src/main/java/net/mcreator/radiant/client/renderer/FakeCreeperRenderer.java"
+          "src/main/java/net/mcreator/radiant/client/renderer/FakeCreeperRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/FakeCreeperEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/Morph/Fakes"
@@ -3636,8 +3636,8 @@
       "registry_name": "windrunner_living_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/windrunner_living_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/WindrunnerLivingShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/WindrunnerLivingShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/windrunner_living_shardblade.json"
         ]
       },
       "path": "~/Shardblade"
@@ -3968,8 +3968,8 @@
       "registry_name": "elsecaller_living_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/ElsecallerLivingShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/elsecaller_living_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/elsecaller_living_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/ElsecallerLivingShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade"
@@ -3982,8 +3982,8 @@
       "registry_name": "lightweaver_living_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/LightweaverLivingShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/lightweaver_living_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/lightweaver_living_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/LightweaverLivingShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade"
@@ -4300,12 +4300,12 @@
       "registry_name": "illumination_cobblestone_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationCobblestoneBlockBlock.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_cobblestone_block.json",
           "src/main/resources/assets/radiant/models/block/illumination_cobblestone_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationCobblestoneBlockBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_cobblestone_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationCobblestoneBlockBlock.java",
           "src/main/resources/assets/radiant/models/item/illumination_cobblestone_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_cobblestone_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_cobblestone_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationCobblestoneBlockBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4337,12 +4337,12 @@
       "registry_name": "illumination_acacia_log_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/illumination_acacia_log_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationAcaciaLogBlockBlock.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_acacia_log_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_acacia_log_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationAcaciaLogBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_acacia_log_block.json"
+          "src/main/resources/assets/radiant/models/block/illumination_acacia_log_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_acacia_log_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_acacia_log_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4355,12 +4355,12 @@
       "registry_name": "illumination_acacia_planks_block",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationAcaciaPlanksBlockBlockEntity.java",
           "src/main/resources/assets/radiant/blockstates/illumination_acacia_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationAcaciaPlanksBlockBlock.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_acacia_planks_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_acacia_planks_block.json",
           "src/main/resources/assets/radiant/models/block/illumination_acacia_planks_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationAcaciaPlanksBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_acacia_planks_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_acacia_planks_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4373,11 +4373,11 @@
       "registry_name": "illumination_birch_log_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_birch_log_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBirchLogBlockBlock.java",
           "src/main/resources/assets/radiant/models/item/illumination_birch_log_block.json",
           "src/main/resources/assets/radiant/models/block/illumination_birch_log_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_birch_log_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBirchLogBlockBlock.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_birch_log_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBirchLogBlockBlockEntity.java"
         ]
       },
@@ -4391,11 +4391,11 @@
       "registry_name": "illumination_birch_planks_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_birch_planks_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_birch_planks_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBirchPlanksBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_birch_planks_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_birch_planks_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_birch_planks_block.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_birch_planks_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationBirchPlanksBlockBlockEntity.java",
+          "src/main/resources/assets/radiant/models/block/illumination_birch_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationBirchPlanksBlockBlock.java"
         ]
       },
@@ -4409,12 +4409,12 @@
       "registry_name": "illumination_bookshelf_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_bookshelf_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationBookshelfBlockBlock.java",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationBookshelfBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_bookshelf_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationBookshelfBlockBlock.java",
           "src/main/resources/assets/radiant/blockstates/illumination_bookshelf_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_bookshelf_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_bookshelf_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_bookshelf_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_bookshelf_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4427,12 +4427,12 @@
       "registry_name": "illumination_cherry_log_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationCherryLogBlockBlock.java",
-          "src/main/resources/assets/radiant/models/block/illumination_cherry_log_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_cherry_log_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_cherry_log_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationCherryLogBlockBlockEntity.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_cherry_log_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_cherry_log_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_cherry_log_block.json"
+          "src/main/java/net/mcreator/radiant/block/IlluminationCherryLogBlockBlock.java",
+          "src/main/resources/assets/radiant/models/block/illumination_cherry_log_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4446,10 +4446,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/block/IlluminationCherryPlanksBlockBlock.java",
-          "src/main/resources/assets/radiant/models/block/illumination_cherry_planks_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_cherry_planks_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_cherry_planks_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_cherry_planks_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_cherry_planks_block.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_cherry_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationCherryPlanksBlockBlockEntity.java"
         ]
       },
@@ -4463,12 +4463,12 @@
       "registry_name": "illumination_clay_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/illumination_clay_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationClayBlockBlock.java",
           "src/main/resources/assets/radiant/models/item/illumination_clay_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_clay_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationClayBlockBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_clay_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_clay_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_clay_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationClayBlockBlock.java",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationClayBlockBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4481,12 +4481,12 @@
       "registry_name": "illumination_cobbled_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/blockstates/illumination_cobbled_deepslate_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_cobbled_deepslate_block.json",
           "src/main/resources/assets/radiant/models/block/illumination_cobbled_deepslate_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_cobbled_deepslate_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationCobbledDeepslateBlockBlockEntity.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_cobbled_deepslate_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationCobbledDeepslateBlockBlock.java",
-          "src/main/resources/assets/radiant/models/item/illumination_cobbled_deepslate_block.json"
+          "src/main/resources/assets/radiant/blockstates/illumination_cobbled_deepslate_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4499,12 +4499,12 @@
       "registry_name": "illumination_crimson_planks_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/illumination_crimson_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationCrimsonPlanksBlockBlock.java",
+          "src/main/resources/assets/radiant/models/block/illumination_crimson_planks_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_crimson_planks_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_crimson_planks_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationCrimsonPlanksBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/block/illumination_crimson_planks_block.json"
+          "src/main/resources/assets/radiant/models/item/illumination_crimson_planks_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationCrimsonPlanksBlockBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4520,9 +4520,9 @@
           "src/main/resources/assets/radiant/models/block/illumination_dark_oak_log_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationDarkOakLogBlockBlockEntity.java",
           "src/main/resources/assets/radiant/blockstates/illumination_dark_oak_log_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDarkOakLogBlockBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_dark_oak_log_block.json",
-          "src/main/resources/assets/radiant/models/item/illumination_dark_oak_log_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationDarkOakLogBlockBlock.java"
+          "src/main/resources/assets/radiant/models/item/illumination_dark_oak_log_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4535,11 +4535,11 @@
       "registry_name": "illumination_dark_oak_planks_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/illumination_dark_oak_planks_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationDarkOakPlanksBlockBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_dark_oak_planks_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_dark_oak_planks_block.json",
           "src/main/resources/assets/radiant/models/block/illumination_dark_oak_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationDarkOakPlanksBlockBlockEntity.java",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDarkOakPlanksBlockBlock.java",
           "src/main/resources/assets/radiant/blockstates/illumination_dark_oak_planks_block.json"
         ]
       },
@@ -4553,12 +4553,12 @@
       "registry_name": "illumination_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateBlockBlock.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_deepslate_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_deepslate_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_deepslate_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/block/illumination_deepslate_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateBlockBlock.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4571,12 +4571,12 @@
       "registry_name": "illumination_deepslate_coal_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/illumination_deepslate_coal_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_deepslate_coal_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_coal_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_deepslate_coal_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateCoalBlockBlockEntity.java",
+          "src/main/resources/assets/radiant/models/item/illumination_deepslate_coal_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateCoalBlockBlock.java",
-          "src/main/resources/assets/radiant/models/block/illumination_deepslate_coal_block.json"
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateCoalBlockBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4589,12 +4589,12 @@
       "registry_name": "illumination_deepslate_iron_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/illumination_deepslate_iron_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateIronBlockBlockEntity.java",
-          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateIronBlockBlock.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_iron_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_deepslate_iron_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_deepslate_iron_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_iron_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateIronBlockBlock.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_deepslate_iron_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_deepslate_iron_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4607,12 +4607,12 @@
       "registry_name": "illumination_deepsalte_copper_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationDeepsalteCopperBlockBlock.java",
           "src/main/resources/assets/radiant/models/item/illumination_deepsalte_copper_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepsalteCopperBlockBlockEntity.java",
+          "src/main/resources/assets/radiant/models/block/illumination_deepsalte_copper_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_deepsalte_copper_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_deepsalte_copper_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_deepsalte_copper_block.json"
+          "src/main/java/net/mcreator/radiant/block/IlluminationDeepsalteCopperBlockBlock.java",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepsalteCopperBlockBlockEntity.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_deepsalte_copper_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4625,12 +4625,12 @@
       "registry_name": "illumination_deepslate_diamond_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/illumination_deepslate_diamond_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_deepslate_diamond_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_diamond_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateDiamondBlockBlock.java",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateDiamondBlockBlockEntity.java",
           "src/main/resources/assets/radiant/blockstates/illumination_deepslate_diamond_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_deepslate_diamond_block.json"
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateDiamondBlockBlockEntity.java",
+          "src/main/resources/assets/radiant/models/item/illumination_deepslate_diamond_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateDiamondBlockBlock.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4643,12 +4643,12 @@
       "registry_name": "illumination_deepsalte_emerald_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepsalteEmeraldBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_deepsalte_emerald_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepsalte_emerald_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_deepsalte_emerald_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationDeepsalteEmeraldBlockBlock.java",
-          "src/main/resources/assets/radiant/models/block/illumination_deepsalte_emerald_block.json"
+          "src/main/resources/assets/radiant/models/item/illumination_deepsalte_emerald_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_deepsalte_emerald_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_deepsalte_emerald_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepsalteEmeraldBlockBlockEntity.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepsalte_emerald_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4661,12 +4661,12 @@
       "registry_name": "illumination_deepslate_gold_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateGoldBlockBlockEntity.java",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateGoldBlockBlock.java",
           "src/main/resources/assets/radiant/models/item/illumination_deepslate_gold_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_deepslate_gold_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateGoldBlockBlockEntity.java",
           "src/main/resources/assets/radiant/blockstates/illumination_deepslate_gold_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_gold_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateGoldBlockBlock.java"
+          "src/main/resources/assets/radiant/models/block/illumination_deepslate_gold_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4679,12 +4679,12 @@
       "registry_name": "illumination_deepslate_lapislazuli_block",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateLapislazuliBlockBlockEntity.java",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateLapislazuliBlockBlock.java",
           "src/main/resources/assets/radiant/models/block/illumination_deepslate_lapislazuli_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_deepslate_lapislazuli_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateLapislazuliBlockBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_lapislazuli_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_deepslate_lapislazuli_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateLapislazuliBlockBlock.java"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_lapislazuli_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4697,12 +4697,12 @@
       "registry_name": "illumination_deepslate_redstone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/illumination_deepslate_redstone_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_redstone_block.json",
-          "src/main/resources/assets/radiant/models/item/illumination_deepslate_redstone_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_deepslate_redstone_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateRedstoneBlockBlock.java",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationDeepslateRedstoneBlockBlockEntity.java",
-          "src/main/java/net/mcreator/radiant/block/IlluminationDeepslateRedstoneBlockBlock.java"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_deepslate_redstone_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_deepslate_redstone_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_deepslate_redstone_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_deepslate_redstone_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4715,12 +4715,12 @@
       "registry_name": "illumination_jungle_log_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_jungle_log_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_jungle_log_block.json",
-          "src/main/resources/assets/radiant/models/item/illumination_jungle_log_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationJungleLogBlockBlock.java",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationJungleLogBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/block/illumination_jungle_log_block.json"
+          "src/main/java/net/mcreator/radiant/block/IlluminationJungleLogBlockBlock.java",
+          "src/main/resources/assets/radiant/models/item/illumination_jungle_log_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_jungle_log_block.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_jungle_log_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_jungle_log_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4733,12 +4733,12 @@
       "registry_name": "illumination_jungle_planks_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/block/illumination_jungle_planks_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_jungle_planks_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationJunglePlanksBlockBlock.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_jungle_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationJunglePlanksBlockBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_jungle_planks_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_jungle_planks_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationJunglePlanksBlockBlock.java",
+          "src/main/resources/assets/radiant/models/block/illumination_jungle_planks_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_jungle_planks_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4751,12 +4751,12 @@
       "registry_name": "illumination_lapislazuli_ore_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationLapislazuliOreBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_lapislazuli_ore_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_lapislazuli_ore_block.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_lapislazuli_ore_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_lapislazuli_ore_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_lapislazuli_ore_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationLapislazuliOreBlockBlock.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_lapislazuli_ore_block.json"
+          "src/main/resources/assets/radiant/models/item/illumination_lapislazuli_ore_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationLapislazuliOreBlockBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4769,12 +4769,12 @@
       "registry_name": "illumination_mangrove_log_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/illumination_mangrove_log_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_mangrove_log_block.json",
-          "src/main/resources/assets/radiant/blockstates/illumination_mangrove_log_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_mangrove_log_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationMangroveLogBlockBlock.java",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationMangroveLogBlockBlockEntity.java"
+          "src/main/resources/assets/radiant/models/item/illumination_mangrove_log_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_mangrove_log_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_mangrove_log_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationMangroveLogBlockBlockEntity.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_mangrove_log_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4788,11 +4788,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationMangrovePlanksBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_mangrove_planks_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_mangrove_planks_block.json",
-          "src/main/resources/assets/radiant/models/item/illumination_mangrove_planks_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationMangrovePlanksBlockBlock.java",
           "src/main/resources/assets/radiant/models/block/illumination_mangrove_planks_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationMangrovePlanksBlockBlock.java"
+          "src/main/resources/assets/radiant/models/item/illumination_mangrove_planks_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_mangrove_planks_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4806,11 +4806,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/block/IlluminationMudBlockBlock.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_mud_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_mud_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_mud_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_mud_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_mud_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationMudBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_mud_block.json"
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_mud_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4824,11 +4824,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationOakLogBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/models/item/illumination_oak_log_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationOakLogBlockBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_oak_log_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_oak_log_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_oak_log_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_oak_log_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationOakLogBlockBlock.java"
+          "src/main/resources/assets/radiant/models/block/illumination_oak_log_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4842,11 +4842,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/radiant/blockstates/illumination_oak_planks_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_oak_planks_block.json",
-          "src/main/resources/assets/radiant/models/item/illumination_oak_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationOakPlanksBlockBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_oak_planks_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationOakPlanksBlockBlock.java"
+          "src/main/java/net/mcreator/radiant/block/IlluminationOakPlanksBlockBlock.java",
+          "src/main/resources/assets/radiant/models/item/illumination_oak_planks_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_oak_planks_block.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_oak_planks_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4859,12 +4859,12 @@
       "registry_name": "illumination_redstone_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationRedstoneBlockBlockEntity.java",
-          "src/main/java/net/mcreator/radiant/block/IlluminationRedstoneBlockBlock.java",
-          "src/main/resources/assets/radiant/models/item/illumination_redstone_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_redstone_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationRedstoneBlockBlockEntity.java",
+          "src/main/resources/assets/radiant/models/item/illumination_redstone_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_redstone_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_redstone_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_redstone_block.json"
+          "src/main/java/net/mcreator/radiant/block/IlluminationRedstoneBlockBlock.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4877,12 +4877,12 @@
       "registry_name": "illumination_redstone_ore_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationRedstoneOreBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_redstone_ore_block.json",
+          "src/main/resources/assets/radiant/models/block/illumination_redstone_ore_block.json",
           "src/main/java/net/mcreator/radiant/block/IlluminationRedstoneOreBlockBlock.java",
-          "src/main/resources/assets/radiant/models/item/illumination_redstone_ore_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationRedstoneOreBlockBlockEntity.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_redstone_ore_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_redstone_ore_block.json"
+          "src/main/resources/assets/radiant/models/item/illumination_redstone_ore_block.json",
+          "src/main/resources/assets/radiant/blockstates/illumination_redstone_ore_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4895,12 +4895,12 @@
       "registry_name": "illumination_snow_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationSnowBlockBlock.java",
-          "src/main/resources/assets/radiant/models/item/illumination_snow_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_snow_block.json",
           "src/main/resources/assets/radiant/blockstates/illumination_snow_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationSnowBlockBlockEntity.java",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_snow_block.json"
+          "src/main/resources/assets/radiant/models/block/illumination_snow_block.json",
+          "src/main/java/net/mcreator/radiant/block/IlluminationSnowBlockBlock.java",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_snow_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_snow_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationSnowBlockBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4913,12 +4913,12 @@
       "registry_name": "illumination_spruce_log_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/radiant/models/block/illumination_spruce_log_block.json",
           "src/main/resources/assets/radiant/models/item/illumination_spruce_log_block.json",
-          "src/main/java/net/mcreator/radiant/block/entity/IlluminationSpruceLogBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_spruce_log_block.json",
-          "src/main/java/net/mcreator/radiant/block/IlluminationSpruceLogBlockBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/illumination_spruce_log_block.json",
-          "src/main/resources/assets/radiant/models/block/illumination_spruce_log_block.json"
+          "src/main/java/net/mcreator/radiant/block/IlluminationSpruceLogBlockBlock.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_spruce_log_block.json",
+          "src/main/java/net/mcreator/radiant/block/entity/IlluminationSpruceLogBlockBlockEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -4931,12 +4931,12 @@
       "registry_name": "illumination_spruce_planks_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/IlluminationSprucePlanksBlockBlock.java",
-          "src/main/resources/assets/radiant/models/item/illumination_spruce_planks_block.json",
           "src/main/java/net/mcreator/radiant/block/entity/IlluminationSprucePlanksBlockBlockEntity.java",
-          "src/main/resources/assets/radiant/blockstates/illumination_spruce_planks_block.json",
+          "src/main/resources/data/radiant/loot_table/blocks/illumination_spruce_planks_block.json",
           "src/main/resources/assets/radiant/models/block/illumination_spruce_planks_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/illumination_spruce_planks_block.json"
+          "src/main/java/net/mcreator/radiant/block/IlluminationSprucePlanksBlockBlock.java",
+          "src/main/resources/assets/radiant/blockstates/illumination_spruce_planks_block.json",
+          "src/main/resources/assets/radiant/models/item/illumination_spruce_planks_block.json"
         ]
       },
       "path": "~/Surges/Illumination/IllusionBlocks"
@@ -5595,12 +5595,12 @@
       "registry_name": "cohesion_block_cobblestone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockCobblestoneFluid.java",
+          "src/main/resources/assets/radiant/models/item/cohesion_block_cobblestone_bucket.json",
           "src/main/resources/assets/radiant/models/block/cohesion_block_cobblestone.json",
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockCobblestoneFluidType.java",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockCobblestoneFluid.java",
           "src/main/java/net/mcreator/radiant/block/CohesionBlockCobblestoneBlock.java",
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_cobblestone.json",
-          "src/main/resources/assets/radiant/models/item/cohesion_block_cobblestone_bucket.json"
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockCobblestoneFluidType.java",
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_cobblestone.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -5644,12 +5644,12 @@
       "registry_name": "cohesion_block_deepslate_c_obblestone",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDeepslateCObblestoneFluid.java",
           "src/main/java/net/mcreator/radiant/block/CohesionBlockDeepslateCObblestoneBlock.java",
           "src/main/resources/assets/radiant/blockstates/cohesion_block_deepslate_c_obblestone.json",
-          "src/main/resources/assets/radiant/models/item/cohesion_block_deepslate_c_obblestone_bucket.json",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDeepslateCObblestoneFluid.java",
+          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDeepslateCObblestoneFluidType.java",
           "src/main/resources/assets/radiant/models/block/cohesion_block_deepslate_c_obblestone.json",
-          "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDeepslateCObblestoneFluidType.java"
+          "src/main/resources/assets/radiant/models/item/cohesion_block_deepslate_c_obblestone_bucket.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -5693,12 +5693,12 @@
       "registry_name": "cohesion_block_deepslate",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockDeepslateBlock.java",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_deepslate.json",
+          "src/main/resources/assets/radiant/models/item/cohesion_block_deepslate_bucket.json",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockDeepslateFluidType.java",
           "src/main/resources/assets/radiant/blockstates/cohesion_block_deepslate.json",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDeepslateFluid.java",
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockDeepslateBlock.java",
-          "src/main/resources/assets/radiant/models/item/cohesion_block_deepslate_bucket.json",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_deepslate.json"
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockDeepslateFluid.java"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -5742,8 +5742,8 @@
       "registry_name": "edgedancer_abrasion_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/edgedancer_abrasion_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/EdgedancerAbrasionGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/EdgedancerAbrasionGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/edgedancer_abrasion_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -5770,8 +5770,8 @@
       "registry_name": "truthwatcher_progression_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/truthwatcher_progression_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/TruthwatcherProgressionGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/TruthwatcherProgressionGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_progression_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -5906,11 +5906,11 @@
       "registry_name": "cultivationspren_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/CultivationsprenBlockBlock.java",
           "src/main/resources/assets/radiant/models/block/cultivationspren_block.json",
-          "src/main/resources/assets/radiant/blockstates/cultivationspren_block.json",
+          "src/main/resources/data/radiant/loot_table/blocks/cultivationspren_block.json",
           "src/main/resources/assets/radiant/models/item/cultivationspren_block.json",
-          "src/main/resources/data/radiant/loot_table/blocks/cultivationspren_block.json"
+          "src/main/java/net/mcreator/radiant/block/CultivationsprenBlockBlock.java",
+          "src/main/resources/assets/radiant/blockstates/cultivationspren_block.json"
         ]
       },
       "path": "~/Spren/Cultivationspren"
@@ -5924,10 +5924,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/radiant/models/item/cultivationspren_block_decay.json",
-          "src/main/resources/data/radiant/loot_table/blocks/cultivationspren_block_decay.json",
-          "src/main/resources/assets/radiant/models/block/cultivationspren_block_decay.json",
           "src/main/java/net/mcreator/radiant/block/CultivationsprenBlockDecayBlock.java",
-          "src/main/resources/assets/radiant/blockstates/cultivationspren_block_decay.json"
+          "src/main/resources/assets/radiant/models/block/cultivationspren_block_decay.json",
+          "src/main/resources/assets/radiant/blockstates/cultivationspren_block_decay.json",
+          "src/main/resources/data/radiant/loot_table/blocks/cultivationspren_block_decay.json"
         ]
       },
       "path": "~/Spren/Cultivationspren"
@@ -6468,13 +6468,13 @@
       "registry_name": "blood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/BloodBlock.java",
           "src/main/java/net/mcreator/radiant/fluid/types/BloodFluidType.java",
           "src/main/resources/assets/radiant/models/item/blood_bucket.json",
-          "src/main/resources/assets/radiant/models/block/blood.json",
-          "src/main/java/net/mcreator/radiant/fluid/BloodFluid.java",
+          "src/main/resources/assets/radiant/blockstates/blood.json",
           "src/main/java/net/mcreator/radiant/item/BloodItem.java",
-          "src/main/resources/assets/radiant/blockstates/blood.json"
+          "src/main/java/net/mcreator/radiant/block/BloodBlock.java",
+          "src/main/resources/assets/radiant/models/block/blood.json",
+          "src/main/java/net/mcreator/radiant/fluid/BloodFluid.java"
         ]
       },
       "path": "~/Surges/Transformation"
@@ -6544,8 +6544,8 @@
       "registry_name": "edgedancer_dead_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/edgedancer_dead_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/EdgedancerDeadShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/EdgedancerDeadShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/edgedancer_dead_shardblade.json"
         ]
       },
       "path": "~/Shardblade/DeadBlades"
@@ -6558,8 +6558,8 @@
       "registry_name": "stoneward_dead_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/stoneward_dead_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/StonewardDeadShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/StonewardDeadShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/stoneward_dead_shardblade.json"
         ]
       },
       "path": "~/Shardblade/DeadBlades"
@@ -6586,8 +6586,8 @@
       "registry_name": "truthwatcher_dead_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/truthwatcher_dead_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/TruthwatcherDeadShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/TruthwatcherDeadShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_dead_shardblade.json"
         ]
       },
       "path": "~/Shardblade/DeadBlades"
@@ -6600,8 +6600,8 @@
       "registry_name": "windrunner_dead_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/WindrunnerDeadShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/windrunner_dead_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/windrunner_dead_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/WindrunnerDeadShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/DeadBlades"
@@ -6714,8 +6714,8 @@
       "registry_name": "willshaper_transportation_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/willshaper_transportation_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/WillshaperTransportationGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/WillshaperTransportationGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/willshaper_transportation_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -6768,8 +6768,8 @@
       "registry_name": "stoneward_cohesion_glyph",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/stoneward_cohesion_glyph.json",
-          "src/main/java/net/mcreator/radiant/item/StonewardCohesionGlyphItem.java"
+          "src/main/java/net/mcreator/radiant/item/StonewardCohesionGlyphItem.java",
+          "src/main/resources/assets/radiant/models/item/stoneward_cohesion_glyph.json"
         ]
       },
       "path": "~/Other"
@@ -6822,8 +6822,8 @@
       "registry_name": "tension_axe_rock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_axe_rock.json",
-          "src/main/java/net/mcreator/radiant/item/TensionAxeRockItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionAxeRockItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_axe_rock.json"
         ]
       },
       "path": "~/Surges/Tension/Axe"
@@ -6836,8 +6836,8 @@
       "registry_name": "tension_shovel_rock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TensionShovelRockItem.java",
-          "src/main/resources/assets/radiant/models/item/tension_shovel_rock.json"
+          "src/main/resources/assets/radiant/models/item/tension_shovel_rock.json",
+          "src/main/java/net/mcreator/radiant/item/TensionShovelRockItem.java"
         ]
       },
       "path": "~/Surges/Tension/Shovel"
@@ -6850,8 +6850,8 @@
       "registry_name": "tension_hoe_rock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_hoe_rock.json",
-          "src/main/java/net/mcreator/radiant/item/TensionHoeRockItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionHoeRockItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_hoe_rock.json"
         ]
       },
       "path": "~/Surges/Tension/Hoe"
@@ -6969,11 +6969,11 @@
       "registry_name": "cultivationspren_block_l",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/CultivationsprenBlockLBlock.java",
-          "src/main/resources/assets/radiant/blockstates/cultivationspren_block_l.json",
           "src/main/resources/assets/radiant/models/block/cultivationspren_block_l.json",
+          "src/main/resources/assets/radiant/models/item/cultivationspren_block_l.json",
+          "src/main/java/net/mcreator/radiant/block/CultivationsprenBlockLBlock.java",
           "src/main/resources/data/radiant/loot_table/blocks/cultivationspren_block_l.json",
-          "src/main/resources/assets/radiant/models/item/cultivationspren_block_l.json"
+          "src/main/resources/assets/radiant/blockstates/cultivationspren_block_l.json"
         ]
       },
       "path": "~/Spren/Cultivationspren"
@@ -7057,10 +7057,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/block/CultivationsprenBlockLDecayBlock.java",
-          "src/main/resources/assets/radiant/models/item/cultivationspren_block_l_decay.json",
+          "src/main/resources/data/radiant/loot_table/blocks/cultivationspren_block_l_decay.json",
           "src/main/resources/assets/radiant/blockstates/cultivationspren_block_l_decay.json",
           "src/main/resources/assets/radiant/models/block/cultivationspren_block_l_decay.json",
-          "src/main/resources/data/radiant/loot_table/blocks/cultivationspren_block_l_decay.json"
+          "src/main/resources/assets/radiant/models/item/cultivationspren_block_l_decay.json"
         ]
       },
       "path": "~/Spren/Cultivationspren"
@@ -7135,11 +7135,11 @@
       "registry_name": "smoke",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/blockstates/smoke.json",
+          "src/main/resources/data/radiant/loot_table/blocks/smoke.json",
           "src/main/resources/assets/radiant/models/item/smoke.json",
           "src/main/java/net/mcreator/radiant/block/SmokeBlock.java",
-          "src/main/resources/data/radiant/loot_table/blocks/smoke.json",
-          "src/main/resources/assets/radiant/models/block/smoke.json"
+          "src/main/resources/assets/radiant/models/block/smoke.json",
+          "src/main/resources/assets/radiant/blockstates/smoke.json"
         ]
       },
       "path": "~/Surges/Transformation"
@@ -7266,8 +7266,8 @@
       "registry_name": "infused_emerald",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/infused_emerald.json",
-          "src/main/java/net/mcreator/radiant/item/InfusedEmeraldItem.java"
+          "src/main/java/net/mcreator/radiant/item/InfusedEmeraldItem.java",
+          "src/main/resources/assets/radiant/models/item/infused_emerald.json"
         ]
       },
       "path": "~/Gems"
@@ -7280,13 +7280,13 @@
       "registry_name": "aluminum_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/radiant/worldgen/configured_feature/aluminum_ore.json",
           "src/main/resources/assets/radiant/models/item/aluminum_ore.json",
-          "src/main/resources/assets/radiant/blockstates/aluminum_ore.json",
-          "src/main/java/net/mcreator/radiant/block/AluminumOreBlock.java",
-          "src/main/resources/assets/radiant/models/block/aluminum_ore.json",
           "src/main/resources/data/radiant/neoforge/biome_modifier/aluminum_ore_biome_modifier.json",
-          "src/main/resources/data/radiant/worldgen/placed_feature/aluminum_ore.json"
+          "src/main/resources/data/radiant/worldgen/placed_feature/aluminum_ore.json",
+          "src/main/java/net/mcreator/radiant/block/AluminumOreBlock.java",
+          "src/main/resources/assets/radiant/blockstates/aluminum_ore.json",
+          "src/main/resources/data/radiant/worldgen/configured_feature/aluminum_ore.json",
+          "src/main/resources/assets/radiant/models/block/aluminum_ore.json"
         ]
       },
       "path": "~/Aluminum"
@@ -7332,8 +7332,8 @@
       "registry_name": "aluminum_nugget",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/aluminum_nugget.json",
-          "src/main/java/net/mcreator/radiant/item/AluminumNuggetItem.java"
+          "src/main/java/net/mcreator/radiant/item/AluminumNuggetItem.java",
+          "src/main/resources/assets/radiant/models/item/aluminum_nugget.json"
         ]
       },
       "path": "~/Aluminum"
@@ -7588,8 +7588,8 @@
       "registry_name": "invisible_radiant_particle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/client/particle/InvisibleRadiantParticleParticle.java",
-          "src/main/resources/assets/radiant/particles/invisible_radiant_particle.json"
+          "src/main/resources/assets/radiant/particles/invisible_radiant_particle.json",
+          "src/main/java/net/mcreator/radiant/client/particle/InvisibleRadiantParticleParticle.java"
         ]
       },
       "path": "~/Surges"
@@ -7602,11 +7602,11 @@
       "registry_name": "windrunner_shardplate",
       "metadata": {
         "files": [
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_boots.json",
           "src/main/java/net/mcreator/radiant/item/WindrunnerShardplateItem.java",
-          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_chestplate.json",
-          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_helmet.json",
           "src/main/resources/assets/radiant/models/item/windrunner_shardplate_leggings.json",
-          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_boots.json"
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_chestplate.json"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7620,10 +7620,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_boots.json",
-          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_leggings.json",
-          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_chestplate.json",
           "src/main/java/net/mcreator/radiant/item/SkybreakerShardplateItem.java",
-          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_helmet.json"
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_helmet.json",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_chestplate.json"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7637,10 +7637,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_helmet.json",
-          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_leggings.json",
-          "src/main/java/net/mcreator/radiant/item/DustbringerShardplateItem.java",
           "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_boots.json",
-          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_chestplate.json"
+          "src/main/java/net/mcreator/radiant/item/DustbringerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_leggings.json"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7653,11 +7653,11 @@
       "registry_name": "edgedancer_shardplate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/EdgedancerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_helmet.json",
           "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_boots.json",
           "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_chestplate.json",
-          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_helmet.json",
-          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_leggings.json"
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_leggings.json",
+          "src/main/java/net/mcreator/radiant/item/EdgedancerShardplateItem.java"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7670,11 +7670,11 @@
       "registry_name": "truthwatcher_shardplate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/TruthwatcherShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_helmet.json",
           "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_leggings.json",
+          "src/main/java/net/mcreator/radiant/item/TruthwatcherShardplateItem.java",
           "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_chestplate.json",
-          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_boots.json",
-          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_helmet.json"
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_boots.json"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7687,11 +7687,11 @@
       "registry_name": "lightweaver_shardplate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_helmet.json",
+          "src/main/java/net/mcreator/radiant/item/LightweaverShardplateItem.java",
           "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_boots.json",
-          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_helmet.json",
           "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_chestplate.json",
-          "src/main/java/net/mcreator/radiant/item/LightweaverShardplateItem.java"
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_leggings.json"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7704,11 +7704,11 @@
       "registry_name": "elsecaller_shardplate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/ElsecallerShardplateItem.java",
           "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_leggings.json",
           "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_chestplate.json",
-          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_helmet.json",
-          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_leggings.json"
+          "src/main/java/net/mcreator/radiant/item/ElsecallerShardplateItem.java",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_helmet.json"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7722,10 +7722,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/radiant/item/WillshaperShardplateItem.java",
-          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_leggings.json",
           "src/main/resources/assets/radiant/models/item/willshaper_shardplate_boots.json",
-          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_helmet.json",
-          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_chestplate.json"
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_helmet.json"
         ]
       },
       "path": "~/Shardplate/Armors/Living"
@@ -7738,10 +7738,10 @@
       "registry_name": "stoneward_shardplate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_boots.json",
-          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_helmet.json",
           "src/main/resources/assets/radiant/models/item/stoneward_shardplate_chestplate.json",
           "src/main/resources/assets/radiant/models/item/stoneward_shardplate_leggings.json",
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_boots.json",
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_helmet.json",
           "src/main/java/net/mcreator/radiant/item/StonewardShardplateItem.java"
         ]
       },
@@ -8290,11 +8290,11 @@
       "registry_name": "aluminum_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/aluminum_block.json",
           "src/main/resources/assets/radiant/models/block/aluminum_block.json",
-          "src/main/java/net/mcreator/radiant/block/AluminumBlockBlock.java",
+          "src/main/resources/assets/radiant/models/item/aluminum_block.json",
+          "src/main/resources/assets/radiant/blockstates/aluminum_block.json",
           "src/main/resources/data/radiant/loot_table/blocks/aluminum_block.json",
-          "src/main/resources/assets/radiant/blockstates/aluminum_block.json"
+          "src/main/java/net/mcreator/radiant/block/AluminumBlockBlock.java"
         ]
       },
       "path": "~/Aluminum"
@@ -8333,12 +8333,12 @@
       "registry_name": "cohesion_block_blackstone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/block/CohesionBlockBlackstoneBlock.java",
-          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockBlackstoneFluid.java",
           "src/main/java/net/mcreator/radiant/fluid/types/CohesionBlockBlackstoneFluidType.java",
+          "src/main/java/net/mcreator/radiant/block/CohesionBlockBlackstoneBlock.java",
+          "src/main/resources/assets/radiant/models/block/cohesion_block_blackstone.json",
+          "src/main/java/net/mcreator/radiant/fluid/CohesionBlockBlackstoneFluid.java",
           "src/main/resources/assets/radiant/models/item/cohesion_block_blackstone_bucket.json",
-          "src/main/resources/assets/radiant/blockstates/cohesion_block_blackstone.json",
-          "src/main/resources/assets/radiant/models/block/cohesion_block_blackstone.json"
+          "src/main/resources/assets/radiant/blockstates/cohesion_block_blackstone.json"
         ]
       },
       "path": "~/Surges/Cohesion/CohesionBlocks"
@@ -8451,8 +8451,8 @@
       "registry_name": "tension_lead",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/tension_lead.json",
-          "src/main/java/net/mcreator/radiant/item/TensionLeadItem.java"
+          "src/main/java/net/mcreator/radiant/item/TensionLeadItem.java",
+          "src/main/resources/assets/radiant/models/item/tension_lead.json"
         ]
       },
       "path": "~/Surges/Tension/Other"
@@ -8475,6 +8475,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8498,6 +8502,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8521,6 +8529,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8544,6 +8556,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8567,6 +8583,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8590,6 +8610,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8613,6 +8637,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8636,6 +8664,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8659,6 +8691,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8682,6 +8718,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8705,6 +8745,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8728,6 +8772,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8751,6 +8799,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8774,6 +8826,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8797,6 +8853,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8935,6 +8995,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8958,6 +9022,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8981,6 +9049,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9004,6 +9076,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9027,6 +9103,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9203,8 +9283,8 @@
       "registry_name": "cognitive_honorspren",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveHonorsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/CognitiveHonorsprenEntity.java"
+          "src/main/java/net/mcreator/radiant/entity/CognitiveHonorsprenEntity.java",
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveHonorsprenRenderer.java"
         ]
       },
       "path": "~/Spren"
@@ -9245,8 +9325,8 @@
       "registry_name": "cognitive_lightspren",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveLightsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/CognitiveLightsprenEntity.java"
+          "src/main/java/net/mcreator/radiant/entity/CognitiveLightsprenEntity.java",
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveLightsprenRenderer.java"
         ]
       },
       "path": "~/Spren"
@@ -9334,8 +9414,8 @@
       "registry_name": "cognitive_mistspren",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveMistsprenRenderer.java",
-          "src/main/java/net/mcreator/radiant/entity/CognitiveMistsprenEntity.java"
+          "src/main/java/net/mcreator/radiant/entity/CognitiveMistsprenEntity.java",
+          "src/main/java/net/mcreator/radiant/client/renderer/CognitiveMistsprenRenderer.java"
         ]
       },
       "path": "~/Spren"
@@ -9854,8 +9934,8 @@
       "registry_name": "elsecaller_dead_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/ElsecallerDeadShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/elsecaller_dead_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/elsecaller_dead_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/ElsecallerDeadShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/DeadBlades"
@@ -9868,8 +9948,8 @@
       "registry_name": "dustbringer_emerald_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/DustbringerEmeraldBondableShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/dustbringer_emerald_bondable_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/dustbringer_emerald_bondable_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/DustbringerEmeraldBondableShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -9882,8 +9962,8 @@
       "registry_name": "dustbringer_diamond_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/dustbringer_diamond_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/DustbringerDiamondBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/DustbringerDiamondBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/dustbringer_diamond_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -9896,8 +9976,8 @@
       "registry_name": "edgedancer_emerald_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/edgedancer_emerald_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/EdgedancerEmeraldBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/EdgedancerEmeraldBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/edgedancer_emerald_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -9910,8 +9990,8 @@
       "registry_name": "edgedancer_diamond_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/EdgedancerDiamondBondableShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/edgedancer_diamond_bondable_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/edgedancer_diamond_bondable_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/EdgedancerDiamondBondableShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -9924,8 +10004,8 @@
       "registry_name": "skybreaker_diamond_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/SkybreakerDiamondBondableShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/skybreaker_diamond_bondable_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/skybreaker_diamond_bondable_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/SkybreakerDiamondBondableShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -9938,8 +10018,8 @@
       "registry_name": "skybreaker_emerald_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/skybreaker_emerald_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/SkybreakerEmeraldBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/SkybreakerEmeraldBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/skybreaker_emerald_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -9952,8 +10032,8 @@
       "registry_name": "windrunner_emerald_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/windrunner_emerald_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/WindrunnerEmeraldBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/WindrunnerEmeraldBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/windrunner_emerald_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -9994,8 +10074,8 @@
       "registry_name": "truthwatcher_emerald_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/truthwatcher_emerald_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/TruthwatcherEmeraldBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/TruthwatcherEmeraldBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_emerald_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10008,8 +10088,8 @@
       "registry_name": "lightweaver_diamond_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/LightweaverDiamondBondableShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/lightweaver_diamond_bondable_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/lightweaver_diamond_bondable_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/LightweaverDiamondBondableShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10078,8 +10158,8 @@
       "registry_name": "stoneward_diamond_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/stoneward_diamond_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/StonewardDiamondBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/StonewardDiamondBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/stoneward_diamond_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10092,8 +10172,8 @@
       "registry_name": "elsecaller_emerald_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/ElsecallerEmeraldBondableShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/elsecaller_emerald_bondable_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/elsecaller_emerald_bondable_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/ElsecallerEmeraldBondableShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10106,8 +10186,8 @@
       "registry_name": "elsecaller_diamond_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/elsecaller_diamond_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/ElsecallerDiamondBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/ElsecallerDiamondBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/elsecaller_diamond_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10354,8 +10434,8 @@
       "registry_name": "infused_amethyst",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/InfusedAmethystItem.java",
-          "src/main/resources/assets/radiant/models/item/infused_amethyst.json"
+          "src/main/resources/assets/radiant/models/item/infused_amethyst.json",
+          "src/main/java/net/mcreator/radiant/item/InfusedAmethystItem.java"
         ]
       },
       "path": "~/Gems"
@@ -10382,8 +10462,8 @@
       "registry_name": "edgedancer_amethyst_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/edgedancer_amethyst_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/EdgedancerAmethystBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/EdgedancerAmethystBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/edgedancer_amethyst_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10424,8 +10504,8 @@
       "registry_name": "truthwatcher_amethyst_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/truthwatcher_amethyst_bondable_shardblade.json",
-          "src/main/java/net/mcreator/radiant/item/TruthwatcherAmethystBondableShardbladeItem.java"
+          "src/main/java/net/mcreator/radiant/item/TruthwatcherAmethystBondableShardbladeItem.java",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_amethyst_bondable_shardblade.json"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10452,8 +10532,8 @@
       "registry_name": "willshaper_amethyst_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/WillshaperAmethystBondableShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/willshaper_amethyst_bondable_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/willshaper_amethyst_bondable_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/WillshaperAmethystBondableShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10480,8 +10560,8 @@
       "registry_name": "elsecaller_amethyst_bondable_shardblade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/ElsecallerAmethystBondableShardbladeItem.java",
-          "src/main/resources/assets/radiant/models/item/elsecaller_amethyst_bondable_shardblade.json"
+          "src/main/resources/assets/radiant/models/item/elsecaller_amethyst_bondable_shardblade.json",
+          "src/main/java/net/mcreator/radiant/item/ElsecallerAmethystBondableShardbladeItem.java"
         ]
       },
       "path": "~/Shardblade/Bonded"
@@ -10645,11 +10725,11 @@
       "registry_name": "windrunner_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/WindrunnerShardplateBondableItem.java",
           "src/main/resources/assets/radiant/models/item/windrunner_shardplate_bondable_leggings.json",
-          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_bondable_chestplate.json",
+          "src/main/java/net/mcreator/radiant/item/WindrunnerShardplateBondableItem.java",
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_bondable_helmet.json",
           "src/main/resources/assets/radiant/models/item/windrunner_shardplate_bondable_boots.json",
-          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_bondable_helmet.json"
+          "src/main/resources/assets/radiant/models/item/windrunner_shardplate_bondable_chestplate.json"
         ]
       },
       "path": "~/Shardplate/Armors/Windrunner"
@@ -10662,11 +10742,11 @@
       "registry_name": "skybreaker_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_leggings.json",
-          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_chestplate.json",
-          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_boots.json",
           "src/main/java/net/mcreator/radiant/item/SkybreakerShardplateBondableItem.java",
-          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_helmet.json"
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_helmet.json",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_boots.json",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_leggings.json",
+          "src/main/resources/assets/radiant/models/item/skybreaker_shardplate_bondable_chestplate.json"
         ]
       },
       "path": "~/Shardplate/Armors/Skybreaker"
@@ -10679,11 +10759,11 @@
       "registry_name": "dustbringer_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_bondable_leggings.json",
-          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_bondable_chestplate.json",
-          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_bondable_helmet.json",
           "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_bondable_boots.json",
-          "src/main/java/net/mcreator/radiant/item/DustbringerShardplateBondableItem.java"
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_bondable_leggings.json",
+          "src/main/java/net/mcreator/radiant/item/DustbringerShardplateBondableItem.java",
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_bondable_helmet.json",
+          "src/main/resources/assets/radiant/models/item/dustbringer_shardplate_bondable_chestplate.json"
         ]
       },
       "path": "~/Shardplate/Armors/Dustbringer"
@@ -10696,11 +10776,11 @@
       "registry_name": "edgedancer_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_bondable_chestplate.json",
-          "src/main/java/net/mcreator/radiant/item/EdgedancerShardplateBondableItem.java",
           "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_bondable_helmet.json",
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_bondable_leggings.json",
           "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_bondable_boots.json",
-          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_bondable_leggings.json"
+          "src/main/resources/assets/radiant/models/item/edgedancer_shardplate_bondable_chestplate.json",
+          "src/main/java/net/mcreator/radiant/item/EdgedancerShardplateBondableItem.java"
         ]
       },
       "path": "~/Shardplate/Armors/Edgedancer"
@@ -10713,11 +10793,11 @@
       "registry_name": "truthwatcher_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_bondable_boots.json",
           "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_bondable_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_bondable_boots.json",
+          "src/main/java/net/mcreator/radiant/item/TruthwatcherShardplateBondableItem.java",
           "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_bondable_helmet.json",
-          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_bondable_leggings.json",
-          "src/main/java/net/mcreator/radiant/item/TruthwatcherShardplateBondableItem.java"
+          "src/main/resources/assets/radiant/models/item/truthwatcher_shardplate_bondable_leggings.json"
         ]
       },
       "path": "~/Shardplate/Armors/Truthwatcher"
@@ -10730,11 +10810,11 @@
       "registry_name": "lightweaver_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_bondable_chestplate.json",
           "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_bondable_boots.json",
-          "src/main/java/net/mcreator/radiant/item/LightweaverShardplateBondableItem.java",
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_bondable_leggings.json",
           "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_bondable_helmet.json",
-          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_bondable_leggings.json"
+          "src/main/resources/assets/radiant/models/item/lightweaver_shardplate_bondable_chestplate.json",
+          "src/main/java/net/mcreator/radiant/item/LightweaverShardplateBondableItem.java"
         ]
       },
       "path": "~/Shardplate/Armors/Lightweaver"
@@ -10747,11 +10827,11 @@
       "registry_name": "elsecaller_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_bondable_boots.json",
-          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_bondable_leggings.json",
           "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_bondable_helmet.json",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_bondable_chestplate.json",
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_bondable_leggings.json",
           "src/main/java/net/mcreator/radiant/item/ElsecallerShardplateBondableItem.java",
-          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_bondable_chestplate.json"
+          "src/main/resources/assets/radiant/models/item/elsecaller_shardplate_bondable_boots.json"
         ]
       },
       "path": "~/Shardplate/Armors/Elsecaller"
@@ -10764,9 +10844,9 @@
       "registry_name": "willshaper_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_bondable_helmet.json",
           "src/main/resources/assets/radiant/models/item/willshaper_shardplate_bondable_chestplate.json",
           "src/main/java/net/mcreator/radiant/item/WillshaperShardplateBondableItem.java",
+          "src/main/resources/assets/radiant/models/item/willshaper_shardplate_bondable_helmet.json",
           "src/main/resources/assets/radiant/models/item/willshaper_shardplate_bondable_leggings.json",
           "src/main/resources/assets/radiant/models/item/willshaper_shardplate_bondable_boots.json"
         ]
@@ -10781,11 +10861,11 @@
       "registry_name": "stoneward_shardplate_bondable",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/item/StonewardShardplateBondableItem.java",
-          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_bondable_chestplate.json",
           "src/main/resources/assets/radiant/models/item/stoneward_shardplate_bondable_boots.json",
           "src/main/resources/assets/radiant/models/item/stoneward_shardplate_bondable_leggings.json",
-          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_bondable_helmet.json"
+          "src/main/java/net/mcreator/radiant/item/StonewardShardplateBondableItem.java",
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_bondable_helmet.json",
+          "src/main/resources/assets/radiant/models/item/stoneward_shardplate_bondable_chestplate.json"
         ]
       },
       "path": "~/Shardplate/Armors/Stoneward"
@@ -10875,8 +10955,8 @@
       "registry_name": "fake_cow",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/entity/FakeCowEntity.java",
-          "src/main/java/net/mcreator/radiant/client/renderer/FakeCowRenderer.java"
+          "src/main/java/net/mcreator/radiant/client/renderer/FakeCowRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/FakeCowEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/Morph/Fakes"
@@ -10889,8 +10969,8 @@
       "registry_name": "fake_pig",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/entity/FakePigEntity.java",
-          "src/main/java/net/mcreator/radiant/client/renderer/FakePigRenderer.java"
+          "src/main/java/net/mcreator/radiant/client/renderer/FakePigRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/FakePigEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/Morph/Fakes"
@@ -10953,8 +11033,8 @@
       "registry_name": "fake_witch",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/entity/FakeWitchEntity.java",
-          "src/main/java/net/mcreator/radiant/client/renderer/FakeWitchRenderer.java"
+          "src/main/java/net/mcreator/radiant/client/renderer/FakeWitchRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/FakeWitchEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/Morph/Fakes"
@@ -10967,8 +11047,8 @@
       "registry_name": "fake_zombie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/radiant/entity/FakeZombieEntity.java",
-          "src/main/java/net/mcreator/radiant/client/renderer/FakeZombieRenderer.java"
+          "src/main/java/net/mcreator/radiant/client/renderer/FakeZombieRenderer.java",
+          "src/main/java/net/mcreator/radiant/entity/FakeZombieEntity.java"
         ]
       },
       "path": "~/Surges/Illumination/Morph/Fakes"
@@ -11165,6 +11245,89 @@
         ]
       },
       "path": "~/Shardplate/Effect"
+    },
+    {
+      "name": "TransformationSurgeGUIThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transformation_surge_gui_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TransformationSurgeGUIThisGUIIsOpenedProcedure.java"
+        ]
+      },
+      "path": "~/Surges/Transformation"
+    },
+    {
+      "name": "TransformationCalculateXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transformation_calculate_xp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/TransformationCalculateXPProcedure.java"
+        ]
+      },
+      "path": "~/Surges/Transformation"
+    },
+    {
+      "name": "CalculatePlayerXp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calculate_player_xp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/radiant/procedures/CalculatePlayerXpProcedure.java"
+        ]
+      },
+      "path": "~/Surges"
     }
   ],
   "variable_elements": [
@@ -12620,8 +12783,51 @@
       "item.radiant.dustbringer_shardplate_bondable_boots": "Shardplate Boots",
       "advancements.lightweaver_second_ideal.title": "The Second Ideal",
       "item.radiant.lightweaver_shardplate_bondable_boots": "Shardplate Boots",
-      "item.radiant.skybreaker_diamond_bondable_shardblade": "Shardblade"
+      "item.radiant.skybreaker_diamond_bondable_shardblade": "Shardblade",
+      "fluid_type.radiant.cohesion_block_dirt": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_stone": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_obsidian": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_netherrack": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_granite": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_sandstone": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_sand": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_diorite": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_bedrock": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_andesite": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_debris": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_endstone": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_liquid": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_cobblestone": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_deepslate_c_obblestone": "Cohesion Liquid",
+      "fluid_type.radiant.cohesion_block_deepslate": "Cohesion Liquid",
+      "fluid_type.radiant.blood": "Blood",
+      "fluid_type.radiant.cohesion_block_blackstone": "Cohesion Liquid"
     }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/radiant/init/RadiantModTabs.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModModels.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/radiant/RadiantMod.java",
+      "src/main/java/net/mcreator/radiant/network/RadiantModVariables.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModFluidTypes.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModFluids.java",
+      "src/main/java/net/mcreator/radiant/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModMenus.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModScreens.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModKeyMappings.java",
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "src/main/java/net/mcreator/radiant/init/RadiantModParticles.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModParticleTypes.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModMobEffects.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModBlocks.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModBlockEntities.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModItems.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModEntities.java",
+      "src/main/java/net/mcreator/radiant/init/RadiantModEntityRenderers.java"
+    ]
   },
   "foldersRoot": {
     "name": "~",
@@ -12898,5 +13104,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.radiant"
   },
-  "mcreatorVersion": 202500113416
+  "mcreatorVersion": 202500228610
 }

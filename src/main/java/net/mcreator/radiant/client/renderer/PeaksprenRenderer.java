@@ -1,4 +1,3 @@
-
 package net.mcreator.radiant.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -21,6 +20,7 @@ public class PeaksprenRenderer extends HumanoidMobRenderer<PeaksprenEntity, Huma
 	@Override
 	protected void scale(PeaksprenEntity entity, PoseStack poseStack, float f) {
 		poseStack.scale(0.3f, 0.3f, 0.3f);
+		poseStack.scale(entity.getAgeScale(), entity.getAgeScale(), entity.getAgeScale());
 	}
 
 	@Override

@@ -1,10 +1,11 @@
-
 package net.mcreator.radiant.item;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -57,6 +58,12 @@ public abstract class SkybreakerShardplateItem extends ArmorItem {
 		}
 
 		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean isFoil(ItemStack itemstack) {
+			return true;
+		}
+
+		@Override
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
@@ -68,6 +75,12 @@ public abstract class SkybreakerShardplateItem extends ArmorItem {
 	public static class Chestplate extends SkybreakerShardplateItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(6)).fireResistant());
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean isFoil(ItemStack itemstack) {
+			return true;
 		}
 
 		@Override
@@ -85,6 +98,12 @@ public abstract class SkybreakerShardplateItem extends ArmorItem {
 		}
 
 		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean isFoil(ItemStack itemstack) {
+			return true;
+		}
+
+		@Override
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
@@ -96,6 +115,12 @@ public abstract class SkybreakerShardplateItem extends ArmorItem {
 	public static class Boots extends SkybreakerShardplateItem {
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(6)).fireResistant());
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean isFoil(ItemStack itemstack) {
+			return true;
 		}
 
 		@Override

@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "radiant:tension_gold_armor_helmet",
-    "radiant:tension_gold_armor_chestplate",
     "radiant:tension_gold_armor_leggings",
-    "radiant:tension_gold_armor_boots",
     "minecraft:golden_helmet",
-    "minecraft:golden_chestplate",
     "minecraft:golden_leggings",
-    "minecraft:golden_boots"
+    "radiant:tension_gold_armor_chestplate",
+    "minecraft:golden_chestplate",
+    "minecraft:golden_boots",
+    "radiant:tension_gold_armor_helmet",
+    "radiant:tension_gold_armor_boots"
   ]
 }

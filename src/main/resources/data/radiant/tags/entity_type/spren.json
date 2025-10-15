@@ -1,23 +1,23 @@
 {
   "replace": false,
   "values": [
-    "radiant:ashspren",
+    "radiant:cognitive_cultivationspren",
     "radiant:cryptic",
-    "radiant:cultivationspren",
-    "radiant:highspren",
-    "radiant:honorspren",
     "radiant:inkspren",
     "radiant:lightspren",
-    "radiant:mistspren",
-    "radiant:peakspren",
-    "radiant:cognitive_honorspren",
-    "radiant:cognitive_cultivationspren",
-    "radiant:cognitive_peakspren",
-    "radiant:cognitive_lightspren",
+    "radiant:cognitive_mistspren",
     "radiant:cognitive_ashspren",
-    "radiant:cognitive_highspren",
+    "radiant:ashspren",
+    "radiant:honorspren",
+    "radiant:cognitive_lightspren",
+    "radiant:cultivationspren",
     "radiant:cognitive_inkspren",
+    "radiant:cognitive_honorspren",
     "radiant:cognitive_cryptic",
-    "radiant:cognitive_mistspren"
+    "radiant:peakspren",
+    "radiant:cognitive_highspren",
+    "radiant:highspren",
+    "radiant:cognitive_peakspren",
+    "radiant:mistspren"
   ]
 }
